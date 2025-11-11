@@ -1,0 +1,59 @@
+{
+  "definitions": {
+    "etat": "Autorité instituée sur un plan juridique et politique — fonctions : juridique (représentation), politique (pouvoir), administrative (gestion)."
+  },
+  "citations": [],
+  "philosophes": [
+    {
+      "nom": "Aristote",
+      "oeuvre": "Politique",
+      "idee": "Quelles sont les causes et les raisons de la réunion des hommes en société ? 1) Réponse factuelle : comme animaux grégaires, les hommes s'unissent pour répondre à leurs besoins. 2) Réponse métaphysique : pour bien vivre"
+    },
+    {
+      "nom": "Hobbes",
+      "oeuvre": "Le Citoyen",
+      "idee": "État de nature → Contrat social → État de société. Guerre tous contre tous → Fin de la guerre. Selon Hobbes, la nature pousse les hommes à s'opposer"
+    }
+  ],
+  "quiz_questions": [
+    {
+      "q": "Parmi ces fonctions, laquelle NE fait PAS partie des fonctions de l'État ?",
+      "correct": "Religieuse (sauver les âmes)",
+      "distractors": [
+        "Juridique (représentation)",
+        "Politique (pouvoir)",
+        "Administrative (gestion)",
+        "Économique (production)"
+      ],
+      "defText": "L'État a 3 fonctions : juridique (représentation), politique (pouvoir) et administrative (gestion). Il n'a pas de fonction religieuse."
+    },
+    {
+      "q": "Selon Aristote, pourquoi les hommes se réunissent-ils ?",
+      "correct": "Pour répondre à leurs besoins et bien vivre",
+      "distractors": [
+        "Par contrainte divine",
+        "Pour fuir la nature hostile",
+        "Par instinct de domination",
+        "Pour accumuler de la richesse"
+      ],
+      "defText": "Aristote donne 2 réponses : 1) Factuelle : comme d'autres animaux grégaires, pour répondre à leurs besoins. 2) Métaphysique : pour \"bien vivre\"."
+    },
+    {
+      "q": "Que soutient Hobbes sur l'état de nature ?",
+      "correct": "Une guerre de tous contre tous",
+      "distractors": [
+        "Les hommes y sont naturellement altruistes",
+        "La société y est superflue",
+        "La politique doit être religieuse",
+        "La coopération est spontanée"
+      ],
+      "defText": "Hobbes décrit l'état de nature comme une guerre de tous contre tous. Selon lui, la nature pousse les hommes à s'opposer (l'homme est un loup pour l'homme)."
+    },
+    {
+      "q": "Quel philosophe a théorisé le passage de l'état de nature au contrat social ?",
+      "correct": "Hobbes",
+      "distractors": ["Aristote", "Pascal", "Alain", "Spinoza"],
+      "defText": "Hobbes : État de nature (guerre de tous contre tous) → Contrat social → État de société (fin de la guerre). La vie en société n'est pas naturelle mais conventionnelle."
+    }
+  ]
+}

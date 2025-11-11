@@ -1,0 +1,217 @@
+{
+  "definitions": {
+    "devoir": "Impératif de conscience imposant d'accomplir ce qui est prescrit par une obligation religieuse, morale ou légale."
+  },
+  "citations": [
+    {
+      "auteur": "É. Durkheim",
+      "oeuvre": "L'Éducation morale",
+      "citation": "Quand notre conscience parle, c'est la société qui parle en nous."
+    }
+  ],
+  "philosophes": [
+    {
+      "nom": "Zénon",
+      "courant": "Stoïcien"
+    },
+    {
+      "nom": "Jeremy Bentham",
+      "courant": "Utilitariste"
+    },
+    {
+      "nom": "Kant",
+      "oeuvre": "Fondement de la métaphysique des mœurs",
+      "idee": "Action bonne si intention bonne. Bonne volonté = agir par devoir, non par contrainte ni intérêt"
+    },
+    {
+      "nom": "É. Durkheim",
+      "oeuvre": "L'Éducation morale",
+      "idee": "Quand notre conscience parle, c'est la société qui parle en nous. Conscience morale = intériorisation de la contrainte sociale"
+    }
+  ],
+  "quiz_questions": [
+    {
+      "q": "Quelle formulation décrit le devoir ?",
+      "correct": "Impératif de conscience imposant d'accomplir ce qui est prescrit",
+      "distractors": [
+        "Une simple suggestion sociale",
+        "Un plaisir partagé",
+        "Une contrainte physique",
+        "Une préférence individuelle",
+        "Une décision purement utilitariste",
+        "Une habitude culturelle",
+        "Obligation sociale sans dimension morale",
+        "Règle optionnelle relevant du choix personnel",
+        "Prescription légale sans référence à la conscience",
+        "Attente collective sans impératif moral",
+        "Norme culturelle variable selon les sociétés",
+        "Contrainte externe exercée par la force",
+        "Simple recommandation d'usage social",
+        "Préférence individuelle déguisée en règle",
+        "Devoir = recherche du plaisir personnel",
+        "Instruction administrative sans portée morale",
+        "Engagement purement conventionnel entre individus",
+        "Directive religieuse seulement rituelle",
+        "Décision privée dépourvue d'obligation",
+        "Consigne temporaire liée à une circonstance",
+        "Rôle social attendu mais non obligatoire",
+        "Prescription morale fondée sur l'intérêt",
+        "Obligation contractuelle exclusivement juridique",
+        "Impulsion émotionnelle sans caractère normatif",
+        "Conseil moral sans caractère impératif",
+        "Norme pragmatique visant l'efficacité"
+      ],
+      "defKey": "devoir"
+    },
+    {
+      "q": "Quelle est la différence entre 'contrainte' et 'obligation' ?",
+      "correct": "Contrainte = usage de la force / Obligation = autorité légitime",
+      "distractors": [
+        "Ce sont des synonymes",
+        "Contrainte = morale / Obligation = physique",
+        "Contrainte = sociale / Obligation = individuelle",
+        "Contrainte = choix personnel / Obligation = instinct",
+        "Contrainte = religieuse / Obligation = naturelle",
+        "Contrainte = règle morale / Obligation = sentiment personnel",
+        "Contrainte = volonté individuelle / Obligation = pression sociale",
+        "Contrainte = choix libre / Obligation = recommandation",
+        "Contrainte = sanction morale / Obligation = sanction juridique",
+        "Contrainte = contrainte économique / Obligation = contrainte morale",
+        "Contrainte = absence de responsabilité / Obligation = responsabilité accrue",
+        "Contrainte = préférence collective / Obligation = règle privée",
+        "Contrainte = contrainte psychologique / Obligation = contrainte physique",
+        "Contrainte = contrainte temporaire / Obligation = contrainte permanente",
+        "Contrainte = imposition volontaire / Obligation = imposition involontaire",
+        "Contrainte = discours moral / Obligation = loi écrite",
+        "Contrainte = menace implicite / Obligation = simple attente",
+        "Contrainte = coercition légale / Obligation = sanction religieuse",
+        "Contrainte = contrainte sociale douce / Obligation = contrainte administrative",
+        "Contrainte = absence de légitimité / Obligation = effet contraignant sans force",
+        "Contrainte = ordre moral intérieur / Obligation = ordre extérieur",
+        "Contrainte = effet de la coutume / Obligation = règle universelle",
+        "Contrainte = contrainte institutionnelle / Obligation = contrat personnel",
+        "Contrainte = contrainte intellectuelle / Obligation = contrainte émotionnelle",
+        "Contrainte = punition assurée / Obligation = simple recommandation"
+      ],
+      "defText": "Contrainte : injonction accompagnée de l'usage d'une FORCE imposant l'obéissance. Obligation : quand on considère que l'injonction émane d'une AUTORITÉ LÉGITIME."
+    },
+    {
+      "q": "Quel stoïcien est cité en lien avec le devoir ?",
+      "correct": "Zénon",
+      "distractors": [
+        "Kant", 
+        "Bentham", 
+        "Aristote", 
+        "Sénèque", 
+        "Epicure",
+        "Chrysippe",
+        "Épictète",
+        "Sénèque",
+        "Marc Aurèle",
+        "Musonius Rufus",
+        "Cleanthes",
+        "Posidonius",
+        "Panaetius",
+        "Diogène Laërce",
+        "Antipater",
+        "Hierocles",
+        "Ménédème",
+        "Eudemos",
+        "Athenodorus",
+        "Arius Didymus",
+        "Papirius",
+        "Ariston"
+      ],
+      "defText": "Zénon est le philosophe stoïcien cité. Le stoïcisme prône l'acceptation du destin et la maîtrise des passions."
+    },
+    {
+      "q": "Selon Durkheim, qu'est-ce que la conscience morale ?",
+      "correct": "La société qui parle en nous",
+      "distractors": [
+        "Un instinct individuel", 
+        "Un choix purement religieux", 
+        "Une conséquence biologique", 
+        "Un calcul utilitariste",
+        "Une voix intérieure purement individuelle",
+        "Un instinct biologique inné",
+        "Un calcul utilitaire visant l'intérêt",
+        "Une conséquence de la psychologie personnelle",
+        "Un reflet direct des émotions",
+        "Un produit de la famille uniquement",
+        "Une règle imposée par la nature",
+        "Une norme universelle indépendante de la société",
+        "Un jugement rationnel isolé de l'environnement",
+        "Une préférence culturelle personnelle",
+        "Un mécanisme individuel de survie",
+        "Un simple héritage génétique",
+        "Un artefact historique sans influence actuelle",
+        "Un choix conscient et isolé de l'individu",
+        "Un ensemble de sentiments amoureux",
+        "Une loi naturelle accessible à tous sans socialisation",
+        "Une balance entre plaisir et douleur",
+        "Un décret religieux intérieur",
+        "Une habitude individuelle sans portée sociale"
+      ],
+      "defText": "Durkheim : \"Quand notre conscience parle, c'est la société qui parle en nous.\" Notre conscience morale est une intériorisation de la contrainte sociale."
+    },
+    {
+      "q": "Que dit Kant sur la bonne volonté ?",
+      "correct": "Agir par devoir, non par contrainte ni intérêt",
+      "distractors": ["Agir uniquement par intérêt personnel", 
+      "Le devoir est inutile", 
+      "La bonne volonté n'existe pas", 
+      "Agir par habitude sociale",
+      "Agir selon l'intérêt personnel maximisé",
+      "Agir uniquement pour obtenir du plaisir",
+      "Agir sous la simple influence des émotions",
+      "Agir parce que la loi l'impose sans intention",
+      "Agir pour satisfaire des désirs sociaux",
+      "Agir en vue d'une récompense future",
+      "Agir seulement si le résultat est utile",
+      "Agir par peur de la sanction uniquement",
+      "Agir en suivant les coutumes locales",
+      "Agir pour maintenir le statut social",
+      "Agir en conformité avec les instincts",
+      "Agir quand cela plaît aux autres",
+      "Agir selon l'intérêt du plus grand nombre",
+      "Agir sous l'autorité d'une tradition religieuse",
+      "Agir sans réfléchir mais en visant l'honneur",
+      "Agir pour éviter la culpabilité personnelle",
+      "Agir uniquement pour l'estime d'autrui",
+      "Agir en se fiant uniquement à l'expérience",
+      "Agir selon l'exemple d'un leader"
+    ],
+      "defText": "Pour Kant : 1) Une action est bonne si l'intention est bonne. 2) La bonne volonté = agir conformément au devoir ET agir par devoir (non par contrainte ou intérêt)."
+    },
+    {
+      "q": "Selon Kant, une action est bonne si :",
+      "correct": "L'intention est bonne",
+      "distractors": [
+        "Le résultat est bon", 
+        "Elle procure du plaisir", 
+        "Elle est approuvée par tous", 
+        "Elle suit l'intérêt personnel",
+        "Le résultat produit le plus de plaisir",
+        "L'action est conforme aux coutumes",
+        "Elle procure un avantage économique",
+        "Elle est imposée par une majorité",
+        "Elle vient d'une habitude personnelle",
+        "Elle est dictée par l'instinct",
+        "Elle est acclamée socialement",
+        "Elle évite une sanction immédiate",
+        "Elle maximise l'intérêt particulier",
+        "Elle est pratiquée par une autorité religieuse",
+        "Elle suit une tradition ancienne",
+        "Elle apporte prestige et renommée",
+        "Elle découle d'une émotion sincère",
+        "Elle est utile pour la survie immédiate",
+        "Elle est efficace dans un but pragmatique",
+        "Elle est rentable économiquement",
+        "Elle correspond à un désir personnel",
+        "Elle est imposée par la loi sans intention",
+        "Elle répond à une simple préférence sociale"
+      ],
+      "defText": "Pour Kant : une action est bonne si l'intention est bonne (et non si le résultat est bon)."
+    }
+  ]
+}

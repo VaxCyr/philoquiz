@@ -1,0 +1,612 @@
+{
+  "definitions": {
+    "bonheur": "Ce qui nous satisfait."
+  },
+  "remedes": [
+    "Ne pas avoir peur de Dieu (ils sont parfaits donc désintéressés de nous)",
+    "Ne pas craindre la mort (si vivant alors pas mort, et si mort alors pas vivant)",
+    "Il est possible d'être heureux (plaisirs)",
+    "Il est possible de supporter la douleur (car elle est limitée)"
+  ],
+  "desires": [
+    "Naturels et nécessaires (il faut)",
+    "Naturels et non nécessaires (on peut)",
+    "Non naturels et non nécessaires (on ne doit pas)"
+  ],
+  "citations": [
+    {
+      "auteur": "B. Pascal",
+      "oeuvre": "Pensées",
+      "citation": "Nous ne nous tenons jamais au temps présent. Nous anticipons l'avenir comme trop lent à venir, [...] ou nous rappelons le passé pour l'arrêter comme trop prompt [...]."
+    },
+    {
+      "auteur": "Alain",
+      "oeuvre": "Propos",
+      "citation": "Dès qu'un homme cherche le bonheur, il est condamné à ne pas le trouver [...]."
+    }
+  ],
+  "quiz_questions": [
+    {
+      "q": "Quelle formulation correspond à la définition du bonheur ?",
+      "correct": "Ce qui nous satisfait",
+      "distractors": [
+        "Un état de joie permanente",
+        "La suppression des devoirs",
+        "Une récompense divine",
+        "Un état d'excitation sans fin",
+        "La richesse matérielle",
+        "L'absence totale de douleur",
+        "La reconnaissance sociale universelle",
+        "La satisfaction immédiate de tous les désirs",
+        "Ce qui nous attire",
+        "Ce qui nous amuse",
+        "Ce qui nous distrait",
+        "Ce qui nous procure du plaisir immédiat",
+        "Ce qui répond à nos désirs",
+        "Ce qui comble nos besoins physiques",
+        "Ce qui dépend de la chance",
+        "Ce qui correspond à nos attentes sociales",
+        "Ce qui nous rend populaires",
+        "Ce qui nous fait oublier la souffrance",
+        "Ce qui nous donne du pouvoir",
+        "Ce qui assure notre sécurité",
+        "Ce qui flatte notre ego",
+        "Ce qui impressionne les autres",
+        "Ce qui nous fait rire",
+        "Ce qui nous divertit",
+        "Ce qui nous épargne l’effort",
+        "Ce qui nous éloigne de la réalité",
+        "Ce qui nous procure une satisfaction matérielle",
+        "Ce qui correspond à notre confort"
+      ],
+      "defKey": "bonheur"
+    },
+
+
+
+
+
+
+    {
+      "q": "Lequel de ces remèdes contre le malheur est dans le cours ?",
+      "correct": "Ne pas craindre la mort",
+      "distractors": [
+        "Chercher la vengeance",
+        "Ignorer sa conscience",
+        "Chercher à éviter la douleur à tout prix",
+        "Rechercher la gloire",
+        "Ignorer la raison",
+        "Poursuivre la richesse",
+        "Vivre dans la peur de l’inconnu",
+        "Croire au destin absolu",
+        "Fuir toute responsabilité",
+        "Craindre les dieux",
+        "Éviter la réflexion morale",
+        "Rechercher les plaisirs extrêmes",
+        "Se couper du monde",
+        "Vouloir contrôler la nature",
+        "Éviter toute souffrance",
+        "Vivre uniquement dans le présent",
+        "Redouter la punition divine",
+        "Multiplier les désirs",
+        "Rechercher l’immortalité",
+        "Ignorer la mort",
+        "S’abandonner à la peur",
+        "Ne pas penser à la douleur"
+      ],
+      "defText": "Les 4 remèdes sont : 1) Ne pas avoir peur de Dieu, 2) Ne pas craindre la mort, 3) Il est possible d'être heureux, 4) Il est possible de supporter la douleur."
+    },
+
+    {
+      "q": "Lequel de ces remèdes contre le malheur est dans le cours ?",
+      "correct": "Ne pas avoir peur de Dieu",
+      "distractors": [
+        "S'isoler complètement",
+        "Chercher la vengeance",
+        "Ignorer sa conscience",
+        "Croire que Dieu punit sans raison",
+        "Redouter la volonté divine",
+        "Multiplier les offrandes pour plaire à Dieu",
+        "Prier sans comprendre",
+        "Craindre la colère divine",
+        "Chercher à apaiser les dieux",
+        "Croire que les dieux sont cruels",
+        "Obéir à Dieu par peur",
+        "Rejeter toute croyance religieuse",
+        "Éviter de parler des dieux",
+        "Se méfier de toute divinité",
+        "Craindre l’enfer avant tout",
+        "Espérer une récompense divine",
+        "Vivre pour mériter le paradis",
+        "Chercher à plaire aux dieux",
+        "Ne pas douter des dieux",
+        "Suivre les dieux aveuglément",
+        "Croire que les dieux se fâchent",
+        "Vivre dans la crainte divine",
+        "Se soumettre aux dieux"
+      ],
+      "defText": "Les 4 remèdes sont : 1) Ne pas avoir peur de Dieu, 2) Ne pas craindre la mort, 3) Il est possible d'être heureux, 4) Il est possible de supporter la douleur."
+    },
+
+    {
+      "q": "Lequel de ces remèdes contre le malheur est dans le cours ?",
+      "correct": "Il est possible de supporter la douleur",
+      "distractors": [
+        "S'isoler complètement",
+        "Chercher la vengeance",
+        "Ignorer sa conscience",
+        "Il faut fuir la douleur à tout prix",
+        "La douleur est toujours insupportable",
+        "Il faut ignorer la souffrance des autres",
+        "La douleur détruit nécessairement le bonheur",
+        "Il faut éviter tout effort",
+        "La douleur ne peut pas être surmontée",
+        "Il faut refuser la souffrance",
+        "La douleur est un mal absolu",
+        "Il faut chercher à supprimer toute douleur",
+        "La douleur empêche de penser",
+        "La douleur est incompatible avec la sagesse",
+        "La douleur doit être cachée",
+        "Il faut nier la souffrance",
+        "La douleur vient du péché",
+        "La douleur est une punition divine",
+        "Il faut redouter la douleur",
+        "La douleur ne mène qu’à la tristesse",
+        "La douleur rend le bonheur impossible",
+        "Il faut se protéger de toute souffrance",
+        "Il faut supprimer la douleur avant tout"
+      ],
+      "defText": "Les 4 remèdes sont : 1) Ne pas avoir peur de Dieu, 2) Ne pas craindre la mort, 3) Il est possible d'être heureux, 4) Il est possible de supporter la douleur."
+    },
+
+    {
+      "q": "Lequel de ces remèdes contre le malheur est dans le cours ?",
+      "correct": "Il est possible d'être heureux (plaisirs)",
+      "distractors": [
+        "S'isoler complètement",
+        "Chercher la vengeance",
+        "Ignorer sa conscience",
+        "Le bonheur est inaccessible",
+        "Le plaisir conduit toujours au malheur",
+        "Le bonheur dépend du hasard",
+        "Il faut renoncer à tout plaisir",
+        "Le bonheur est une illusion",
+        "Le plaisir est contraire à la raison",
+        "Il faut éviter toute émotion",
+        "Le bonheur ne dure jamais",
+        "Seul le travail rend heureux",
+        "Le bonheur est réservé aux sages",
+        "Le plaisir est une faute morale",
+        "Il faut souffrir pour être heureux",
+        "Le bonheur vient après la mort",
+        "Le plaisir empêche la sagesse",
+        "Il faut mépriser les plaisirs du corps",
+        "Le bonheur vient de la gloire",
+        "Le plaisir rend esclave",
+        "Le bonheur dépend du destin",
+        "Il faut craindre le bonheur",
+        "Le bonheur est un état impossible"
+      ],
+      "defText": "Les 4 remèdes sont : 1) Ne pas avoir peur de Dieu, 2) Ne pas craindre la mort, 3) Il est possible d'être heureux, 4) Il est possible de supporter la douleur."
+    },
+
+
+
+
+
+
+
+
+    {
+      "q": "Quel philosophe est associé à l'utilitarisme dans le cours ?",
+      "correct": "Jeremy Bentham",
+      "distractors": [
+        "Kant", 
+        "Zénon", 
+        "Aristote", 
+        "Epicure", 
+        "Spinoza",
+         "John Locke",
+        "David Hume",
+        "Thomas Hobbes",
+        "John Stuart Mill",
+        "René Descartes",
+        "Aristote",
+        "Epicure",
+        "Socrate",
+        "Platon",
+        "Spinoza",
+        "Pascal",
+        "Nietzsche",
+        "Kant",
+        "Durkheim",
+        "Sartre",
+        "Leibniz",
+        "Montesquieu",
+        "Rousseau",
+        "Augustin",
+        "Cicéron"
+      ],
+      "defText": "Jeremy Bentham est le représentant de l'utilitarisme (doctrine qui considère l'utilité comme principe du bien)."
+    },
+    {
+      "q": "Qui a écrit : 'Nous ne nous tenons jamais au temps présent' ?",
+      "correct": "B. Pascal (Pensées)",
+      "distractors": [
+        "Alain (Propos)", 
+        "Durkheim (L'éduquation morale)", 
+        "Hobbes (Le Citoyen)", 
+        "Aristote (Politiques)",
+        "R. Descartes (Méditations)",
+        "Montaigne (Essais)",
+        "A. Camus (Le Mythe de Sisyphe)",
+        "J.-P. Sartre (L’Être et le Néant)",
+        "Voltaire (Candide)",
+        "Spinoza (Éthique)",
+        "Epicure (Lettre à Ménécée)",
+        "Platon (Phèdre)",
+        "Nietzsche (Ainsi parlait Zarathoustra)",
+        "Aristote (Éthique à Nicomaque)",
+        "Freud (Malaise dans la civilisation)",
+        "Diderot (Le Neveu de Rameau)",
+        "Rousseau (Les Confessions)",
+        "Hume (Traité de la nature humaine)",
+        "Kant (Critique de la raison pratique)",
+        "Cicéron (Tusculanes)",
+        "Leibniz (Monadologie)",
+        "Alain (Propos sur le bonheur)",
+        "Durkheim (Les formes élémentaires de la vie religieuse)",
+        "Epictète (Manuel)"
+      ],
+      "defText": "Citation de Blaise Pascal dans les Pensées. Pascal critique notre incapacité à vivre le présent : on anticipe l'avenir ou on rappelle le passé."
+    },
+    {
+      "q": "Que signifie 'contingent' dans les repères ?",
+      "correct": "Ce qui peut ou aurait pu être autrement",
+      "distractors": [
+        "Ce qui ne peut pas ne pas être",
+        "Ce qui dépasse les limites naturelles d'un objet",
+        "Ce qui est universel",
+        "Ce qui est contenu dans ses limites naturelles",
+        "Ce qui ne peut pas être modifié",
+        "Ce qui dépend d'une cause divine",
+        "Ce qui est éternel",
+        "Ce qui s'impose par nécessité",
+        "Ce qui est universel",
+        "Ce qui ne change jamais",
+        "Ce qui est absolu",
+        "Ce qui découle d'une loi morale",
+        "Ce qui est en droit obligatoire",
+        "Ce qui ne dépend pas du hasard",
+        "Ce qui ne peut pas ne pas être",
+        "Ce qui est conforme à la nature",
+        "Ce qui est purement rationnel",
+        "Ce qui est stable et fixe",
+        "Ce qui s’impose à tous les cas",
+        "Ce qui est toujours vrai",
+        "Ce qui est nécessaire",
+        "Ce qui est une règle universelle",
+        "Ce qui est défini par la raison",
+        "Ce qui ne peut être autrement"
+      ],
+      "defKey": "contingent"
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "q": "Parmi ces repères, lesquels forment une paire ?",
+      "corrects": ["Absolu", "Relatif"],
+      "distractors": ["Contingent", "Universel", "Particulier", "En droit", "Contrainte", "Transcendant", "En puissance"],
+      "multi": true,
+      "defText": "Absolu (ne dépend de rien) ≠ Relatif (dépend d'autre chose). Autre paire : Contingent (peut être autrement) ≠ Nécessaire (ne peut pas ne pas être)."
+    },
+    {
+      "q": "Parmi ces repères, lesquels forment une paire ?",
+      "corrects": ["Contingent", "Nécessaire"],
+      "distractors": ["Absolu", "Universel", "Singulier", "En fait", "Contrainte", "Immanent", "En acte"],
+      "multi": true,
+      "defText": "Contingent : Ce qui peut ou aurait pu être autrement ≠ Nécessaire : Ce qui ne peut pas ne pas être."
+    },
+    {
+      "q": "Parmi ces repères, lesquels forment une paire ?",
+      "corrects": ["En fait", "En droit"],
+      "distractors": ["Nécessaire", "Général", "Particulier", "Relatif", "Obligation", "Transcendant", "En puissance"],
+      "multi": true,
+      "defText": "En fait : Ce qui est / En droit : Ce qui devrait être."
+    },
+    {
+      "q": "Parmi ces repères, lesquels forment une paire ?",
+      "corrects": ["Contrainte", "Obligation"],
+      "distractors": ["Contingent", "Universel", "Général", "En droit", "Absolu", "Immanent", "En acte"],
+      "multi": true,
+      "defText": "Contrainte : Injonction accompagnée de l'usage d'une force qui impose une obéissance / Obligation : Quand on considère que l'injonction émane d'une autorité légitime"
+    },
+    {
+      "q": "Parmi ces repères, lesquels forment une paire ?",
+      "corrects": ["Transcendant", "Immmanent"],
+      "distractors": ["Nécessaire", "Singulier", "Particulier", "En fait", "Contrainte", "Relatif", "En acte"],
+      "multi": true,
+      "defText": "Transcendant : Dépasse les limites naturel d'un objet ≠ Immanent : Contenu dans les limites naturel d'un objet"
+    },
+    {
+      "q": "Parmi ces repères, lesquels forment une paire ?",
+      "corrects": ["En acte", "En puissance"],
+      "distractors": ["Contingent", "Général", "Singulier", "En fait", "Obligation", "Transcendant", "Absolu"],
+      "multi": true,
+      "defText": "En acte : Achevé/accomplit ≠ En puissance : Accomplissement potentiel"
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "q": "Que signifie 'en droit' dans les repères ?",
+      "correct": "Ce qui devrait être",
+      "distractors": [
+        "Ce qui est", 
+        "Ce qui dépend d'autre chose", 
+        "Ce qui ne peut pas ne pas être", 
+        "Ce qui s'applique à tous les cas",
+        "Ce qui est effectivement le cas",
+        "Ce qui dépend de la loi naturelle",
+        "Ce qui est imposé par la société",
+        "Ce qui est matériellement vrai",
+        "Ce qui relève du hasard",
+        "Ce qui existe déjà",
+        "Ce qui ne peut pas être autrement",
+        "Ce qui dépend d’un contexte concret",
+        "Ce qui s’applique à tous les cas",
+        "Ce qui découle d’une coutume",
+        "Ce qui est lié à la morale",
+        "Ce qui est conforme à la réalité",
+        "Ce qui se constate dans les faits",
+        "Ce qui résulte d’un choix libre",
+        "Ce qui est purement rationnel",
+        "Ce qui s’impose par contrainte",
+        "Ce qui s’observe objectivement",
+        "Ce qui s’applique sans exception",
+        "Ce qui est vérifiable empiriquement",
+        "Ce qui est vrai en pratique"
+      ],
+      "defText": "En droit = ce qui devrait être (normatif) / En fait = ce qui est (descriptif)."
+    },
+    {
+      "q": "Que signifie 'transcendant' dans les repères ?",
+      "correct": "Dépasse les limites naturelles d'un objet",
+      "distractors": [
+        "Contenu dans les limites naturelles", 
+        "Applicable à un seul cas", 
+        "Relatif à d'autres choses", 
+        "Général",
+        "Reste à l’intérieur des limites naturelles",
+        "Se conforme à la matière observable",
+        "Relève uniquement de l’expérience sensible",
+        "Est contenu dans le monde physique",
+        "Dépend d’une observation empirique",
+        "Fait partie de la nature même",
+        "N’existe que dans l’esprit humain",
+        "Se limite à ce qui est perceptible",
+        "Est réductible au monde matériel",
+        "S’explique par les lois naturelles",
+        "S’applique à une expérience vécue",
+        "Est défini par la science",
+        "Appartient à la réalité concrète",
+        "S’inscrit dans un contexte limité",
+        "Relève du sensible",
+        "Se rapporte au corps",
+        "Dépend du monde intérieur",
+        "Est contenu dans l’objet étudié",
+        "Ne dépasse pas la perception",
+        "Se situe dans le domaine empirique"
+      ],
+      "defText": "Transcendant = dépasse les limites naturelles / Immanent = contenu dans les limites naturelles."
+    },
+
+    {
+      "q": "Que signifie 'universel' dans le cours ?",
+      "correct": "S'applique à tous les cas",
+      "distractors": [
+        "S'applique à la plupart des cas",
+        "S'applique à un nombre limité de cas",
+        "S'applique à un seul cas",
+        "S'applique à un ensemble précis de cas",
+        "S'applique à une majorité de cas",
+        "S'applique à la plupart des cas",
+        "S'applique à un seul cas",
+        "S'applique dans certains contextes",
+        "Dépend de la culture",
+        "Ne concerne qu'une minorité",
+        "Varie selon les circonstances",
+        "Est propre à un individu",
+        "S'applique dans des cas rares",
+        "S'applique seulement dans un pays",
+        "Dépend du point de vue moral",
+        "Est relatif aux opinions",
+        "Est valable parfois",
+        "Est limité dans le temps",
+        "Est spécifique à une époque",
+        "Dépend du contexte social",
+        "Est lié à la coutume",
+        "Ne s'applique qu'aux humains",
+        "Est conditionné par la loi",
+        "Ne s'applique qu'en théorie",
+        "Est restreint à quelques cas"
+      ],
+      "defText": "Universel → tous les cas / Général → la plupart / Particulier → nombre limité / Singulier → un seul cas."
+    },
+    {
+      "q": "Que signifie 'immanent' ?",
+      "correct": "Contenu dans les limites naturelles d'un objet",
+      "distractors": [
+        "Ce qui ne peut pas ne pas être", 
+        "Applicable à tous les cas", 
+        "Relatif à d'autres choses",
+        "Dépasse les limites naturelles d’un objet",
+        "Transcende la nature",
+        "Existe indépendamment du monde matériel",
+        "Appartient à un autre plan de réalité",
+        "S’explique par des causes extérieures",
+        "Est au-delà de l’expérience humaine",
+        "Se situe hors du monde observable",
+        "Relève du surnaturel",
+        "S’impose depuis l’extérieur",
+        "Provient d’une entité transcendante",
+        "Ne dépend d’aucune condition naturelle",
+        "Est étranger à l’objet",
+        "Est extérieur à l’existence physique",
+        "Relève d’une cause divine",
+        "Vient d’un principe extérieur",
+        "Se manifeste hors de la nature",
+        "Réside dans une sphère métaphysique",
+        "S’oppose à la réalité matérielle",
+        "Est indépendant de la nature",
+        "N’a pas de lien avec l’objet"
+      ],
+      "defText": "Immanent = contenu dans les limites naturelles d'un objet / Transcendant = dépasse ces limites."
+    },
+    {
+      "q": "Combien y a-t-il de types de désirs listés dans le cours ?",
+      "correct": "3 types",
+      "distractors": ["2 types", "4 types", "5 types", "6 types", "Une dizaine de types", "Une infinité de types", "Un unique type"],
+      "defText": "3 types : 1) Naturels et nécessaires (il faut), 2) Naturels et non nécessaires (on peut), 3) Non naturels et non nécessaires (on ne doit pas)."
+    },
+    {
+      "q": "Que signifie 'en acte' ?",
+      "correct": "Achevé / accompli",
+      "distractors": [
+        "Accomplissement potentiel", 
+        "Ce qui peut être autrement", 
+        "Dépendant d'autres choses", 
+        "Ce qui ne peut pas ne pas être",
+        "Potentiel / en devenir",
+        "Non réalisé",
+        "En préparation",
+        "À l’état d’intention",
+        "Virtuel",
+        "Possible mais pas accompli",
+        "À venir",
+        "Latent",
+        "Inachevé",
+        "Imaginé seulement",
+        "Conceptuel",
+        "En formation",
+        "En puissance",
+        "Futur",
+        "Projeté",
+        "Pas encore existant",
+        "Théorique",
+        "Anticipé",
+        "Inexistant",
+        "Hypothétique"
+      ],
+      "defText": "En acte = achevé/accompli / En puissance = accomplissement potentiel."
+    },
+    {
+      "q": "Quelle phrase est attribuée à Alain dans le cours ?",
+      "correct": "Dès qu'un homme cherche le bonheur, il est condamné à ne pas le trouver",
+      "distractors": [
+        "Le devoir est une contrainte physique", 
+        "L'État naît de la mort", "La conscience est biologique", 
+        "Le bonheur est une richesse",
+        "Le bonheur est une illusion nécessaire à la vie",
+        "Seul le sage atteint le vrai bonheur",
+        "Le bonheur ne dépend que de la vertu",
+        "Le bonheur n’existe que dans l’instant présent",
+        "L’homme ne peut être heureux qu’en société",
+        "Le bonheur est dans la recherche, non dans la possession",
+        "Le bonheur vient de la raison seule",
+        "L’homme heureux ignore qu’il l’est",
+        "Le bonheur est une habitude",
+        "Le bonheur s’obtient par la connaissance de soi",
+        "Le bonheur se trouve dans le devoir",
+        "La sagesse consiste à être heureux",
+        "Le bonheur est un équilibre fragile",
+        "Le bonheur dépend du courage de vivre",
+        "Le bonheur est un effort quotidien",
+        "Le bonheur vient du renoncement",
+        "L’homme heureux ne cherche pas à comprendre",
+        "Le bonheur est l’harmonie entre raison et passion",
+        "Le bonheur est un état de paix intérieure",
+        "L’homme doit mériter le bonheur"
+      ],
+      "defText": "Citation d'Alain dans les Propos. Alain suggère qu'on ne peut atteindre le bonheur en le cherchant directement."
+    },
+    {
+      "q": "Que signifie 'général' dans les repères ?",
+      "correct": "S'applique à la plupart des cas",
+      "distractors": [
+        "S'applique à tous les cas", 
+        "S'applique à un seul cas", 
+        "Ne s'applique à aucun cas", 
+        "S'applique à un nombre limité de cas",
+        "S'applique rarement",
+        "Varie selon les individus",
+        "Concerne une minorité",
+        "Dépend du hasard",
+        "S'applique à certaines situations",
+        "S'applique dans un contexte particulier",
+        "Ne s'applique qu’en théorie",
+        "S'applique à un groupe restreint",
+        "Concerne quelques exceptions",
+        "Relève du particulier",
+        "S'applique rarement de façon identique",
+        "Dépend des conditions locales",
+        "Ne s’applique qu’aux humains",
+        "Est spécifique à une culture",
+        "S’applique à un cas isolé",
+        "S’applique à un seul moment",
+        "Est propre à un individu",
+        "Est restreint à certaines situations"
+      ],
+      "defText": "Universel → tous / Général → la plupart / Particulier → limité / Singulier → un seul."
+    },
+
+    {
+      "q": "Selon le cours, quel type de désir faut-il éviter ?",
+      "correct": "Non naturels et non nécessaires",
+      "distractors": [
+        "Naturels et nécessaires", 
+        "Naturels et non nécessaires", 
+        "Tous les désirs", 
+        "Aucun désir",
+        "Naturels mais inutiles",
+        "Naturels mais excessifs",
+        "Non naturels mais nécessaires",
+        "Non nécessaires mais inoffensifs",
+        "Désirs physiques simples",
+        "Désirs liés à la survie",
+        "Désirs matériels modérés",
+        "Désirs spirituels",
+        "Désirs raisonnables",
+        "Désirs liés à la sagesse",
+        "Désirs de connaissance",
+        "Désirs naturels et simples",
+        "Désirs essentiels à la vie",
+        "Désirs conformes à la nature"
+      ],
+      "defText": "Non naturels et non nécessaires = on ne doit pas / Naturels et nécessaires = il faut / Naturels et non nécessaires = on peut."
+    }
+  ]
+}

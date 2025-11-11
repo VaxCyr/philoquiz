@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Jeu de révision — Philosophie (Bonheur / Devoir / État)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <h1>Jeu de révision - Philosophie</h1>
+    <p class="lead">Quatre modes : Quiz, Association, Révision et Flashcards.</p>
+
+    <div class="controls">
+      <button id="mode-quiz">Quiz</button>
+      <button id="mode-match">Association</button>
+      <button id="mode-revision">Révision</button>
+      <button id="mode-flash">Flashcards</button>
+      <button id="show-defs">Définitions</button>
+      <div style="flex:1"></div>
+    </div>
+
+    <div class="area">
+      <div class="panel" id="main"></div>
+      <aside class="panel" id="side">
+        <div id="scoreWrap"><div class="score">Score : <span id="score-val">0</span> / <span id="score-max">0</span></div></div>
+        <p class="small" id="progress">Mode : —</p>
+        <hr style="opacity:.06;margin:10px 0">
+        <div id="hint" class="small">Astuce : Lis les définitions si tu bloques.</div>
+      </aside>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
