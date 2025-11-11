@@ -16,17 +16,100 @@
     }
   ],
   "quiz_questions": [
+
+
+
+
+
     {
-      "q": "Parmi ces fonctions, laquelle NE fait PAS partie des fonctions de l'État ?",
-      "correct": "Religieuse (sauver les âmes)",
+      "q": "Parmi ces fonctions, laquelle fait partie des fonctions de l'État ?",
+      "correct": "Juridique (représentation)",
       "distractors": [
-        "Juridique (représentation)",
-        "Politique (pouvoir)",
-        "Administrative (gestion)",
-        "Économique (production)"
+        "Économique (production)",
+        "Culturelle (éducation morale)",
+        "Militaire (guerre permanente)",
+        "Scientifique (découverte des lois naturelles)",
+        "Religieuse (culte et dogme)",
+        "Commerciale (fixation des prix)",
+        "Financière (création monétaire)",
+        "Sociale (entraide communautaire)",
+        "Symbolique (représentation du sacré)",
+        "Morale (enseignement des vertus)",
+        "Industrielle (fabrication de biens)",
+        "Pédagogique (transmission des savoirs)",
+        "Civile (vie quotidienne des citoyens)",
+        "Agricole (gestion des récoltes)",
+        "Diplomatique (relations entre citoyens)",
+        "Médicale (soins de santé)",
+        "Scientifique (expérimentation politique)",
+        "Familiale (autorité parentale)",
+        "Spirituelle (recherche de sens)",
+        "Esthétique (promotion des arts)"
       ],
-      "defText": "L'État a 3 fonctions : juridique (représentation), politique (pouvoir) et administrative (gestion). Il n'a pas de fonction religieuse."
+      "defText": "L'État a 3 fonctions : juridique de représentation, politique de pouvoir et administrative de gestion."
     },
+
+    {
+      "q": "Parmi ces fonctions, laquelle fait partie des fonctions de l'État ?",
+      "correct": "Politique (pouvoir)",
+      "distractors": [
+        "Religieuse (culte et foi)",
+        "Éthique (enseignement du bien)",
+        "Esthétique (création artistique)",
+        "Militaire (violence légitime)",
+        "Civique (entraide citoyenne)",
+        "Culturelle (préservation des traditions)",
+        "Scientifique (avancée du savoir)",
+        "Économique (production de richesse)",
+        "Éducative (formation morale)",
+        "Financière (stabilisation monétaire)",
+        "Familiale (régulation du foyer)",
+        "Agricole (gestion des ressources naturelles)",
+        "Symbolique (représentation des mythes)",
+        "Artistique (diffusion culturelle)",
+        "Médicale (prévention des maladies)",
+        "Philosophique (réflexion morale)",
+        "Linguistique (codification du langage)",
+        "Juridique (rédaction des lois)",
+        "Patriotique (culte national)",
+        "Morale (définition du bien et du mal)"
+      ],
+      "defText": "L'État a 3 fonctions : juridique de représentation, politique de pouvoir et administrative de gestion."
+    },
+
+    {
+      "q": "Parmi ces fonctions, laquelle fait partie des fonctions de l'État ?",
+      "correct": "Administrative (gestion)",
+      "distractors": [
+        "Militaire (défense intérieure)",
+        "Scientifique (innovation publique)",
+        "Culturelle (patrimoine national)",
+        "Religieuse (gestion du culte)",
+        "Sociale (entraide populaire)",
+        "Industrielle (production matérielle)",
+        "Économique (création de richesse)",
+        "Financière (gestion des marchés)",
+        "Agricole (gestion des récoltes)",
+        "Morale (instruction civique)",
+        "Politique (exercice du pouvoir)",
+        "Diplomatique (relations internationales)",
+        "Pédagogique (enseignement scolaire)",
+        "Esthétique (embellissement du pays)",
+        "Patriotique (cohésion nationale)",
+        "Technologique (développement industriel)",
+        "Familiale (régulation du mariage)",
+        "Civique (éducation citoyenne)",
+        "Juridique (arbitrage des conflits)",
+        "Spirituelle (élévation morale)"
+      ],
+      "defText": "L'État a 3 fonctions : juridique de représentation, politique de pouvoir et administrative de gestion."
+    },
+
+
+
+
+
+
     {
       "q": "Selon Aristote, pourquoi les hommes se réunissent-ils ?",
       "correct": "Pour répondre à leurs besoins et bien vivre",
@@ -34,25 +117,87 @@
         "Par contrainte divine",
         "Pour fuir la nature hostile",
         "Par instinct de domination",
-        "Pour accumuler de la richesse"
+        "Pour accumuler de la richesse",
+        "Pour imposer leur force",
+        "Pour fuir la solitude",
+        "Pour augmenter leur richesse",
+        "Pour se défendre contre la nature",
+        "Pour éviter la guerre",
+        "Pour survivre collectivement",
+        "Pour satisfaire leurs désirs",
+        "Pour échapper à la peur",
+        "Pour créer des lois morales",
+        "Pour partager leurs connaissances",
+        "Pour transmettre leur culture",
+        "Pour trouver la vérité",
+        "Pour se reproduire",
+        "Pour échapper au travail",
+        "Pour bâtir des cités puissantes",
+        "Pour atteindre la gloire",
+        "Pour obéir à Dieu",
+        "Pour conquérir le monde",
+        "Pour dominer les autres espèces",
+        "Pour assurer leur sécurité"
       ],
       "defText": "Aristote donne 2 réponses : 1) Factuelle : comme d'autres animaux grégaires, pour répondre à leurs besoins. 2) Métaphysique : pour \"bien vivre\"."
     },
     {
       "q": "Que soutient Hobbes sur l'état de nature ?",
-      "correct": "Une guerre de tous contre tous",
+      "correct": "C'est une une guerre de tous contre tous",
       "distractors": [
         "Les hommes y sont naturellement altruistes",
         "La société y est superflue",
         "La politique doit être religieuse",
-        "La coopération est spontanée"
+        "La coopération est spontanée",
+        "C'est un état de paix originelle",
+        "C'est un état de pure liberté morale",
+        "C'est une harmonie naturelle",
+        "C'est une société parfaite sans lois",
+        "C'est un état de coopération mutuelle",
+        "C'est une période d'abondance et de joie",
+        "C'est un état dirigé par la raison",
+        "C'est un état de sagesse partagée",
+        "C'est un ordre spontané",
+        "C'est un équilibre écologique",
+        "C'est une vie sous la loi divine",
+        "C'est une existence sans désirs",
+        "C'est une société régie par la coutume",
+        "C'est un état de fraternité primitive",
+        "C'est un équilibre entre bien et mal",
+        "C'est une vie guidée par la vertu",
+        "C'est un état d'égalité naturelle",
+        "C'est une communauté de sages",
+        "C'est une alliance tacite entre individus",
+        "C'est une paix imposée par la nature"
       ],
       "defText": "Hobbes décrit l'état de nature comme une guerre de tous contre tous. Selon lui, la nature pousse les hommes à s'opposer (l'homme est un loup pour l'homme)."
     },
     {
       "q": "Quel philosophe a théorisé le passage de l'état de nature au contrat social ?",
       "correct": "Hobbes",
-      "distractors": ["Aristote", "Pascal", "Alain", "Spinoza"],
+      "distractors": [
+        "Aristote", 
+        "Pascal", 
+        "Alain", 
+        "Spinoza",
+        "Rousseau",
+        "Locke",
+        "Platon",
+        "Descartes",
+        "Kant",
+        "Epicure",
+        "Montaigne",
+        "Hegel",
+        "Voltaire",
+        "Marx",
+        "Nietzsche",
+        "Saint-Augustin",
+        "Rawls",
+        "Durkheim",
+        "Comte",
+        "Bentham",
+        "Levi-Strauss"
+      ],
       "defText": "Hobbes : État de nature (guerre de tous contre tous) → Contrat social → État de société (fin de la guerre). La vie en société n'est pas naturelle mais conventionnelle."
     }
   ]
