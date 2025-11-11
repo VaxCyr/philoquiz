@@ -269,12 +269,15 @@ function startQuiz(){
             .replace(/\"/g,'&quot;')
             .replace(/'/g,'&#039;');
     }
-    function formatOptionLabel(optText){
-        const m = String(optText).match(/^(.*)\s*\(([^)]+)\)\s*$/);
-        if(m){
-            const author = escapeHTML(m[1]);
-            const work = escapeHTML(m[2]);
-            return `${author} (<span class="work">${work}</span>)`;
+    // Ne souligne les titres d'ouvrage que pour les questions "Qui a écrit ..."
+    function formatOptionLabel(optText, highlightWork){
+        if(highlightWork){
+            const m = String(optText).match(/^(.*)\s*\(([^)]+)\)\s*$/);
+            if(m){
+                const author = escapeHTML(m[1]);
+                const work = escapeHTML(m[2]);
+                return `${author} (<span class="work">${work}</span>)`;
+            }
         }
         return escapeHTML(optText);
     }
@@ -292,6 +295,9 @@ function startQuiz(){
     note.style.marginBottom='8px'; 
     note.textContent = item.multi? 'Réponse attendue : plusieurs (sélectionnez puis validez).':'Réponse attendue : une seule'; 
     main.appendChild(note);
+
+    // Détecte si la question est de type auteur/ouvrage
+    const highlightWork = /Qui\s+a\s+écrit/i.test(String(item.q));
 
     if(item.multi){
         // Support new schema with dynamic distractors: { corrects: [..], distractors: [..] }
@@ -312,7 +318,7 @@ function startQuiz(){
         optsMulti.forEach((optObj)=>{
         const btn = document.createElement('div'); 
         btn.className='answer'; 
-        btn.innerHTML = formatOptionLabel(optObj.text); 
+        btn.innerHTML = formatOptionLabel(optObj.text, highlightWork); 
         if (!useDynamic) btn.dataset.origIdx = optObj.origIdx;
         btn.onclick = ()=>{
             if(btn.classList.contains('disabled')) return;
@@ -395,7 +401,7 @@ function startQuiz(){
         opts.forEach(opt=>{
         const btn = document.createElement('div'); 
         btn.className='answer'; 
-        btn.innerHTML = formatOptionLabel(opt); 
+        btn.innerHTML = formatOptionLabel(opt, highlightWork); 
         btn.onclick = ()=>{
             if(btn.classList.contains('disabled')) return;
             

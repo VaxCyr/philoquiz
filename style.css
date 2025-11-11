@@ -166,8 +166,15 @@
     button.primary{background:var(--accent);color:#042032;border:none}
     button.active{background:var(--accent);color:#042032;border:none}
     button:disabled{opacity:0.5;cursor:not-allowed}
-    .area{display:grid;grid-template-columns:1fr 360px;gap:18px}
-    .panel{background:var(--card);padding:14px;border-radius:10px;min-height:220px}
+.area{display:grid;grid-template-columns:1fr 360px;gap:18px}
+.panel{background:var(--card);padding:14px;border-radius:10px;min-height:220px}
+/* Responsive layout for mobile */
+@media (max-width: 768px){
+  .wrap{max-width:980px;margin:16px auto;padding:16px}
+  .area{grid-template-columns:1fr;gap:12px}
+  .panel{min-height:0}
+  .match-grid{grid-template-columns:1fr}
+}
     .score{font-weight:700; font-size:18px}
     .question{font-size:18px;margin-bottom:12px}
     .answers{display:flex;flex-direction:column;gap:8px}
