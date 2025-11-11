@@ -237,12 +237,17 @@ function checkDefinitionMatch(userAnswer, correctDef){
     const correctNorm = normalizeText(correctDef);
     const userKeywords = extractKeywords(userAnswer);
     const correctKeywords = extractKeywords(correctDef);
+    // Si la définition correcte est trop courte ou sans mots-clés, fallback à une inclusion des 10 premiers caractères
     if(correctKeywords.length === 0) return userNorm.includes(correctNorm.slice(0,10));
+    // Comptage basé sur les tokens exacts (évite les faux positifs par sous-chaînes)
+    const userSet = new Set(userKeywords);
     let matchCount = 0;
     for(const keyword of correctKeywords){
-    if(userNorm.includes(keyword)) matchCount++;
+        if(userSet.has(keyword)) matchCount++;
     }
-    return matchCount / correctKeywords.length >= 0.5;
+    // Règle d'acceptation : au moins 3 mots-clés ou 35% des mots-clés, plafonné à 6
+    const required = Math.min(6, Math.max(3, Math.ceil(correctKeywords.length * 0.35)));
+    return matchCount >= required;
 }
 
 function startQuiz(){
