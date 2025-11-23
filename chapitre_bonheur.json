@@ -608,6 +608,167 @@
         "Désirs conformes à la nature"
       ],
       "defText": "Non naturels et non nécessaires = on ne doit pas / Naturels et nécessaires = il faut / Naturels et non nécessaires = on peut."
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    {
+      "q": "Pour Schopenhauer, qu’est-ce que la volonté dans l’être humain ?",
+      "correct": "Un effort perpétuel qui engendre des désirs sans fin",
+      "distractors": [
+        "Une faculté rationnelle qui cherche la vérité",
+        "Un simple instinct social propre aux animaux",
+        "Une capacité morale tournée vers le bien",
+        "Un élan vital qui cherche l’harmonie",
+        "Une énergie qui permet d’atteindre la sérénité",
+        "Une force matérielle mesurable"
+      ],
+      "defText": "Chez Schopenhauer, la volonté est un effort infini qui produit des désirs ininterrompus."
+    },
+
+
+    {
+      "q": "Pourquoi, selon Schopenhauer, tout désir est-il une source de souffrance ?",
+      "correct": "Parce qu’il naît d’un manque qui nous tourmente tant qu’il n’est pas satisfait",
+      "distractors": [
+        "Parce qu’il contredit la morale",
+        "Parce qu’il nous éloigne des autres",
+        "Parce qu’il détruit nécessairement le corps",
+        "Parce qu’il est toujours impossible à satisfaire",
+        "Parce qu’il dépend exclusivement du hasard",
+        "Parce qu’il oppose la raison et les émotions"
+      ],
+      "defText": "Pour Schopenhauer, tout désir vient d’une privation : tant qu’il n’est pas satisfait, il est souffrance."
+    },
+
+
+    {
+      "q": "Selon Schopenhauer, pourquoi la satisfaction d’un désir ne permet-elle pas le bonheur durable ?",
+      "correct": "Parce que le plaisir est bref et qu’un nouveau désir surgit par la suite",
+      "distractors": [
+        "Parce que le plaisir est incompatible avec la morale",
+        "Parce que le plaisir détruit la volonté",
+        "Parce qu’un désir satisfait disparaît définitivement",
+        "Parce que le plaisir conduit à la sagesse",
+        "Parce que le plaisir rend indifférent au monde"
+      ],
+      "defText": "Chez Schopenhauer, la satisfaction ne dure pas : elle produit aussitôt un nouveau désir."
+    },
+
+
+    {
+      "q": "D'après Schopenhauer, pourquoi l’être humain ne peut-il pas être durablement heureux ?",
+      "correct": "Parce que la vie oscille entre souffrance et ennui",
+      "distractors": [
+        "Parce que les hommes sont trop attachés à la politique",
+        "Parce que la morale empêche d’être heureux",
+        "Parce que les plaisirs sont moralement interdits",
+        "Parce que l’homme refuse de se cultiver",
+        "Parce que la nature humaine vise toujours la tranquillité"
+      ],
+      "defText": "La structure de la volonté humaine fait osciller l’existence entre souffrance (désir insatisfait) et ennui (absence de désir)."
+    },
+
+
+    {
+      "q": "Pourquoi, selon Pascal, les hommes ne vivent-ils presque jamais dans le présent ?",
+      "correct": "Parce qu’ils regrettent le passé et espèrent l’avenir",
+      "distractors": [
+        "Parce qu’ils n’ont aucune mémoire",
+        "Parce qu’ils vivent uniquement dans la contemplation",
+        "Parce qu’ils refusent d’imaginer l’avenir",
+        "Parce qu’ils sont naturellement tournés vers la pure rationalité",
+        "Parce qu’ils se contentent toujours de ce qu’ils ont"
+      ],
+      "defText": "Pascal affirme que l’homme fuit le présent : il se tourne vers ce qui n’est plus (passé) ou pas encore (avenir)."
+    },
+
+
+    {
+      "q": "Quel rôle joue l’imagination dans le malheur humain selon Pascal ?",
+      "correct": "Elle nous fait craindre des choses inutiles et désirer des objets non nécessaires",
+      "distractors": [
+        "Elle permet de distinguer le vrai du faux",
+        "Elle nous protège du malheur",
+        "Elle rend toujours les hommes plus raisonnables",
+        "Elle conduit au bonheur durable",
+        "Elle empêche de percevoir le passé"
+      ],
+      "defText": "L’imagination, chez Pascal, déforme la réalité et alimente des peurs ou des désirs illusoires."
+    },
+
+
+    {
+      "q": "Pourquoi, selon Pascal, les hommes ne peuvent-ils pas connaître un bonheur complet ?",
+      "correct": "Parce qu’ils ne vivent jamais dans l’instant présent où se trouve le bonheur",
+      "distractors": [
+        "Parce qu’ils ne sont pas assez raisonnables",
+        "Parce qu’ils refusent de travailler",
+        "Parce qu’ils recherchent trop la gloire",
+        "Parce qu’ils veulent supprimer toutes leurs passions",
+        "Parce qu’ils ignorent entièrement leurs désirs"
+      ],
+      "defText": "Pour Pascal, l’homme est incapable de demeurer dans le présent ; or, seul le présent pourrait contenir un véritable bonheur."
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   ]
 }
