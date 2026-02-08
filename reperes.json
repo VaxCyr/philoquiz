@@ -21,6 +21,28 @@
     "obligation": "Injonction perçue comme émanant d'une autorité légitime.",
     
     "en_acte": "Achevé / accompli.",
-    "en_puissance": "Accomplissement potentiel."
+    "en_puissance": "Accomplissement potentiel.",
+
+    "légal" : "ce qui est juste ou permis par les lois",
+    "légitime" : "ce qui est conforme à un principe supérieur de moral ou de justice",
+
+    "genre" : "Groupe d'objet",
+    "espèce " : "Sous ensemble de genre",
+    "individu" : "Objet singulier",
+
+    "croire" : "Tenir pour vrai en s'appuyant sur des motifs subjectif",
+    "savoir" : "Affirmer vrai en s'appuyant sur des preuves objective, rationnelle et/ou empirique",
+
+    "objectif" : "Un discous est objectif quand il décrit l'objet comme il est",
+    "subjectif" : "Un discours est subjectif quand il reflète le point de vue ou l'avis de celui qui le prononce",
+    "intersubjectif" : "C'est le produit d'une comparaison entre plusieurs subjectivités",
+
+    "vrai" : "Quand le contenu est adéquat avec l'objet",
+    "certain" : "Quand il n'est pas possible de douter de sa véracité",
+    "probable" : "",
+
+    "principes" : "",
+    "conséquences" : "",
+    "conclusion" : ""
   }
 }

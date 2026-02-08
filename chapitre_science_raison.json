@@ -1,0 +1,183 @@
+{
+  "definitions": {
+    "science": "1) Somme des connaissances qu’un individu possède. 2) Activité visant à établir un ensemble cohérent de connaissances en supposant que les phénomènes obéissent à des lois ; elle établit des connaissances par des méthodes rationnelles et/ou expérimentales.",
+    "raison": "1) Ce qui rend compte d’un fait ou d’un phénomène. 2) Faculté de l’esprit d’organiser ses rapports au réel, dans les domaines pratique et théorique ; notamment capacités de calcul et de jugement."
+  },
+  "citations": [
+    {
+      "auteur": "Einstein et Infeld",
+      "oeuvre": "L’évolution des idées en physique",
+      "citation": "La vérité scientifique est un idéal : supposée objective et certaine, mais toujours à atteindre."
+    }
+  ],
+  "philosophes": [
+    {
+      "nom": "Bachelard",
+      "oeuvre": "Psychanalyse du feu",
+      "idee": "Toute description suppose des choix ; l’objectivité est un idéal qui requiert une vigilance contre la subjectivité."
+    },
+    {
+      "nom": "François Jacob",
+      "oeuvre": "Le darwinisme aujourd’hui",
+      "idee": "Mythes et science répondent aux mêmes questions ; les mythes sont à accepter/refuser, les théories scientifiques sont modifiables et en droit réfutables."
+    }
+  ],
+  "quiz_questions": [
+    {
+      "q": "Quelle formulation décrit la science selon le cours ?",
+      "correct": "Activité visant à établir des connaissances par méthodes rationnelles et/ou expérimentales",
+      "distractors": [
+        "Savoir populaire hérité des coutumes",
+        "Savoir religieux immuable",
+        "Connaissance intuitive sans épreuve",
+        "Opinion majoritaire des savants",
+        "Doctrine imposée par l’État",
+        "Expérience personnelle non partagée",
+        "Récit mythique explicatif",
+        "Savoir moral sur le bien et le mal",
+        "Règle juridique sur les faits",
+        "Technique pure sans théorie",
+        "Tradition philosophique ancienne"
+      ],
+      "defKey": "science"
+    },
+    {
+      "q": "Que signifie « raison » selon le cours ?",
+      "correct": "Faculté d’organiser nos rapports au réel (calcul et jugement)",
+      "distractors": [
+        "Instinct biologique de survie",
+        "Émotion morale",
+        "Imagination créatrice",
+        "Mémoire des coutumes",
+        "Révélation spirituelle",
+        "Pouvoir politique",
+        "Capacité religieuse",
+        "Autorité sociale",
+        "Talent artistique",
+        "Force physique",
+        "Habitude culturelle"
+      ],
+      "defKey": "raison"
+    },
+    {
+      "q": "Selon Jacob, quelle différence sépare mythe et science ?",
+      "correct": "Le mythe est à accepter/refuser ; la science est modifiable et réfutable",
+      "distractors": [
+        "La science est immuable ; le mythe est modifiable",
+        "Le mythe est expérimental ; la science est révélée",
+        "La science est subjective ; le mythe est objectif",
+        "Le mythe est universellement vrai ; la science est locale",
+        "La science répond aux émotions ; le mythe aux lois",
+        "La science est une croyance ; le mythe une preuve",
+        "Le mythe se teste ; la science se croit",
+        "Le mythe est rationnel ; la science est intuitive"
+      ],
+      "defText": "Jacob : mythes — attitude d’adhésion/refus ; science — théories modifiables, en droit réfutables."
+    },
+    {
+      "q": "Que souligne Bachelard à propos de l’objectivité ?",
+      "correct": "La description comporte des choix ; vigilance contre la subjectivité",
+      "distractors": [
+        "L’objectivité est donnée immédiatement",
+        "Toute description est purement objective",
+        "La subjectivité est toujours bonne",
+        "La science est un récit mythique",
+        "La raison est inutile en science",
+        "Seules les émotions conduisent à la vérité",
+        "La méthode expérimentale exclut tout choix",
+        "La théorie suffit sans observation"
+      ],
+      "defText": "Bachelard : on décrit ce qu’on estime ; l’objectivité exige une discipline critique."
+    },
+    {
+      "q": "Que signifie « savoir » dans les repères ?",
+      "correct": "Affirmer vrai avec des preuves objectives, rationnelles et/ou empiriques",
+      "distractors": [
+        "Tenir pour vrai par motifs subjectifs",
+        "Croire selon la tradition",
+        "Penser sans démonstration",
+        "Accepter par autorité",
+        "Supposer par intuition",
+        "Imaginer des causes",
+        "Affirmer par coutume",
+        "Décider par vote",
+        "Juger par émotion"
+      ],
+      "defKey": "savoir"
+    },
+    {
+      "q": "Que signifie « croire » dans les repères ?",
+      "correct": "Tenir pour vrai en s’appuyant sur des motifs subjectifs",
+      "distractors": [
+        "Affirmer vrai avec preuves objectives",
+        "Énoncer une loi scientifique",
+        "Décrire l’objet comme il est",
+        "Comparer des subjectivités",
+        "Énoncer un jugement juridique",
+        "Conclure par calcul",
+        "Prouver par expérience",
+        "Mesurer intersubjectivement",
+        "Décider rationnellement"
+      ],
+      "defKey": "croire"
+    },
+    {
+      "q": "Que signifie « objectif » dans les repères ?",
+      "correct": "Décrire l’objet comme il est",
+      "distractors": [
+        "Exprimer un point de vue personnel",
+        "Comparer des avis",
+        "Croire par coutume",
+        "Décider politiquement",
+        "Juger par émotion",
+        "Conclure par autorité",
+        "Refuser toute preuve"
+      ],
+      "defKey": "objectif"
+    },
+    {
+      "q": "Que signifie « subjectif » dans les repères ?",
+      "correct": "Refléter le point de vue de celui qui parle",
+      "distractors": [
+        "Décrire l’objet comme il est",
+        "Comparer plusieurs subjectivités",
+        "Prouver empiriquement",
+        "Énoncer une loi",
+        "Conclure rationnellement",
+        "Décider juridiquement",
+        "Démontrer mathématiquement"
+      ],
+      "defKey": "subjectif"
+    },
+    {
+      "q": "Que signifie « intersubjectif » dans les repères ?",
+      "correct": "Produit d’une comparaison entre plusieurs subjectivités",
+      "distractors": [
+        "Vérité absolue",
+        "Opinion individuelle",
+        "Principe moral supérieur",
+        "Fait brut incontestable",
+        "Révélation religieuse",
+        "Règle juridique",
+        "Coutume locale"
+      ],
+      "defKey": "intersubjectif"
+    },
+    {
+      "q": "Selon le cours, la science suppose que :",
+      "correct": "Les phénomènes obéissent à des lois",
+      "distractors": [
+        "Les phénomènes sont purement chaotiques",
+        "La nature dépend des émotions",
+        "La vérité est relative",
+        "Les lois sont exclusivement morales",
+        "Les phénomènes suivent la tradition",
+        "La réalité est inaccessible",
+        "Les faits n’existent pas",
+        "La science ne teste rien",
+        "Les lois sont décidées par vote"
+      ],
+      "defKey": "science"
+    }
+  ]
+}

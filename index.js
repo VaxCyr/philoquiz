@@ -153,7 +153,7 @@ function initializeApp() {
     const menuToggle = document.getElementById('menu-toggle');
     const menu = document.getElementById('menu');
     const themeToggle = document.getElementById('theme-toggle');
-    const contactBtn = document.getElementById('contact-btn');
+    
 
     // Toggle menu
     menuToggle.addEventListener('click', () => {
@@ -182,10 +182,6 @@ function initializeApp() {
         themeToggle.textContent = '🌙 Mode Sombre';
     }
 
-    // Contact button (placeholder for now)
-    contactBtn.addEventListener('click', () => {
-        alert('Fonctionnalité "Me contacter" à implémenter !');
-    });
 }
 
 function initializeQuizInterface() {

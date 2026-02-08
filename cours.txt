@@ -3,6 +3,22 @@
 > Le **bonheur **c'est ce qui nous satisfait.
 > Le **devoir **est un impératif de conscience qui impose à l'H d'accomplir ce qui est prescrit en vertu d'une obligation religieuse, morale ou légale.
 > L'**État** est une autorité instituée définie sur un plan juridique et politique. 3 fonctions : **Juridique **de représentation, **politique **de pouvoir et **administrative **de gestion
+> La **Justice** : le terme désigne en général une valeur (le juste), ou ce qui est conforme à cette valeur (ce qui est juste).
+   On distingue :
+      - La justice comme attitude ou comme veertu : c'est la volonté constante de rendre à chacun ce qui lui revient.
+      - La justice comme norme : c'est alors l'ensemble des droits, et l'ensemble des lois qui sont conformes aux droits de chacun.
+> La **Vérité** :
+   D'après l'usage le plus courant du terme, « une vérité » est une idée conforme à la réalité . Et « la vérité », en général, est la conformité entre une pensée ou son expression, et l'objet de cette pensée.
+   Dans le cadre de discussions scientifiques ou communes, le mot « vérité » recouvre parfois une autre définition : C'est une connaissance reconnue comme juste, comme conforme à son objet et possédant à ce titre une valeur absolue, ultime.
+> La **Science** :
+   - Somme des connaissances qu'un individu possède.
+   - Activité humaine visant à établir un ensemble cohérent de connaissances.  Cette activité suppose que ces objets ou phénomènes obéissent à des lois : elle s'efforce d'établir des connaissances par des méthodes rationnelles et/ou expérimentales.
+> La **Raison** : 
+   - Ce qui rend compte d'un fait, d'un phénomène.
+   - La raison est la faculté qu'à l'esprit humain d'organiser ses relations avec le réel ; son activité considérée en général tant dans le domaine pratique que dans le domaine théorique. En ce dernier sens, le mot « raison » peut désigner plus précisément :
+      - Une capacité de calcul ;
+      - Une capacité de jugement ;
+
 
 
 ## Définitions des repères :
@@ -30,10 +46,12 @@
 > Particulier -> Un nombre limité de cas
 > Singulier -> Un seul cas
 
+> *Déjà implémentée dans reperes.json*
+
 
 ### Références sur le Bonheur :
 
-- **Remèdes** (contre le malheur?) :
+- **Remèdes** (contre le malheur?) d'après Epicure:
 > 1° Ne pas avoir peur de Dieu (Ils sont parfait donc désintéressé de nous)
 > 2° Ne pas craindre la mort (Si vivant alors pas mort, et si mort alors pas vivant)
 > 3° Il est possible d'être heureux (Plaisirs)
@@ -224,3 +242,126 @@ Selon Pascal, nous fuyons le présent : nous nous tournons vers le passé, qui n
 Le présent, seul temps réel, nous “blesse” ou nous échappe. L’imagination nous pousse à craindre des choses inutiles et à désirer des objets superflus. 
 Contrairement à Épicure, Pascal pense que la nature humaine ne permet pas de demeurer dans l’instant présent ; ainsi, nous ne vivons jamais vraiment et 
 restons incapables d’être heureux.
+
+
+
+
+
+
+--------------------------- 
+
+[Auteur], [nom_de_l_ouvrage]
+[Idée(s) à retenir (si pas de guillemet, alors ce n'est pas des citations, seulement des reformulations ou synthèse)]
+
+
+Sur le Bonheur :
+
+   Épicure, Lettre à Ménécée
+   Bien vivre = heureux
+   {Les remèdes citées plus haut}
+   Les humains sont malheureux car ils cherchent le bonheur là où il n'est pas
+   Le bonheur existe, il est simple, c'est le plaisir
+
+   Alain, Propos
+   Le bonheur se à celui qui le cherche
+   "Le bonheur n'est pas comme cet objet en vitrine, que vous pouvez choisir, payer, emporter [...].
+
+Sur l'État :
+   Locke, Second traité du gouvernement civil
+   /Locke est en opposition à Hobbes sur l'État/
+   D'après lui l'État a été créer pour défendre les libertés
+   L'État défini les libertés de chacun pour rendre possible la coexistence des libertés de chacun
+
+Sur la Justice :
+   Aristote, Rhétorique
+   « [...] il y a une justice et une injustice dont tous les hommes ont comme une divination et dont le sentiment leur est naturel et commun [...]. »
+   Selon Aristote nous supposons des lois naturelles de justice, c'est une croyance qui se traduit dans certains de nos jugements et de nos actes
+
+   Pascal, Pensées
+   /En opposition/
+   Les hommes ont effectivement une croyance selon laquelle il y aurait une injustice naturelle, connue de tous ; mais cette croyance est démentie par les faits.
+      Si ça serait le cas, on devrait avoir un exemple d'une action que tout le monde trouve injuste.
+   Selon Pascal, la justice véritable existe mais est inacessible à la raison mais accessible au coeur.
+
+   Locke, Essai sur l'entendement humain
+   Les règles de la justice sont des créations humaines venant répondre à un problème pratique posé par la vie en commun.
+   La seule règle universel est le fait qu'il y ai des règles. Ce qui est universel c'est le problème de la justice
+
+   Aristote, Éthique à Nicomaque
+   « juste » :
+      - Légal (ce qui est autorisé par les lois positives)
+      - égal (relation mathématiques) :
+         - Justice correctrice > égalité arithmétique (punition équivalente au mal commis)
+         - Justice distributive > égalité géométrique (proportionnelle)
+   
+   John Rawls, Une théorie de la justice
+   Premier principe de la justice : Chaque personne doit avoir un droit égal au système total le plus étendu de liberté de base égale pour tous, compatible avec un même système pour tous ».
+   Deuxième principe de la justice : Les inégalités sociales et économiques doivent être organisées de façon à ce que à la fois :
+      Elles apportent aux plus désavantagés les meilleurs perspectives.
+      Elles soient attachés à des fonctions et à des positions ouvertes à tous conformément à juste égalité des chances. 
+
+   Platon, La République
+   La justice c'est pour garder les forts, forts. C'est un outil de domination pour les forts.
+      Forts pouvant désigner une majorité ou une force physique.
+   Les règles avantages ceux qui les donnes
+
+   K. Marx (et F.Engels), l'idéologie Allemande
+   La justice c'est une idéologie
+   L'idéologie pour Marx c'est un ensemble d'idée et de représentation qu'ont les hommes au sujet de la société dans laquelle ils vivent.
+   L'affirmation de l'égalité est le meilleur moyen de justifier l'inégalité
+
+
+
+Sur la Vérité :
+   Spinoza, Pensées métaphysique
+   3 sens du mot « vrai » :
+      - Un récit est qualifié de « vrai » quand il raconte des faits tels qu'ils se sont réellement passées ;
+      - on appelle « idée vraie » celle qui montre une chose telle qu'elle est en elle-même (Exemple ; A² = B² + C² différent d'un récit masi vrai quand même) ;
+      - Par métaphore, on qualifie parfois une chose de « vraie » , quand son apparence extérieur correspond à sa nature profonde ;
+
+   Aristote, Métaphysique
+   Il définit la vérité « une certaine correspondance entre ce que l'on pense, et ce qui est ».
+
+   Protagoras, La vérité
+   Protagoras défend l'idée que la vérité est subjective.
+   Il a une thèse relativiste, toutes vérité est relative = pas de vérité absolue
+   
+   /opposition/
+   Platon, Théétète
+   Réfutation du relativisme par Socrate :
+      - Le relativisme ne permet pas de distinguer le vrai du faux (pourtant j'arrive à voir que je me trompe des fois) ;
+      - Le relativisme se contredit (Protagoras dit que tout opinion est vraie, Socrate dit que c'est faux, donc Protagoras à faux puisque c'est vrai que c'est faux.) ;
+      - Le relativisme ne permet pas de comprendre comment les hommes peuvent se comprendre les uns les autres (Les opinions humains divergent sur certains sujets, il y a désaccord, ce qui suppose que ceux qui dialoguent parlent de la même chose. Il existe donc des expériences et vérités commune.)
+
+   Platon, République
+   L'allégorie de la caverne : 
+   Les prisonniers enchaînés au fond de la caverne, voient des ombres, qu'ils prennent pour la seule réalité existante
+   -> La plupart des hommes vivent dans l'ignorance/l'illusion
+   Des personnes sont détachées contraints de regarder les objets le feu à l'origine des ombres qu'ils ont vues jusqu'alors 
+   - > L'éducation est d'abord une contrainte difficile elle remet en question les opinions de celui qui la reçoit
+   Certains parviennent à la surface 
+   -> Le terme de l'éducation est la vision directe d'une réalité supérieure ; Cette vision est synonyme de joie et de liberté
+   Ceux qui sont montés à la surface sont contraints de redescendre dans la caverne ; Le récit est mal reçu 
+   -> Les discours qui dénoncent les illusions communes sont rejetés
+
+   Montaigne, Essaie
+   L'Homme n'a pas trouvé la vérité objective qu'il recherchait mais il a appris à mieux se connaitre,à connaitre sa faiblesse
+   Depuis des siècles l'Homme cherche la vérité
+   Il cherche une vérité objective/définitive/certaine
+   D'après Montaigne, ils ne l'ont pas atteint et ne peuvent l'atteindre
+
+   Einstein (et Infeld), L'évolution des idées en physique
+   Le scientifique suppose qu'il existe une vérité objective, certaine et définitive, mais elle est toujours pour lui un idéal
+
+   Bachelard, Psychanalyse du feu
+   On croît être objectif, néanmoins on ne l'est pas forcément, toute description suppose des choix -> Subjectivité
+   On décrit ce qu'on estime mérité d'être décrit
+   On fait des choix sans le savoir par moment
+
+   Jacob, le darwinisme aujourd'hui
+   Les discours scientifiques et myhtes répondent tout deux aux mêmes questions fondamental, mais de manière opposé
+   Ils répondent aux besoin naturels des humains de connaître
+   Quand on ne percoit pas la cause, on l'imagine
+   Mais l'attitude change entre les deux :
+      Les mythes doivent être acceptés ou refusé, ils sont immodifiable
+      Les théories scientifique sont modifiable et en droit (i.e. devraient être) réfutable

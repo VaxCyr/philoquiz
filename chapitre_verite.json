@@ -1,0 +1,189 @@
+{
+  "definitions": {
+    "verite": "Conformité entre une pensée ou son expression et l’objet de cette pensée. Par usage courant : « une vérité » est une idée conforme à la réalité."
+  },
+  "citations": [
+    {
+      "auteur": "Aristote",
+      "oeuvre": "Métaphysique",
+      "citation": "La vérité consiste en une certaine correspondance entre ce que l’on pense et ce qui est."
+    }
+  ],
+  "philosophes": [
+    {
+      "nom": "Spinoza",
+      "oeuvre": "Pensées métaphysiques",
+      "idee": "Trois sens de « vrai » : récit vrai (conforme aux faits), idée vraie (montre la chose telle qu’elle est en elle-même), chose dite « vraie » par métaphore (apparence conforme à la nature profonde)."
+    },
+    {
+      "nom": "Protagoras",
+      "oeuvre": "La vérité",
+      "idee": "Relativisme : toute vérité est relative ; il n’existe pas de vérité absolue."
+    },
+    {
+      "nom": "Platon (Socrate)",
+      "oeuvre": "Théétète",
+      "idee": "Réfutation du relativisme : il ne distingue pas vrai/faux ; se contredit ; n’explique pas le dialogue et l’accord sur des vérités communes."
+    },
+    {
+      "nom": "Platon",
+      "oeuvre": "La République (Allégorie de la caverne)",
+      "idee": "La plupart vivent dans l’illusion. L’éducation est d’abord contrainte ; elle conduit à la vision d’une réalité supérieure ; les discours qui dénoncent l’illusion sont rejetés."
+    },
+    {
+      "nom": "Montaigne",
+      "oeuvre": "Essais",
+      "idee": "L’homme n’atteint pas la vérité objective qu’il cherche ; il apprend sa faiblesse et à mieux se connaître."
+    },
+    {
+      "nom": "Einstein et Infeld",
+      "oeuvre": "L’évolution des idées en physique",
+      "idee": "La vérité scientifique est un idéal : postulée comme objective et certaine, mais jamais définitivement atteinte."
+    },
+    {
+      "nom": "Bachelard",
+      "oeuvre": "Psychanalyse du feu",
+      "idee": "La description suppose des choix : subjectivité inévitable ; on décrit ce que l’on estime digne d’être décrit."
+    },
+    {
+      "nom": "François Jacob",
+      "oeuvre": "Le darwinisme aujourd’hui",
+      "idee": "Mythes et science répondent aux mêmes questions, mais diffèrent : mythes — à accepter ou refuser ; science — modifiable et en droit réfutable."
+    }
+  ],
+  "quiz_questions": [
+    {
+      "q": "Quelle formulation correspond à la définition de la vérité ?",
+      "correct": "Conformité entre une pensée ou son expression et son objet",
+      "distractors": [
+        "Accord entre opinions individuelles",
+        "Ce qui plaît à la majorité",
+        "Ce qui est utile dans la pratique",
+        "Conformité avec la tradition",
+        "Ce qui est incontestable moralement",
+        "Accord avec une autorité religieuse",
+        "Ce qui est probable",
+        "Ce qui est certain sans preuve",
+        "Ce qui est cohérent avec soi",
+        "Ce qui est vérifié par la loi",
+        "Ce qui est conforme au goût",
+        "Ce qui est proclamé par le pouvoir",
+        "Ce qui est ressenti comme vrai"
+      ],
+      "defKey": "verite"
+    },
+    {
+      "q": "Quel est un des trois sens de « vrai » selon Spinoza ?",
+      "correct": "Idée vraie : montre la chose telle qu’elle est en elle-même",
+      "distractors": [
+        "Idée vraie : ce que la majorité croit",
+        "Idée vraie : ce qui est moralement acceptable",
+        "Idée vraie : ce qui est utile",
+        "Idée vraie : ce qui plaît aux savants",
+        "Idée vraie : ce qui est prouvé juridiquement",
+        "Idée vraie : ce qui est ancien",
+        "Idée vraie : ce qui est simple"
+      ],
+      "defText": "Spinoza distingue : récit vrai (faits), idée vraie (essence), chose « vraie » par métaphore (apparence conforme à la nature)."
+    },
+    {
+      "q": "La thèse de Protagoras soutient que :",
+      "correct": "Toute vérité est relative, il n’existe pas de vérité absolue",
+      "distractors": [
+        "Il existe une vérité absolue accessible à tous",
+        "La vérité est divine et immuable",
+        "La vérité est scientifique seulement",
+        "La vérité est morale avant tout",
+        "La vérité est dictée par la coutume",
+        "La vérité est la même partout",
+        "La vérité est objective et certaine"
+      ],
+      "defText": "Protagoras : thèse relativiste — toutes vérités sont relatives."
+    },
+    {
+      "q": "Quel argument Platon avance-t-il contre le relativisme ?",
+      "correct": "Le relativisme se contredit lorsqu’il affirme que toutes opinions sont vraies",
+      "distractors": [
+        "Le relativisme est trop scientifique",
+        "Le relativisme est trop moral",
+        "Le relativisme nie la religion",
+        "Le relativisme refuse la coutume",
+        "Le relativisme est sensible à l’expérience",
+        "Le relativisme est conforme à la nature",
+        "Le relativisme est juste parfois"
+      ],
+      "defText": "Socrate/Platon : 1) pas de critère vrai/faux ; 2) contradiction performative ; 3) n’explique pas l’accord intersubjectif."
+    },
+    {
+      "q": "Dans l’allégorie de la caverne, que représente l’éducation au début ?",
+      "correct": "Une contrainte qui remet en question les opinions",
+      "distractors": [
+        "Une liberté immédiate et joyeuse",
+        "Un divertissement agréable",
+        "Une obéissance à la tradition",
+        "Une révélation religieuse",
+        "Un oubli du réel",
+        "Une acceptation des illusions",
+        "Une vision directe de la vérité"
+      ],
+      "defText": "Platon : l’éducation est d’abord difficile et contraignante ; elle arrache aux illusions."
+    },
+    {
+      "q": "Selon Einstein et Infeld, la vérité scientifique est :",
+      "correct": "Un idéal jamais définitivement atteint",
+      "distractors": [
+        "Une certitude absolue atteinte par la physique moderne",
+        "Une opinion majoritaire des scientifiques",
+        "Une révélation religieuse propre à la science",
+        "Une règle juridique immuable",
+        "Un consensus éternel",
+        "Une vérité mythique",
+        "Une évidence morale"
+      ],
+      "defText": "La vérité scientifique est postulée objective et certaine, mais demeure un idéal."
+    },
+    {
+      "q": "Que signifie « objectif » dans les repères ?",
+      "correct": "Décrire l’objet comme il est",
+      "distractors": [
+        "Exprimer son point de vue personnel",
+        "Comparer des avis différents",
+        "Affirmer sans preuve",
+        "Suivre une coutume",
+        "Croire selon la majorité",
+        "Imposer son opinion",
+        "Douter systématiquement",
+        "Penser par analogie"
+      ],
+      "defKey": "objectif"
+    },
+    {
+      "q": "Que signifie « subjectif » dans les repères ?",
+      "correct": "Refléter le point de vue de celui qui parle",
+      "distractors": [
+        "Décrire l’objet comme il est",
+        "Comparer des subjectivités",
+        "Résumer des faits",
+        "Énoncer des lois",
+        "Raisonner par calcul",
+        "Exprimer une vérité absolue",
+        "Déterminer une règle universelle"
+      ],
+      "defKey": "subjectif"
+    },
+    {
+      "q": "Que signifie « intersubjectif » dans les repères ?",
+      "correct": "Produit d’une comparaison entre plusieurs subjectivités",
+      "distractors": [
+        "Vérité absolue",
+        "Opinion personnelle",
+        "Règle juridique",
+        "Connaissance divine",
+        "Fait brut",
+        "Principe moral universel",
+        "Mesure scientifique incontestable"
+      ],
+      "defKey": "intersubjectif"
+    }
+  ]
+}
