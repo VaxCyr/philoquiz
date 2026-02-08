@@ -37,9 +37,9 @@
     "subjectif" : "Un discours est subjectif quand il reflète le point de vue ou l'avis de celui qui le prononce",
     "intersubjectif" : "C'est le produit d'une comparaison entre plusieurs subjectivités",
 
-    "vrai" : "Quand le contenu est adéquat avec l'objet",
-    "certain" : "Quand il n'est pas possible de douter de sa véracité",
-    "probable" : "",
+    "vrai" : "Une idée est vraie lorsqu’elle montre une chose telle qu’elle est en elle-même ou raconte des faits tels qu’ils se sont passés ",
+    "certain" : "Quelque chose  est certain lorsqu’il est impossible de douter de sa véracité.",
+    "probable" : "Quelque chose est probable si l’on a des raisons de le penser vrai sans en être certain.",
 
     "principes" : "",
     "conséquences" : "",
