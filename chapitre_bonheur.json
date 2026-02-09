@@ -16,12 +16,12 @@
   "citations": [
     {
       "auteur": "B. Pascal",
-      "oeuvre": "Pensées",
+      "oeuvre": "<em>Pensées</em>",
       "citation": "Nous ne nous tenons jamais au temps présent. Nous anticipons l'avenir comme trop lent à venir, [...] ou nous rappelons le passé pour l'arrêter comme trop prompt [...]."
     },
     {
       "auteur": "Alain",
-      "oeuvre": "Propos",
+      "oeuvre": "<em>Propos</em>",
       "citation": "Dès qu'un homme cherche le bonheur, il est condamné à ne pas le trouver [...]."
     }
     
@@ -232,9 +232,9 @@
     },
     {
       "q": "Qui a écrit : 'Nous ne nous tenons jamais au temps présent' ?",
-      "correct": "B. Pascal (Pensées)",
+      "correct": "B. Pascal (<em>Pensées</em>)",
       "distractors": [
-        "Alain (Propos)", 
+        "Alain (<em>Propos</em>)", 
         "Durkheim (L'éduquation morale)", 
         "Hobbes (Le Citoyen)", 
         "Aristote (Politiques)",
@@ -259,10 +259,10 @@
         "Durkheim (Les formes élémentaires de la vie religieuse)",
         "Epictète (Manuel)"
       ],
-      "defText": "Citation de Blaise Pascal dans les Pensées. Pascal critique notre incapacité à vivre le présent : on anticipe l'avenir ou on rappelle le passé."
+      "defText": "Citation de Blaise Pascal dans les <em>Pensées</em>. Pascal critique notre incapacité à vivre le présent : on anticipe l'avenir ou on rappelle le passé."
     },
     {
-      "q": "Que signifie 'contingent' dans les repères ?",
+      "q": "Que signifie 'contingent' ?",
       "correct": "Ce qui peut ou aurait pu être autrement",
       "distractors": [
         "Ce qui ne peut pas ne pas être",
@@ -363,7 +363,7 @@
 
 
     {
-      "q": "Que signifie 'en droit' dans les repères ?",
+      "q": "Que signifie 'en droit' ?",
       "correct": "Ce qui devrait être",
       "distractors": [
         "Ce qui est", 
@@ -394,7 +394,7 @@
       "defText": "En droit = ce qui devrait être (normatif) / En fait = ce qui est (descriptif)."
     },
     {
-      "q": "Que signifie 'transcendant' dans les repères ?",
+      "q": "Que signifie 'transcendant' ?",
       "correct": "Dépasse les limites naturelles d'un objet",
       "distractors": [
         "Contenu dans les limites naturelles", 
@@ -552,10 +552,10 @@
         "Le bonheur est un état de paix intérieure",
         "L’homme doit mériter le bonheur"
       ],
-      "defText": "Citation d'Alain dans les Propos. Alain suggère qu'on ne peut atteindre le bonheur en le cherchant directement."
+      "defText": "Alain dans <em>Propos</em> : Dès qu'un homme cherche le bonheur, il est condamné à ne pas le trouver."
     },
     {
-      "q": "Que signifie 'général' dans les repères ?",
+      "q": "Que signifie 'général' ?",
       "correct": "S'applique à la plupart des cas",
       "distractors": [
         "S'applique à tous les cas", 

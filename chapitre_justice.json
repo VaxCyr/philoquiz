@@ -5,39 +5,39 @@
   "citations": [
     {
       "auteur": "Aristote",
-      "oeuvre": "Rhétorique",
+      "oeuvre": "<em>Rhétorique</em>",
       "citation": "[...] il y a une justice et une injustice dont tous les hommes ont comme une divination et dont le sentiment leur est naturel et commun [...]."
     },
     {
       "auteur": "Pascal",
-      "oeuvre": "Pensées",
+      "oeuvre": "<em>Pensées</em>",
       "citation": "Les hommes ont effectivement une croyance selon laquelle il y aurait une injustice naturelle, connue de tous ; mais cette croyance est démentie par les faits."
     }
   ],
   "philosophes": [
     {
       "nom": "Aristote",
-      "oeuvre": "Éthique à Nicomaque",
+      "oeuvre": "<em>Éthique à Nicomaque</em>",
       "idee": "Le « juste » est légal et égal. Justice correctrice → égalité arithmétique ; Justice distributive → égalité géométrique (proportionnelle)."
     },
     {
       "nom": "John Rawls",
-      "oeuvre": "Une théorie de la justice",
+      "oeuvre": "<em>Une théorie de la justice</em>",
       "idee": "Principe 1 : libertés de base égales pour tous. Principe 2 : inégalités organisées au bénéfice des plus désavantagés et attachées à des positions ouvertes à tous (juste égalité des chances)."
     },
     {
       "nom": "Platon",
-      "oeuvre": "La République",
+      "oeuvre": "<em>La République</em>",
       "idee": "La justice est un outil de domination au service des forts (majorité ou force physique)."
     },
     {
       "nom": "K. Marx (et F. Engels)",
-      "oeuvre": "L'idéologie allemande",
+      "oeuvre": "<em>L'idéologie allemande</em>",
       "idee": "La justice est une idéologie : ensemble d’idées qui justifient un ordre social donné ; l’affirmation d’égalité peut servir à légitimer l’inégalité."
     },
     {
       "nom": "Locke",
-      "oeuvre": "Essai sur l'entendement humain",
+      "oeuvre": "<em>Essai sur l'entendement humain</em>",
       "idee": "Les règles de justice sont des créations humaines répondant à un problème pratique de la vie commune ; ce qui est universel, c’est le besoin de règles."
     }
   ],
@@ -88,7 +88,7 @@
         "L’égalité coutumière",
         "La proportion religieuse"
       ],
-      "defText": "Aristote : justice correctrice → égalité arithmétique (punition/compensation équivalente au mal commis)."
+      "defText": "Aristote dans <em>Éthique à Nicomaque</em> : justice correctrice → égalité arithmétique (punition/compensation équivalente au mal commis)."
     },
     {
       "q": "Dans la justice distributive, on applique :",
@@ -104,7 +104,7 @@
         "La répartition par naissance",
         "La répartition par honneur"
       ],
-      "defText": "Aristote : justice distributive → égalité géométrique (proportionnelle aux parts, mérites, fonctions)."
+      "defText": "Aristote dans <em>Éthique à Nicomaque</em> : justice distributive → égalité géométrique (proportionnelle aux parts, mérites, fonctions)."
     },
     {
       "q": "Quel est le premier principe de justice chez Rawls ?",
@@ -120,7 +120,7 @@
         "Libertés définies par la religion",
         "Libertés réservées aux citoyens nés sur le territoire"
       ],
-      "defText": "Rawls : Principe 1 — droit égal au système le plus étendu de libertés de base égales pour tous, compatible avec le même système pour autrui."
+      "defText": "Rawls dans <em>Une théorie de la justice</em> : Principe 1 — droit égal au système le plus étendu de libertés de base égales pour tous, compatible avec le même système pour autrui."
     },
     {
       "q": "Quel est le « principe de différence » chez Rawls ?",
@@ -136,10 +136,10 @@
         "Protéger la propriété des élites",
         "Garantir l’égalité des résultats"
       ],
-      "defText": "Rawls : Principe 2 — inégalités admises si elles améliorent la situation des plus désavantagés et si les positions sont ouvertes à tous (juste égalité des chances)."
+      "defText": "Rawls dans <em>Une théorie de la justice</em> : Principe 2 — inégalités admises si elles améliorent la situation des plus désavantagés et si les positions sont ouvertes à tous (juste égalité des chances)."
     },
     {
-      "q": "Selon Platon (La République), la justice sert :",
+      "q": "Selon Platon (<em>La République</em>), la justice sert :",
       "correct": "L’intérêt des plus forts",
       "distractors": [
         "Le bien commun toujours",
@@ -152,7 +152,7 @@
         "La recherche de la vérité scientifique",
         "Le bonheur particulier"
       ],
-      "defText": "Platon (critique) : la justice sert les intérêts de ceux qui dictent les règles."
+      "defText": "Platon dans <em>La République</em> (critique) : la justice sert les intérêts de ceux qui dictent les règles."
     },
     {
       "q": "Pour Marx, la justice est :",
@@ -168,10 +168,10 @@
         "Une invention juridique des dieux",
         "Un besoin psychologique"
       ],
-      "defText": "Marx : l’idéologie est un ensemble d’idées qui justifient l’ordre social ; l’affirmation d’égalité peut masquer des inégalités."
+      "defText": "Marx dans <em>L'idéologie allemande</em> : l’idéologie est un ensemble d’idées qui justifient l’ordre social ; l’affirmation d’égalité peut masquer des inégalités."
     },
     {
-      "q": "Selon Aristote (Rhétorique), nous avons :",
+      "q": "Selon Aristote (<em>Rhétorique</em>), nous avons :",
       "correct": "Comme une divination d’une justice naturelle commune",
       "distractors": [
         "Un savoir scientifique de la justice",
@@ -184,7 +184,7 @@
         "Une connaissance mathématique du juste",
         "Une intuition religieuse du juste"
       ],
-      "defText": "Aristote suggère un sentiment naturel et commun de justice."
+      "defText": "Aristote dans <em>Rhétorique</em> suggère un sentiment naturel et commun de justice."
     },
     {
       "q": "Selon Pascal, la croyance en une justice naturelle universelle est :",
@@ -200,10 +200,10 @@
         "Indiscutable",
         "Mesurable mathématiquement"
       ],
-      "defText": "Pascal : s’il y avait une injustice naturelle connue de tous, on trouverait des actions unanimement jugées injustes — ce n’est pas le cas."
+      "defText": "Pascal dans <em>Pensées</em> : s’il y avait une injustice naturelle connue de tous, on trouverait des actions unanimement jugées injustes — ce n’est pas le cas."
     },
     {
-      "q": "Que signifie « légal » dans les repères ?",
+      "q": "Que signifie « légal » ?",
       "correct": "Ce qui est juste ou permis par les lois",
       "distractors": [
         "Ce qui est conforme à une morale supérieure",
@@ -219,7 +219,7 @@
       "defKey": "légal"
     },
     {
-      "q": "Que signifie « légitime » dans les repères ?",
+      "q": "Que signifie « légitime » ?",
       "correct": "Conforme à un principe supérieur de morale ou de justice",
       "distractors": [
         "Permis par les lois positives",

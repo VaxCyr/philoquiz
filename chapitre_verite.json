@@ -5,49 +5,49 @@
   "citations": [
     {
       "auteur": "Aristote",
-      "oeuvre": "Métaphysique",
+      "oeuvre": "<em>Métaphysique</em>",
       "citation": "La vérité consiste en une certaine correspondance entre ce que l’on pense et ce qui est."
     }
   ],
   "philosophes": [
     {
       "nom": "Spinoza",
-      "oeuvre": "Pensées métaphysiques",
+      "oeuvre": "<em>Pensées métaphysiques</em>",
       "idee": "Trois sens de « vrai » : récit vrai (conforme aux faits), idée vraie (montre la chose telle qu’elle est en elle-même), chose dite « vraie » par métaphore (apparence conforme à la nature profonde)."
     },
     {
       "nom": "Protagoras",
-      "oeuvre": "La vérité",
+      "oeuvre": "<em>La vérité</em>",
       "idee": "Relativisme : toute vérité est relative ; il n’existe pas de vérité absolue."
     },
     {
       "nom": "Platon (Socrate)",
-      "oeuvre": "Théétète",
+      "oeuvre": "<em>Théétète</em>",
       "idee": "Réfutation du relativisme : il ne distingue pas vrai/faux ; se contredit ; n’explique pas le dialogue et l’accord sur des vérités communes."
     },
     {
       "nom": "Platon",
-      "oeuvre": "La République (Allégorie de la caverne)",
+      "oeuvre": "<em>La République</em> (Allégorie de la caverne)",
       "idee": "La plupart vivent dans l’illusion. L’éducation est d’abord contrainte ; elle conduit à la vision d’une réalité supérieure ; les discours qui dénoncent l’illusion sont rejetés."
     },
     {
       "nom": "Montaigne",
-      "oeuvre": "Essais",
+      "oeuvre": "<em>Essais</em>",
       "idee": "L’homme n’atteint pas la vérité objective qu’il cherche ; il apprend sa faiblesse et à mieux se connaître."
     },
     {
       "nom": "Einstein et Infeld",
-      "oeuvre": "L’évolution des idées en physique",
+      "oeuvre": "<em>L’évolution des idées en physique</em>",
       "idee": "La vérité scientifique est un idéal : postulée comme objective et certaine, mais jamais définitivement atteinte."
     },
     {
       "nom": "Bachelard",
-      "oeuvre": "Psychanalyse du feu",
+      "oeuvre": "<em>Psychanalyse du feu</em>",
       "idee": "La description suppose des choix : subjectivité inévitable ; on décrit ce que l’on estime digne d’être décrit."
     },
     {
       "nom": "François Jacob",
-      "oeuvre": "Le darwinisme aujourd’hui",
+      "oeuvre": "<em>Le darwinisme aujourd’hui</em>",
       "idee": "Mythes et science répondent aux mêmes questions, mais diffèrent : mythes — à accepter ou refuser ; science — modifiable et en droit réfutable."
     }
   ],
@@ -84,7 +84,7 @@
         "Idée vraie : ce qui est ancien",
         "Idée vraie : ce qui est simple"
       ],
-      "defText": "Spinoza distingue : récit vrai (faits), idée vraie (essence), chose « vraie » par métaphore (apparence conforme à la nature)."
+      "defText": "Spinoza dans <em>Pensées métaphysiques</em> distingue : récit vrai (conforme aux faits), idée vraie (essence), chose « vraie » par métaphore (apparence conforme à la nature)."
     },
     {
       "q": "La thèse de Protagoras soutient que :",
@@ -98,7 +98,7 @@
         "La vérité est la même partout",
         "La vérité est objective et certaine"
       ],
-      "defText": "Protagoras : thèse relativiste — toutes vérités sont relatives."
+      "defText": "Protagoras dans <em>La vérité</em> soutient une thèse relativiste : toutes les vérités sont subjectives/relatives et tout opinion est vraie.."
     },
     {
       "q": "Quel argument Platon avance-t-il contre le relativisme ?",
@@ -112,7 +112,7 @@
         "Le relativisme est conforme à la nature",
         "Le relativisme est juste parfois"
       ],
-      "defText": "Socrate/Platon : 1) pas de critère vrai/faux ; 2) contradiction performative ; 3) n’explique pas l’accord intersubjectif."
+      "defText": "Socrate/Platon dans <em>Théétète</em> : 1) pas de critère vrai/faux ; 2) contradiction performative ; 3) n’explique pas l’accord intersubjectif."
     },
     {
       "q": "Dans l’allégorie de la caverne, que représente l’éducation au début ?",
@@ -126,7 +126,7 @@
         "Une acceptation des illusions",
         "Une vision directe de la vérité"
       ],
-      "defText": "Platon : l’éducation est d’abord difficile et contraignante ; elle arrache aux illusions."
+      "defText": "Platon dans <em>La République</em> (Allégorie de la caverne) : l’éducation est d’abord difficile et contraignante ; elle arrache aux illusions."
     },
     {
       "q": "Selon Einstein et Infeld, la vérité scientifique est :",
@@ -140,10 +140,10 @@
         "Une vérité mythique",
         "Une évidence morale"
       ],
-      "defText": "La vérité scientifique est postulée objective et certaine, mais demeure un idéal."
+      "defText": "Le scientifique suppose qu'il existe une vérité objective, certaine et définitive, mais elle est toujours pour lui un idéal."
     },
     {
-      "q": "Que signifie « objectif » dans les repères ?",
+      "q": "Que signifie « objectif » ?",
       "correct": "Décrire l’objet comme il est",
       "distractors": [
         "Exprimer son point de vue personnel",
@@ -158,7 +158,7 @@
       "defKey": "objectif"
     },
     {
-      "q": "Que signifie « subjectif » dans les repères ?",
+      "q": "Que signifie « subjectif » ?",
       "correct": "Refléter le point de vue de celui qui parle",
       "distractors": [
         "Décrire l’objet comme il est",
@@ -172,7 +172,7 @@
       "defKey": "subjectif"
     },
     {
-      "q": "Que signifie « intersubjectif » dans les repères ?",
+      "q": "Que signifie « intersubjectif » ?",
       "correct": "Produit d’une comparaison entre plusieurs subjectivités",
       "distractors": [
         "Vérité absolue",

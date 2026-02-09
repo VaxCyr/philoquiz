@@ -6,19 +6,19 @@
   "citations": [
     {
       "auteur": "Einstein et Infeld",
-      "oeuvre": "L’évolution des idées en physique",
+      "oeuvre": "<em>L’évolution des idées en physique</em>",
       "citation": "La vérité scientifique est un idéal : supposée objective et certaine, mais toujours à atteindre."
     }
   ],
   "philosophes": [
     {
       "nom": "Bachelard",
-      "oeuvre": "Psychanalyse du feu",
+      "oeuvre": "<em>Psychanalyse du feu</em>",
       "idee": "Toute description suppose des choix ; l’objectivité est un idéal qui requiert une vigilance contre la subjectivité."
     },
     {
       "nom": "François Jacob",
-      "oeuvre": "Le darwinisme aujourd’hui",
+      "oeuvre": "<em>Le darwinisme aujourd’hui</em>",
       "idee": "Mythes et science répondent aux mêmes questions ; les mythes sont à accepter/refuser, les théories scientifiques sont modifiables et en droit réfutables."
     }
   ],
@@ -72,7 +72,7 @@
         "Le mythe se teste ; la science se croit",
         "Le mythe est rationnel ; la science est intuitive"
       ],
-      "defText": "Jacob : mythes — attitude d’adhésion/refus ; science — théories modifiables, en droit réfutables."
+      "defText": "François Jacob dans <em>Le darwinisme aujourd’hui</em> : mythes — attitude d’adhésion/refus ; science — théories modifiables, en droit réfutables."
     },
     {
       "q": "Que souligne Bachelard à propos de l’objectivité ?",
@@ -87,10 +87,10 @@
         "La méthode expérimentale exclut tout choix",
         "La théorie suffit sans observation"
       ],
-      "defText": "Bachelard : on décrit ce qu’on estime ; l’objectivité exige une discipline critique."
+      "defText": "Bachelard dans <em>Psychanalyse du feu</em> : on décrit ce qu’on estime ; l’objectivité exige une discipline critique."
     },
     {
-      "q": "Que signifie « savoir » dans les repères ?",
+      "q": "Que signifie « savoir » ?",
       "correct": "Affirmer vrai avec des preuves objectives, rationnelles et/ou empiriques",
       "distractors": [
         "Tenir pour vrai par motifs subjectifs",
@@ -106,7 +106,7 @@
       "defKey": "savoir"
     },
     {
-      "q": "Que signifie « croire » dans les repères ?",
+      "q": "Que signifie « croire » ?",
       "correct": "Tenir pour vrai en s’appuyant sur des motifs subjectifs",
       "distractors": [
         "Affirmer vrai avec preuves objectives",
@@ -122,7 +122,7 @@
       "defKey": "croire"
     },
     {
-      "q": "Que signifie « objectif » dans les repères ?",
+      "q": "Que signifie « objectif » ?",
       "correct": "Décrire l’objet comme il est",
       "distractors": [
         "Exprimer un point de vue personnel",
@@ -136,7 +136,7 @@
       "defKey": "objectif"
     },
     {
-      "q": "Que signifie « subjectif » dans les repères ?",
+      "q": "Que signifie « subjectif » ?",
       "correct": "Refléter le point de vue de celui qui parle",
       "distractors": [
         "Décrire l’objet comme il est",
@@ -150,7 +150,7 @@
       "defKey": "subjectif"
     },
     {
-      "q": "Que signifie « intersubjectif » dans les repères ?",
+      "q": "Que signifie « intersubjectif » ?",
       "correct": "Produit d’une comparaison entre plusieurs subjectivités",
       "distractors": [
         "Vérité absolue",

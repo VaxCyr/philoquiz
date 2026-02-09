@@ -5,7 +5,7 @@
   "citations": [
     {
       "auteur": "É. Durkheim",
-      "oeuvre": "L'Éducation morale",
+      "oeuvre": "<em>L'Éducation morale</em>",
       "citation": "Quand notre conscience parle, c'est la société qui parle en nous."
     }
   ],
@@ -20,12 +20,12 @@
     },
     {
       "nom": "Kant",
-      "oeuvre": "Fondement de la métaphysique des mœurs",
+      "oeuvre": "<em>Fondement de la métaphysique des mœurs</em>",
       "idee": "Action bonne si intention bonne. Bonne volonté = agir par devoir, non par contrainte ni intérêt"
     },
     {
       "nom": "É. Durkheim",
-      "oeuvre": "L'Éducation morale",
+      "oeuvre": "<em>L'Éducation morale</em>",
       "idee": "Quand notre conscience parle, c'est la société qui parle en nous. Conscience morale = intériorisation de la contrainte sociale"
     }
   ],
@@ -152,7 +152,7 @@
         "Un décret religieux intérieur",
         "Une habitude individuelle sans portée sociale"
       ],
-      "defText": "Durkheim : \"Quand notre conscience parle, c'est la société qui parle en nous.\" Notre conscience morale est une intériorisation de la contrainte sociale."
+      "defText": "Durkheim dans <em>L'Éducation morale</em> : \"Quand notre conscience parle, c'est la société qui parle en nous.\" Notre conscience morale est une intériorisation de la contrainte sociale."
     },
     {
       "q": "Que dit Kant sur la bonne volonté ?",
@@ -211,7 +211,7 @@
         "Elle est imposée par la loi sans intention",
         "Elle répond à une simple préférence sociale"
       ],
-      "defText": "Pour Kant : une action est bonne si l'intention est bonne (et non si le résultat est bon)."
+      "defText": "Pour Kant, dans les <em>Fondement de la métaphysique des mœurs</em> : une action est bonne si l'intention est bonne (et non si le résultat est bon)."
     }
   ]
 }

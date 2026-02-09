@@ -41,8 +41,8 @@
     "certain" : "Quelque chose  est certain lorsqu’il est impossible de douter de sa véracité.",
     "probable" : "Quelque chose est probable si l’on a des raisons de le penser vrai sans en être certain.",
 
-    "principes" : "",
-    "conséquences" : "",
-    "conclusion" : ""
+    "principes" : "Idée(s) point de départ d'un raisonnement",
+    "conséquences" : "Idée(s) qui découle logiquement d'une autre idée",
+    "conclusion" : "Terme/point d'arrivée d'un raisonnement"
   }
 }
