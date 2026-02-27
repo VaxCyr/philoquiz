@@ -594,8 +594,15 @@ function startRevisionQuestions(difficulty){
         const input = document.createElement('input');
         input.type = 'text';
         input.placeholder = 'Ta réponse...';
-        input.addEventListener('keypress', (e) => {
-        if(e.key === 'Enter' && !input.disabled) submitBtn.click();
+        input.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault(); // Empêche le comportement par défaut
+                if (!input.disabled) {
+                    submitBtn.click(); // Valide si on n'a pas encore validé
+                } else if (typeof nextBtn !== 'undefined' && nextBtn) {
+                    nextBtn.click(); // Passe à la suite si déjà validé
+                }
+            }
         });
         main.appendChild(input);
 
@@ -671,8 +678,18 @@ function startRevisionQuestions(difficulty){
 
         const textarea = document.createElement('textarea');
         textarea.placeholder = 'Ta définition...';
-        textarea.addEventListener('keypress', (e) => {
-        if(e.key === 'Enter' && e.ctrlKey && !textarea.disabled) submitBtn.click();
+        textarea.addEventListener('keydown', (e) => {
+            // Déclenche sur Entrée + Ctrl
+            if (e.key === 'Enter' && e.ctrlKey) {
+                e.preventDefault();
+                if (!textarea.disabled) {
+                    submitBtn.click(); // Première étape : Valider
+                } else {
+                    // Deuxième étape : Suivant
+                    const nextBtn = main.querySelector('button:last-child');
+                    if (nextBtn) nextBtn.click();
+                }
+            }
         });
         main.appendChild(textarea);
 

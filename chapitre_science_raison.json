@@ -24,7 +24,7 @@
   ],
   "quiz_questions": [
     {
-      "q": "Quelle formulation décrit la science selon le cours ?",
+      "q": "Quelle formulation décrit la science ?",
       "correct": "Activité visant à établir des connaissances par méthodes rationnelles et/ou expérimentales",
       "distractors": [
         "Savoir populaire hérité des coutumes",
