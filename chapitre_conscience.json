@@ -1,0 +1,131 @@
+{
+  "definitions": {
+    "conscience": "Le sentiment intérieur qui accompagne les actions et les pensées du sujet. Elle peut être morale (voix intérieure qui juge la moralité), théorique (faculté caractérisant l'activité de l'esprit par son rapport à soi, au monde et aux autres), spontanée (accompagne les représentations) ou réfléchie (résultat d'un effort d'introspection).",
+    "reflexivité": "Rapport de la conscience à elle-même.",
+    "intentionnalité": "Rapport de la conscience au monde.",
+    "intersubjectivité": "Rapport de la conscience aux autres.",
+    "substance_pensante": "L'esprit, quelque chose qui pense (Descartes).",
+    "substance_étendue": "Le corps, quelque chose qui est étendu, flexible et muable (Descartes)."
+  },
+  "philosophes": [
+    {
+      "nom": "Descartes",
+      "oeuvre": "<em>Discours de la méthode</em>",
+      "idee": "Recherche de principes vrais et certains par la méthode du doute. La première certitude est le 'Je pense donc je suis' (cogito). L'homme est une substance pensante (esprit) liée à une substance étendue (corps). L'idée de Dieu est la marque du créateur dans l'être imparfait."
+    },
+    {
+      "nom": "Pascal",
+      "oeuvre": "<em>Pensées</em>",
+      "idee": "L'Homme est un roseau pensant : fragilité physique (roseau) mais grandeur par la pensée. L'homme est contenu dans l'univers par son corps mais comprend l'univers par sa pensée. On apprend à se connaître par soi-même et par les autres."
+    },
+    {
+      "nom": "John Locke",
+      "oeuvre": "<em>Essai sur l'entendement humain</em>",
+      "idee": "La conscience de soi est la clé de l'identité. Être conscient, c'est avoir conscience de ses pensées et de ses actes, et savoir qu'on en est l'auteur."
+    }
+  ],
+  "quiz_questions": [
+    {
+      "q": "Quelle est la certitude de Descartes dans les Discours de la méthode?",
+      "correct": "Je pense donc je suis",
+      "distractors": [
+        "Le monde existe",
+        "Dieu existe",
+        "Le corps est premier",
+        "Les sens sont fiables",
+        "Le doute est impossible",
+        "La vérité est relative",
+        "L'homme est parfait",
+        "Rien n'est certain",
+        "La conscience est une illusion",
+        "L'esprit est identique au corps"
+      ],
+      "defText": "Dans le <em>Discours de la méthode</em>, Descartes parvient à cette première certitude après avoir utilisé la méthode du doute : même si je doute de tout, je ne peux pas douter que je suis en train de douter, donc de penser."
+    },
+    {
+      "q": "Que signifie l'expression de Pascal 'roseau pensant' ?",
+      "correct": "L'homme est fragile mais dotée d'une pensée",
+      "distractors": [
+        "L'homme est une plante",
+        "L'homme est purement matériel",
+        "L'homme est un être tout-puissant",
+        "La pensée est une faiblesse",
+        "L'homme n'a pas de corps",
+        "La nature est supérieure à l'esprit",
+        "L'homme est un être sans conscience",
+        "La fragilité empêche la pensée",
+        "L'homme est un automate",
+        "La pensée est une illusion biologique"
+      ],
+      "defText": "Dans les <em>Pensées</em>, Pascal utilise cette métaphore pour exprimer la double nature de l'homme : sa fragilité physique face à l'univers (roseau) et sa grandeur unique par la conscience (pensant)."
+    },
+    {
+      "q": "Selon Locke, quelle est la clé de l'identité personnelle ?",
+      "correct": "La conscience de soi",
+      "distractors": [
+        "Le corps physique",
+        "L'âme immortelle",
+        "Le regard des autres",
+        "La mémoire biologique",
+        "L'appartenance sociale",
+        "Le nom de famille",
+        "La volonté pure",
+        "L'instinct de survie",
+        "La naissance",
+        "Les gènes"
+      ],
+      "defText": "Pour John Locke dans son <em>Essai sur l'entendement humain</em>, l'identité d'une personne repose sur la conscience : le fait de pouvoir se considérer comme le même être dans différents temps et lieux."
+    },
+    {
+      "q": "Comment Descartes définit-il l'esprit (l'essence de l'homme) ?",
+      "correct": "Une substance pensante",
+      "distractors": [
+        "Une substance étendue",
+        "Une illusion du cerveau",
+        "Un ensemble de désirs",
+        "Un produit social",
+        "Une force vitale",
+        "Un fragment de Dieu",
+        "Une structure logique",
+        "Une mémoire accumulée",
+        "Une réaction chimique",
+        "Un souffle biologique"
+      ],
+      "defText": "Dans ses <em>Méditations</em> (citées dans le <em>Discours de la méthode</em>), Descartes distingue la substance pensante (l'esprit) de la substance étendue (le corps)."
+    },
+    {
+      "q": "Quelles sont les deux causes de l'erreur selon Descartes ?",
+      "correct": "La prévention et la précipitation",
+      "distractors": [
+        "L'ignorance et la bêtise",
+        "La folie et le rêve",
+        "Les sens et le corps",
+        "Dieu et le malin génie",
+        "Le manque de temps et d'argent",
+        "La paresse et l'orgueil",
+        "L'oubli et l'inattention",
+        "La passion et le désir",
+        "La société et l'éducation",
+        "Le hasard et la chance"
+      ],
+      "defText": "Dans le <em>Discours de la méthode</em>, Descartes identifie la prévention (préjugés) et la précipitation (juger trop vite) comme les sources de nos erreurs."
+    },
+    {
+      "q": "Selon Pascal, par quoi apprenons-nous à nous connaître ?",
+      "correct": "Par soi-même et par les autres",
+      "distractors": [
+        "Uniquement par l'introspection",
+        "Uniquement par les livres",
+        "Par l'observation de la nature",
+        "Par la science expérimentale",
+        "Par la prière seule",
+        "Par le hasard des rencontres",
+        "On ne peut pas se connaître",
+        "Par l'étude de l'histoire",
+        "Par les voyages",
+        "Par la réussite sociale"
+      ],
+      "defText": "Dans les <em>Pensées</em>, Pascal souligne que la connaissance de soi passe à la fois par la conscience intérieure et par le rapport aux autres."
+    }
+  ]
+}

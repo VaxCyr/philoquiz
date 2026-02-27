@@ -43,6 +43,10 @@
 
     "principes" : "Idée(s) point de départ d'un raisonnement",
     "conséquences" : "Idée(s) qui découle logiquement d'une autre idée",
-    "conclusion" : "Terme/point d'arrivée d'un raisonnement"
+    "conclusion" : "Terme/point d'arrivée d'un raisonnement",
+
+    "Identité" : "Objet -> Posséder même qualités",
+    "égalité" : "Objet -> même quantité ou valeur",
+    "différence" : "soit non indentité soit non égalité"
   }
 }
