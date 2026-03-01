@@ -153,12 +153,12 @@
         "Une évidence morale"
       ],
       "defText": "Le scientifique suppose qu'il existe une vérité objective, certaine et définitive, mais elle est toujours pour lui un idéal.",
-      "keywords": ["idéal","jamais","atteint"],
+      "keywords": ["idéal",["jamais atteint","inatteignable"]],
       "revision": true
     },
     {
-      "q": "Décrire l’objet comme il est",
-      "correct": "objectif",
+      "q": "Que signifie « objectif » ?",
+      "correct": "Décrire l’objet comme il est",
       "distractors": [
         "Exprimer son point de vue personnel",
         "Comparer des avis différents",
@@ -173,8 +173,8 @@
       "keywords": ["décrire","il est"]
     },
     {
-      "q": "Refléter le point de vue de celui qui parle",
-      "correct": "subjectif",
+      "q": "Que signifie « subjectif » ?",
+      "correct": "Refléter le point de vue de celui qui parle",
       "distractors": [
         "Décrire l’objet comme il est",
         "Comparer des subjectivités",
@@ -188,8 +188,8 @@
       "keywords": ["point de vue"]
     },
     {
-      "q": "Produit d’une comparaison entre plusieurs subjectivités",
-      "correct": "intersubjectif",
+      "q": "Que signifie « intersubjectif » ?",
+      "correct": "Produit d’une comparaison entre plusieurs subjectivités",
       "distractors": [
         "Vérité absolue",
         "Opinion personnelle",
