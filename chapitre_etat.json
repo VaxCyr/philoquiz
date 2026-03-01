@@ -2,6 +2,9 @@
   "definitions": {
     "etat": "Autorité instituée sur un plan juridique et politique — fonctions : juridique (représentation), politique (pouvoir), administrative (gestion)."
   },
+  "definitions_keywords": {
+    "etat": ["autorité","instituée","plan juridique et politique","juridique","représentation","politique","pouvoir","administrative","gestion"]
+  },
   "citations": [],
   "philosophes": [
     {
@@ -16,11 +19,6 @@
     }
   ],
   "quiz_questions": [
-
-
-
-
-
     {
       "q": "Parmi ces fonctions, laquelle fait partie des fonctions de l'État ?",
       "correct": "Juridique (représentation)",
@@ -46,9 +44,9 @@
         "Spirituelle (recherche de sens)",
         "Esthétique (promotion des arts)"
       ],
-      "defText": "L'État a 3 fonctions : juridique de représentation, politique de pouvoir et administrative de gestion."
+      "defText": "L'État a 3 fonctions : juridique de représentation, politique de pouvoir et administrative de gestion.",
+      "keywords": []
     },
-
     {
       "q": "Parmi ces fonctions, laquelle fait partie des fonctions de l'État ?",
       "correct": "Politique (pouvoir)",
@@ -74,9 +72,9 @@
         "Patriotique (culte national)",
         "Morale (définition du bien et du mal)"
       ],
-      "defText": "L'État a 3 fonctions : juridique de représentation, politique de pouvoir et administrative de gestion."
+      "defText": "L'État a 3 fonctions : juridique de représentation, politique de pouvoir et administrative de gestion.",
+      "keywords": []
     },
-
     {
       "q": "Parmi ces fonctions, laquelle fait partie des fonctions de l'État ?",
       "correct": "Administrative (gestion)",
@@ -102,14 +100,9 @@
         "Juridique (arbitrage des conflits)",
         "Spirituelle (élévation morale)"
       ],
-      "defText": "L'État a 3 fonctions : juridique de représentation, politique de pouvoir et administrative de gestion."
+      "defText": "L'État a 3 fonctions : juridique de représentation, politique de pouvoir et administrative de gestion.",
+      "keywords": []
     },
-
-
-
-
-
-
     {
       "q": "Selon Aristote, pourquoi les hommes se réunissent-ils ?",
       "correct": "Pour répondre à leurs besoins et bien vivre",
@@ -139,7 +132,8 @@
         "Pour dominer les autres espèces",
         "Pour assurer leur sécurité"
       ],
-      "defText": "Aristote dans <em>Politique</em> donne 2 réponses : 1) Factuelle : comme d'autres animaux grégaires, pour répondre à leurs besoins. 2) Métaphysique : pour \"bien vivre\"."
+      "defText": "Aristote dans <em>Politique</em> donne 2 réponses : 1) Factuelle : comme d'autres animaux grégaires, pour répondre à leurs besoins. 2) Métaphysique : pour \"bien vivre\".",
+      "keywords": ["besoins","vivre"]
     },
     {
       "q": "Que soutient Hobbes sur l'état de nature ?",
@@ -170,7 +164,8 @@
         "C'est une alliance tacite entre individus",
         "C'est une paix imposée par la nature"
       ],
-      "defText": "Hobbes dans <em>Le Citoyen</em> décrit l'état de nature comme une guerre de tous contre tous. Selon lui, la nature pousse les hommes à s'opposer (l'homme est un loup pour l'homme)."
+      "defText": "Hobbes dans <em>Le Citoyen</em> décrit l'état de nature comme une guerre de tous contre tous. Selon lui, la nature pousse les hommes à s'opposer (l'homme est un loup pour l'homme).",
+      "keywords": ["guerre","tous contre tous"]
     },
     {
       "q": "Quel philosophe a théorisé le passage de l'état de nature au contrat social ?",
@@ -198,7 +193,8 @@
         "Bentham",
         "Levi-Strauss"
       ],
-      "defText": "Hobbes dans <em>Le Citoyen</em> : État de nature (guerre de tous contre tous) → Contrat social → État de société (fin de la guerre). La vie en société n'est pas naturelle mais conventionnelle."
+      "defText": "Hobbes dans <em>Le Citoyen</em> : État de nature (guerre de tous contre tous) → Contrat social → État de société (fin de la guerre). La vie en société n'est pas naturelle mais conventionnelle.",
+      "keywords": []
     }
   ]
 }

@@ -1,6 +1,9 @@
 {
   "definitions": {
-    "justice": "Valeur (le juste) et ce qui y est conforme. Deux sens : 1) comme vertu — volonté constante de rendre à chacun ce qui lui revient ; 2) comme norme — ensemble des droits et des lois conformes aux droits de chacun."
+    "justice": "Valeur (le juste), ou ce qui est conforme à cette valeur (ce qui est juste); Deux sens : 1) comme vertu — volonté constante de rendre à chacun ce qui lui revient ; 2) comme norme — ensemble des droits et des lois conformes aux droits de chacun."
+  },
+  "definitions_keywords": {
+    "justice": ["valeur","juste","conforme à cette valeur","est juste"]
   },
   "citations": [
     {
@@ -56,7 +59,8 @@
         "La récompense des vertueux uniquement",
         "La punition exemplaire des fautifs"
       ],
-      "defKey": "justice"
+      "defKey": "justice",
+      "keywords": ["volonté","constante","chacun","lui revient"]
     },
     {
       "q": "La justice comme norme, c’est :",
@@ -72,7 +76,8 @@
         "La recherche de l’ordre sans droits",
         "La soumission aux autorités privées"
       ],
-      "defKey": "justice"
+      "defKey": "justice",
+      "keywords": ["droits","lois","droits","chacun"]
     },
     {
       "q": "Dans la justice correctrice, on applique :",
@@ -88,7 +93,8 @@
         "L’égalité coutumière",
         "La proportion religieuse"
       ],
-      "defText": "Aristote dans <em>Éthique à Nicomaque</em> : justice correctrice → égalité arithmétique (punition/compensation équivalente au mal commis)."
+      "defText": "Aristote dans <em>Éthique à Nicomaque</em> : justice correctrice → égalité arithmétique (punition/compensation équivalente au mal commis).",
+      "keywords": ["égalité","arithmétique"]
     },
     {
       "q": "Dans la justice distributive, on applique :",
@@ -104,7 +110,8 @@
         "La répartition par naissance",
         "La répartition par honneur"
       ],
-      "defText": "Aristote dans <em>Éthique à Nicomaque</em> : justice distributive → égalité géométrique (proportionnelle aux parts, mérites, fonctions)."
+      "defText": "Aristote dans <em>Éthique à Nicomaque</em> : justice distributive → égalité géométrique (proportionnelle aux parts, mérites, fonctions).",
+      "keywords": ["égalité",["géométrique","proportionnelle"]]
     },
     {
       "q": "Quel est le premier principe de justice chez Rawls ?",
@@ -120,11 +127,12 @@
         "Libertés définies par la religion",
         "Libertés réservées aux citoyens nés sur le territoire"
       ],
-      "defText": "Rawls dans <em>Une théorie de la justice</em> : Principe 1 — droit égal au système le plus étendu de libertés de base égales pour tous, compatible avec le même système pour autrui."
+      "defText": "Rawls dans <em>Une théorie de la justice</em> : Principe 1 — droit égal au système le plus étendu de libertés de base égales pour tous, compatible avec un même système pour tous.",
+      "keywords": ["liberté","égale","tous"]
     },
     {
-      "q": "Quel est le « principe de différence » chez Rawls ?",
-      "correct": "Organiser les inégalités au bénéfice des plus désavantagés",
+      "q": "Quel est le deuxième principe de justice chez Rawls ?",
+      "correct": "Organiser les inégalités au bénéfice des plus désavantagés et permettrent l'égalité des chances",
       "distractors": [
         "Réduire toutes les inégalités à zéro",
         "Favoriser les plus compétents",
@@ -136,7 +144,8 @@
         "Protéger la propriété des élites",
         "Garantir l’égalité des résultats"
       ],
-      "defText": "Rawls dans <em>Une théorie de la justice</em> : Principe 2 — inégalités admises si elles améliorent la situation des plus désavantagés et si les positions sont ouvertes à tous (juste égalité des chances)."
+      "defText": "Rawls dans <em>Une théorie de la justice</em> : Principe 2 — inégalités admises si elles améliorent la situation des plus désavantagés et si les positions sont ouvertes à tous (juste égalité des chances).",
+      "keywords": []
     },
     {
       "q": "Selon Platon (La République), la justice sert :",
@@ -152,7 +161,8 @@
         "La recherche de la vérité scientifique",
         "Le bonheur particulier"
       ],
-      "defText": "Platon dans <em>La République</em> (critique) : la justice sert les intérêts de ceux qui dictent les règles."
+      "defText": "Platon dans <em>La République</em> (critique) : la justice sert les intérêts de ceux qui dictent les règles.",
+      "keywords": []
     },
     {
       "q": "Pour Marx, la justice est :",
@@ -168,7 +178,8 @@
         "Une invention juridique des dieux",
         "Un besoin psychologique"
       ],
-      "defText": "Marx dans <em>L'idéologie allemande</em> : l’idéologie est un ensemble d’idées qui justifient l’ordre social ; l’affirmation d’égalité peut masquer des inégalités."
+      "defText": "Marx dans <em>L'idéologie allemande</em> : l’idéologie est un ensemble d’idées qui justifient l’ordre social ; l’affirmation d’égalité peut masquer des inégalités.",
+      "keywords": ["idéologie"]
     },
     {
       "q": "Selon Aristote (Rhétorique), nous avons :",
@@ -184,7 +195,8 @@
         "Une connaissance mathématique du juste",
         "Une intuition religieuse du juste"
       ],
-      "defText": "Aristote dans <em>Rhétorique</em> suggère un sentiment naturel et commun de justice."
+      "defText": "Aristote dans <em>Rhétorique</em> suggère un sentiment naturel et commun de justice.",
+      "keywords": ["divination","justice","commune"]
     },
     {
       "q": "Selon Pascal, la croyance en une justice naturelle universelle est :",
@@ -200,11 +212,12 @@
         "Indiscutable",
         "Mesurable mathématiquement"
       ],
-      "defText": "Pascal dans <em>Pensées</em> : s’il y avait une injustice naturelle connue de tous, on trouverait des actions unanimement jugées injustes — ce n’est pas le cas."
+      "defText": "Pascal dans <em>Pensées</em> : s’il y avait une injustice naturelle connue de tous, on trouverait des actions unanimement jugées injustes — ce n’est pas le cas.",
+      "keywords": []
     },
     {
-      "q": "Que signifie « légal » ?",
-      "correct": "Ce qui est juste ou permis par les lois",
+      "q": "Ce qui est juste ou permis par les lois",
+      "correct": "légal",
       "distractors": [
         "Ce qui est conforme à une morale supérieure",
         "Ce qui est nécessaire",
@@ -216,11 +229,12 @@
         "Ce qui est probable",
         "Ce qui est subjectif"
       ],
-      "defKey": "légal"
+      "defKey": "légal",
+      "keywords": ["juste","permis","lois"]
     },
     {
-      "q": "Que signifie « légitime » ?",
-      "correct": "Conforme à un principe supérieur de morale ou de justice",
+      "q": "Conforme à un principe supérieur de morale ou de justice",
+      "correct": "légitime",
       "distractors": [
         "Permis par les lois positives",
         "Dicté par la coutume",
@@ -232,7 +246,8 @@
         "Universellement vrai",
         "Scientifiquement prouvé"
       ],
-      "defKey": "légitime"
+      "defKey": "légitime",
+      "keywords": ["conforme","principe supérieur","morale","justice"]
     }
   ]
 }

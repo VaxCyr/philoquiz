@@ -2,6 +2,9 @@
   "definitions": {
     "bonheur": "Ce qui nous satisfait."
   },
+  "definitions_keywords": {
+    "bonheur": ["satisfait"]
+  },
   "remedes": [
     "Ne pas avoir peur de Dieu (ils sont parfaits donc désintéressés de nous)",
     "Ne pas craindre la mort (si vivant alors pas mort, et si mort alors pas vivant)",
@@ -60,14 +63,9 @@
         "Ce qui nous procure une satisfaction matérielle",
         "Ce qui correspond à notre confort"
       ],
-      "defKey": "bonheur"
+      "defKey": "bonheur",
+      "keywords": ["satisfait"]
     },
-
-
-
-
-
-
     {
       "q": "Lequel de ces remèdes contre le malheur est dans le cours ?",
       "correct": "Ne pas craindre la mort",
@@ -95,9 +93,9 @@
         "S’abandonner à la peur",
         "Ne pas penser à la douleur"
       ],
-      "defText": "Les 4 remèdes sont : 1) Ne pas avoir peur de Dieu, 2) Ne pas craindre la mort, 3) Il est possible d'être heureux, 4) Il est possible de supporter la douleur."
+      "defText": "Les 4 remèdes sont : 1) Ne pas avoir peur de Dieu, 2) Ne pas craindre la mort, 3) Il est possible d'être heureux, 4) Il est possible de supporter la douleur.",
+      "keywords": ["mort", ["craindre", "peur"]]
     },
-
     {
       "q": "Lequel de ces remèdes contre le malheur est dans le cours ?",
       "correct": "Ne pas avoir peur de Dieu",
@@ -126,9 +124,9 @@
         "Vivre dans la crainte divine",
         "Se soumettre aux dieux"
       ],
-      "defText": "Les 4 remèdes sont : 1) Ne pas avoir peur de Dieu, 2) Ne pas craindre la mort, 3) Il est possible d'être heureux, 4) Il est possible de supporter la douleur."
+      "defText": "Les 4 remèdes sont : 1) Ne pas avoir peur de Dieu, 2) Ne pas craindre la mort, 3) Il est possible d'être heureux, 4) Il est possible de supporter la douleur.",
+      "keywords": ["dieu", ["craindre", "peur"]]
     },
-
     {
       "q": "Lequel de ces remèdes contre le malheur est dans le cours ?",
       "correct": "Il est possible de supporter la douleur",
@@ -157,9 +155,9 @@
         "Il faut se protéger de toute souffrance",
         "Il faut supprimer la douleur avant tout"
       ],
-      "defText": "Les 4 remèdes sont : 1) Ne pas avoir peur de Dieu, 2) Ne pas craindre la mort, 3) Il est possible d'être heureux, 4) Il est possible de supporter la douleur."
+      "defText": "Les 4 remèdes sont : 1) Ne pas avoir peur de Dieu, 2) Ne pas craindre la mort, 3) Il est possible d'être heureux, 4) Il est possible de supporter la douleur.",
+      "keywords": ["supporter","douleur"]
     },
-
     {
       "q": "Lequel de ces remèdes contre le malheur est dans le cours ?",
       "correct": "Il est possible d'être heureux (plaisirs)",
@@ -188,16 +186,9 @@
         "Il faut craindre le bonheur",
         "Le bonheur est un état impossible"
       ],
-      "defText": "Les 4 remèdes sont : 1) Ne pas avoir peur de Dieu, 2) Ne pas craindre la mort, 3) Il est possible d'être heureux, 4) Il est possible de supporter la douleur."
+      "defText": "Les 4 remèdes sont : 1) Ne pas avoir peur de Dieu, 2) Ne pas craindre la mort, 3) Il est possible d'être heureux, 4) Il est possible de supporter la douleur.",
+      "keywords": ["possible","heureux"]
     },
-
-
-
-
-
-
-
-
     {
       "q": "Quel philosophe est associé à l'utilitarisme dans le cours ?",
       "correct": "Jeremy Bentham",
@@ -228,7 +219,8 @@
         "Augustin",
         "Cicéron"
       ],
-      "defText": "Jeremy Bentham est le représentant de l'utilitarisme (doctrine qui considère l'utilité comme principe du bien)."
+      "defText": "Jeremy Bentham est le représentant de l'utilitarisme (doctrine qui considère l'utilité comme principe du bien).",
+      "keywords": ["Bentham"]
     },
     {
       "q": "Qui a écrit : 'Nous ne nous tenons jamais au temps présent' ?",
@@ -259,11 +251,12 @@
         "Durkheim (Les formes élémentaires de la vie religieuse)",
         "Epictète (Manuel)"
       ],
-      "defText": "Citation de Blaise Pascal dans les <em>Pensées</em>. Pascal critique notre incapacité à vivre le présent : on anticipe l'avenir ou on rappelle le passé."
+      "defText": "Citation de Blaise Pascal dans les <em>Pensées</em>. Pascal critique notre incapacité à vivre le présent : on anticipe l'avenir ou on rappelle le passé.",
+      "keywords": ["Pascal"]
     },
     {
-      "q": "Que signifie 'contingent' ?",
-      "correct": "Ce qui peut ou aurait pu être autrement",
+      "q": "Ce qui peut ou aurait pu être autrement",
+      "correct": "contingent",
       "distractors": [
         "Ce qui ne peut pas ne pas être",
         "Ce qui dépasse les limites naturelles d'un objet",
@@ -290,81 +283,60 @@
         "Ce qui est défini par la raison",
         "Ce qui ne peut être autrement"
       ],
-      "defKey": "contingent"
+      "defKey": "contingent",
+      "keywords": [["peut","aurait pu"],"être",["différent","autrement"]]
     },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     {
       "q": "Parmi ces repères, lesquels forment une paire ?",
       "corrects": ["Absolu", "Relatif"],
       "distractors": ["Contingent", "Universel", "Particulier", "En droit", "Contrainte", "Transcendant", "En puissance"],
       "multi": true,
-      "defText": "Absolu (ne dépend de rien) ≠ Relatif (dépend d'autre chose). Autre paire : Contingent (peut être autrement) ≠ Nécessaire (ne peut pas ne pas être)."
+      "defText": "Absolu (ne dépend de rien) ≠ Relatif (dépend d'autre chose). Autre paire : Contingent (peut être autrement) ≠ Nécessaire (ne peut pas ne pas être).",
+      "keywords": []
     },
     {
       "q": "Parmi ces repères, lesquels forment une paire ?",
       "corrects": ["Contingent", "Nécessaire"],
       "distractors": ["Absolu", "Universel", "Singulier", "En fait", "Contrainte", "Immanent", "En acte"],
       "multi": true,
-      "defText": "Contingent : Ce qui peut ou aurait pu être autrement ≠ Nécessaire : Ce qui ne peut pas ne pas être."
+      "defText": "Contingent : Ce qui peut ou aurait pu être autrement ≠ Nécessaire : Ce qui ne peut pas ne pas être.",
+      "keywords": []
     },
     {
       "q": "Parmi ces repères, lesquels forment une paire ?",
       "corrects": ["En fait", "En droit"],
       "distractors": ["Nécessaire", "Général", "Particulier", "Relatif", "Obligation", "Transcendant", "En puissance"],
       "multi": true,
-      "defText": "En fait : Ce qui est / En droit : Ce qui devrait être."
+      "defText": "En fait : Ce qui est / En droit : Ce qui devrait être.",
+      "keywords": []
     },
     {
       "q": "Parmi ces repères, lesquels forment une paire ?",
       "corrects": ["Contrainte", "Obligation"],
       "distractors": ["Contingent", "Universel", "Général", "En droit", "Absolu", "Immanent", "En acte"],
       "multi": true,
-      "defText": "Contrainte : Injonction accompagnée de l'usage d'une force qui impose une obéissance / Obligation : Quand on considère que l'injonction émane d'une autorité légitime"
+      "defText": "Contrainte : Injonction accompagnée de l'usage d'une force qui impose une obéissance / Obligation : Quand on considère que l'injonction émane d'une autorité légitime",
+      "keywords": []
     },
     {
       "q": "Parmi ces repères, lesquels forment une paire ?",
       "corrects": ["Transcendant", "Immmanent"],
       "distractors": ["Nécessaire", "Singulier", "Particulier", "En fait", "Contrainte", "Relatif", "En acte"],
       "multi": true,
-      "defText": "Transcendant : Dépasse les limites naturel d'un objet ≠ Immanent : Contenu dans les limites naturel d'un objet"
+      "defText": "Transcendant : Dépasse les limites naturel d'un objet ≠ Immanent : Contenu dans les limites naturel d'un objet",
+      "keywords": []
     },
     {
       "q": "Parmi ces repères, lesquels forment une paire ?",
       "corrects": ["En acte", "En puissance"],
       "distractors": ["Contingent", "Général", "Singulier", "En fait", "Obligation", "Transcendant", "Absolu"],
       "multi": true,
-      "defText": "En acte : Achevé/accomplit ≠ En puissance : Accomplissement potentiel"
+      "defText": "En acte : Achevé/accomplit ≠ En puissance : Accomplissement potentiel",
+      "keywords": []
     },
-
-
-
-
-
-
-
-
-
-
-
-
-
     {
-      "q": "Que signifie 'en droit' ?",
-      "correct": "Ce qui devrait être",
+      "q": "Ce qui devrait être",
+      "correct": "en droit",
       "distractors": [
         "Ce qui est", 
         "Ce qui dépend d'autre chose", 
@@ -381,7 +353,7 @@
         "Ce qui s’applique à tous les cas",
         "Ce qui découle d’une coutume",
         "Ce qui est lié à la morale",
-        "Ce qui est conforme à la réalité",
+        "Ce qui est conforme à la realityé",
         "Ce qui se constate dans les faits",
         "Ce qui résulte d’un choix libre",
         "Ce qui est purement rationnel",
@@ -391,11 +363,12 @@
         "Ce qui est vérifiable empiriquement",
         "Ce qui est vrai en pratique"
       ],
-      "defText": "En droit = ce qui devrait être (normatif) / En fait = ce qui est (descriptif)."
+      "defText": "En droit = ce qui devrait être (normatif) / En fait = ce qui est (descriptif).",
+      "keywords": ["devrait","être"]
     },
     {
-      "q": "Que signifie 'transcendant' ?",
-      "correct": "Dépasse les limites naturelles d'un objet",
+      "q": "Dépasse les limites naturelles d'un objet",
+      "correct": "transcendant",
       "distractors": [
         "Contenu dans les limites naturelles", 
         "Applicable à un seul cas", 
@@ -422,18 +395,18 @@
         "Ne dépasse pas la perception",
         "Se situe dans le domaine empirique"
       ],
-      "defText": "Transcendant = dépasse les limites naturelles / Immanent = contenu dans les limites naturelles."
+      "defText": "Transcendant = dépasse les limites naturelles / Immanent = contenu dans les limites naturelles.",
+      "keywords": [["dépasse","sort","exterieur"],"limite","naturelle"]
     },
-
     {
-      "q": "Que signifie 'universel' dans le cours ?",
-      "correct": "S'applique à tous les cas",
+      "q": "S'applique à tous les cas",
+      "correct": "universel",
       "distractors": [
         "S'applique à la plupart des cas",
         "S'applique à un nombre limité de cas",
         "S'applique à un seul cas",
         "S'applique à un ensemble précis de cas",
-        "S'applique à une majorité de cas",
+        "S'applique à une majorityé de cas",
         "S'applique à la plupart des cas",
         "S'applique à un seul cas",
         "S'applique dans certains contextes",
@@ -455,15 +428,16 @@
         "Ne s'applique qu'en théorie",
         "Est restreint à quelques cas"
       ],
-      "defText": "Universel → tous les cas / Général → la plupart / Particulier → nombre limité / Singulier → un seul cas."
+      "defText": "Universel → tous les cas / Général → la plupart / Particulier → nombre limité / Singulier → un seul cas.",
+      "keywords": ["tous","cas"]
     },
     {
-      "q": "Que signifie 'immanent' ?",
-      "correct": "Contenu dans les limites naturelles d'un objet",
+      "q": "Contenu dans les limites naturelles d'un objet",
+      "correct": "immanent",
       "distractors": [
         "Ce qui ne peut pas ne pas être", 
         "Applicable à tous les cas", 
-        "Relatif à d'autres choses",
+        "Relatif à d'autres choses", 
         "Dépasse les limites naturelles d’un objet",
         "Transcende la nature",
         "Existe indépendamment du monde matériel",
@@ -485,17 +459,19 @@
         "Est indépendant de la nature",
         "N’a pas de lien avec l’objet"
       ],
-      "defText": "Immanent = contenu dans les limites naturelles d'un objet / Transcendant = dépasse ces limites."
+      "defText": "Immanent = contenu dans les limites naturelles d'un objet / Transcendant = dépasse ces limites.",
+      "keywords": [["contenu","intérieur","dans"],"limite","naturelle"]
     },
     {
       "q": "Combien y a-t-il de types de désirs listés dans le cours ?",
       "correct": "3 types",
       "distractors": ["2 types", "4 types", "5 types", "6 types", "Une dizaine de types", "Une infinité de types", "Un unique type"],
-      "defText": "3 types : 1) Naturels et nécessaires (il faut), 2) Naturels et non nécessaires (on peut), 3) Non naturels et non nécessaires (on ne doit pas)."
+      "defText": "3 types : 1) Naturels et nécessaires (il faut), 2) Naturels et non nécessaires (on peut), 3) Non naturels et non nécessaires (on ne doit pas).",
+      "keywords": []
     },
     {
-      "q": "Que signifie 'en acte' ?",
-      "correct": "Achevé / accompli",
+      "q": "Achevé / accompli",
+      "correct": "en acte",
       "distractors": [
         "Accomplissement potentiel", 
         "Ce qui peut être autrement", 
@@ -522,10 +498,11 @@
         "Inexistant",
         "Hypothétique"
       ],
-      "defText": "En acte = achevé/accompli / En puissance = accomplissement potentiel."
+      "defText": "En acte = achevé/accompli / En puissance = accomplissement potentiel.",
+      "keywords": [["achevé","accompli","terminer"]]
     },
     {
-      "q": "Quelle phrase est attribuée à Alain dans le cours ?",
+      "q": "Quelle phrase est attribuée à Alain dans le cours à propos du Bonheur ?",
       "correct": "Dès qu'un homme cherche le bonheur, il est condamné à ne pas le trouver",
       "distractors": [
         "Le devoir est une contrainte physique", 
@@ -552,11 +529,12 @@
         "Le bonheur est un état de paix intérieure",
         "L’homme doit mériter le bonheur"
       ],
-      "defText": "Alain dans <em>Propos</em> : Dès qu'un homme cherche le bonheur, il est condamné à ne pas le trouver."
+      "defText": "Alain dans <em>Propos</em> : Dès qu'un homme cherche le bonheur, il est condamné à ne pas le trouver.",
+      "keywords": ["cherche","bonheur","pas",["trouver","avoir"]]
     },
     {
-      "q": "Que signifie 'général' ?",
-      "correct": "S'applique à la plupart des cas",
+      "q": "S'applique à la plupart des cas",
+      "correct": "général",
       "distractors": [
         "S'applique à tous les cas", 
         "S'applique à un seul cas", 
@@ -581,9 +559,9 @@
         "Est propre à un individu",
         "Est restreint à certaines situations"
       ],
-      "defText": "Universel → tous / Général → la plupart / Particulier → limité / Singulier → un seul."
+      "defText": "Universel → tous / Général → la plupart / Particulier → limité / Singulier → un seul.",
+      "keywords": [["plupart","majorité"],"cas"]
     },
-
     {
       "q": "Selon le cours, quel type de désir faut-il éviter ?",
       "correct": "Non naturels et non nécessaires",
@@ -607,29 +585,9 @@
         "Désirs essentiels à la vie",
         "Désirs conformes à la nature"
       ],
-      "defText": "Non naturels et non nécessaires = on ne doit pas / Naturels et nécessaires = il faut / Naturels et non nécessaires = on peut."
+      "defText": "Non naturels et non nécessaires = on ne doit pas / Naturels et nécessaires = il faut / Naturels et non nécessaires = on peut.",
+      "keywords": []
     },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
     {
       "q": "Pour Schopenhauer, qu’est-ce que la volonté dans l’être humain ?",
       "correct": "Un effort perpétuel qui engendre des désirs sans fin",
@@ -641,10 +599,9 @@
         "Une énergie qui permet d’atteindre la sérénité",
         "Une force matérielle mesurable"
       ],
-      "defText": "Chez Schopenhauer, la volonté est un effort infini qui produit des désirs ininterrompus."
+      "defText": "Chez Schopenhauer, la volonté est un effort infini qui produit des désirs ininterrompus.",
+      "keywords": ["effort",["perpétuel","infini","infinie"],"désirs",["sans fin","infini"]]
     },
-
-
     {
       "q": "Pourquoi, selon Schopenhauer, tout désir est-il une source de souffrance ?",
       "correct": "Parce qu’il naît d’un manque qui nous tourmente tant qu’il n’est pas satisfait",
@@ -656,10 +613,9 @@
         "Parce qu’il dépend exclusivement du hasard",
         "Parce qu’il oppose la raison et les émotions"
       ],
-      "defText": "Pour Schopenhauer, tout désir vient d’une privation : tant qu’il n’est pas satisfait, il est souffrance."
+      "defText": "Pour Schopenhauer, tout désir vient d’une privation : tant qu’il n’est pas satisfait, il est souffrance.",
+      "keywords": ["naît","manque",["non satisfait", "pas satisfait"]]
     },
-
-
     {
       "q": "Selon Schopenhauer, pourquoi la satisfaction d’un désir ne permet-elle pas le bonheur durable ?",
       "correct": "Parce que le plaisir est bref et qu’un nouveau désir surgit par la suite",
@@ -670,10 +626,9 @@
         "Parce que le plaisir conduit à la sagesse",
         "Parce que le plaisir rend indifférent au monde"
       ],
-      "defText": "Chez Schopenhauer, la satisfaction ne dure pas : elle produit aussitôt un nouveau désir."
+      "defText": "Chez Schopenhauer, la satisfaction ne dure pas : elle produit aussitôt un nouveau désir.",
+      "keywords": [["plaisir","bonheur"], ["bref","court","limité"],"nouveau","désir"]
     },
-
-
     {
       "q": "D'après Schopenhauer, pourquoi l’être humain ne peut-il pas être durablement heureux ?",
       "correct": "Parce que la vie oscille entre souffrance et ennui",
@@ -684,10 +639,9 @@
         "Parce que l’homme refuse de se cultiver",
         "Parce que la nature humaine vise toujours la tranquillité"
       ],
-      "defText": "La structure de la volonté humaine fait osciller l’existence entre souffrance (désir insatisfait) et ennui (absence de désir)."
+      "defText": "La structure de la volonté humaine fait osciller l’existence entre souffrance (désir insatisfait) et ennui (absence de désir).",
+      "keywords": ["vie","souffrance","ennui"]
     },
-
-
     {
       "q": "Pourquoi, selon Pascal, les hommes ne vivent-ils presque jamais dans le présent ?",
       "correct": "Parce qu’ils regrettent le passé et espèrent l’avenir",
@@ -698,10 +652,9 @@
         "Parce qu’ils sont naturellement tournés vers la pure rationalité",
         "Parce qu’ils se contentent toujours de ce qu’ils ont"
       ],
-      "defText": "Pascal affirme que l’homme fuit le présent : il se tourne vers ce qui n’est plus (passé) ou pas encore (avenir)."
+      "defText": "Pascal affirme que l’homme fuit le présent : il se tourne vers ce qui n’est plus (passé) ou pas encore (avenir).",
+      "keywords": [["pensent","regrettent"],"passé", ["espèrent","pensent"], "l'avenir"]
     },
-
-
     {
       "q": "Quel rôle joue l’imagination dans le malheur humain selon Pascal ?",
       "correct": "Elle nous fait craindre des choses inutiles et désirer des objets non nécessaires",
@@ -712,63 +665,21 @@
         "Elle conduit au bonheur durable",
         "Elle empêche de percevoir le passé"
       ],
-      "defText": "L’imagination, chez Pascal, déforme la réalité et alimente des peurs ou des désirs illusoires."
+      "defText": "L’imagination, chez Pascal, déforme la réalité et alimente des peurs ou des désirs illusoires.",
+      "keywords": [["craindre","peur"], "inutile",["désirer","vouloir"],["non nécessaire","pas nécessaire"]]
     },
-
-
     {
       "q": "Pourquoi, selon Pascal, les hommes ne peuvent-ils pas connaître un bonheur complet ?",
       "correct": "Parce qu’ils ne vivent jamais dans l’instant présent où se trouve le bonheur",
       "distractors": [
         "Parce qu’ils ne sont pas assez raisonnables",
         "Parce qu’ils refusent de travailler",
-        "Parce qu’ils recherchent trop la gloire",
+        "Parce qu’Ils recherchent trop la gloire",
         "Parce qu’ils veulent supprimer toutes leurs passions",
         "Parce qu’ils ignorent entièrement leurs désirs"
       ],
-      "defText": "Pour Pascal, l’homme est incapable de demeurer dans le présent ; or, seul le présent pourrait contenir un véritable bonheur."
+      "defText": "Pour Pascal, l’homme est incapable de demeurer dans le présent ; or, seul le présent pourrait contenir un véritable bonheur.",
+      "keywords": ["jamais","présent","bonheur"]
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   ]
 }

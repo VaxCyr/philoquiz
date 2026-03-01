@@ -3,6 +3,10 @@
     "science": "1) Somme des connaissances qu’un individu possède. 2) Activité visant à établir un ensemble cohérent de connaissances en supposant que les phénomènes obéissent à des lois ; elle établit des connaissances par des méthodes rationnelles et/ou expérimentales.",
     "raison": "1) Ce qui rend compte d’un fait ou d’un phénomène. 2) Faculté de l’esprit d’organiser ses rapports au réel, dans les domaines pratique et théorique ; notamment capacités de calcul et de jugement."
   },
+  "definitions_keywords": {
+    "science": [],
+    "raison": []
+  },
   "citations": [
     {
       "auteur": "Einstein et Infeld",
@@ -39,11 +43,12 @@
         "Technique pure sans théorie",
         "Tradition philosophique ancienne"
       ],
-      "defKey": "science"
+      "defKey": "science",
+      "keywords": ["activité","établir","connaissances","méthodes",["rationnelle","expérimentale"]]
     },
     {
-      "q": "Que signifie « raison » selon le cours ?",
-      "correct": "Faculté d’organiser nos rapports au réel (calcul et jugement)",
+      "q": "Faculté d’organiser nos rapports au réel (calcul et jugement)",
+      "correct": "raison",
       "distractors": [
         "Instinct biologique de survie",
         "Émotion morale",
@@ -57,7 +62,8 @@
         "Force physique",
         "Habitude culturelle"
       ],
-      "defKey": "raison"
+      "defKey": "raison",
+      "keywords": ["faculté","organiser","réel"]
     },
     {
       "q": "Selon Jacob, quelle différence sépare mythe et science ?",
@@ -72,11 +78,13 @@
         "Le mythe se teste ; la science se croit",
         "Le mythe est rationnel ; la science est intuitive"
       ],
-      "defText": "François Jacob dans <em>Le darwinisme aujourd’hui</em> : mythes — attitude d’adhésion/refus ; science — théories modifiables, en droit réfutables."
+      "defText": "François Jacob dans <em>Le darwinisme aujourd’hui</em> : mythes — attitude d’adhésion/refus ; science — théories modifiables, en droit réfutables.",
+      "keywords": ["mythe","accepter","refuser","science",["modifiable","réfutable"]],
+      "revision": true
     },
     {
       "q": "Que souligne Bachelard à propos de l’objectivité ?",
-      "correct": "La description comporte des choix ; vigilance contre la subjectivité",
+      "correct": "On pense être objectif en étant subjectif, (La description comporte des choix)",
       "distractors": [
         "L’objectivité est donnée immédiatement",
         "Toute description est purement objective",
@@ -87,11 +95,13 @@
         "La méthode expérimentale exclut tout choix",
         "La théorie suffit sans observation"
       ],
-      "defText": "Bachelard dans <em>Psychanalyse du feu</em> : on décrit ce qu’on estime ; l’objectivité exige une discipline critique."
+      "defText": "Bachelard dans <em>Psychanalyse du feu</em> : on décrit ce qu’on estime ; l’objectivité exige une discipline critique.",
+      "keywords": ["pense","objectif","subjectif"],
+      "revision": true
     },
     {
-      "q": "Que signifie « savoir » ?",
-      "correct": "Affirmer vrai avec des preuves objectives, rationnelles et/ou empiriques",
+      "q": "Affirmer vrai avec des preuves objectives, rationnelles et/ou empiriques",
+      "correct": "savoir",
       "distractors": [
         "Tenir pour vrai par motifs subjectifs",
         "Croire selon la tradition",
@@ -103,11 +113,12 @@
         "Décider par vote",
         "Juger par émotion"
       ],
-      "defKey": "savoir"
+      "defKey": "savoir",
+      "keywords": ["affirmer","vrai","preuve",["objectives","rationnelles","empiriques"]]
     },
     {
-      "q": "Que signifie « croire » ?",
-      "correct": "Tenir pour vrai en s’appuyant sur des motifs subjectifs",
+      "q": "Tenir pour vrai en s’appuyant sur des motifs subjectifs",
+      "correct": "croire",
       "distractors": [
         "Affirmer vrai avec preuves objectives",
         "Énoncer une loi scientifique",
@@ -119,11 +130,12 @@
         "Mesurer intersubjectivement",
         "Décider rationnellement"
       ],
-      "defKey": "croire"
+      "defKey": "croire",
+      "keywords": ["vrai","subjectif"]
     },
     {
-      "q": "Que signifie « objectif » ?",
-      "correct": "Décrire l’objet comme il est",
+      "q": "Décrire l’objet comme il est",
+      "correct": "objectif",
       "distractors": [
         "Exprimer un point de vue personnel",
         "Comparer des avis",
@@ -133,11 +145,12 @@
         "Conclure par autorité",
         "Refuser toute preuve"
       ],
-      "defKey": "objectif"
+      "defKey": "objectif",
+      "keywords": ["décrire","il est"]
     },
     {
-      "q": "Que signifie « subjectif » ?",
-      "correct": "Refléter le point de vue de celui qui parle",
+      "q": "Refléter le point de vue de celui qui parle",
+      "correct": "subjectif",
       "distractors": [
         "Décrire l’objet comme il est",
         "Comparer plusieurs subjectivités",
@@ -147,11 +160,12 @@
         "Décider juridiquement",
         "Démontrer mathématiquement"
       ],
-      "defKey": "subjectif"
+      "defKey": "subjectif",
+      "keywords": ["point de vue"]
     },
     {
-      "q": "Que signifie « intersubjectif » ?",
-      "correct": "Produit d’une comparaison entre plusieurs subjectivités",
+      "q": "Produit d’une comparaison entre plusieurs subjectivités",
+      "correct": "intersubjectif",
       "distractors": [
         "Vérité absolue",
         "Opinion individuelle",
@@ -161,10 +175,11 @@
         "Règle juridique",
         "Coutume locale"
       ],
-      "defKey": "intersubjectif"
+      "defKey": "intersubjectif",
+      "keywords": ["comparaison","subjectivités"]
     },
     {
-      "q": "Selon le cours, la science suppose que :",
+      "q": "La science suppose que :",
       "correct": "Les phénomènes obéissent à des lois",
       "distractors": [
         "Les phénomènes sont purement chaotiques",
@@ -177,7 +192,8 @@
         "La science ne teste rien",
         "Les lois sont décidées par vote"
       ],
-      "defKey": "science"
+      "defKey": "science",
+      "keywords": ["phénomènes","obéissent","lois"]
     }
   ]
 }

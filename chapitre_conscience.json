@@ -1,11 +1,19 @@
 {
   "definitions": {
     "conscience": "Le sentiment intérieur qui accompagne les actions et les pensées du sujet. Elle peut être morale (voix intérieure qui juge la moralité), théorique (faculté caractérisant l'activité de l'esprit par son rapport à soi, au monde et aux autres), spontanée (accompagne les représentations) ou réfléchie (résultat d'un effort d'introspection).",
-    "reflexivité": "Rapport de la conscience à elle-même.",
+    "reflexivité": "Rapport de la conscience à soi.",
     "intentionnalité": "Rapport de la conscience au monde.",
     "intersubjectivité": "Rapport de la conscience aux autres.",
     "substance_pensante": "L'esprit, quelque chose qui pense (Descartes).",
     "substance_étendue": "Le corps, quelque chose qui est étendu, flexible et muable (Descartes)."
+  },
+  "definitions_keywords": {
+    "conscience": [["voix","sentiment"], "intérieur","actions","pensées"],
+    "reflexivité": ["rapport","conscience","soi"],
+    "intentionnalité": ["rapport","conscience","monde"],
+    "intersubjectivité": ["rapport","conscience","autres"],
+    "substance_pensante": [["l'esprit","esprit"]],
+    "substance_étendue": ["corps"]
   },
   "philosophes": [
     {
@@ -40,7 +48,9 @@
         "La conscience est une illusion",
         "L'esprit est identique au corps"
       ],
-      "defText": "Dans le <em>Discours de la méthode</em>, Descartes parvient à cette première certitude après avoir utilisé la méthode du doute : même si je doute de tout, je ne peux pas douter que je suis en train de douter, donc de penser."
+      "defText": "Dans le <em>Discours de la méthode</em>, Descartes parvient à cette première certitude après avoir utilisé la méthode du doute : même si je doute de tout, je ne peux pas douter que je suis en train de douter, donc de penser.",
+      "keywords": ["pense","donc","suis"],
+      "revision": true
     },
     {
       "q": "Que signifie l'expression de Pascal 'roseau pensant' ?",
@@ -57,7 +67,9 @@
         "L'homme est un automate",
         "La pensée est une illusion biologique"
       ],
-      "defText": "Dans les <em>Pensées</em>, Pascal utilise cette métaphore pour exprimer la double nature de l'homme : sa fragilité physique face à l'univers (roseau) et sa grandeur unique par la conscience (pensant)."
+      "defText": "Dans les <em>Pensées</em>, Pascal utilise cette métaphore pour exprimer la double nature de l'homme : sa fragilité physique face à l'univers (roseau) et sa grandeur unique par la conscience (pensant).",
+      "keywords": ["homme","fragile",["pensant","pensée","conscient"]],
+      "revision": true
     },
     {
       "q": "Selon Locke, quelle est la clé de l'identité personnelle ?",
@@ -74,7 +86,9 @@
         "La naissance",
         "Les gènes"
       ],
-      "defText": "Pour John Locke dans son <em>Essai sur l'entendement humain</em>, l'identité d'une personne repose sur la conscience : le fait de pouvoir se considérer comme le même être dans différents temps et lieux."
+      "defText": "Pour John Locke dans son <em>Essai sur l'entendement humain</em>, l'identité d'une personne repose sur la conscience : le fait de pouvoir se considérer comme le même être dans différents temps et lieux.",
+      "keywords": ["conscience","soi"],
+      "revision": true
     },
     {
       "q": "Comment Descartes définit-il l'esprit (l'essence de l'homme) ?",
@@ -91,7 +105,9 @@
         "Une réaction chimique",
         "Un souffle biologique"
       ],
-      "defText": "Dans ses <em>Méditations</em> (citées dans le <em>Discours de la méthode</em>), Descartes distingue la substance pensante (l'esprit) de la substance étendue (le corps)."
+      "defText": "Dans ses <em>Méditations</em> (citées dans le <em>Discours de la méthode</em>), Descartes distingue la substance pensante (l'esprit) de la substance étendue (e corps).",
+      "keywords": ["substance","pensante"],
+      "revision": true
     },
     {
       "q": "Quelles sont les deux causes de l'erreur selon Descartes ?",
@@ -108,7 +124,9 @@
         "La société et l'éducation",
         "Le hasard et la chance"
       ],
-      "defText": "Dans le <em>Discours de la méthode</em>, Descartes identifie la prévention (préjugés) et la précipitation (juger trop vite) comme les sources de nos erreurs."
+      "defText": "Dans le <em>Discours de la méthode</em>, Descartes identifie la prévention (préjugés) et la précipitation (juger trop vite) comme les sources de nos erreurs.",
+      "keywords": ["prevention","précipitation"],
+      "revision": true
     },
     {
       "q": "Selon Pascal, par quoi apprenons-nous à nous connaître ?",
@@ -125,7 +143,9 @@
         "Par les voyages",
         "Par la réussite sociale"
       ],
-      "defText": "Dans les <em>Pensées</em>, Pascal souligne que la connaissance de soi passe à la fois par la conscience intérieure et par le rapport aux autres."
+      "defText": "Dans les <em>Pensées</em>, Pascal souligne que la connaissance de soi passe à la fois par la conscience intérieure et par le rapport aux autres.",
+      "keywords": [["soi-même","soi même"],"autres"],
+      "revision": true
     }
   ]
 }

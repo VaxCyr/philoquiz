@@ -2,6 +2,9 @@
   "definitions": {
     "verite": "Conformité entre une pensée ou son expression et l’objet de cette pensée. Par usage courant : « une vérité » est une idée conforme à la réalité."
   },
+  "definitions_keywords": {
+    "verite": ["conformité",["pensée","expression"],"réalité"]
+  },
   "citations": [
     {
       "auteur": "Aristote",
@@ -70,7 +73,8 @@
         "Ce qui est proclamé par le pouvoir",
         "Ce qui est ressenti comme vrai"
       ],
-      "defKey": "verite"
+      "defKey": "verite",
+      "keywords": ["conformité",["pensée","expression"],"réalité"]
     },
     {
       "q": "Quel est un des trois sens de « vrai » selon Spinoza ?",
@@ -84,7 +88,9 @@
         "Idée vraie : ce qui est ancien",
         "Idée vraie : ce qui est simple"
       ],
-      "defText": "Spinoza dans <em>Pensées métaphysiques</em> distingue : récit vrai (conforme aux faits), idée vraie (essence), chose « vraie » par métaphore (apparence conforme à la nature)."
+      "defText": "Spinoza dans <em>Pensées métaphysiques</em> distingue : récit vrai (conforme aux faits), idée vraie (essence), chose « vraie » par métaphore (apparence conforme à la nature).",
+      "keywords": ["montre","telle qu'elle est"],
+      "revision": true
     },
     {
       "q": "La thèse de Protagoras soutient que :",
@@ -98,7 +104,9 @@
         "La vérité est la même partout",
         "La vérité est objective et certaine"
       ],
-      "defText": "Protagoras dans <em>La vérité</em> soutient une thèse relativiste : toutes les vérités sont subjectives/relatives et tout opinion est vraie.."
+      "defText": "Protagoras dans <em>La vérité</em> soutient une thèse relativiste : toutes les vérités sont subjectives/relatives et tout opinion est vraie..",
+      "keywords": ["toute","verité","relative"],
+      "revision": true
     },
     {
       "q": "Quel argument Platon avance-t-il contre le relativisme ?",
@@ -112,7 +120,9 @@
         "Le relativisme est conforme à la nature",
         "Le relativisme est juste parfois"
       ],
-      "defText": "Socrate/Platon dans <em>Théétète</em> : 1) pas de critère vrai/faux ; 2) contradiction performative ; 3) n’explique pas l’accord intersubjectif."
+      "defText": "Socrate/Platon dans <em>Théétète</em> : 1) pas de critère vrai/faux ; 2) contradiction performative ; 3) n’explique pas l’accord intersubjectif.",
+      "keywords": ["relativisme","se contredit"],
+      "revision": true
     },
     {
       "q": "Dans l’allégorie de la caverne, que représente l’éducation au début ?",
@@ -126,7 +136,9 @@
         "Une acceptation des illusions",
         "Une vision directe de la vérité"
       ],
-      "defText": "Platon dans <em>La République</em> (Allégorie de la caverne) : l’éducation est d’abord difficile et contraignante ; elle arrache aux illusions."
+      "defText": "Platon dans <em>La République</em> (Allégorie de la caverne) : l’éducation est d’abord difficile et contraignante ; elle arrache aux illusions.",
+      "keywords": [],
+      "revision": false
     },
     {
       "q": "Selon Einstein et Infeld, la vérité scientifique est :",
@@ -140,11 +152,13 @@
         "Une vérité mythique",
         "Une évidence morale"
       ],
-      "defText": "Le scientifique suppose qu'il existe une vérité objective, certaine et définitive, mais elle est toujours pour lui un idéal."
+      "defText": "Le scientifique suppose qu'il existe une vérité objective, certaine et définitive, mais elle est toujours pour lui un idéal.",
+      "keywords": ["idéal","jamais","atteint"],
+      "revision": true
     },
     {
-      "q": "Que signifie « objectif » ?",
-      "correct": "Décrire l’objet comme il est",
+      "q": "Décrire l’objet comme il est",
+      "correct": "objectif",
       "distractors": [
         "Exprimer son point de vue personnel",
         "Comparer des avis différents",
@@ -155,11 +169,12 @@
         "Douter systématiquement",
         "Penser par analogie"
       ],
-      "defKey": "objectif"
+      "defKey": "objectif",
+      "keywords": ["décrire","il est"]
     },
     {
-      "q": "Que signifie « subjectif » ?",
-      "correct": "Refléter le point de vue de celui qui parle",
+      "q": "Refléter le point de vue de celui qui parle",
+      "correct": "subjectif",
       "distractors": [
         "Décrire l’objet comme il est",
         "Comparer des subjectivités",
@@ -169,11 +184,12 @@
         "Exprimer une vérité absolue",
         "Déterminer une règle universelle"
       ],
-      "defKey": "subjectif"
+      "defKey": "subjectif",
+      "keywords": ["point de vue"]
     },
     {
-      "q": "Que signifie « intersubjectif » ?",
-      "correct": "Produit d’une comparaison entre plusieurs subjectivités",
+      "q": "Produit d’une comparaison entre plusieurs subjectivités",
+      "correct": "intersubjectif",
       "distractors": [
         "Vérité absolue",
         "Opinion personnelle",
@@ -183,7 +199,8 @@
         "Principe moral universel",
         "Mesure scientifique incontestable"
       ],
-      "defKey": "intersubjectif"
+      "defKey": "intersubjectif",
+      "keywords": ["comparaison", "subjectivités"]
     }
   ]
 }

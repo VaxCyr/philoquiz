@@ -7,6 +7,7 @@ let DESIRES = [];
 let PHILOSOPHES_DEVOIR = [];
 let PHILOSOPHES_ETAT = [];
 let REPERES_DEFS = {};
+let DEFINITIONS_KEYWORDS = {};
 
 // Fonction pour charger les données JSON
 async function loadData() {
@@ -84,6 +85,11 @@ async function loadChapterData(chapters) {
     // Add definitions
         if (data.definitions) {
           Object.assign(DEFINITIONS, data.definitions);
+        }
+        
+        // Add definitions keywords
+        if (data.definitions_keywords) {
+          Object.assign(DEFINITIONS_KEYWORDS, data.definitions_keywords);
         }
         
         // Add citations
@@ -214,12 +220,13 @@ function showDefinitionBox(title,text){
     box.innerHTML = `<strong>${title}</strong><div class='small' style='margin-top:6px'>${text}</div>`; 
     return box;
 }
-function normalizeText(text){
+function normalizeText(text) {
+    if (!text) return "";
     return text.toLowerCase()
-    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
-    .replace(/[^a-z0-9\s]/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim();
+        .normalize("NFD").replace(/[\u0300-\u036f]/g, "") // Enlève les accents
+        .replace(/[^a-z0-9\s]/g, ' ')                   // Remplace ponctuation par espace
+        .replace(/\s+/g, ' ')                            // Enlève doubles espaces
+        .trim();
 }
 function extractKeywords(text){
     const stopWords = ['le','la','les','un','une','des','de','du','ce','qui','que','est','sont','dans','sur','pour','par','avec','sans','sous','ou','et','à','a'];
@@ -228,21 +235,52 @@ function extractKeywords(text){
     .split(/\s+/)
     .filter(w => w.length > 2 && !stopWords.includes(w));
 }
-function checkDefinitionMatch(userAnswer, correctDef){
+function checkDefinitionMatch(userAnswer, correctDef, source) {
     const userNorm = normalizeText(userAnswer);
+    let keywords = [];
+
+    // 'source' peut être soit le terme (string) pour chercher dans DEFINITIONS_KEYWORDS,
+    // soit directement le tableau de mots-clés de la question de quiz.
+    if (Array.isArray(source)) {
+        keywords = source;
+    } else if (typeof source === 'string' && DEFINITIONS_KEYWORDS[source]) {
+        keywords = DEFINITIONS_KEYWORDS[source];
+    }
+
+    // Si on a des mots-clés spécifiques définis
+    if (keywords.length > 0) {
+        // On vérifie que TOUS les éléments du premier niveau sont respectés (AND)
+        // Si un élément est un tableau, au moins un de ses membres doit être présent (OR)
+        return keywords.every(kw => {
+            if (Array.isArray(kw)) {
+                return kw.some(subKw => userNorm.includes(normalizeText(subKw)));
+            }
+            return userNorm.includes(normalizeText(kw));
+        });
+    }
+
     const correctNorm = normalizeText(correctDef);
+    
+    // Si c'est quasiment identique après normalisation, on valide direct
+    if (userNorm === correctNorm) return true;
+
     const userKeywords = extractKeywords(userAnswer);
     const correctKeywords = extractKeywords(correctDef);
-    // Si la définition correcte est trop courte ou sans mots-clés, fallback à une inclusion des 10 premiers caractères
+
     if(correctKeywords.length === 0) return userNorm.includes(correctNorm.slice(0,10));
-    // Comptage basé sur les tokens exacts (évite les faux positifs par sous-chaînes)
+
     const userSet = new Set(userKeywords);
     let matchCount = 0;
     for(const keyword of correctKeywords){
         if(userSet.has(keyword)) matchCount++;
     }
-    // Règle d'acceptation : au moins 3 mots-clés ou 35% des mots-clés, plafonné à 6
-    const required = Math.min(6, Math.max(3, Math.ceil(correctKeywords.length * 0.35)));
+
+    // AJUSTEMENT ICI : 
+    // Si la définition est très courte (1-2 mots), il faut 100% de match.
+    // Sinon, on garde ta règle de 35%.
+    const threshold = correctKeywords.length <= 2 ? 1 : 0.35;
+    const required = Math.min(6, Math.max(1, Math.ceil(correctKeywords.length * threshold)));
+    
     return matchCount >= required;
 }
 
@@ -553,22 +591,86 @@ function startRevision(){
 function startRevisionQuestions(difficulty){
     setMode('Révision — ' + (difficulty==='easy'?'Facile':difficulty==='medium'?'Moyen':'Difficile'));
     score = 0;
-    const allTerms = Object.entries(DEFINITIONS);
-    const terms = randSort(allTerms).slice(0, 10);
-    maxQ = terms.length;
+    
+    // Mélange des définitions ET des questions de quiz pour le mode révision
+    const pool = [];
+    
+    // Ajout des définitions standards (Mot -> Définition)
+    Object.entries(DEFINITIONS).forEach(([term, def]) => {
+        pool.push({ 
+            type: 'definition', 
+            term: term, 
+            definition: def, 
+            source: term 
+        });
+    });
+    
+    // Ajout des questions de quiz qui ont des mots-clés ET qui sont marquées pour la révision
+    QUIZ_QS.forEach(q => {
+        const isRevisionReady = q.keywords && q.keywords.length > 0;
+        const isSuitable = q.defKey || q.revision === true;
+        
+        if (!q.multi && isRevisionReady && isSuitable) {
+            let term, definition;
+            
+            // On veut toujours :
+            // term = le mot court / le concept / la question courte
+            // definition = l'explication longue / la définition
+            
+            // Si la question 'q' contient "Que signifie" ou "Qu'est-ce que", 
+            // c'est que le mot est dans la question et la définition dans 'correct'.
+            const qLower = q.q.toLowerCase();
+            const isQuestionPhrased = qLower.includes("que signifie") || 
+                                    qLower.includes("qu'est-ce que") || 
+                                    qLower.includes("que veut dire") ||
+                                    qLower.includes("quel est") ||
+                                    qLower.includes("quelle est");
+
+            if (isQuestionPhrased) {
+                // On extrait le mot entre guillemets si possible, sinon on prend q.q tel quel
+                const match = q.q.match(/« (.+) »/) || q.q.match(/"(.+)"/) || q.q.match(/'(.+)'/);
+                term = match ? match[1] : q.q;
+                definition = q.correct;
+            } else if (q.defKey || q.chapter === 'reperes') {
+                // Si c'est un repère classique (déjà harmonisé ou structuré def -> mot)
+                // alors q.q est la définition et q.correct est le mot.
+                term = q.correct;
+                definition = q.q;
+            } else {
+                // Cas par défaut (ex: Conscience)
+                term = q.q;
+                definition = q.correct;
+            }
+
+            pool.push({ 
+                type: 'quiz', 
+                term: term, 
+                definition: definition, 
+                source: q.keywords,
+                isTerm: true // Pour forcer l'affichage "Mot :"
+            });
+        }
+    });
+
+    const items = randSort(pool).slice(0, 10);
+    maxQ = items.length;
     updateScore();
     let idx = 0;
     renderRevisionQuestion();
 
     function renderRevisionQuestion(){
-    const [term, def] = terms[idx];
+    const item = items[idx];
+    const term = item.term;
+    const def = item.definition;
     main.innerHTML = '';
     
     let isEasyMode = true;
     if(difficulty === 'hard'){
         isEasyMode = false;
     } else if(difficulty === 'medium'){
-        isEasyMode = Math.random() > 0.3;
+        // En mode moyen, on mélange les deux sens, sauf pour les quiz non-repères
+        // qui sont souvent bizarres en mode "Inversé" (Réponse -> Question)
+        isEasyMode = item.type === 'quiz' && !item.defKey ? false : Math.random() > 0.3;
     }
 
     const qdiv = document.createElement('div');
@@ -596,11 +698,11 @@ function startRevisionQuestions(difficulty){
         input.placeholder = 'Ta réponse...';
         input.addEventListener('keydown', (e) => {
             if (e.key === 'Enter') {
-                e.preventDefault(); // Empêche le comportement par défaut
+                e.preventDefault();
                 if (!input.disabled) {
-                    submitBtn.click(); // Valide si on n'a pas encore validé
+                    submitBtn.click();
                 } else if (typeof nextBtn !== 'undefined' && nextBtn) {
-                    nextBtn.click(); // Passe à la suite si déjà validé
+                    nextBtn.click();
                 }
             }
         });
@@ -614,9 +716,10 @@ function startRevisionQuestions(difficulty){
         if(!input.value.trim()) return;
         const userAnswer = normalizeText(input.value);
         const correctAnswer = normalizeText(term);
+
         const correct = userAnswer === correctAnswer || 
-                        (userAnswer.length > 2 && correctAnswer.includes(userAnswer)) || 
-                        (correctAnswer.length > 2 && userAnswer.includes(correctAnswer));
+            (userAnswer.length > 3 && correctAnswer.includes(userAnswer)) || 
+            (correctAnswer.length > 3 && userAnswer.includes(correctAnswer));
 
         input.disabled = true;
         submitBtn.disabled = true;
@@ -634,7 +737,7 @@ function startRevisionQuestions(difficulty){
         }
         main.appendChild(feedback);
         
-        const defBox = showDefinitionBox('Définition', def);
+        const defBox = showDefinitionBox('Définition complète', def);
         main.appendChild(defBox);
 
         const nextBtn = document.createElement('button');
@@ -667,25 +770,25 @@ function startRevisionQuestions(difficulty){
         termDiv.style.padding = '12px';
         termDiv.style.background = 'rgba(255,255,255,0.03)';
         termDiv.style.borderRadius = '8px';
-        termDiv.innerHTML = `<strong>Terme :</strong> ${term.replace(/_/g, ' ')}`;
+        // Dans index.js, j'ai modifié la ligne de rendu pour plus de clarté :
+        termDiv.innerHTML = `<strong>${item.isTerm || item.type === 'definition' ? 'Mot' : 'Question'} :</strong> ${term.replace(/_/g, ' ')}`;
+        // termDiv.innerHTML = `<strong>${item.type === 'quiz' && !item.defKey ? 'Question' : 'Mot'} :</strong> ${term.replace(/_/g, ' ')}`;
         main.appendChild(termDiv);
 
         const instruction = document.createElement('div');
         instruction.className = 'small';
         instruction.style.marginTop = '12px';
-        instruction.textContent = 'Donne la définition (les mots-clés principaux suffisent) :';
+        instruction.textContent = item.type === 'quiz' && !item.defKey ? 'Réponds à la question :' : 'Donne la définition (les mots-clés principaux suffisent) :';
         main.appendChild(instruction);
 
         const textarea = document.createElement('textarea');
-        textarea.placeholder = 'Ta définition...';
+        textarea.placeholder = 'Ta réponse...';
         textarea.addEventListener('keydown', (e) => {
-            // Déclenche sur Entrée + Ctrl
             if (e.key === 'Enter' && e.ctrlKey) {
                 e.preventDefault();
                 if (!textarea.disabled) {
-                    submitBtn.click(); // Première étape : Valider
+                    submitBtn.click();
                 } else {
-                    // Deuxième étape : Suivant
                     const nextBtn = main.querySelector('button:last-child');
                     if (nextBtn) nextBtn.click();
                 }
@@ -699,7 +802,7 @@ function startRevisionQuestions(difficulty){
         submitBtn.style.marginTop = '10px';
         submitBtn.onclick = () => {
         if(!textarea.value.trim()) return;
-        const correct = checkDefinitionMatch(textarea.value, def);
+        const correct = checkDefinitionMatch(textarea.value, def, item.source);
 
         textarea.disabled = true;
         submitBtn.disabled = true;
@@ -709,11 +812,11 @@ function startRevisionQuestions(difficulty){
         feedback.className = 'feedback ' + (correct ? 'correct' : 'wrong');
         
         if(correct){
-            feedback.innerHTML = `<strong>✓ Bonne définition !</strong>`;
+            feedback.innerHTML = `<strong>✓ Correct !</strong>`;
             score++;
             updateScore();
         } else {
-            feedback.innerHTML = `<strong>✗ Définition incomplète ou incorrecte</strong>`;
+            feedback.innerHTML = `<strong>✗ Incomplet ou incorrect</strong>`;
         }
         main.appendChild(feedback);
         
@@ -731,7 +834,7 @@ function startRevisionQuestions(difficulty){
         correctBox.style.background = 'rgba(16,185,129,0.05)';
         correctBox.style.border = '1px solid rgba(16,185,129,0.3)';
         correctBox.style.borderRadius = '8px';
-        correctBox.innerHTML = `<strong>Définition attendue :</strong><br><em>${def}</em>`;
+        correctBox.innerHTML = `<strong>Réponse attendue :</strong><br><em>${def}</em>`;
         main.appendChild(correctBox);
 
         const nextBtn = document.createElement('button');

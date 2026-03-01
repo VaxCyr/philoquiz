@@ -12,10 +12,12 @@
           "general",
           "particulier",
           "singulier",
-          "en_fait",
+          "en fait",
           "probable"
         ],
-        "defKey": "absolu"
+        "defKey": "absolu",
+        "keywords": ["dépend","rien"],
+        "revision": true
       },
       {
         "q": "Ce qui dépend ou est limité par autre chose.",
@@ -31,23 +33,27 @@
           "genre",
           "identite"
         ],
-        "defKey": "relatif"
+        "defKey": "relatif",
+        "keywords": [["dépend","limité"],"autre"],
+        "revision": true
       },
       {
-        "q": "Qu'est-ce qui est contingent ?",
-        "correct": "Ce qui peut ou aurait pu être autrement.",
+        "q": "Ce qui peut ou aurait pu être autrement.",
+        "correct": "contingent",
         "distractors": [
-          "Ce qui ne peut pas ne pas être.",
-          "Ce qui s'applique à tous les cas.",
-          "Ce qui ne dépend de rien d'autre.",
-          "Ce qui est conforme à la loi.",
-          "Ce qui devrait être.",
-          "Ce qui est impossible à douter.",
-          "Ce qui est contenu dans ses limites naturelles.",
-          "Ce qui est objectivement prouvé.",
-          "Ce qui concerne un seul cas."
+          "necessaire",
+          "universel",
+          "absolu",
+          "legal",
+          "en droit",
+          "certain",
+          "immanent",
+          "objectif",
+          "singulier"
         ],
-        "defKey": "contingent"
+        "defKey": "contingent",
+        "keywords": [["aurait pu","peut"],"être",["différent","autrement"]],
+        "revision": true
       },
       {
         "q": "Ce qui ne peut pas ne pas être.",
@@ -63,23 +69,27 @@
           "difference",
           "particulier"
         ],
-        "defKey": "necessaire"
+        "defKey": "necessaire",
+        "keywords": ["peut pas", "pas être"],
+        "revision": true
       },
       {
-        "q": "Qu'est-ce qui est universel ?",
-        "correct": "Ce qui s'applique à tous les cas.",
+        "q": "Ce qui s'applique à tous les cas.",
+        "correct": "universel",
         "distractors": [
-          "Ce qui s'applique à la plupart des cas.",
-          "Ce qui concerne un seul cas.",
-          "Ce qui est limité à un groupe restreint.",
-          "Ce qui dépend d'autre chose.",
-          "Ce qui est une sous-catégorie.",
-          "Ce qui est seulement possible.",
-          "Ce qui est légal.",
-          "Ce qui est subjectif.",
-          "Ce qui est accompli."
+          "general",
+          "particulier",
+          "singulier",
+          "absolu",
+          "necessaire",
+          "certain",
+          "objectif",
+          "immanent",
+          "individu"
         ],
-        "defKey": "universel"
+        "defKey": "universel",
+        "keywords": ["tous","cas"],
+        "revision": true
       },
       {
         "q": "Ce qui s'applique à la plupart des cas.",
@@ -95,7 +105,9 @@
           "immanent",
           "individu"
         ],
-        "defKey": "general"
+        "defKey": "general",
+        "keywords": [["majorité","plupart"],"cas"],
+        "revision": true
       },
       {
         "q": "Ce qui concerne un seul cas unique.",
@@ -111,23 +123,27 @@
           "probable",
           "conclusion"
         ],
-        "defKey": "singulier"
+        "defKey": "singulier",
+        "keywords": [["seul","unique"],"cas"],
+        "revision": true
       },
       {
-        "q": "Qu'est-ce qui est particulier ?",
-        "correct": "Ce qui s'applique à un ensemble limité de cas.",
+        "q": "Ce qui s'applique à un ensemble limité de cas.",
+        "correct": "particulier",
         "distractors": [
-          "Ce qui s'applique à tous les cas.",
-          "Ce qui concerne un seul cas.",
-          "Ce qui est nécessaire.",
-          "Ce qui ne dépend de rien.",
-          "Ce qui est en acte.",
-          "Ce qui est transcendant.",
-          "Ce qui est objectif.",
-          "Ce qui est une conséquence.",
-          "Ce qui est légal."
+          "universel",
+          "general",
+          "singulier",
+          "absolu",
+          "necessaire",
+          "certain",
+          "objectif",
+          "immanent",
+          "individu"
         ],
-        "defKey": "particulier"
+        "defKey": "particulier",
+        "keywords": [["quelques","ensemble limité"],"cas"],
+        "revision": true
       },
       {
         "q": "Ce qui devrait être.",
@@ -143,7 +159,9 @@
           "universel",
           "identite"
         ],
-        "defKey": "en_droit"
+        "defKey": "en_droit",
+        "keywords": [["devrait","doit"],"être"],
+        "revision": true
       },
       {
         "q": "Ce qui est.",
@@ -159,23 +177,27 @@
           "genre",
           "transcendant"
         ],
-        "defKey": "en_fait"
+        "defKey": "en_fait",
+        "keywords": ["qui","est"],
+        "revision": true
       },
       {
-        "q": "Qu'est-ce qui est transcendant ?",
-        "correct": "Ce qui dépasse les limites naturelles d'un objet.",
+        "q": "Ce qui dépasse les limites naturelles d'un objet.",
+        "correct": "transcendant",
         "distractors": [
-          "Ce qui est contenu dans ses limites naturelles.",
-          "Ce qui est accompli.",
-          "Ce qui est potentiel.",
-          "Ce qui est légal.",
-          "Ce qui est subjectif.",
-          "Ce qui est une conclusion.",
-          "Ce qui est universel.",
-          "Ce qui est relatif.",
-          "Ce qui est contingent."
+          "immanent",
+          "absolu",
+          "necessaire",
+          "universel",
+          "legitime",
+          "subjectif",
+          "individu",
+          "certain",
+          "principe"
         ],
-        "defKey": "transcendant"
+        "defKey": "transcendant",
+        "keywords": [["dépasse","sort","exterieur"],"limite","naturelle"],
+        "revision": true
       },
       {
         "q": "Ce qui est contenu dans les limites naturelles d'un objet.",
@@ -191,7 +213,9 @@
           "certain",
           "principe"
         ],
-        "defKey": "immanent"
+        "defKey": "immanent",
+        "keywords": [["contenu","intérieur","dans"],"limite","naturelle"],
+        "revision": true
       },
       {
         "q": "Tenir pour vrai en s'appuyant sur des motifs subjectifs.",
@@ -207,7 +231,9 @@
           "legitime",
           "identite"
         ],
-        "defKey": "croire"
+        "defKey": "croire",
+        "keywords": ["vrai","subjectif"],
+        "revision": true
       },
       {
         "q": "Affirmer vrai en s'appuyant sur des preuves objectives, rationnelles et/ou empiriques.",
@@ -223,7 +249,9 @@
           "relatif",
           "obligation"
         ],
-        "defKey": "savoir"
+        "defKey": "savoir",
+        "keywords": ["affirmer","vrai","preuves",["objectives","rationnelles","empiriques"]],
+        "revision": true
       },
       {
         "q": "Un discours qui décrit l'objet comme il est.",
@@ -239,7 +267,9 @@
           "genre",
           "consequence"
         ],
-        "defKey": "objectif"
+        "defKey": "objectif",
+        "keywords": [["décrit","description"],"est"],
+        "revision": true
       },
       {
         "q": "Un discours qui reflète le point de vue de celui qui parle.",
@@ -255,7 +285,9 @@
           "identite",
           "universel"
         ],
-        "defKey": "subjectif"
+        "defKey": "subjectif",
+        "keywords": ["point de vue"],
+        "revision": true
       },
       {
         "q": "Produit d'une comparaison entre plusieurs subjectivités.",
@@ -271,7 +303,9 @@
           "egalite",
           "en fait"
         ],
-        "defKey": "intersubjectif"
+        "defKey": "intersubjectif",
+        "keywords": ["comparaison","subjectivités"],
+        "revision": true
       },
       {
         "q": "Une idée montrant une chose telle qu'elle est ou raconte les faits tels qu'ils se sont passés, c'est une idée ...",
@@ -287,7 +321,9 @@
           "obligation",
           "particulier"
         ],
-        "defKey": "vrai"
+        "defKey": "vrai",
+        "keywords": [["telle qu'elle est","tels qu'ils se sont passés"]],
+        "revision": true
       },
       {
         "q": "Quelque chose dont il est impossible de douter. C'est quelque chose de ...",
@@ -303,7 +339,9 @@
           "immanent",
           "individu"
         ],
-        "defKey": "certain"
+        "defKey": "certain",
+        "keywords": ["impossible de douter"],
+        "revision": true
       },
       {
         "q": "Quelque chose qu'on a des raisons de penser vrai sans en être certain.",
@@ -319,7 +357,9 @@
           "legal",
           "singulier"
         ],
-        "defKey": "probable"
+        "defKey": "probable",
+        "keywords": ["penser vrai","sans","certain"],
+        "revision": true
       },
       {
         "q": "Idée point de départ d'un raisonnement.",
@@ -335,7 +375,9 @@
           "croire",
           "particulier"
         ],
-        "defKey": "principes"
+        "defKey": "principes",
+        "keywords": [["point de départ", "départ", "début"],"raisonnement"],
+        "revision": true
       },
       {
         "q": "Idée qui découle logiquement d'une autre idée.",
@@ -351,7 +393,9 @@
           "en acte",
           "genre"
         ],
-        "defKey": "conséquences"
+        "defKey": "conséquences",
+        "keywords": [["découle","suivant","suit"],"logiquement"],
+        "revision": true
       },
       {
         "q": "Point d'arrivée d'un raisonnement.",
@@ -367,7 +411,9 @@
           "difference",
           "espece"
         ],
-        "defKey": "conclusion"
+        "defKey": "conclusion",
+        "keywords": [["point d'arrivée","arrivée","fin"], "raisonnement"],
+        "revision": true
       },
       {
         "q": "Groupe d'objets.",
@@ -383,7 +429,9 @@
           "legal",
           "subjectif"
         ],
-        "defKey": "genre"
+        "defKey": "genre",
+        "keywords": ["groupe","objet"],
+        "revision": true
       },
       {
         "q": "Sous-ensemble d'un genre.",
@@ -399,7 +447,9 @@
           "objectif",
           "en fait"
         ],
-        "defKey": "espèce"
+        "defKey": "espèce",
+        "keywords": [["sous-ensemble","sous ensemble"],"genre"],
+        "revision": true
       },
       {
         "q": "Objet singulier.",
@@ -415,7 +465,9 @@
           "obligation",
           "conclusion"
         ],
-        "defKey": "individu"
+        "defKey": "individu",
+        "keywords": ["objet","singulier"],
+        "revision": true
       },
       {
         "q": "Posséder les mêmes qualités.",
@@ -431,7 +483,9 @@
           "probable",
           "subjectif"
         ],
-        "defKey": "Identité"
+        "defKey": "Identité",
+        "keywords": [["même","mêmes"],["qualités","qualité"]],
+        "revision": true
       },
       {
         "q": "Avoir la même quantité ou valeur.",
@@ -447,7 +501,9 @@
           "principes",
           "immanent"
         ],
-        "defKey": "égalité"
+        "defKey": "égalité",
+        "keywords": [["même","équivalante"],["valeur","quantité"]],
+        "revision": true
       },
       {
         "q": "Non-identité ou non-égalité.",
@@ -463,7 +519,9 @@
           "genre",
           "conclusion"
         ],
-        "defKey": "différence"
+        "defKey": "différence",
+        "keywords": [["non-identité","non identité"],["non-égalité","non égalité"]],
+        "revision": true
       }
     ]
 }
