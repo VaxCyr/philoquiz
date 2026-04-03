@@ -6,6 +6,8 @@ let REMEDES = [];
 let DESIRES = [];
 let PHILOSOPHES_DEVOIR = [];
 let PHILOSOPHES_ETAT = [];
+let PHILOSOPHES_CONSCIENCE = [];
+let PHILOSOPHES_LIBERTE_TEMPS = [];
 let REPERES_DEFS = {};
 let DEFINITIONS_KEYWORDS = {};
 
@@ -53,6 +55,8 @@ async function loadChapterData(chapters) {
   DESIRES = [];
   PHILOSOPHES_DEVOIR = [];
   PHILOSOPHES_ETAT = [];
+  PHILOSOPHES_CONSCIENCE = [];
+  PHILOSOPHES_LIBERTE_TEMPS = [];
   
   // Load data for each selected chapter
   const chapterPromises = chapters.map(async chapter => {
@@ -105,6 +109,10 @@ async function loadChapterData(chapters) {
           if (data.philosophes) PHILOSOPHES_DEVOIR.push(...data.philosophes);
         } else if (chapter === 'etat') {
           if (data.philosophes) PHILOSOPHES_ETAT.push(...data.philosophes);
+        } else if (chapter === 'conscience') {
+          if (data.philosophes) PHILOSOPHES_CONSCIENCE.push(...data.philosophes);
+        } else if (chapter === 'liberte_temps') {
+          if (data.philosophes) PHILOSOPHES_LIBERTE_TEMPS.push(...data.philosophes);
         }
   });
   

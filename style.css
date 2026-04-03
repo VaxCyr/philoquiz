@@ -261,8 +261,8 @@
       border:1px solid var(--error);
     }
 
-    /* Underline work titles in author options */
-    .work{ text-decoration: underline; }
+    /* Italicize work titles in author options */
+    .work{ font-style: italic; text-decoration: none; }
     html.light-mode .site-footer{
       color:var(--muted);
       border-top:1px solid rgba(0,0,0,0.08)

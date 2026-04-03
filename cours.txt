@@ -378,6 +378,8 @@ Sur la Conscience :
          - aux autres - intersubjectivité
    + En psychologique, la consience spontanée (accompagne représentations mentales) et la conscience réflechie (résultat d'un effort délibérée d'introspection)
 
+   L'inconscient : L'ensemble des phénomènes physiologiques, psychiques et neuropsychiques qui échappent totalement à la conscience du sujet. En psychanalyse freudienne (1er topyque) l'inconscient c'est l'ensemble des phénomènes psychiques qu'une résistance empêche d'accéder à la conscience.
+
    Descartes, Discours de la méthodes
 
    (A PARTIR DE CE QUI SUIT IL FAUT SYNTHETISER EN ÇA :
@@ -435,3 +437,75 @@ Sur la Conscience :
          - avoir conscience de ses pensées
          - avoir conscience de ses actes
          - avoir conscience qu'on est l'auteur de ses pensées et actes
+
+   Freud, Métapsychologie
+      Existence de l'inconscient psychique est légitime (elle permet d'éclairer l'expérience et la pratique ; en médecine : effets positifs) et nécessaire (nécessité relative ; en science : quand pas d'autres moyens de l'expliquer)
+         C'est-à-dire comme preuves de cette existence on a les résultats de la psychanalyse et l'éclairage de phénomènes tel que les rêves
+      L'Homme n'est pas maître de ses propres pensées
+      Le rejet de l'hypothèse de l'existence de l'inconscient vient de la blessure narcissique que cette hypothèse leur inflige
+
+      Critiques de Freud/Théorie freudienne :
+         - Alain, Éléments de philosophie
+            Notion d'inconscient repose sur une confusion, elle est inutile
+            Ce que Freud explique par l'inconscient devra un jour s'expliquer par l'action/le corps
+         - Sartres, L'être et le néant
+            Thoérie du determinisme psychique nie la liberté
+            Mauvaise foi (=ne pas reconnaître sa responsabilité), cette théorie nous donne des excuses car c'est plus facile à vivre quand on est pas responsable
+         - Popper, Conjecture et réfutations
+            Théorie freudienne ne peut être vue comme une véritable théorie scientifique car elle n'est pas réfutable, dès que ça colle pas, elle est adaptée
+
+Sur la Liberté et le temps :
+
+   Sur la Liberté :
+
+      La « Liberté » c'est le pouvoir de faire ce que l'on veut
+      On distingue :
+      D'un point de vue morale 
+      - Le libre arbitre - Capacité pour l'agent de se décider par lui-même, de choisir entre le bien et le mal.
+      - L'autonomie - Ne pas être soumis à une loi imposée de l'extérieur mais obéir à une loi dont on est soi même l'auteur.
+      D'un point de vue politique
+      - Un individu est libre quand il dispose d'un ensemble de droits reconnus et protégés par l'État
+      - Un peuple est libre quand il décide des lois qu'il se donne « Liberté » est alors synonyme de « souveraineté populaire »
+
+      Thomas d'Aquin, Somme théologique
+         « L'homme possède le libre arbitre ; sans quoi, les conseils, les exhortations, les préceptes, les interdictions, les récompenses et les châtiments seraient vains. »
+         
+         Si l'être humain n'est pas libre, pourquoi le conseiller
+         Tout jugement moral/juridique suppose que celui qui est jugé aurait pu agir différemment de ce qu'il a fait
+         Tout jugement moral suppose de la responsabilité de ses actes
+         -> Ce qui suppose la liberté
+         1° ce qui suppose qu'il est la cause volontaire de ses actes
+         2° ce qui suppose qu'elle aurait pu agir autrement
+         3° ce qui suppose qu'il agit de manière éclairé
+
+         /opposition/
+         Spinoza, Lettre à Schuller
+            Le libre arbitre est une illusion dont la cause est l'ignorance de l'Homme
+            Pas de raison que l'Homme échappe au déterminisme physique ; i.e. Causes -> Évènements par le biais de loi(s) naturelle(s) 
+   
+   Sur le temps :
+
+      (Pas de def justement car personne n'est d'accord)
+
+      Théorie Objectiviste 
+         Le temps donné est objectif car lié à des phénomènes objectifs
+
+         Aristote, Physique
+            « Voici ce qu'est le temps : c'est le nombre du mouvement selon l'antérieur - postérieur »
+            Le temps est un aspect/dimension du mouvement/changement
+            Le temps est qualifiable
+            Le temps est mesurable par distance parcouru, quantité qui sépare un instant d'un autre
+      
+      Théorie Subjectiviste
+
+         Bergson, La pensée et le mouvant
+            Il distingue le temps réel du temps mesuré, le temps réel échappe aux sciences et mathématiques
+            D'après lui quand on mesure le temps on mesure un mobile ; exemple horloge, aiguille bouge donc on mesure une distance, on mesure de l'espace
+
+         Sartres, L'existentialisme est un humanisme
+            L'Homme n'est pas seulement en soi (i.e. quelque chose qui se définit par des caractéristiques objectives) mais aussi pour soi (i.e. être ce que l'on a conscience d'être).
+            L'Homme est liberté ce qui caractérise son existence
+            L'Homme fuis la liberté car il ne veut pas être responsable mais il est condamné à être libre
+
+            « Chez l'Homme, l'existence (ce qui fait que l'object est réel) précède l'essence (ce que c'est ; sa nature/définition) »
+            D'parès Sartres, on vit puis on s'auto donne une définition/essence

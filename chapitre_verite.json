@@ -157,6 +157,24 @@
       "revision": true
     },
     {
+      "q": "Selon Montaigne, que gagne l'homme à chercher une vérité qu'il ne peut atteindre ?",
+      "correct": "Il apprend à mieux se connaître et à connaître sa faiblesse",
+      "distractors": [
+        "Il finit par trouver une vérité absolue",
+        "Il devient supérieur aux autres animaux",
+        "Il prouve l'existence de Dieu",
+        "Il construit des machines parfaites",
+        "Il oublie ses soucis quotidiens",
+        "Il devient un savant universel",
+        "Il ne gagne absolument rien",
+        "Il découvre les lois de l'univers",
+        "Il devient immortel"
+      ],
+      "defText": "Dans ses <em>Essais</em>, Montaigne explique que la quête de vérité est utile non parce qu'on la trouve (elle nous échappe), mais parce qu'elle nous révèle nos propres limites.",
+      "keywords": [["connaissance","apprentissage","apprend"],["soi-même","connaître"]],
+      "revision": true
+    },
+    {
       "q": "Que signifie « objectif » ?",
       "correct": "Décrire l’objet comme il est",
       "distractors": [

@@ -14,6 +14,8 @@ PhiloQuiz est un quiz de révision en philosophie permettant de s’entraîner s
 * Justice
 * Vérité
 * Science & Raison
+* Consience
+* Liberté & Temps
 
 ---
 

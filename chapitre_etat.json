@@ -16,9 +16,33 @@
       "nom": "Hobbes",
       "oeuvre": "<em>Le Citoyen</em>",
       "idee": "État de nature → Contrat social → État de société. Guerre tous contre tous → Fin de la guerre. Selon Hobbes, la nature pousse les hommes à s'opposer"
+    },
+    {
+      "nom": "Locke",
+      "oeuvre": "<em>Second traité du gouvernement civil</em>",
+      "idee": "L'État a été créé pour défendre les libertés. Il définit les libertés de chacun pour rendre possible la coexistence des libertés de chacun (en opposition à Hobbes)."
     }
   ],
   "quiz_questions": [
+    {
+      "q": "Selon Locke, pourquoi l'État a-t-il été créé ?",
+      "correct": "Pour défendre les libertés et permettre leur coexistence",
+      "distractors": [
+        "Pour imposer la force du plus puissant",
+        "Pour supprimer toute liberté individuelle",
+        "Pour obéir à une loi divine",
+        "Pour assurer la richesse des élites",
+        "Pour préparer la guerre contre les autres",
+        "Pour punir les pécheurs",
+        "Pour abolir la propriété privée",
+        "Pour limiter les droits des citoyens",
+        "Pour satisfaire les désirs du monarque",
+        "Pour créer une religion d'État"
+      ],
+      "defText": "Dans son <em>Second traité du gouvernement civil</em>, Locke s'oppose à Hobbes en affirmant que le rôle de l'État est de protéger les libertés naturelles de chacun.",
+      "keywords": [["défense","défendre"],["liberté","libertés"]],
+      "revision": true
+    },
     {
       "q": "Parmi ces fonctions, laquelle fait partie des fonctions de l'État ?",
       "correct": "Juridique (représentation)",

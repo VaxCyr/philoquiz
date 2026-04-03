@@ -1,0 +1,294 @@
+{
+  "definitions": {
+    "liberté": "Le pouvoir de faire ce que l'on veut. Elle peut être morale (libre arbitre, autonomie) ou politique (droits protégés, souveraineté populaire).",
+    "libre_arbitre": "Capacité pour l'agent de se décider par lui-même, de choisir entre le bien et le mal.",
+    "autonomie": "Fait de ne pas être soumis à une loi imposée de l'extérieur, mais d'obéir à une loi dont on est soi-même l'auteur.",
+    "souveraineté_populaire": "Principe selon lequel un peuple est libre quand il décide lui-même des lois qu'il se donne.",
+    "temps_objectif": "Conception du temps comme dimension mesurable du mouvement (Aristote).",
+    "temps reel": "Il distingue le temps réel du temps mesuré, le temps réel échappe aux sciences et mathématiques. D'après lui quand on mesure le temps on mesure un mobile ; exemple horloge, aiguille bouge donc on mesure une distance, on mesure de l'espace."
+  },
+  "definitions_keywords": {
+    "liberté": [],
+    "libre_arbitre": [],
+    "autonomie": [],
+    "souveraineté_populaire": [],
+    "temps_objectif": [],
+    "durée": []
+  },
+  "philosophes": [
+    {
+      "nom": "Thomas d'Aquin",
+      "oeuvre": "<em>Somme théologique</em>",
+      "idee": "L'homme possède le libre arbitre, car sans lui les conseils, récompenses et châtiments seraient vains. La responsabilité morale suppose que l'on soit la cause volontaire de nos actes."
+    },
+    {
+      "nom": "Spinoza",
+      "oeuvre": "<em>Lettre à Schuller</em>",
+      "idee": "Le libre arbitre est une illusion résultant de l'ignorance des causes qui nous poussent à agir. L'homme est soumis au déterminisme physique comme tout autre objet de la nature."
+    },
+    {
+      "nom": "Aristote",
+      "oeuvre": "<em>Physique</em>",
+      "idee": "Le temps est le « nombre du mouvement selon l'antérieur et le postérieur ». C'est une dimension objective et mesurable du changement."
+    },
+    {
+      "nom": "Bergson",
+      "oeuvre": "<em>La pensée et le mouvant</em>",
+      "idee": "Le temps réel (la durée) échappe aux mathématiques. En mesurant le temps, la science ne mesure en réalité que de l'espace (le mouvement d'une aiguille d'horloge)."
+    },
+    {
+      "nom": "Sartre",
+      "oeuvre": "<em>L'existentialisme est un humanisme</em>",
+      "idee": "L'existence précède l'essence : l'homme existe d'abord, puis se définit par ses choix. Il est « condamné à être libre » car il est responsable de tout ce qu'il est."
+    }
+  ],
+  "quiz_questions": [
+    {
+      "q": "Selon Thomas d'Aquin, qu'est-ce qui serait vain si l'homme n'était pas libre ?",
+      "correct": "Les conseils, les récompenses et les châtiments",
+      "distractors": [
+        "La science et les mathématiques",
+        "Le plaisir et la douleur",
+        "Le mouvement des astres",
+        "La vie biologique",
+        "La mémoire du passé",
+        "Le langage humain",
+        "L'instinct de survie",
+        "La force physique",
+        "Le hasard des rencontres",
+        "La construction des cités"
+      ],
+      "defText": "Dans la <em>Somme théologique</em>, Thomas d'Aquin soutient que la liberté est le fondement nécessaire de toute morale et de toute justice : on ne peut conseiller ou punir qu'un être capable de choisir.",
+      "keywords": [["conseils","récompenses","châtiments"]],
+      "revision": true
+    },
+    {
+      "q": "Pourquoi le libre arbitre est-il une illusion selon Spinoza ?",
+      "correct": "Parce que nous ignorons les causes qui nous déterminent",
+      "distractors": [
+        "Parce que Dieu nous trompe",
+        "Parce que nous n'avons pas de volonté",
+        "Parce que la société nous manipule",
+        "Parce que le cerveau est trop petit",
+        "Parce que les lois sont injustes",
+        "Parce que nous agissons sans raison",
+        "Parce que le futur est déjà écrit",
+        "Parce que nous sommes des machines",
+        "Parce que nos sens sont limités",
+        "Parce que la vérité est inaccessible"
+      ],
+      "defText": "Dans sa <em>Lettre à Schuller</em>, Spinoza explique que les hommes se croient libres car ils sont conscients de leurs actions, mais ignorants des causes physiques ou psychiques qui les poussent à agir (i.e. déterminisme physique).",
+      "keywords": [["igonrance","ignorons","ignore"],"causes",["agir","determinent","determine","actions"]],
+      "revision": true
+    },
+    {
+      "q": "Comment Aristote définit-il le temps ?",
+      "correct": "Le nombre du mouvement selon l'antérieur et le postérieur",
+      "distractors": [
+        "Une illusion de la conscience",
+        "Un fleuve qui s'écoule",
+        "La marque du créateur",
+        "Un sentiment de nostalgie",
+        "L'attente du futur",
+        "Une force destructrice",
+        "Le rythme du cœur",
+        "Un espace infini",
+        "Une succession de moments présents",
+        "Le produit de l'imagination"
+      ],
+      "defText": "Dans la <em>Physique</em>, Aristote lie indissociablement le temps au changement : il est ce qui permet de mesurer l'avant et l'après dans un mouvement.",
+      "keywords": ["nombre","mouvement"],
+      "revision": true
+    },
+    {
+      "q": "Que mesure-t-on réellement selon Bergson quand on mesure le temps ?",
+      "correct": "De l'espace (le mouvement d'un mobile)",
+      "distractors": [
+        "La profondeur de l'âme",
+        "La vitesse de la pensée",
+        "L'intensité du désir",
+        "La vérité absolue",
+        "La durée réelle",
+        "La volonté de vivre",
+        "La fin du monde",
+        "La rotation de la Terre",
+        "La fatigue du corps",
+        "L'ordre de la société"
+      ],
+      "defText": "Pour Bergson dans <em>La pensée et le mouvant</em>, la science spatialise le temps. Le temps vécu (durée) est une expérience qualitative que les horloges ne peuvent pas saisir.",
+      "keywords": ["espace"],
+      "revision": true
+    },
+    {
+      "q": "Que signifie la formule de Sartre « l'existence précède l'essence » ?",
+      "correct": "L'homme vit puis se définit par ses actes",
+      "distractors": [
+        "L'homme naît avec un destin tracé",
+        "Le corps est plus important que l'esprit",
+        "Dieu a un projet pour chaque homme",
+        "L'homme est un objet comme les autres",
+        "La nature humaine est immuable",
+        "Il faut vivre avant de penser",
+        "Le passé détermine le futur",
+        "La société crée l'individu",
+        "L'instinct commande la raison",
+        "On ne peut pas changer qui l'on est"
+      ],
+      "defText": "Dans <em>L'existentialisme est un humanisme</em>, Sartre explique que contrairement à un objet (comme un coupe-papier) fabriqué selon un concept, l'homme n'a pas de nature prédéfinie.",
+      "keywords": [["existence","vit","vie"],["puis","ensuite","après"],"se définit"],
+      "revision": true
+    },
+    {
+      "q": "Pourquoi l'homme est-il « condamné à être libre » selon Sartre ?",
+      "correct": "Car il ne s'est pas créé lui-même mais est responsable de tout ce qu'il fait",
+      "distractors": [
+        "Car la liberté est un fardeau juridique",
+        "Car il doit obéir aux lois de l'État",
+        "Car il est enfermé dans sa conscience",
+        "Car il ne peut pas s'empêcher de penser",
+        "Car la prison est l'opposé de la liberté",
+        "Car il est soumis au destin",
+        "Car Dieu l'a abandonné",
+        "Car il doit travailler pour vivre",
+        "Car la vérité l'oblige à agir",
+        "Car ses désirs sont infinis"
+      ],
+      "defText": "Sartre affirme que nous sommes « jetés » dans le monde sans l'avoir choisi, mais qu'à partir de là, chaque acte est un choix dont nous portons l'entière responsabilité.",
+      "keywords": ["responsable",["tout ce qu'il fait","tous ses actes","ses actes"]],
+      "revision": true
+    },
+    {
+      "q": "Quelle est la définition de la liberté selon le cours ?",
+      "correct": "Le pouvoir de faire ce que l'on veut",
+      "distractors": [
+        "L'absence totale de lois",
+        "La satisfaction de tous les désirs",
+        "Le pouvoir de dominer les autres",
+        "L'obéissance aveugle au destin",
+        "Le droit de ne rien faire",
+        "La possession de richesses",
+        "Le rejet de toute autorité",
+        "Le fait d'agir sans réfléchir",
+        "La soumission à la nature",
+        "L'ignorance des conséquences"
+      ],
+      "defKey": "liberté",
+      "keywords": ["pouvoir de faire ce que l'on veut"],
+      "revision": true
+    },
+    {
+      "q": "Qu'est-ce que l'autonomie d'un point de vue moral ?",
+      "correct": "Obéir à une loi dont on est soi-même l'auteur",
+      "distractors": [
+        "Faire ce qui nous plaît sans limites",
+        "Suivre les lois de la société par peur",
+        "Obéir aux ordres d'un chef suprême",
+        "Agir selon ses instincts biologiques",
+        "Refuser toute forme de règle",
+        "Se soumettre à une autorité religieuse",
+        "Agir au hasard sans but précis",
+        "Suivre la mode et les opinions",
+        "Être indépendant financièrement",
+        "Vivre seul sans les autres"
+      ],
+      "defKey": "autonomie",
+      "keywords": [["obeissance","obéir"],"loi",["on est l'auteur","soi-même l'auteur","soi même l'auteur"]],
+      "revision": true
+    },
+    {
+      "q": "Quand dit-on qu'un peuple est libre politiquement ?",
+      "correct": "Quand il décide des lois qu'il se donne (souveraineté populaire)",
+      "distractors": [
+        "Quand il n'y a plus de gouvernement",
+        "Quand il est le plus riche du monde",
+        "Quand il a conquis ses voisins",
+        "Quand il possède des armes puissantes",
+        "Quand il refuse de payer des impôts",
+        "Quand il suit une tradition millénaire",
+        "Quand il est dirigé par un roi sage",
+        "Quand il ignore les lois internationales",
+        "Quand il vit en autarcie complète",
+        "Quand il n'a aucune règle sociale"
+      ],
+      "defKey": "souveraineté_populaire",
+      "keywords": ["décide","loi"],
+      "revision": true
+    },
+    {
+      "q": "Quelles sont les conditions de la responsabilité selon Thomas d'Aquin ?",
+      "correct": "Être cause volontaire, pouvoir agir autrement et agir de manière éclairée",
+      "distractors": [
+        "Être riche, puissant et célèbre",
+        "Être jeune, en bonne santé et intelligent",
+        "Obéir aux lois, à Dieu et à la famille",
+        "Avoir de la mémoire, de l'imagination et de la force",
+        "Vouloir le bien, éviter le mal et prier",
+        "Être libre, égal et fraternel",
+        "Connaître le passé, vivre le présent et prévoir l'avenir",
+        "Avoir un corps, une âme et un esprit",
+        "Être citoyen, majeur et vacciné",
+        "Ne jamais se tromper, être parfait et sage"
+      ],
+      "defText": "Tout jugement moral suppose la responsabilité, qui repose sur trois piliers : 1° être la cause volontaire de ses actes, 2° avoir pu agir autrement, 3° agir de manière éclairée.",
+      "keywords": ["cause volontaire","agir autrement","agir de manière éclairée"],
+      "revision": true
+    },
+    {
+      "q": "Selon Sartre, qu'est-ce qu'être « pour soi » ?",
+      "correct": "Être ce que l'on a conscience d'être",
+      "distractors": [
+        "Être un objet défini par des caractéristiques objectives",
+        "Être un animal guidé par ses instincts",
+        "Être une machine programmée",
+        "Être un reflet du regard des autres",
+        "Être un fragment de la divinité",
+        "Être un produit de son environnement social",
+        "Être une substance immuable",
+        "Être une illusion de la matière",
+        "Être un esclave de ses passions",
+        "Être un corps sans esprit"
+      ],
+      "defText": "L'Homme n'est pas seulement en soi (i.e. quelque chose qui se définit par des caractéristiques objectives) mais aussi pour soi (i.e. être ce que l'on a conscience d'être)",
+      "keywords": ["être","conscience","d'être"],
+      "revision": true
+    },
+    {
+      "q": "Comment Bergson distingue-t-il le temps réel du temps mesuré ?",
+      "correct": "Le temps réel échappe à la science et aux mathématiques",
+      "distractors": [
+        "Le temps réel est une succession d'instants immobiles et juxtaposés",
+        "Le temps mesuré correspond à la durée pure vécue par la conscience",
+        "Le temps de la science est une donnée immédiate de la conscience",
+        "La mesure du temps permet de saisir l'essence du mouvement",
+        "Le temps réel est spatialisé pour être mieux appréhendé par l'esprit",
+        "La science définit le temps réel comme une continuité hétérogène",
+        "Il n'y a aucune différence de nature entre la durée et l'espace",
+        "Le temps mesuré est une force créatrice d'imprévisibilité",
+        "Le temps réel est une quantité divisible en segments égaux",
+        "Le temps mathématique exprime la qualité pure des états psychologiques"
+      ],
+      "defKey": "temps reel",
+      "keywords": [],
+      "revision": true
+    },
+    {
+      "q": "Pourquoi la science ne mesure-t-elle que de « l'espace » selon Bergson ?",
+      "correct": "Car elle mesure le mouvement d'un mobile (comme une aiguille d'horloge)",
+      "distractors": [
+        "Car le temps n'existe pas pour les savants",
+        "Car l'espace est plus facile à calculer",
+        "Car la conscience est une illusion spatiale",
+        "Car les horloges sont imprécises",
+        "Car le temps est une ligne droite",
+        "Car la science ignore la matière",
+        "Car le mouvement est immobile",
+        "Car les mathématiques sont limitées au volume",
+        "Car le présent est un point dans l'espace",
+        "Car la réalité est purement géométrique"
+      ],
+      "defText": "Bergson soutient que mesurer le temps revient à mesurer une distance parcourue par un objet (mobile), ce qui spatialise le temps et en fait perdre la nature réelle (la durée).",
+      "keywords": [],
+      "revision": true
+    }
+  ]
+}

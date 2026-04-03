@@ -5,7 +5,8 @@
     "intentionnalité": "Rapport de la conscience au monde.",
     "intersubjectivité": "Rapport de la conscience aux autres.",
     "substance_pensante": "L'esprit, quelque chose qui pense (Descartes).",
-    "substance_étendue": "Le corps, quelque chose qui est étendu, flexible et muable (Descartes)."
+    "substance_étendue": "Le corps, quelque chose qui est étendu, flexible et muable (Descartes).",
+    "inconscient": "L'ensemble des phénomènes psychiques qui échappent à la conscience. Chez Freud (1ère topique), c'est ce qu'une résistance empêche d'accéder à la conscience."
   },
   "definitions_keywords": {
     "conscience": [["voix","sentiment"], "intérieur","actions","pensées"],
@@ -13,7 +14,8 @@
     "intentionnalité": ["rapport","conscience","monde"],
     "intersubjectivité": ["rapport","conscience","autres"],
     "substance_pensante": [["l'esprit","esprit"]],
-    "substance_étendue": ["corps"]
+    "substance_étendue": ["corps"],
+    "inconscient": ["phénomènes","psychiques","conscience"]
   },
   "philosophes": [
     {
@@ -30,11 +32,31 @@
       "nom": "John Locke",
       "oeuvre": "<em>Essai sur l'entendement humain</em>",
       "idee": "La conscience de soi est la clé de l'identité. Être conscient, c'est avoir conscience de ses pensées et de ses actes, et savoir qu'on en est l'auteur."
+    },
+    {
+      "nom": "Freud",
+      "oeuvre": "<em>Métapsychologie</em>",
+      "idee": "L'existence de l'inconscient est légitime (efficacité médicale) et nécessaire (explication scientifique). L'homme n'est pas maître de ses propres pensées. Le rejet de cette idée vient de la blessure narcissique qu'elle inflige."
+    },
+    {
+      "nom": "Alain",
+      "oeuvre": "<em>Éléments de philosophie</em>",
+      "idee": "La notion d'inconscient repose sur une confusion et est inutile. Ce que Freud explique par l'inconscient devra un jour s'expliquer par l'action du corps."
+    },
+    {
+      "nom": "Sartre",
+      "oeuvre": "<em>L'être et le néant</em>",
+      "idee": "La théorie du déterminisme psychique (inconscient) est une forme de 'mauvaise foi' : elle sert d'excuse pour ne pas reconnaître sa responsabilité et sa liberté."
+    },
+    {
+      "nom": "Popper",
+      "oeuvre": "<em>Conjectures et réfutations</em>",
+      "idee": "La théorie freudienne n'est pas scientifique car elle n'est pas réfutable : elle s'adapte toujours pour ne jamais être mise en défaut par l'expérience."
     }
   ],
   "quiz_questions": [
     {
-      "q": "Quelle est la certitude de Descartes dans les Discours de la méthode?",
+      "q": "Quelle est la certitude de Descartes dans les <em>Discours de la méthode</em> ?",
       "correct": "Je pense donc je suis",
       "distractors": [
         "Le monde existe",
@@ -54,7 +76,7 @@
     },
     {
       "q": "Que signifie l'expression de Pascal 'roseau pensant' ?",
-      "correct": "L'homme est fragile mais dotée d'une pensée",
+      "correct": "L'homme est fragile mais doté d'une pensée",
       "distractors": [
         "L'homme est une plante",
         "L'homme est purement matériel",
@@ -105,7 +127,7 @@
         "Une réaction chimique",
         "Un souffle biologique"
       ],
-      "defText": "Dans ses <em>Méditations</em> (citées dans le <em>Discours de la méthode</em>), Descartes distingue la substance pensante (l'esprit) de la substance étendue (e corps).",
+      "defText": "Dans ses <em>Méditations</em> (citées dans le <em>Discours de la méthode</em>), Descartes distingue la substance pensante (l'esprit) de la substance étendue (le corps).",
       "keywords": ["substance","pensante"],
       "revision": true
     },
@@ -145,6 +167,100 @@
       ],
       "defText": "Dans les <em>Pensées</em>, Pascal souligne que la connaissance de soi passe à la fois par la conscience intérieure et par le rapport aux autres.",
       "keywords": [["soi-même","soi même"],"autres"],
+      "revision": true
+    },
+    {
+      "q": "Quelle critique Sartre fait-il à la théorie de l'inconscient ?",
+      "correct": "C'est une forme de mauvaise foi pour fuir sa liberté",
+      "distractors": [
+        "C'est une théorie trop religieuse",
+        "L'inconscient est trop complexe",
+        "Freud a oublié le rôle du corps",
+        "La psychanalyse est une science exacte",
+        "L'inconscient n'existe que chez les fous",
+        "C'est une invention des médecins",
+        "L'inconscient est le siège de la raison",
+        "Elle ne s'applique qu'aux enfants",
+        "C'est une théorie trop optimiste",
+        "L'inconscient est le moteur du progrès"
+      ],
+      "defText": "Dans <em>L'être et le néant</em>, Sartre voit dans l'inconscient une excuse commode pour nier notre responsabilité absolue : c'est ce qu'il appelle la 'mauvaise foi'.",
+      "keywords": ["mauvaise foi",["fuir","fuit","fuis"],"liberté"],
+      "revision": true
+    },
+    {
+      "q": "Pourquoi Popper considère-t-il que la psychanalyse n'est pas une science ?",
+      "correct": "Parce qu'elle n'est pas réfutable",
+      "distractors": [
+        "Parce qu'elle utilise des mathématiques",
+        "Parce qu'elle soigne des gens",
+        "Parce qu'elle est trop ancienne",
+        "Parce qu'elle ne parle pas du corps",
+        "Parce qu'elle est purement logique",
+        "Parce qu'elle refuse le dialogue",
+        "Parce qu'elle est trop complexe",
+        "Parce qu'elle est basée sur des mythes",
+        "Parce qu'elle ne fait pas d'expériences",
+        "Parce qu'elle est subjective"
+      ],
+      "defText": "Pour Karl Popper, une théorie est scientifique si on peut imaginer une expérience qui la contredit (réfutabilité). La psychanalyse, elle, trouve toujours une explication pour confirmer ses thèses.",
+      "keywords": [["pas réfutable","irréfutable","iréfutable","non réfutable"]],
+      "revision": true
+    },
+    {
+      "q": "Selon Freud, pourquoi l'existence de l'inconscient est-elle légitime ?",
+      "correct": "Pour son efficacité dans la pratique médicale",
+      "distractors": [
+        "Parce que tout le monde le sent",
+        "Parce que c'est écrit dans les livres",
+        "Parce que c'est une loi biologique",
+        "Parce que Dieu l'a voulu",
+        "Parce que c'est plus simple ainsi",
+        "Parce que le cerveau est grand",
+        "Parce que les rêves sont jolis",
+        "Parce que la société l'impose",
+        "Parce que c'est une évidence logique",
+        "Parce que c'est une théorie populaire"
+      ],
+      "defText": "Dans sa <em>Métapsychologie</em>, Freud soutient que l'hypothèse de l'inconscient est légitime car elle permet de soigner des troubles psychiques que la conscience seule n'explique pas.",
+      "keywords": ["efficacité","médicale"],
+      "revision": true
+    },
+    {
+      "q": "Selon Descartes, que représente l'idée de Dieu (la perfection) dans notre esprit ?",
+      "correct": "La marque du créateur dans son ouvrage",
+      "distractors": [
+        "Une invention de la société",
+        "Une peur de la mort",
+        "Une erreur de raisonnement",
+        "Un souvenir d'enfance",
+        "Une preuve de notre propre perfection",
+        "Une illusion des sens",
+        "Un désir insatiable",
+        "Une loi biologique",
+        "Une tradition culturelle",
+        "Un pur hasard"
+      ],
+      "defText": "Dans la 3ème <em>Méditation</em>, Descartes soutient que nous, êtres imparfaits, ne pouvons pas être la cause de l'idée de perfection. Cette idée a donc été déposée en nous par Dieu, comme la « marque du créateur ».",
+      "keywords": [["marque","trace"],["créateur","dieu"],["ouvrage","travail"]],
+      "revision": true
+    },
+    {
+      "q": "Quel est l'argument de Descartes pour prouver l'existence de Dieu dans sa 5ème Méditation ?",
+      "correct": "Puisque Dieu est parfait, il possède toutes les perfections, dont l'existence",
+      "distractors": [
+        "Le monde est si beau qu'il doit avoir un créateur",
+        "Le mal n'existe pas, donc Dieu existe",
+        "Nous avons besoin de Dieu pour être heureux",
+        "Les miracles prouvent sa présence",
+        "La Bible le dit, donc c'est vrai",
+        "Le hasard ne peut pas créer la vie",
+        "L'ordre de l'univers est une preuve mathématique",
+        "Sans Dieu, la vérité serait relative",
+        "L'homme est parfait, donc Dieu existe"
+      ],
+      "defText": "Dans la 5ème <em>Méditation</em>, Descartes utilise l'argument ontologique : l'existence est une perfection ; or Dieu possède toutes les perfections par définition, donc il existe nécessairement.",
+      "keywords": ["parfait",["toutes","toute"],"perfection",["l'existence","existence"]],
       "revision": true
     }
   ]

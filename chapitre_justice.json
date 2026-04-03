@@ -216,6 +216,24 @@
       "keywords": []
     },
     {
+      "q": "Selon Locke, quel est le seul aspect universel de la justice ?",
+      "correct": "Le fait qu'il y ait des règles (le besoin de règles)",
+      "distractors": [
+        "Le contenu exact des lois",
+        "La punition des coupables",
+        "L'égalité parfaite des richesses",
+        "Le respect de la religion",
+        "La protection du plus fort",
+        "L'absence de conflits",
+        "Le droit de propriété absolue",
+        "La liberté totale",
+        "Le bonheur pour tous"
+      ],
+      "defText": "Dans l'<em>Essai sur l'entendement humain</em>, Locke soutient que les règles de justice sont des inventions humaines pour résoudre des problèmes pratiques. Ce qui est universel, ce n'est pas telle ou telle règle, mais la nécessité d'en avoir.",
+      "keywords": [["présence","presence","il y a", "ait"],"règles"],
+      "revision": true
+    },
+    {
       "q": "Ce qui est juste ou permis par les lois",
       "correct": "légal",
       "distractors": [
