@@ -308,7 +308,7 @@
         "revision": true
       },
       {
-        "q": "Une idée montrant une chose telle qu'elle est ou raconte les faits tels qu'ils se sont passés, c'est une idée ...",
+        "q": "Une idée montrant une chose telle qu'elle est ou raconte les faits tels qu'ils se sont passés",
         "correct": "vrai",
         "distractors": [
           "certain",
@@ -326,7 +326,7 @@
         "revision": true
       },
       {
-        "q": "Quelque chose dont il est impossible de douter. C'est quelque chose de ...",
+        "q": "Quelque chose dont il est impossible de douter.",
         "correct": "certain",
         "distractors": [
           "probable",

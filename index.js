@@ -586,17 +586,44 @@ function startRevision(){
     selector.className = 'difficulty-selector';
 
     ['Facile', 'Moyen', 'Difficile'].forEach((name, i) => {
-    const btn = document.createElement('div');
-    btn.className = 'difficulty-btn';
-    btn.textContent = name;
-    btn.onclick = () => startRevisionQuestions(['easy','medium','hard'][i]);
-    selector.appendChild(btn);
+        const btn = document.createElement('div');
+        btn.className = 'difficulty-btn';
+        btn.textContent = name;
+        btn.onclick = () => showRevisionCountSelector(['easy','medium','hard'][i]);
+        selector.appendChild(btn);
     });
 
     main.appendChild(selector);
 }
 
-function startRevisionQuestions(difficulty){
+function showRevisionCountSelector(difficulty) {
+    main.innerHTML = '';
+    const title = document.createElement('div');
+    title.className = 'question';
+    title.textContent = 'Mode Révision — Combien de questions ?';
+    main.appendChild(title);
+
+    const selector = document.createElement('div');
+    selector.className = 'difficulty-selector'; // Reusing the same grid layout
+
+    [5, 10, 20].forEach(count => {
+        const btn = document.createElement('div');
+        btn.className = 'difficulty-btn';
+        btn.textContent = count + ' questions';
+        btn.onclick = () => startRevisionQuestions(difficulty, count);
+        selector.appendChild(btn);
+    });
+
+    main.appendChild(selector);
+
+    const backBtn = document.createElement('button');
+    backBtn.textContent = ' Retour au choix de difficulté';
+    backBtn.style.marginTop = '20px';
+    backBtn.onclick = startRevision;
+    main.appendChild(backBtn);
+}
+
+function startRevisionQuestions(difficulty, requestedCount){
     setMode('Révision — ' + (difficulty==='easy'?'Facile':difficulty==='medium'?'Moyen':'Difficile'));
     score = 0;
     
@@ -660,7 +687,7 @@ function startRevisionQuestions(difficulty){
         }
     });
 
-    const items = randSort(pool).slice(0, 10);
+    const items = randSort(pool).slice(0, requestedCount);
     maxQ = items.length;
     updateScore();
     let idx = 0;
