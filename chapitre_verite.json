@@ -173,52 +173,6 @@
       "defText": "Dans ses <em>Essais</em>, Montaigne explique que la quête de vérité est utile non parce qu'on la trouve (elle nous échappe), mais parce qu'elle nous révèle nos propres limites.",
       "keywords": [["connaissance","apprentissage","apprend"],["soi-même","connaître"]],
       "revision": true
-    },
-    {
-      "q": "Que signifie « objectif » ?",
-      "correct": "Décrire l’objet comme il est",
-      "distractors": [
-        "Exprimer son point de vue personnel",
-        "Comparer des avis différents",
-        "Affirmer sans preuve",
-        "Suivre une coutume",
-        "Croire selon la majorité",
-        "Imposer son opinion",
-        "Douter systématiquement",
-        "Penser par analogie"
-      ],
-      "defKey": "objectif",
-      "keywords": ["décrire","il est"]
-    },
-    {
-      "q": "Que signifie « subjectif » ?",
-      "correct": "Refléter le point de vue de celui qui parle",
-      "distractors": [
-        "Décrire l’objet comme il est",
-        "Comparer des subjectivités",
-        "Résumer des faits",
-        "Énoncer des lois",
-        "Raisonner par calcul",
-        "Exprimer une vérité absolue",
-        "Déterminer une règle universelle"
-      ],
-      "defKey": "subjectif",
-      "keywords": ["point de vue"]
-    },
-    {
-      "q": "Que signifie « intersubjectif » ?",
-      "correct": "Produit d’une comparaison entre plusieurs subjectivités",
-      "distractors": [
-        "Vérité absolue",
-        "Opinion personnelle",
-        "Règle juridique",
-        "Connaissance divine",
-        "Fait brut",
-        "Principe moral universel",
-        "Mesure scientifique incontestable"
-      ],
-      "defKey": "intersubjectif",
-      "keywords": ["comparaison", "subjectivités"]
     }
   ]
 }

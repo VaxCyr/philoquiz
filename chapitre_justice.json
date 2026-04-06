@@ -232,40 +232,6 @@
       "defText": "Dans l'<em>Essai sur l'entendement humain</em>, Locke soutient que les règles de justice sont des inventions humaines pour résoudre des problèmes pratiques. Ce qui est universel, ce n'est pas telle ou telle règle, mais la nécessité d'en avoir.",
       "keywords": [["présence","presence","il y a", "ait"],"règles"],
       "revision": true
-    },
-    {
-      "q": "Ce qui est juste ou permis par les lois",
-      "correct": "légal",
-      "distractors": [
-        "Ce qui est conforme à une morale supérieure",
-        "Ce qui est nécessaire",
-        "Ce qui est absolu",
-        "Ce qui est en droit",
-        "Ce qui est en fait",
-        "Ce qui est universel",
-        "Ce qui dépend de la coutume",
-        "Ce qui est probable",
-        "Ce qui est subjectif"
-      ],
-      "defKey": "légal",
-      "keywords": ["juste","permis","lois"]
-    },
-    {
-      "q": "Conforme à un principe supérieur de morale ou de justice",
-      "correct": "légitime",
-      "distractors": [
-        "Permis par les lois positives",
-        "Dicté par la coutume",
-        "Imposé par la force",
-        "Accepté par la majorité",
-        "Validé par la tradition",
-        "Recommandé par la religion",
-        "Avantageux pour les puissants",
-        "Universellement vrai",
-        "Scientifiquement prouvé"
-      ],
-      "defKey": "légitime",
-      "keywords": ["conforme","principe supérieur","morale","justice"]
     }
   ]
 }

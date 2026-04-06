@@ -680,6 +680,24 @@
       ],
       "defText": "Pour Pascal, l’homme est incapable de demeurer dans le présent ; or, seul le présent pourrait contenir un véritable bonheur.",
       "keywords": ["jamais","présent","bonheur"]
+    },
+    {
+      "q": "Quelle est la conception stoïcienne du bonheur ?",
+      "correct": "Vivre selon la nature (usage de la raison)",
+      "distractors": [
+        "Rechercher tous les plaisirs sensibles",
+        "Accumuler des richesses matérielles",
+        "Éviter toute forme de souffrance",
+        "Obéir aveuglément au destin",
+        "Se retirer du monde social",
+        "Prier les dieux pour la chance",
+        "Dominer les autres hommes",
+        "Ignorer les lois de la cité",
+        "Se fier uniquement aux émotions",
+        "Vivre sans aucune contrainte"
+      ],
+      "defText": "Pour les stoïciens (Zénon, Épictète), le bonheur consiste à accorder sa volonté à l'ordre rationnel du monde (vivre selon la nature).",
+      "keywords": ["nature",["raison","rationnel"]]
     }
   ]
 }

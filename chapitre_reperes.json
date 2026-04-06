@@ -522,6 +522,114 @@
         "defKey": "différence",
         "keywords": [["non-identité","non identité"],["non-égalité","non égalité"]],
         "revision": true
+      },
+      {
+        "q": "Usage de la force imposant l'obéissance.",
+        "correct": "contrainte",
+        "distractors": [
+          "obligation",
+          "legal",
+          "legitime",
+          "necessaire",
+          "absolu",
+          "en fait",
+          "en puissance",
+          "certain",
+          "vrai"
+        ],
+        "defKey": "contrainte",
+        "keywords": ["force","obéissance"],
+        "revision": true
+      },
+      {
+        "q": "Quand on considère que l'injonction émane d'une autorité légitime.",
+        "correct": "obligation",
+        "distractors": [
+          "contrainte",
+          "legal",
+          "legitime",
+          "necessaire",
+          "absolu",
+          "en fait",
+          "en puissance",
+          "certain",
+          "vrai"
+        ],
+        "defKey": "obligation",
+        "keywords": ["autorité","légitime"],
+        "revision": true
+      },
+      {
+        "q": "Ce qui est pleinement réalisé.",
+        "correct": "en acte",
+        "distractors": [
+          "en puissance",
+          "en fait",
+          "en droit",
+          "absolu",
+          "necessaire",
+          "certain",
+          "vrai",
+          "objectif",
+          "singulier"
+        ],
+        "defKey": "en_acte",
+        "keywords": [["réalisé","achevé"],"acte"],
+        "revision": true
+      },
+      {
+        "q": "Ce qui n'est qu'une simple possibilité.",
+        "correct": "en puissance",
+        "distractors": [
+          "en acte",
+          "en fait",
+          "en droit",
+          "absolu",
+          "necessaire",
+          "certain",
+          "vrai",
+          "objectif",
+          "singulier"
+        ],
+        "defKey": "en_puissance",
+        "keywords": ["simple",["possibilité","potentiel"]],
+        "revision": true
+      },
+      {
+        "q": "Ce qui est juste ou permis par les lois.",
+        "correct": "légal",
+        "distractors": [
+          "légitime",
+          "en droit",
+          "en fait",
+          "contrainte",
+          "obligation",
+          "necessaire",
+          "absolu",
+          "vrai",
+          "certain"
+        ],
+        "defKey": "légal",
+        "keywords": ["juste","permis","lois"],
+        "revision": true
+      },
+      {
+        "q": "Conforme à un principe supérieur de morale ou de justice.",
+        "correct": "légitime",
+        "distractors": [
+          "légal",
+          "en droit",
+          "en fait",
+          "contrainte",
+          "obligation",
+          "necessaire",
+          "absolu",
+          "vrai",
+          "certain"
+        ],
+        "defKey": "légitime",
+        "keywords": ["conforme","principe supérieur","morale","justice"],
+        "revision": true
       }
     ]
 }

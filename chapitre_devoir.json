@@ -68,39 +68,6 @@
       "keywords": ["impératif","conscience","imposant",["de faire","d'accomplir","d'éxecuté"],["prescrit","demandé"]]
     },
     {
-      "q": "Quelle est la différence entre 'contrainte' et 'obligation' ?",
-      "correct": "Contrainte = usage de la force / Obligation = autorité légitime",
-      "distractors": [
-        "Ce sont des synonymes",
-        "Contrainte = morale / Obligation = physique",
-        "Contrainte = sociale / Obligation = individuelle",
-        "Contrainte = choix personnel / Obligation = instinct",
-        "Contrainte = religieuse / Obligation = naturelle",
-        "Contrainte = règle morale / Obligation = sentiment personnel",
-        "Contrainte = volonté individuelle / Obligation = pression sociale",
-        "Contrainte = choix libre / Obligation = recommandation",
-        "Contrainte = sanction morale / Obligation = sanction juridique",
-        "Contrainte = contrainte économique / Obligation = contrainte morale",
-        "Contrainte = absence de responsabilité / Obligation = responsabilité accrue",
-        "Contrainte = préférence collective / Obligation = règle privée",
-        "Contrainte = contrainte psychologique / Obligation = contrainte physique",
-        "Contrainte = contrainte temporaire / Obligation = contrainte permanente",
-        "Contrainte = imposition volontaire / Obligation = imposition involontaire",
-        "Contrainte = discours moral / Obligation = loi écrite",
-        "Contrainte = menace implicite / Obligation = simple affente",
-        "Contrainte = coercition légale / Obligation = sanction religieuse",
-        "Contrainte = contrainte sociale douce / Obligation = contrainte administrative",
-        "Contrainte = absence de légitimité / Obligation = effet contraignant sans force",
-        "Contrainte = ordre moral intérieur / Obligation = ordre extérieur",
-        "Contrainte = effet de la coutume / Obligation = règle universelle",
-        "Contrainte = contrainte institutionnelle / Obligation = contrat personnel",
-        "Contrainte = contrainte intellectuelle / Obligation = contrainte émotionnelle",
-        "Contrainte = punition assurée / Obligation = simple recommandation"
-      ],
-      "defText": "Contrainte : injonction accompagnée de l'usage d'une FORCE imposant l'obéissance. Obligation : quand on considère que l'injonction émane d'une AUTORITÉ LÉGITIME.",
-      "keywords": ["contrainte","force","obligation","autorité légitime"]
-    },
-    {
       "q": "Quel stoïcien est cité en lien avec le devoir ?",
       "correct": "Zénon",
       "distractors": [
