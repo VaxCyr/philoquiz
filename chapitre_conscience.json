@@ -72,7 +72,7 @@
       ],
       "defText": "Dans le <em>Discours de la méthode</em>, Descartes parvient à cette première certitude après avoir utilisé la méthode du doute : même si je doute de tout, je ne peux pas douter que je suis en train de douter, donc de penser.",
       "keywords": ["pense","donc","suis"],
-      "revision": true
+      "revision": false
     },
     {
       "q": "Que signifie l'expression de Pascal « roseau pensant » ?",
@@ -129,7 +129,7 @@
       ],
       "defText": "Dans ses <em>Méditations</em> (citées dans le <em>Discours de la méthode</em>), Descartes distingue la substance pensante (l'esprit) de la substance étendue (le corps).",
       "keywords": ["substance","pensante"],
-      "revision": true
+      "revision": false
     },
     {
       "q": "Quelles sont les deux causes de l'erreur selon Descartes ?",
@@ -261,7 +261,7 @@
       ],
       "defText": "Dans la 5ème <em>Méditation</em>, Descartes utilise l'argument ontologique : l'existence est une perfection ; or Dieu possède toutes les perfections par définition, donc il existe nécessairement.",
       "keywords": ["parfait",["toutes","toute"],"perfection",["l'existence","existence"]],
-      "revision": true
+      "revision": false
     }
   ]
 }

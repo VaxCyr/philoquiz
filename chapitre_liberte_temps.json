@@ -4,7 +4,7 @@
     "libre_arbitre": "Capacité pour l'agent de se décider par lui-même, de choisir entre le bien et le mal.",
     "autonomie": "Fait de ne pas être soumis à une loi imposée de l'extérieur, mais d'obéir à une loi dont on est soi-même l'auteur.",
     "souveraineté_populaire": "Principe selon lequel un peuple est libre quand il décide lui-même des lois qu'il se donne.",
-    "temps reel": "Il distingue le temps réel du temps mesuré, le temps réel échappe aux sciences et mathématiques. D'après lui quand on mesure le temps on mesure un mobile ; exemple horloge, aiguille bouge donc on mesure une distance, on mesure de l'espace."
+    "temps reel": "Le temps réel échappe aux sciences et mathématiques."
   },
   "definitions_keywords": {
     "liberté": ["pouvoir","faire",["ce que l'on veut","ce qu'on veut","comme on veut"]],
@@ -210,7 +210,7 @@
       ],
       "defKey": "souveraineté_populaire",
       "keywords": ["décide","loi"],
-      "revision": true
+      "revision": false
     },
     {
       "q": "Quelles sont les conditions de la responsabilité selon Thomas d'Aquin ?",
@@ -265,7 +265,7 @@
         "Le temps réel est une quantité divisible en segments égaux",
         "Le temps mathématique exprime la qualité pure des états psychologiques"
       ],
-      "defKey": "temps reel",
+      "defText": "Il distingue le temps réel du temps mesuré, le temps réel échappe à la science et aux mathématiques. D'après lui quand on mesure le temps on mesure un mobile ; exemple horloge, aiguille bouge donc on mesure une distance, on mesure de l'espace.",
       "keywords": [],
       "revision": true
     },
