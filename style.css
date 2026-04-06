@@ -272,6 +272,8 @@
       text-decoration: none;
     }
 
+    /* --------------- */
+
     #defail {
       display: flex;
       flex-direction: column;
