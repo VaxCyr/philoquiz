@@ -74,7 +74,8 @@
         "Ce qui est ressenti comme vrai"
       ],
       "defKey": "verite",
-      "keywords": ["conformité",["pensée","expression"],"réalité"]
+      "keywords": ["conformité",["pensée","expression"],"réalité"],
+      "revision":false
     },
     {
       "q": "Quel est un des trois sens de « vrai » selon Spinoza ?",
@@ -154,7 +155,7 @@
       ],
       "defText": "Le scientifique suppose qu'il existe une vérité objective, certaine et définitive, mais elle est toujours pour lui un idéal.",
       "keywords": ["idéal",["jamais atteint","inatteignable"]],
-      "revision": true
+      "revision": false
     },
     {
       "q": "Selon Montaigne, que gagne l'homme à chercher une vérité qu'il ne peut atteindre ?",

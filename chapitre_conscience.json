@@ -56,7 +56,7 @@
   ],
   "quiz_questions": [
     {
-      "q": "Quelle est la certitude de Descartes dans les <em>Discours de la méthode</em> ?",
+      "q": "Quelle est la première certitude de Descartes dans le « Discours de la méthode » ?",
       "correct": "Je pense donc je suis",
       "distractors": [
         "Le monde existe",
@@ -75,7 +75,7 @@
       "revision": true
     },
     {
-      "q": "Que signifie l'expression de Pascal 'roseau pensant' ?",
+      "q": "Que signifie l'expression de Pascal « roseau pensant » ?",
       "correct": "L'homme est fragile mais doté d'une pensée",
       "distractors": [
         "L'homme est une plante",

@@ -4,16 +4,14 @@
     "libre_arbitre": "Capacité pour l'agent de se décider par lui-même, de choisir entre le bien et le mal.",
     "autonomie": "Fait de ne pas être soumis à une loi imposée de l'extérieur, mais d'obéir à une loi dont on est soi-même l'auteur.",
     "souveraineté_populaire": "Principe selon lequel un peuple est libre quand il décide lui-même des lois qu'il se donne.",
-    "temps_objectif": "Conception du temps comme dimension mesurable du mouvement (Aristote).",
     "temps reel": "Il distingue le temps réel du temps mesuré, le temps réel échappe aux sciences et mathématiques. D'après lui quand on mesure le temps on mesure un mobile ; exemple horloge, aiguille bouge donc on mesure une distance, on mesure de l'espace."
   },
   "definitions_keywords": {
-    "liberté": [],
-    "libre_arbitre": [],
-    "autonomie": [],
-    "souveraineté_populaire": [],
-    "temps_objectif": [],
-    "durée": []
+    "liberté": ["pouvoir","faire",["ce que l'on veut","ce qu'on veut","comme on veut"]],
+    "libre_arbitre": ["capacité","décider",["soi-même","soi même","lui-même","lui même","soi meme","lui meme"]],
+    "autonomie": [["obéir","obeissance"],"loi", ["soi-même","soi meme","soi même"], "auteur"],
+    "souveraineté_populaire": ["principe","peuple","libre","décide","lois"],
+    "temps reel": ["échappe",["sciences","mathématiques"]]
   },
   "philosophes": [
     {
@@ -158,7 +156,7 @@
       "revision": true
     },
     {
-      "q": "Quelle est la définition de la liberté selon le cours ?",
+      "q": "Quelle est la définition de la liberté ?",
       "correct": "Le pouvoir de faire ce que l'on veut",
       "distractors": [
         "L'absence totale de lois",
@@ -193,7 +191,7 @@
       ],
       "defKey": "autonomie",
       "keywords": [["obeissance","obéir"],"loi",["on est l'auteur","soi-même l'auteur","soi même l'auteur"]],
-      "revision": true
+      "revision": false
     },
     {
       "q": "Quand dit-on qu'un peuple est libre politiquement ?",
@@ -273,7 +271,7 @@
     },
     {
       "q": "Pourquoi la science ne mesure-t-elle que de « l'espace » selon Bergson ?",
-      "correct": "Car elle mesure le mouvement d'un mobile (comme une aiguille d'horloge)",
+      "correct": "Car elle mesure le mouvement d'un mobile",
       "distractors": [
         "Car le temps n'existe pas pour les savants",
         "Car l'espace est plus facile à calculer",
@@ -286,7 +284,7 @@
         "Car le présent est un point dans l'espace",
         "Car la réalité est purement géométrique"
       ],
-      "defText": "Bergson soutient que mesurer le temps revient à mesurer une distance parcourue par un objet (mobile), ce qui spatialise le temps et en fait perdre la nature réelle (la durée).",
+      "defText": "Bergson soutient que mesurer le temps revient à mesurer une distance parcourue par un objet (mobile, comme une aiguille d'horloge), ce qui spatialise le temps et en fait perdre la nature réelle (la durée).",
       "keywords": [],
       "revision": true
     }

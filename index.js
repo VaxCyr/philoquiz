@@ -631,7 +631,15 @@ function startRevisionQuestions(difficulty, requestedCount){
     const pool = [];
     
     // Ajout des définitions standards (Mot -> Définition)
+    // On ne prend que les définitions qui NE sont PAS des repères globaux, 
+    // SAUF si le chapitre 'reperes' a été explicitement sélectionné.
+    const selectedChapters = Array.from(document.querySelectorAll('input[name="chapters"]:checked')).map(cb => cb.value);
+    const hasRepereChapter = selectedChapters.includes('reperes');
+
     Object.entries(DEFINITIONS).forEach(([term, def]) => {
+        // Si le terme est un repère global et que le chapitre repères n'est pas coché, on ignore
+        if (REPERES_DEFS[term] && !hasRepereChapter) return;
+
         pool.push({ 
             type: 'definition', 
             term: term, 
@@ -659,12 +667,19 @@ function startRevisionQuestions(difficulty, requestedCount){
                                     qLower.includes("qu'est-ce que") || 
                                     qLower.includes("que veut dire") ||
                                     qLower.includes("quel est") ||
-                                    qLower.includes("quelle est");
+                                    qLower.includes("quelle est") ||
+                                    qLower.includes("quelle formulation");
 
             if (isQuestionPhrased) {
                 // On extrait le mot entre guillemets si possible, sinon on prend q.q tel quel
                 const match = q.q.match(/« (.+) »/) || q.q.match(/"(.+)"/) || q.q.match(/'(.+)'/);
                 term = match ? match[1] : q.q;
+                // Si le terme extrait est toujours la question complète, on essaie de nettoyer
+                if (term === q.q && (qLower.includes("quelle est la définition de") || qLower.includes("quelle formulation correspond à la définition de"))) {
+                    term = q.q.replace(/Quelle est la définition de /i, "")
+                              .replace(/Quelle formulation correspond à la définition de /i, "")
+                              .replace(/\?/g, "").trim();
+                }
                 definition = q.correct;
             } else if (q.defKey || q.chapter === 'reperes') {
                 // Si c'est un repère classique (déjà harmonisé ou structuré def -> mot)
