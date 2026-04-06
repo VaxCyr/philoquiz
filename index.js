@@ -11,987 +11,635 @@ let PHILOSOPHES_LIBERTE_TEMPS = [];
 let REPERES_DEFS = {};
 let DEFINITIONS_KEYWORDS = {};
 
-// Fonction pour charger les données JSON
+// ─────────────────────────────────────────────────────────────
+// POOL DE RÉVISION
+// ─────────────────────────────────────────────────────────────
+// Règle simple et déterministe pour inclure une question dans le mode révision :
+//   - La question DOIT avoir un champ "revMot" présent ET non-null
+//   - revMot === ""   → le mot affiché = q.correct
+//   - revMot !== ""   → le mot affiché = revMot (override explicite)
+//   - La définition   = q.defText si présent, sinon q.correct
+// Aucune heuristique sur le contenu de la question n'est utilisée.
+// ─────────────────────────────────────────────────────────────
+
+function buildRevisionPool() {
+  const pool = [];
+  const selectedChapters = Array.from(
+    document.querySelectorAll('input[name="chapters"]:checked')
+  ).map(cb => cb.value);
+  const hasRepereChapter = selectedChapters.includes('reperes');
+
+  // 1. Définitions standards (termes du dictionnaire)
+  Object.entries(DEFINITIONS).forEach(([term, def]) => {
+    if (REPERES_DEFS[term] && !hasRepereChapter) return;
+    pool.push({
+      mot: term.replace(/_/g, ' '),
+      def: def,
+      keywords: DEFINITIONS_KEYWORDS[term] || null,
+      source: 'definition'
+    });
+  });
+
+  // 2. Questions de quiz avec revMot défini et non-null
+  QUIZ_QS.forEach(q => {
+    if (q.multi) return;
+    if (!('revMot' in q) || q.revMot === null || q.revMot === undefined) return;
+
+    const mot = q.revMot === '' ? q.correct : q.revMot;
+    const def = q.defText || q.correct;
+    const keywords = Array.isArray(q.keywords) ? q.keywords : null;
+
+    // Éviter les doublons avec les définitions standards
+    const motNorm = mot.toLowerCase().replace(/_/g, ' ');
+    const alreadyIn = pool.some(
+      item => item.mot.toLowerCase() === motNorm && item.source === 'definition'
+    );
+    if (alreadyIn) return;
+
+    pool.push({ mot, def, keywords, source: 'quiz' });
+  });
+
+  return pool;
+}
+
+// ─────────────────────────────────────────────────────────────
+// CHARGEMENT
+// ─────────────────────────────────────────────────────────────
+
 async function loadData() {
+  try {
+    document.getElementById('chapter-selection').style.display = 'flex';
     try {
-        // Afficher directement le modal de sélection des chapitres
-        document.getElementById('chapter-selection').style.display = 'flex';
-        console.log('Application initialisée - attente de la sélection des chapitres');
-        
-        // Charger les repères globaux (définitions non liées à un chapitre)
-        try {
-            const repRes = await fetch('reperes.json');
-            if (repRes.ok) {
-                const repData = await repRes.json();
-                REPERES_DEFS = repData.definitions || {};
-                console.log(`Repères chargés: ${Object.keys(REPERES_DEFS).length} définitions`);
-            } else {
-                console.warn('reperes.json introuvable ou inaccessible');
-            }
-        } catch (e) {
-            console.warn('Impossible de charger reperes.json:', e);
-        }
-        
-        // Initialiser l'application
-        initializeApp();
-        
-    } catch (error) {
-        console.error('Erreur lors de l\'initialisation:', error);
-        document.getElementById('main').innerHTML = `
-            <div class="question">Erreur d'initialisation</div>
-            <div class="small" style="margin-top: 8px; color: var(--error);">
-                Une erreur s'est produite lors du chargement de l'application.
-            </div>
-        `;
-    }
+      const repRes = await fetch('reperes.json');
+      if (repRes.ok) {
+        const repData = await repRes.json();
+        REPERES_DEFS = repData.definitions || {};
+      }
+    } catch (e) { console.warn('reperes.json:', e); }
+    initializeApp();
+  } catch (error) {
+    console.error('Erreur init:', error);
+  }
 }
 
 async function loadChapterData(chapters) {
-  // Reset all data arrays
-  QUIZ_QS = [];
-  DEFINITIONS = {};
-  CITATIONS = [];
-  REMEDES = [];
-  DESIRES = [];
-  PHILOSOPHES_DEVOIR = [];
-  PHILOSOPHES_ETAT = [];
-  PHILOSOPHES_CONSCIENCE = [];
-  PHILOSOPHES_LIBERTE_TEMPS = [];
-  
-  // Load data for each selected chapter
-  const chapterPromises = chapters.map(async chapter => {
-    try {
-      const response = await fetch(`chapitre_${chapter}.json`);
-      if (!response.ok) throw new Error(`Chapter ${chapter} not found`);
-      return response.json();
-    } catch (error) {
-      console.warn(`Could not load chapter ${chapter}:`, error);
-      return null;
-    }
-  });
-  
-  const chapterData = await Promise.all(chapterPromises);
-  
-  // Combine data from all chapters
-  chapterData.forEach((data, index) => {
-    if (!data) return;
-    
-    const chapter = chapters[index];
-    
-    // Add quiz questions with chapter info
-    if (data.quiz_questions) {
-      QUIZ_QS.push(...data.quiz_questions.map(q => ({
-        ...q,
-        chapter: chapter
-      })));
-    }
-    
-    // Add definitions
-        if (data.definitions) {
-          Object.assign(DEFINITIONS, data.definitions);
-        }
-        
-        // Add definitions keywords
-        if (data.definitions_keywords) {
-          Object.assign(DEFINITIONS_KEYWORDS, data.definitions_keywords);
-        }
-        
-        // Add citations
-        if (data.citations) {
-          CITATIONS.push(...data.citations);
-        }
-        
-        // Add chapter-specific data
-        if (chapter === 'bonheur') {
-          if (data.remedes) REMEDES.push(...data.remedes);
-          if (data.desires) DESIRES.push(...data.desires);
-        } else if (chapter === 'devoir') {
-          if (data.philosophes) PHILOSOPHES_DEVOIR.push(...data.philosophes);
-        } else if (chapter === 'etat') {
-          if (data.philosophes) PHILOSOPHES_ETAT.push(...data.philosophes);
-        } else if (chapter === 'conscience') {
-          if (data.philosophes) PHILOSOPHES_CONSCIENCE.push(...data.philosophes);
-        } else if (chapter === 'liberte_temps') {
-          if (data.philosophes) PHILOSOPHES_LIBERTE_TEMPS.push(...data.philosophes);
-        }
-  });
-  
-  // Fusionner les repères globaux dans les définitions disponibles
-  if (REPERES_DEFS && typeof REPERES_DEFS === 'object') {
-    Object.assign(DEFINITIONS, REPERES_DEFS);
-  }
+  QUIZ_QS = []; DEFINITIONS = {}; CITATIONS = []; REMEDES = []; DESIRES = [];
+  PHILOSOPHES_DEVOIR = []; PHILOSOPHES_ETAT = []; PHILOSOPHES_CONSCIENCE = [];
+  PHILOSOPHES_LIBERTE_TEMPS = []; DEFINITIONS_KEYWORDS = {};
 
-  // Check if we have enough questions
-  if (QUIZ_QS.length < 5) {
-    throw new Error('Pas assez de questions disponibles. Veuillez sélectionner plus de chapitres.');
-  }
-  
-  console.log(`Loaded ${QUIZ_QS.length} questions from ${chapters.length} chapters`);
-  
-  return true; // Ajouter un retour explicite
+  const chapterData = await Promise.all(chapters.map(async chapter => {
+    try {
+      const r = await fetch(`chapitre_${chapter}.json`);
+      if (!r.ok) throw new Error(`Chapter ${chapter} not found`);
+      return r.json();
+    } catch (e) { console.warn(`Could not load ${chapter}:`, e); return null; }
+  }));
+
+  chapterData.forEach((data, i) => {
+    if (!data) return;
+    const chapter = chapters[i];
+    if (data.quiz_questions) QUIZ_QS.push(...data.quiz_questions.map(q => ({ ...q, chapter })));
+    if (data.definitions) Object.assign(DEFINITIONS, data.definitions);
+    if (data.definitions_keywords) Object.assign(DEFINITIONS_KEYWORDS, data.definitions_keywords);
+    if (data.citations) CITATIONS.push(...data.citations);
+    if (chapter === 'bonheur') { if (data.remedes) REMEDES.push(...data.remedes); if (data.desires) DESIRES.push(...data.desires); }
+    else if (chapter === 'devoir' && data.philosophes) PHILOSOPHES_DEVOIR.push(...data.philosophes);
+    else if (chapter === 'etat' && data.philosophes) PHILOSOPHES_ETAT.push(...data.philosophes);
+    else if (chapter === 'conscience' && data.philosophes) PHILOSOPHES_CONSCIENCE.push(...data.philosophes);
+    else if (chapter === 'liberte_temps' && data.philosophes) PHILOSOPHES_LIBERTE_TEMPS.push(...data.philosophes);
+  });
+
+  if (REPERES_DEFS) Object.assign(DEFINITIONS, REPERES_DEFS);
+  if (QUIZ_QS.length < 5) throw new Error('Pas assez de questions. Sélectionnez plus de chapitres.');
+  console.log(`${QUIZ_QS.length} questions chargées depuis ${chapters.length} chapitres`);
+  return true;
 }
+
+// ─────────────────────────────────────────────────────────────
+// INIT
+// ─────────────────────────────────────────────────────────────
 
 function initializeApp() {
-    // Chapter selection functionality
-    const chapterModal = document.getElementById('chapter-selection');
-    const mainContent = document.getElementById('main-content');
-    const validateBtn = document.getElementById('validate-chapters');
-    const warningMsg = document.getElementById('chapter-warning');
-    
-    // Handle chapter validation
-    validateBtn.addEventListener('click', () => {
-        const selectedChapters = Array.from(document.querySelectorAll('input[name="chapters"]:checked')).map(cb => cb.value);
-        
-        if (selectedChapters.length === 0) {
-            warningMsg.textContent = 'Veuillez sélectionner au moins un chapitre.';
-            return;
-        }
-        
-        // Load data for selected chapters
-        loadChapterData(selectedChapters).then(() => {
-            chapterModal.style.display = 'none';
-            mainContent.style.display = 'block';
-            initializeQuizInterface();
-        }).catch(error => {
-            warningMsg.textContent = 'Erreur lors du chargement des données : ' + error.message;
-        });
-    });
-    
-    // Change chapters functionality
-    document.getElementById('change-chapters').addEventListener('click', () => {
-        chapterModal.style.display = 'flex';
-        mainContent.style.display = 'none';
-    });
+  const chapterModal = document.getElementById('chapter-selection');
+  const mainContent = document.getElementById('main-content');
+  const validateBtn = document.getElementById('validate-chapters');
+  const warningMsg = document.getElementById('chapter-warning');
 
-    // Menu functionality
-    const menuToggle = document.getElementById('menu-toggle');
-    const menu = document.getElementById('menu');
-    const themeToggle = document.getElementById('theme-toggle');
-    
+  validateBtn.addEventListener('click', () => {
+    const sel = Array.from(document.querySelectorAll('input[name="chapters"]:checked')).map(cb => cb.value);
+    if (sel.length === 0) { warningMsg.textContent = 'Veuillez sélectionner au moins un chapitre.'; return; }
+    loadChapterData(sel).then(() => {
+      chapterModal.style.display = 'none';
+      mainContent.style.display = 'block';
+      initializeQuizInterface();
+    }).catch(err => { warningMsg.textContent = 'Erreur : ' + err.message; });
+  });
 
-    // Toggle menu
-    menuToggle.addEventListener('click', () => {
-        menu.classList.toggle('hidden');
-    });
+  document.getElementById('change-chapters').addEventListener('click', () => {
+    chapterModal.style.display = 'flex';
+    mainContent.style.display = 'none';
+  });
 
-    // Close menu when clicking outside
-    document.addEventListener('click', (e) => {
-        if (!menuToggle.contains(e.target) && !menu.contains(e.target)) {
-            menu.classList.add('hidden');
-        }
-    });
+  const menuToggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+  menuToggle.addEventListener('click', () => menu.classList.toggle('hidden'));
+  document.addEventListener('click', e => {
+    if (!menuToggle.contains(e.target) && !menu.contains(e.target)) menu.classList.add('hidden');
+  });
 
-    // Theme toggle
-    themeToggle.addEventListener('click', () => {
-        document.documentElement.classList.toggle('light-mode');
-        const isLightMode = document.documentElement.classList.contains('light-mode');
-        themeToggle.textContent = isLightMode ? '🌙 Mode Sombre' : '☀️ Mode Clair';
-        localStorage.setItem('theme', isLightMode ? 'light' : 'dark');
-    });
-
-    // Load saved theme preference
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'light') {
-        document.documentElement.classList.add('light-mode');
-        themeToggle.textContent = '🌙 Mode Sombre';
-    }
-
+  const themeToggle = document.getElementById('theme-toggle');
+  themeToggle.addEventListener('click', () => {
+    document.documentElement.classList.toggle('light-mode');
+    const isLight = document.documentElement.classList.contains('light-mode');
+    themeToggle.textContent = isLight ? '🌙 Mode Sombre' : '☀️ Mode Clair';
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+  });
+  if (localStorage.getItem('theme') === 'light') {
+    document.documentElement.classList.add('light-mode');
+    themeToggle.textContent = '🌙 Mode Sombre';
+  }
 }
+
+// ─────────────────────────────────────────────────────────────
+// INTERFACE QUIZ
+// ─────────────────────────────────────────────────────────────
 
 function initializeQuizInterface() {
-    const main = document.getElementById('main');
-    const scoreVal = document.getElementById('score-val');
-    const scoreMax = document.getElementById('score-max');
-    const progress = document.getElementById('progress');
-    const scoreWrap = document.getElementById('scoreWrap');
+  const main = document.getElementById('main');
+  const scoreVal = document.getElementById('score-val');
+  const scoreMax = document.getElementById('score-max');
+  const progress = document.getElementById('progress');
+  const scoreWrap = document.getElementById('scoreWrap');
+  let score = 0, maxQ = 0, currentMode = '';
 
-    let score = 0, maxQ = 0, currentMode = '';
+  function el(id) { return document.getElementById(id); }
+  function randSort(a) { return a.map(v => [Math.random(), v]).sort((x, y) => x[0] - y[0]).map(x => x[1]); }
+  function setMode(name) { currentMode = name; progress.textContent = 'Mode : ' + name; updateActiveButton(); }
+  function updateScore() { scoreVal.textContent = score; scoreMax.textContent = maxQ; }
+  function updateActiveButton() {
+    ['mode-quiz','mode-match','mode-revision','mode-flash','show-defs'].forEach(id => el(id).classList.remove('active'));
+    if (currentMode === 'Quiz') el('mode-quiz').classList.add('active');
+    if (currentMode === 'Association') el('mode-match').classList.add('active');
+    if (currentMode.startsWith('Révision')) el('mode-revision').classList.add('active');
+    if (currentMode === 'Flashcards') el('mode-flash').classList.add('active');
+    if (currentMode === 'Toutes les définitions') el('show-defs').classList.add('active');
+    scoreWrap.style.display = currentMode === 'Flashcards' ? 'none' : 'block';
+  }
 
-function el(id){return document.getElementById(id)}
-function randSort(a){return a.map(v=>[Math.random(),v]).sort((x,y)=>x[0]-y[0]).map(x=>x[1])}
-function setMode(name){ currentMode = name; progress.textContent = 'Mode : ' + name; updateActiveButton(); }
-function updateScore(){ scoreVal.textContent = score; scoreMax.textContent = maxQ; }
-function updateActiveButton(){
-    ['mode-quiz','mode-match','mode-revision','mode-flash','show-defs'].forEach(id=>{
-    el(id).classList.remove('active');
-    });
-    if(currentMode==='Quiz') el('mode-quiz').classList.add('active');
-    if(currentMode==='Association') el('mode-match').classList.add('active');
-    if(currentMode.includes('Révision')) el('mode-revision').classList.add('active');
-    if(currentMode==='Flashcards') el('mode-flash').classList.add('active');
-    if(currentMode==='Toutes les définitions') el('show-defs').classList.add('active');
-    scoreWrap.style.display = currentMode==='Flashcards' ? 'none' : 'block';
-}
-function showDefinitionBox(title,text){
-    const box = document.createElement('div'); 
-    box.className='defbox'; 
-    box.innerHTML = `<strong>${title}</strong><div class='small' style='margin-top:6px'>${text}</div>`; 
+  function showDefinitionBox(title, text) {
+    const box = document.createElement('div');
+    box.className = 'defbox';
+    box.innerHTML = `<strong>${title}</strong><div class='small' style='margin-top:6px'>${text}</div>`;
     return box;
-}
-function normalizeText(text) {
-    if (!text) return "";
+  }
+
+  function normalizeText(text) {
+    if (!text) return '';
     return text.toLowerCase()
-        .normalize("NFD").replace(/[\u0300-\u036f]/g, "") // Enlève les accents
-        .replace(/[^a-z0-9\s]/g, ' ')                   // Remplace ponctuation par espace
-        .replace(/\s+/g, ' ')                            // Enlève doubles espaces
-        .trim();
-}
-function extractKeywords(text){
-    const stopWords = ['le','la','les','un','une','des','de','du','ce','qui','que','est','sont','dans','sur','pour','par','avec','sans','sous','ou','et','à','a'];
-    return text.toLowerCase()
-    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
-    .split(/\s+/)
-    .filter(w => w.length > 2 && !stopWords.includes(w));
-}
-function checkDefinitionMatch(userAnswer, correctDef, source) {
+      .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+      .replace(/[^a-z0-9\s]/g, ' ').replace(/\s+/g, ' ').trim();
+  }
+
+  function extractKeywords(text) {
+    const stop = ['le','la','les','un','une','des','de','du','ce','qui','que','est','sont',
+      'dans','sur','pour','par','avec','sans','sous','ou','et','à','a','il','elle',
+      'on','nous','vous','ils','elles','se','si','ne','pas','plus','mais','car'];
+    return text.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+      .split(/\s+/).filter(w => w.length > 2 && !stop.includes(w));
+  }
+
+  function checkDefinitionMatch(userAnswer, correctDef, keywords) {
     const userNorm = normalizeText(userAnswer);
-    let keywords = [];
-
-    // 'source' peut être soit le terme (string) pour chercher dans DEFINITIONS_KEYWORDS,
-    // soit directement le tableau de mots-clés de la question de quiz.
-    if (Array.isArray(source)) {
-        keywords = source;
-    } else if (typeof source === 'string' && DEFINITIONS_KEYWORDS[source]) {
-        keywords = DEFINITIONS_KEYWORDS[source];
+    if (Array.isArray(keywords) && keywords.length > 0) {
+      return keywords.every(kw => {
+        if (Array.isArray(kw)) return kw.some(sub => userNorm.includes(normalizeText(sub)));
+        return userNorm.includes(normalizeText(kw));
+      });
     }
-
-    // Si on a des mots-clés spécifiques définis
-    if (keywords.length > 0) {
-        // On vérifie que TOUS les éléments du premier niveau sont respectés (AND)
-        // Si un élément est un tableau, au moins un de ses membres doit être présent (OR)
-        return keywords.every(kw => {
-            if (Array.isArray(kw)) {
-                return kw.some(subKw => userNorm.includes(normalizeText(subKw)));
-            }
-            return userNorm.includes(normalizeText(kw));
-        });
-    }
-
     const correctNorm = normalizeText(correctDef);
-    
-    // Si c'est quasiment identique après normalisation, on valide direct
     if (userNorm === correctNorm) return true;
-
-    const userKeywords = extractKeywords(userAnswer);
-    const correctKeywords = extractKeywords(correctDef);
-
-    if(correctKeywords.length === 0) return userNorm.includes(correctNorm.slice(0,10));
-
-    const userSet = new Set(userKeywords);
+    const userKws = extractKeywords(userAnswer);
+    const correctKws = extractKeywords(correctDef);
+    if (correctKws.length === 0) return userNorm.includes(correctNorm.slice(0, 10));
+    const userSet = new Set(userKws);
     let matchCount = 0;
-    for(const keyword of correctKeywords){
-        if(userSet.has(keyword)) matchCount++;
-    }
-
-    // AJUSTEMENT ICI : 
-    // Si la définition est très courte (1-2 mots), il faut 100% de match.
-    // Sinon, on garde ta règle de 35%.
-    const threshold = correctKeywords.length <= 2 ? 1 : 0.35;
-    const required = Math.min(6, Math.max(1, Math.ceil(correctKeywords.length * threshold)));
-    
+    for (const kw of correctKws) if (userSet.has(kw)) matchCount++;
+    const threshold = correctKws.length <= 2 ? 1 : 0.35;
+    const required = Math.min(6, Math.max(1, Math.ceil(correctKws.length * threshold)));
     return matchCount >= required;
-}
+  }
 
-function startQuiz(){
-    setMode('Quiz'); score=0; 
-    const order = randSort(QUIZ_QS.slice()); 
-    maxQ = Math.min(20, order.length); 
+  // ── QUIZ ──────────────────────────────────────────────────
+
+  function startQuiz() {
+    setMode('Quiz'); score = 0;
+    const order = randSort(QUIZ_QS.slice());
+    maxQ = Math.min(20, order.length);
     updateScore();
     let idx = 0;
     renderQuestion();
 
-    function renderQuestion(){
-    const item = order[idx];
-    // Helper: underline work titles in options for "Qui a écrit :" questions
-    function escapeHTML(str){
-        return String(str)
-            .replace(/&/g,'&amp;')
-            .replace(/</g,'&lt;')
-            .replace(/>/g,'&gt;')
-            .replace(/\"/g,'&quot;')
-            .replace(/'/g,'&#039;');
-    }
-    // Ne souligne les titres d'ouvrage que pour les questions "Qui a écrit ..."
-    function formatOptionLabel(optText, highlightWork){
-        if(highlightWork){
-            const m = String(optText).match(/^(.*)\s*\(([^)]+)\)\s*$/);
-            if(m){
-                const author = escapeHTML(m[1]);
-                const work = escapeHTML(m[2]);
-                return `${author} (<span class="work">${work}</span>)`;
-            }
+    function renderQuestion() {
+      const item = order[idx];
+      main.innerHTML = '';
+
+      function esc(str) {
+        return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+          .replace(/"/g,'&quot;').replace(/'/g,'&#039;');
+      }
+      function fmtOpt(text, hw) {
+        if (hw) {
+          const m = String(text).match(/^(.*)\s*\(([^)]+)\)\s*$/);
+          if (m) return `${esc(m[1])} (<span class="work">${esc(m[2])}</span>)`;
         }
-        return escapeHTML(optText);
-    }
-    main.innerHTML = '';
-    const qdiv = document.createElement('div'); 
-    qdiv.className='question'; 
-    qdiv.textContent = `Q${idx+1}. ` + item.q; 
-    main.appendChild(qdiv);
+        return esc(text);
+      }
 
-    const ans = document.createElement('div'); 
-    ans.className='answers';
+      const qdiv = document.createElement('div');
+      qdiv.className = 'question';
+      qdiv.textContent = `Q${idx+1}. ${item.q}`;
+      main.appendChild(qdiv);
 
-    const note = document.createElement('div'); 
-    note.className='small'; 
-    note.style.marginBottom='8px'; 
-    note.textContent = item.multi? 'Réponse attendue : plusieurs (sélectionnez puis validez).':'Réponse attendue : une seule'; 
-    main.appendChild(note);
+      const note = document.createElement('div');
+      note.className = 'small'; note.style.marginBottom = '8px';
+      note.textContent = item.multi ? 'Réponse attendue : plusieurs (sélectionnez puis validez).' : 'Réponse attendue : une seule';
+      main.appendChild(note);
 
-    // Détecte si la question est de type auteur/ouvrage
-    const highlightWork = /Qui\s+a\s+écrit/i.test(String(item.q));
+      const ans = document.createElement('div'); ans.className = 'answers';
+      const hw = /Qui\s+a\s+écrit/i.test(String(item.q));
 
-    if(item.multi){
-        // Support new schema with dynamic distractors: { corrects: [..], distractors: [..] }
-        let optsMulti;
-        let useDynamic = Array.isArray(item.corrects) && item.corrects.length > 0 && Array.isArray(item.distractors);
-        if (useDynamic) {
-            const need = Math.max(4 - item.corrects.length, 0);
-            const sampled = randSort(item.distractors.slice()).slice(0, need);
-            optsMulti = randSort([...item.corrects, ...sampled]).map(text => ({ text }));
-        } else {
-            // Legacy schema fallback with fixed opts and index array a
-            optsMulti = randSort(item.opts.slice().map((opt, origIdx) => ({text: opt, origIdx})));
-        }
+      if (item.multi) {
+        const useDyn = Array.isArray(item.corrects) && item.corrects.length > 0 && Array.isArray(item.distractors);
+        let optsMulti = useDyn
+          ? randSort([...item.corrects, ...randSort(item.distractors.slice()).slice(0, Math.max(4 - item.corrects.length, 0))]).map(t => ({ text: t }))
+          : randSort(item.opts.slice().map((opt, origIdx) => ({ text: opt, origIdx })));
 
-        const selectedTexts = new Set();
-        const selectedIdxs = new Set();
-
-        optsMulti.forEach((optObj)=>{
-        const btn = document.createElement('div'); 
-        btn.className='answer'; 
-        btn.innerHTML = formatOptionLabel(optObj.text, highlightWork); 
-        if (!useDynamic) btn.dataset.origIdx = optObj.origIdx;
-        btn.onclick = ()=>{
-            if(btn.classList.contains('disabled')) return;
-            if(btn.classList.contains('selected')){ 
-            btn.classList.remove('selected'); 
-            if (useDynamic) { selectedTexts.delete(optObj.text); } else { selectedIdxs.delete(optObj.origIdx); }
-            } else { 
-            btn.classList.add('selected'); 
-            if (useDynamic) { selectedTexts.add(optObj.text); } else { selectedIdxs.add(optObj.origIdx); }
+        const selectedTexts = new Set(), selectedIdxs = new Set();
+        optsMulti.forEach(optObj => {
+          const btn = document.createElement('div'); btn.className = 'answer';
+          btn.innerHTML = fmtOpt(optObj.text, hw);
+          if (!useDyn) btn.dataset.origIdx = optObj.origIdx;
+          btn.onclick = () => {
+            if (btn.classList.contains('disabled')) return;
+            if (btn.classList.contains('selected')) {
+              btn.classList.remove('selected');
+              if (useDyn) selectedTexts.delete(optObj.text); else selectedIdxs.delete(optObj.origIdx);
+            } else {
+              btn.classList.add('selected');
+              if (useDyn) selectedTexts.add(optObj.text); else selectedIdxs.add(optObj.origIdx);
             }
-        };
-        ans.appendChild(btn);
+          };
+          ans.appendChild(btn);
         });
         main.appendChild(ans);
 
-        const submit = document.createElement('button'); 
-        submit.textContent='Valider'; 
-        submit.className='primary';
-        submit.style.marginTop='10px'; 
-        submit.onclick = ()=>{
-        let correct;
-        if (useDynamic) {
-            const correctSet = new Set(item.corrects);
-            const selArr = Array.from(selectedTexts);
-            correct = selArr.length === correctSet.size && selArr.every(t => correctSet.has(t));
-        } else {
-            const chosen = Array.from(selectedIdxs).sort((a,b)=>a-b);
-            correct = JSON.stringify(chosen)===JSON.stringify(item.a);
-        }
-
-        Array.from(ans.children).forEach((c)=>{ 
+        const submit = document.createElement('button'); submit.textContent = 'Valider';
+        submit.className = 'primary'; submit.style.marginTop = '10px';
+        submit.onclick = () => {
+          let correct;
+          if (useDyn) {
+            const cs = new Set(item.corrects), sel = Array.from(selectedTexts);
+            correct = sel.length === cs.size && sel.every(t => cs.has(t));
+          } else {
+            correct = JSON.stringify(Array.from(selectedIdxs).sort((a,b)=>a-b)) === JSON.stringify(item.a);
+          }
+          Array.from(ans.children).forEach(c => {
             c.classList.add('disabled');
-            if (useDynamic) {
-                if (item.corrects.includes(c.textContent)) {
-                    c.classList.add('correct');
-                } else if (c.classList.contains('selected')) {
-                    c.classList.add('wrong');
-                }
-            } else {
-                const origIdx = parseInt(c.dataset.origIdx);
-                if(item.a.includes(origIdx)){
-                    c.classList.add('correct');
-                } else if(c.classList.contains('selected')){
-                    c.classList.add('wrong');
-                }
-            }
-        });
-
-        submit.disabled = true;
-        if(correct){ score++; updateScore(); }
-
-        const rel = item.defKey ? {title:item.defKey.replace(/_/g,' '),text:DEFINITIONS[item.defKey]} : (item.defText?{title:'Explication',text:item.defText}:null);
-        if(rel) main.appendChild(showDefinitionBox(rel.title,rel.text));
-
-        const nextBtn = document.createElement('button'); 
-        nextBtn.textContent='Question suivante'; 
-        nextBtn.className='primary';
-        nextBtn.style.marginTop='10px'; 
-        nextBtn.onclick = ()=>{ idx++; if(idx<maxQ) renderQuestion(); else showResults(); };
-        main.appendChild(nextBtn);
+            if (useDyn) { if (item.corrects.includes(c.textContent)) c.classList.add('correct'); else if (c.classList.contains('selected')) c.classList.add('wrong'); }
+            else { if (item.a.includes(parseInt(c.dataset.origIdx))) c.classList.add('correct'); else if (c.classList.contains('selected')) c.classList.add('wrong'); }
+          });
+          submit.disabled = true;
+          if (correct) { score++; updateScore(); }
+          const rel = item.defKey ? {title:item.defKey.replace(/_/g,' '),text:DEFINITIONS[item.defKey]} : (item.defText?{title:'Explication',text:item.defText}:null);
+          if (rel) main.appendChild(showDefinitionBox(rel.title, rel.text));
+          const nb = document.createElement('button'); nb.textContent = 'Question suivante'; nb.className = 'primary'; nb.style.marginTop = '10px';
+          nb.onclick = () => { idx++; if (idx < maxQ) renderQuestion(); else showResults(); };
+          main.appendChild(nb);
         };
         main.appendChild(submit);
 
-    } else {
-        // Build options from per-question distractor pool if available
-        let opts;
-        let correctIndex;
+      } else {
+        let opts, correctIndex;
         if (item.correct && Array.isArray(item.distractors) && item.distractors.length >= 3) {
-            const pool = item.distractors.slice();
-            // sample 3 distinct distractors
-            const sampled = randSort(pool).slice(0, 3);
-            opts = randSort([item.correct, ...sampled]);
-            correctIndex = opts.indexOf(item.correct);
+          opts = randSort([item.correct, ...randSort(item.distractors.slice()).slice(0, 3)]);
+          correctIndex = opts.indexOf(item.correct);
         } else {
-            // fallback to legacy static options
-            opts = randSort(item.opts.slice());
-            correctIndex = item.a;
+          opts = randSort(item.opts.slice()); correctIndex = item.a;
         }
-
-        opts.forEach(opt=>{
-        const btn = document.createElement('div'); 
-        btn.className='answer'; 
-        btn.innerHTML = formatOptionLabel(opt, highlightWork); 
-        btn.onclick = ()=>{
-            if(btn.classList.contains('disabled')) return;
-            
-            // determine indices according to structure
-            let chosenIndex, isCorrect;
-            if (item.correct && Array.isArray(item.distractors)) {
-                chosenIndex = opts.indexOf(opt);
-                isCorrect = chosenIndex === correctIndex;
-            } else {
-                chosenIndex = item.opts.indexOf(opt);
-                isCorrect = chosenIndex === item.a;
-            }
-            
-            Array.from(ans.children).forEach(c=>{
-            c.classList.add('disabled');
-            if (item.correct && Array.isArray(item.distractors)) {
-                if (c.textContent === item.correct) c.classList.add('correct');
-            } else {
-                const cIndex = item.opts.indexOf(c.textContent);
-                if(cIndex === item.a) c.classList.add('correct');
-            }
+        opts.forEach(opt => {
+          const btn = document.createElement('div'); btn.className = 'answer';
+          btn.innerHTML = fmtOpt(opt, hw);
+          btn.onclick = () => {
+            if (btn.classList.contains('disabled')) return;
+            const isCorrect = item.correct && Array.isArray(item.distractors)
+              ? opts.indexOf(opt) === correctIndex
+              : item.opts.indexOf(opt) === item.a;
+            Array.from(ans.children).forEach(c => {
+              c.classList.add('disabled');
+              if (item.correct && Array.isArray(item.distractors)) { if (c.textContent === item.correct) c.classList.add('correct'); }
+              else { if (item.opts.indexOf(c.textContent) === item.a) c.classList.add('correct'); }
             });
-            
-            if(isCorrect){ score++; updateScore(); }
-            else btn.classList.add('wrong');
-            
-            const rel = item.defKey? {title:item.defKey.replace(/_/g,' '), text:DEFINITIONS[item.defKey]} : (item.defText?{title:'Explication',text:item.defText}: null);
-            if(rel) main.appendChild(showDefinitionBox(rel.title,rel.text));
-            
-            const nextBtn = document.createElement('button'); 
-            nextBtn.textContent='Question suivante'; 
-            nextBtn.className='primary';
-            nextBtn.style.marginTop='10px'; 
-            nextBtn.onclick = ()=>{ idx++; if(idx<maxQ) renderQuestion(); else showResults(); };
-            main.appendChild(nextBtn);
-        };
-        ans.appendChild(btn);
+            if (isCorrect) { score++; updateScore(); } else btn.classList.add('wrong');
+            const rel = item.defKey ? {title:item.defKey.replace(/_/g,' '),text:DEFINITIONS[item.defKey]} : (item.defText?{title:'Explication',text:item.defText}:null);
+            if (rel) main.appendChild(showDefinitionBox(rel.title, rel.text));
+            const nb = document.createElement('button'); nb.textContent = 'Question suivante'; nb.className = 'primary'; nb.style.marginTop = '10px';
+            nb.onclick = () => { idx++; if (idx < maxQ) renderQuestion(); else showResults(); };
+            main.appendChild(nb);
+          };
+          ans.appendChild(btn);
         });
         main.appendChild(ans);
+      }
     }
+    function showResults() {
+      main.innerHTML = `<div class='question'>Terminé — Résultat : ${score}/${maxQ}</div><div class='small' style='margin-top:8px'>Recharge le mode pour rejouer.</div>`;
     }
+  }
 
-    function showResults(){
-    main.innerHTML = `<div class='question'>Terminé — Résultat : ${score}/${maxQ}</div>` +
-        `<div class='small' style='margin-top:8px'>Recharge le mode pour rejouer.</div>`;
-    }
-}
+  // ── ASSOCIATION ────────────────────────────────────────────
 
-function startMatch(){
-    setMode('Association'); score=0;
+  function startMatch() {
+    setMode('Association'); score = 0;
     const entries = Object.entries(DEFINITIONS);
-    const pairs = entries.slice(0,18);
+    const pairs = entries.slice(0, 18);
     maxQ = pairs.length; updateScore();
-
-    const leftKeys = randSort(pairs.map(d=>d[0]));
-    const rightObjs = randSort(pairs.map(d=>({key:d[0],def:d[1]})));
+    const leftKeys = randSort(pairs.map(d => d[0]));
+    const rightObjs = randSort(pairs.map(d => ({ key: d[0], def: d[1] })));
 
     main.innerHTML = '';
-    const inst = document.createElement('div'); 
-    inst.className='small'; 
-    inst.textContent='Clique sur un terme (gauche) puis sur sa définition (droite).'; 
+    const inst = document.createElement('div'); inst.className = 'small';
+    inst.textContent = 'Clique sur un terme (gauche) puis sur sa définition (droite).';
     main.appendChild(inst);
-    const grid = document.createElement('div'); 
-    grid.className='match-grid'; 
-    grid.style.marginTop='10px';
+    const grid = document.createElement('div'); grid.className = 'match-grid'; grid.style.marginTop = '10px';
 
     const leftCol = document.createElement('div');
-    leftKeys.forEach(key=>{
-    const c = document.createElement('div'); 
-    c.className='card'; 
-    c.textContent = key.replace(/_/g,' '); 
-    c.dataset.key = key; 
-    c.dataset.locked = 'false';
-    c.onclick = ()=>{
-        if(c.dataset.locked==='true') return;
-        Array.from(leftCol.children).forEach(x=>x.style.boxShadow='none'); 
-        c.style.boxShadow='inset 0 0 0 2px rgba(125,211,252,0.5)'; 
+    leftKeys.forEach(key => {
+      const c = document.createElement('div'); c.className = 'card';
+      c.textContent = key.replace(/_/g, ' '); c.dataset.key = key; c.dataset.locked = 'false';
+      c.onclick = () => {
+        if (c.dataset.locked === 'true') return;
+        Array.from(leftCol.children).forEach(x => x.style.boxShadow = 'none');
+        c.style.boxShadow = 'inset 0 0 0 2px rgba(125,211,252,0.5)';
         main.dataset.selectedLeft = key;
-    };
-    leftCol.appendChild(c);
+      };
+      leftCol.appendChild(c);
     });
 
     const rightCol = document.createElement('div');
-    rightObjs.forEach(obj=>{
-    const c = document.createElement('div'); 
-    c.className='card'; 
-    c.textContent = obj.def; 
-    c.dataset.key = obj.key; 
-    c.dataset.locked = 'false';
-    c.onclick = ()=>{
-        const leftKey = main.dataset.selectedLeft;
-        if(!leftKey) return alert('Sélectionne d\'abord un terme à gauche.');
-        if(c.dataset.locked==='true') return;
-        const correct = leftKey === c.dataset.key;
-        if(correct){
-        c.dataset.locked='true'; 
-        c.classList.add('locked');
-        const leftEl = Array.from(leftCol.children).find(x=>x.dataset.key===leftKey);
-        if(leftEl){ 
-            leftEl.dataset.locked='true'; 
-            leftEl.classList.add('locked'); 
-            leftEl.style.boxShadow='none';
-        }
-        score++; 
-        updateScore(); 
-        main.dataset.selectedLeft = '';
-        if(score>=maxQ) main.innerHTML = `<div class='question'>Bravo ! ${score}/${maxQ}</div>`; 
+    rightObjs.forEach(obj => {
+      const c = document.createElement('div'); c.className = 'card';
+      c.textContent = obj.def; c.dataset.key = obj.key; c.dataset.locked = 'false';
+      c.onclick = () => {
+        const lk = main.dataset.selectedLeft;
+        if (!lk) return alert('Sélectionne d\'abord un terme à gauche.');
+        if (c.dataset.locked === 'true') return;
+        if (lk === c.dataset.key) {
+          c.dataset.locked = 'true'; c.classList.add('locked');
+          const le = Array.from(leftCol.children).find(x => x.dataset.key === lk);
+          if (le) { le.dataset.locked = 'true'; le.classList.add('locked'); le.style.boxShadow = 'none'; }
+          score++; updateScore(); main.dataset.selectedLeft = '';
+          if (score >= maxQ) main.innerHTML = `<div class='question'>Bravo ! ${score}/${maxQ}</div>`;
         } else {
-        c.style.border='2px solid var(--error)'; 
-        setTimeout(()=>c.style.border='1px dashed rgba(255,255,255,0.04)',600); 
-        main.dataset.selectedLeft = '';
+          c.style.border = '2px solid var(--error)';
+          setTimeout(() => c.style.border = '1px dashed rgba(255,255,255,0.04)', 600);
+          main.dataset.selectedLeft = '';
         }
-    };
-    rightCol.appendChild(c);
+      };
+      rightCol.appendChild(c);
     });
 
-    grid.appendChild(leftCol); 
-    grid.appendChild(rightCol); 
-    main.appendChild(grid);
-}
+    grid.appendChild(leftCol); grid.appendChild(rightCol); main.appendChild(grid);
+  }
 
-function startRevision(){
+  // ── RÉVISION ──────────────────────────────────────────────
+
+  function startRevision() {
     main.innerHTML = '';
-    const title = document.createElement('div');
-    title.className = 'question';
+    const title = document.createElement('div'); title.className = 'question';
     title.textContent = 'Mode Révision — Choisis ta difficulté';
     main.appendChild(title);
 
-    const info = document.createElement('div');
-    info.className = 'small';
-    info.style.marginBottom = '12px';
-    info.innerHTML = `
-    <strong>Facile :</strong> Définition → Mot<br>
-    <strong>Moyen :</strong> Majorité facile + quelques difficiles<br>
-    <strong>Difficile :</strong> Mot → Définition
-    `;
+    const info = document.createElement('div'); info.className = 'small'; info.style.marginBottom = '12px';
+    info.innerHTML = `<strong>Facile :</strong> Définition → trouver le Mot<br><strong>Moyen :</strong> Mélange des deux sens (70% facile / 30% difficile)<br><strong>Difficile :</strong> Mot → écrire la Définition`;
     main.appendChild(info);
 
-    const selector = document.createElement('div');
-    selector.className = 'difficulty-selector';
+    const pool = buildRevisionPool();
+    const poolInfo = document.createElement('div'); poolInfo.className = 'small';
+    poolInfo.style.cssText = 'margin-bottom:16px;opacity:0.6;';
+    poolInfo.textContent = `${pool.length} entrées disponibles pour la révision`;
+    main.appendChild(poolInfo);
 
+    const selector = document.createElement('div'); selector.className = 'difficulty-selector';
     ['Facile', 'Moyen', 'Difficile'].forEach((name, i) => {
-        const btn = document.createElement('div');
-        btn.className = 'difficulty-btn';
-        btn.textContent = name;
-        btn.onclick = () => showRevisionCountSelector(['easy','medium','hard'][i]);
-        selector.appendChild(btn);
+      const btn = document.createElement('div'); btn.className = 'difficulty-btn';
+      btn.textContent = name;
+      btn.onclick = () => showRevisionCountSelector(['easy', 'medium', 'hard'][i], pool);
+      selector.appendChild(btn);
     });
-
     main.appendChild(selector);
-}
+  }
 
-function showRevisionCountSelector(difficulty) {
+  function showRevisionCountSelector(difficulty, pool) {
     main.innerHTML = '';
-    const title = document.createElement('div');
-    title.className = 'question';
+    const title = document.createElement('div'); title.className = 'question';
     title.textContent = 'Mode Révision — Combien de questions ?';
     main.appendChild(title);
 
-    const selector = document.createElement('div');
-    selector.className = 'difficulty-selector'; // Reusing the same grid layout
-
+    const selector = document.createElement('div'); selector.className = 'difficulty-selector';
     [5, 10, 20].forEach(count => {
-        const btn = document.createElement('div');
-        btn.className = 'difficulty-btn';
-        btn.textContent = count + ' questions';
-        btn.onclick = () => startRevisionQuestions(difficulty, count);
-        selector.appendChild(btn);
+      const btn = document.createElement('div'); btn.className = 'difficulty-btn';
+      btn.textContent = count + ' questions';
+      if (count > pool.length) btn.style.opacity = '0.4';
+      btn.onclick = () => startRevisionQuestions(difficulty, Math.min(count, Math.max(pool.length, 1)), pool);
+      selector.appendChild(btn);
     });
-
     main.appendChild(selector);
 
-    const backBtn = document.createElement('button');
-    backBtn.textContent = ' Retour au choix de difficulté';
-    backBtn.style.marginTop = '20px';
-    backBtn.onclick = startRevision;
-    main.appendChild(backBtn);
-}
+    const back = document.createElement('button'); back.textContent = '← Retour';
+    back.style.marginTop = '20px'; back.onclick = startRevision;
+    main.appendChild(back);
+  }
 
-function startRevisionQuestions(difficulty, requestedCount){
-    setMode('Révision — ' + (difficulty==='easy'?'Facile':difficulty==='medium'?'Moyen':'Difficile'));
+  function startRevisionQuestions(difficulty, requestedCount, pool) {
+    const diffLabel = {easy:'Facile', medium:'Moyen', hard:'Difficile'}[difficulty];
+    setMode('Révision — ' + diffLabel);
     score = 0;
-    
-    // Mélange des définitions ET des questions de quiz pour le mode révision
-    const pool = [];
-    
-    // Ajout des définitions standards (Mot -> Définition)
-    // On ne prend que les définitions qui NE sont PAS des repères globaux, 
-    // SAUF si le chapitre 'reperes' a été explicitement sélectionné.
-    const selectedChapters = Array.from(document.querySelectorAll('input[name="chapters"]:checked')).map(cb => cb.value);
-    const hasRepereChapter = selectedChapters.includes('reperes');
-
-    Object.entries(DEFINITIONS).forEach(([term, def]) => {
-        // Si le terme est un repère global et que le chapitre repères n'est pas coché, on ignore
-        if (REPERES_DEFS[term] && !hasRepereChapter) return;
-
-        pool.push({ 
-            type: 'definition', 
-            term: term, 
-            definition: def, 
-            source: term 
-        });
-    });
-    
-    // Ajout des questions de quiz qui ont des mots-clés ET qui sont marquées pour la révision
-    QUIZ_QS.forEach(q => {
-        const isRevisionReady = q.keywords && q.keywords.length > 0;
-        const isSuitable = q.defKey || q.revision === true;
-        
-        if (!q.multi && isRevisionReady && isSuitable) {
-            let term, definition;
-            
-            // On veut toujours :
-            // term = le mot court / le concept / la question courte
-            // definition = l'explication longue / la définition
-            
-            // Si la question 'q' contient "Que signifie" ou "Qu'est-ce que", 
-            // c'est que le mot est dans la question et la définition dans 'correct'.
-            const qLower = q.q.toLowerCase();
-            const isQuestionPhrased = qLower.includes("que signifie") || 
-                                    qLower.includes("qu'est-ce que") || 
-                                    qLower.includes("que veut dire") ||
-                                    qLower.includes("quel est") ||
-                                    qLower.includes("quelle est") ||
-                                    qLower.includes("quelle formulation");
-
-            if (isQuestionPhrased) {
-                // On extrait le mot entre guillemets si possible, sinon on prend q.q tel quel
-                const match = q.q.match(/« (.+) »/) || q.q.match(/"(.+)"/) || q.q.match(/'(.+)'/);
-                term = match ? match[1] : q.q;
-                // Si le terme extrait est toujours la question complète, on essaie de nettoyer
-                if (term === q.q && (qLower.includes("quelle est la définition de") || qLower.includes("quelle formulation correspond à la définition de"))) {
-                    term = q.q.replace(/Quelle est la définition de /i, "")
-                              .replace(/Quelle formulation correspond à la définition de /i, "")
-                              .replace(/\?/g, "").trim();
-                }
-                definition = q.correct;
-            } else if (q.defKey || q.chapter === 'reperes') {
-                // Si c'est un repère classique (déjà harmonisé ou structuré def -> mot)
-                // alors q.q est la définition et q.correct est le mot.
-                term = q.correct;
-                definition = q.q;
-            } else {
-                // Cas par défaut (ex: Conscience)
-                term = q.q;
-                definition = q.correct;
-            }
-
-            pool.push({ 
-                type: 'quiz', 
-                term: term, 
-                definition: definition, 
-                source: q.keywords,
-                isTerm: true // Pour forcer l'affichage "Mot :"
-            });
-        }
-    });
-
-    const items = randSort(pool).slice(0, requestedCount);
-    maxQ = items.length;
-    updateScore();
+    const items = randSort(pool.slice()).slice(0, requestedCount);
+    maxQ = items.length; updateScore();
     let idx = 0;
     renderRevisionQuestion();
 
-    function renderRevisionQuestion(){
-    const item = items[idx];
-    const term = item.term;
-    const def = item.definition;
-    main.innerHTML = '';
-    
-    let isEasyMode = true;
-    if(difficulty === 'hard'){
-        isEasyMode = false;
-    } else if(difficulty === 'medium'){
-        // En mode moyen, on mélange les deux sens, sauf pour les quiz non-repères
-        // qui sont souvent bizarres en mode "Inversé" (Réponse -> Question)
-        isEasyMode = item.type === 'quiz' && !item.defKey ? false : Math.random() > 0.3;
-    }
+    function renderRevisionQuestion() {
+      const item = items[idx];
+      main.innerHTML = '';
 
-    const qdiv = document.createElement('div');
-    qdiv.className = 'question';
-    qdiv.textContent = `Q${idx+1}/${maxQ}`;
-    main.appendChild(qdiv);
+      // Sens : true = Def→Mot (facile), false = Mot→Def (difficile)
+      const showDef = difficulty === 'easy' ? true : difficulty === 'hard' ? false : Math.random() > 0.3;
 
-    if(isEasyMode){
+      const qdiv = document.createElement('div'); qdiv.className = 'question';
+      qdiv.textContent = `Q${idx+1}/${maxQ}`; main.appendChild(qdiv);
+
+      if (showDef) {
+        // ── Facile : affiche la définition, l'user écrit le mot ──
         const defDiv = document.createElement('div');
-        defDiv.style.marginTop = '12px';
-        defDiv.style.padding = '12px';
-        defDiv.style.background = 'rgba(255,255,255,0.03)';
-        defDiv.style.borderRadius = '8px';
-        defDiv.innerHTML = `<strong>Définition :</strong><br>${def}`;
+        defDiv.style.cssText = 'margin-top:12px;padding:12px;background:rgba(255,255,255,0.03);border-radius:8px;';
+        defDiv.innerHTML = `<strong>Définition :</strong><br>${item.def}`;
         main.appendChild(defDiv);
 
-        const instruction = document.createElement('div');
-        instruction.className = 'small';
-        instruction.style.marginTop = '12px';
-        instruction.textContent = 'Quel est le terme correspondant ?';
-        main.appendChild(instruction);
+        const instr = document.createElement('div'); instr.className = 'small'; instr.style.marginTop = '12px';
+        instr.textContent = 'Quel est le terme correspondant ?';
+        main.appendChild(instr);
 
-        const input = document.createElement('input');
-        input.type = 'text';
-        input.placeholder = 'Ta réponse...';
-        input.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter') {
-                e.preventDefault();
-                if (!input.disabled) {
-                    submitBtn.click();
-                } else if (typeof nextBtn !== 'undefined' && nextBtn) {
-                    nextBtn.click();
-                }
-            }
-        });
+        const input = document.createElement('input'); input.type = 'text'; input.placeholder = 'Ta réponse...';
         main.appendChild(input);
 
-        const submitBtn = document.createElement('button');
-        submitBtn.textContent = 'Valider';
-        submitBtn.className = 'primary';
-        submitBtn.style.marginTop = '10px';
+        const submitBtn = document.createElement('button'); submitBtn.textContent = 'Valider';
+        submitBtn.className = 'primary'; submitBtn.style.marginTop = '10px';
+
         submitBtn.onclick = () => {
-        if(!input.value.trim()) return;
-        const userAnswer = normalizeText(input.value);
-        const correctAnswer = normalizeText(term);
+          if (!input.value.trim()) return;
+          const uNorm = normalizeText(input.value), mNorm = normalizeText(item.mot);
+          const correct = uNorm === mNorm
+            || (uNorm.length > 2 && mNorm.includes(uNorm))
+            || (mNorm.length > 2 && uNorm.includes(mNorm));
 
-        const correct = userAnswer === correctAnswer || 
-            (userAnswer.length > 3 && correctAnswer.includes(userAnswer)) || 
-            (correctAnswer.length > 3 && userAnswer.includes(correctAnswer));
-
-        input.disabled = true;
-        submitBtn.disabled = true;
-        submitBtn.style.display = 'none';
-
-        const feedback = document.createElement('div');
-        feedback.className = 'feedback ' + (correct ? 'correct' : 'wrong');
-        
-        if(correct){
-            feedback.innerHTML = `<strong>✓ Correct !</strong><br>Ta réponse : <em>${input.value}</em><br>Le terme est bien : <strong>${term.replace(/_/g, ' ')}</strong>`;
-            score++;
-            updateScore();
-        } else {
-            feedback.innerHTML = `<strong>✗ Incorrect</strong><br>Ta réponse : <em>${input.value}</em><br>Le terme correct est : <strong>${term.replace(/_/g, ' ')}</strong>`;
-        }
-        main.appendChild(feedback);
-        
-        const defBox = showDefinitionBox('Définition complète', def);
-        main.appendChild(defBox);
-
-        const nextBtn = document.createElement('button');
-        nextBtn.textContent = idx+1 < maxQ ? 'Question suivante (Entrée)' : 'Voir les résultats (Entrée)';
-        nextBtn.className = 'primary';
-        nextBtn.style.marginTop = '10px';
-        nextBtn.addEventListener('click', goNext);
-        document.addEventListener('keypress', handleEnter);
-        function handleEnter(e){
-            if(e.key === 'Enter'){
-            document.removeEventListener('keypress', handleEnter);
-            goNext();
-            }
-        }
-        function goNext(){
-            document.removeEventListener('keypress', handleEnter);
-            idx++;
-            if(idx < maxQ) renderRevisionQuestion();
-            else showRevisionResults();
-        }
-        main.appendChild(nextBtn);
-        nextBtn.focus();
+          input.disabled = true; submitBtn.disabled = true; submitBtn.style.display = 'none';
+          const fb = document.createElement('div');
+          fb.className = 'feedback ' + (correct ? 'correct' : 'wrong');
+          if (correct) {
+            fb.innerHTML = `<strong>✓ Correct !</strong><br>Le terme : <strong>${item.mot}</strong>`;
+            score++; updateScore();
+          } else {
+            fb.innerHTML = `<strong>✗ Incorrect</strong><br>Ta réponse : <em>${input.value}</em><br>Le terme correct : <strong>${item.mot}</strong>`;
+          }
+          main.appendChild(fb);
+          showNextBtn();
         };
-        main.appendChild(submitBtn);
-        input.focus();
 
-    } else {
-        const termDiv = document.createElement('div');
-        termDiv.style.marginTop = '12px';
-        termDiv.style.padding = '12px';
-        termDiv.style.background = 'rgba(255,255,255,0.03)';
-        termDiv.style.borderRadius = '8px';
-        // Dans index.js, j'ai modifié la ligne de rendu pour plus de clarté :
-        termDiv.innerHTML = `<strong>${item.isTerm || item.type === 'definition' ? 'Mot' : 'Question'} :</strong> ${term.replace(/_/g, ' ')}`;
-        // termDiv.innerHTML = `<strong>${item.type === 'quiz' && !item.defKey ? 'Question' : 'Mot'} :</strong> ${term.replace(/_/g, ' ')}`;
-        main.appendChild(termDiv);
+        input.addEventListener('keydown', e => { if (e.key === 'Enter' && !input.disabled) { e.preventDefault(); submitBtn.click(); } });
+        main.appendChild(submitBtn); input.focus();
 
-        const instruction = document.createElement('div');
-        instruction.className = 'small';
-        instruction.style.marginTop = '12px';
-        instruction.textContent = item.type === 'quiz' && !item.defKey ? 'Réponds à la question :' : 'Donne la définition (les mots-clés principaux suffisent) :';
-        main.appendChild(instruction);
+      } else {
+        // ── Difficile : affiche le mot, l'user écrit la définition ──
+        const motDiv = document.createElement('div');
+        motDiv.style.cssText = 'margin-top:12px;padding:12px;background:rgba(255,255,255,0.03);border-radius:8px;';
+        motDiv.innerHTML = `<strong>Mot :</strong> ${item.mot}`;
+        main.appendChild(motDiv);
 
-        const textarea = document.createElement('textarea');
-        textarea.placeholder = 'Ta réponse...';
-        textarea.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter' && e.ctrlKey) {
-                e.preventDefault();
-                if (!textarea.disabled) {
-                    submitBtn.click();
-                } else {
-                    const nextBtn = main.querySelector('button:last-child');
-                    if (nextBtn) nextBtn.click();
-                }
-            }
-        });
+        const instr = document.createElement('div'); instr.className = 'small'; instr.style.marginTop = '12px';
+        instr.textContent = 'Donne la définition (les mots-clés principaux suffisent) :';
+        main.appendChild(instr);
+
+        const textarea = document.createElement('textarea'); textarea.placeholder = 'Ta réponse...';
         main.appendChild(textarea);
 
-        const submitBtn = document.createElement('button');
-        submitBtn.textContent = 'Valider (Ctrl+Entrée)';
-        submitBtn.className = 'primary';
-        submitBtn.style.marginTop = '10px';
+        const submitBtn = document.createElement('button'); submitBtn.textContent = 'Valider (Ctrl+Entrée)';
+        submitBtn.className = 'primary'; submitBtn.style.marginTop = '10px';
+
         submitBtn.onclick = () => {
-        if(!textarea.value.trim()) return;
-        const correct = checkDefinitionMatch(textarea.value, def, item.source);
+          if (!textarea.value.trim()) return;
+          const correct = checkDefinitionMatch(textarea.value, item.def, item.keywords);
+          textarea.disabled = true; submitBtn.disabled = true; submitBtn.style.display = 'none';
 
-        textarea.disabled = true;
-        submitBtn.disabled = true;
-        submitBtn.style.display = 'none';
+          const fb = document.createElement('div');
+          fb.className = 'feedback ' + (correct ? 'correct' : 'wrong');
+          fb.innerHTML = correct ? '<strong>✓ Correct !</strong>' : '<strong>✗ Incomplet ou incorrect</strong>';
+          main.appendChild(fb);
+          if (correct) { score++; updateScore(); }
 
-        const feedback = document.createElement('div');
-        feedback.className = 'feedback ' + (correct ? 'correct' : 'wrong');
-        
-        if(correct){
-            feedback.innerHTML = `<strong>✓ Correct !</strong>`;
-            score++;
-            updateScore();
-        } else {
-            feedback.innerHTML = `<strong>✗ Incomplet ou incorrect</strong>`;
-        }
-        main.appendChild(feedback);
-        
-        const userBox = document.createElement('div');
-        userBox.style.marginTop = '8px';
-        userBox.style.padding = '10px';
-        userBox.style.background = 'rgba(255,255,255,0.02)';
-        userBox.style.borderRadius = '8px';
-        userBox.innerHTML = `<strong>Ta réponse :</strong><br><em>${textarea.value}</em>`;
-        main.appendChild(userBox);
-        
-        const correctBox = document.createElement('div');
-        correctBox.style.marginTop = '8px';
-        correctBox.style.padding = '10px';
-        correctBox.style.background = 'rgba(16,185,129,0.05)';
-        correctBox.style.border = '1px solid rgba(16,185,129,0.3)';
-        correctBox.style.borderRadius = '8px';
-        correctBox.innerHTML = `<strong>Réponse attendue :</strong><br><em>${def}</em>`;
-        main.appendChild(correctBox);
+          const userBox = document.createElement('div');
+          userBox.style.cssText = 'margin-top:8px;padding:10px;background:rgba(255,255,255,0.02);border-radius:8px;';
+          userBox.innerHTML = `<strong>Ta réponse :</strong><br><em>${textarea.value}</em>`;
+          main.appendChild(userBox);
 
-        const nextBtn = document.createElement('button');
-        nextBtn.textContent = idx+1 < maxQ ? 'Question suivante (Entrée)' : 'Voir les résultats (Entrée)';
-        nextBtn.className = 'primary';
-        nextBtn.style.marginTop = '10px';
-        nextBtn.addEventListener('click', goNext);
-        document.addEventListener('keypress', handleEnter);
-        function handleEnter(e){
-            if(e.key === 'Enter'){
-            document.removeEventListener('keypress', handleEnter);
-            goNext();
-            }
-        }
-        function goNext(){
-            document.removeEventListener('keypress', handleEnter);
-            idx++;
-            if(idx < maxQ) renderRevisionQuestion();
-            else showRevisionResults();
-        }
-        main.appendChild(nextBtn);
-        nextBtn.focus();
+          const corrBox = document.createElement('div');
+          corrBox.style.cssText = 'margin-top:8px;padding:10px;background:rgba(16,185,129,0.05);border:1px solid rgba(16,185,129,0.3);border-radius:8px;';
+          corrBox.innerHTML = `<strong>Réponse attendue :</strong><br><em>${item.def}</em>`;
+          main.appendChild(corrBox);
+          showNextBtn();
         };
-        main.appendChild(submitBtn);
-        textarea.focus();
-    }
+
+        textarea.addEventListener('keydown', e => { if (e.key === 'Enter' && e.ctrlKey && !textarea.disabled) { e.preventDefault(); submitBtn.click(); } });
+        main.appendChild(submitBtn); textarea.focus();
+      }
+
+      function showNextBtn() {
+        const nb = document.createElement('button');
+        nb.textContent = idx+1 < maxQ ? 'Question suivante (Entrée)' : 'Voir les résultats (Entrée)';
+        nb.className = 'primary'; nb.style.marginTop = '10px';
+        function goNext() { document.removeEventListener('keypress', onEnter); idx++; if (idx < maxQ) renderRevisionQuestion(); else showRevisionResults(); }
+        function onEnter(e) { if (e.key === 'Enter') goNext(); }
+        nb.addEventListener('click', goNext);
+        document.addEventListener('keypress', onEnter);
+        main.appendChild(nb); nb.focus();
+      }
     }
 
-    function showRevisionResults(){
-    main.innerHTML = `<div class='question'>Terminé — Résultat : ${score}/${maxQ}</div>` +
-        `<div class='small' style='margin-top:8px'>Excellent travail ! Recommence pour t'améliorer.</div>`;
+    function showRevisionResults() {
+      main.innerHTML = `<div class='question'>Terminé — Résultat : ${score}/${maxQ}</div><div class='small' style='margin-top:8px'>Excellent travail ! Recommence pour t'améliorer.</div>`;
     }
-}
+  }
 
-function startFlash(){
-    setMode('Flashcards'); 
-    score=0; 
-    const keys = Object.keys(DEFINITIONS); 
-    const order = randSort(keys); 
-    let idx=0; 
-    maxQ = keys.length; 
-    updateScore();
+  // ── FLASHCARDS ────────────────────────────────────────────
+
+  function startFlash() {
+    setMode('Flashcards'); score = 0;
+    const keys = Object.keys(DEFINITIONS);
+    const order = randSort(keys);
+    let idx = 0; maxQ = keys.length; updateScore();
     renderCard();
 
-    function renderCard(){
-    main.innerHTML = '';
-    const k = order[idx];
-    const card = document.createElement('div'); 
-    card.className='flash'; 
-    card.textContent = k.replace(/_/g,' '); 
-    main.appendChild(card);
-    const btns = document.createElement('div'); 
-    btns.style.marginTop='12px';
-    const prev = document.createElement('button'); 
-    prev.textContent='Précédent'; 
-    prev.onclick = ()=>{ if(idx>0){ idx--; renderCard(); } };
-    const show = document.createElement('button'); 
-    show.textContent='Afficher la définition'; 
-    show.className='primary';
-    show.style.marginLeft='8px'; 
-    let showingDef = false;
-    show.onclick = ()=>{ 
-      if(!showingDef){
-        card.textContent = DEFINITIONS[k]; 
-        show.textContent = 'Cacher la définition';
-        showingDef = true;
-      } else {
-        card.textContent = k.replace(/_/g,' ');
-        show.textContent = 'Afficher la définition';
-        showingDef = false;
-      }
-    };
-    const next = document.createElement('button'); 
-    next.textContent='Suivant'; 
-    next.style.marginLeft='8px'; 
-    next.onclick = ()=>{ if(idx+1>=order.length) main.innerHTML = `<div class='question'>Fin des flashcards</div>`; else { idx++; renderCard(); } };
-    btns.appendChild(prev); 
-    btns.appendChild(show); 
-    btns.appendChild(next); 
-    main.appendChild(btns);
-    }
-}
+    function renderCard() {
+      main.innerHTML = '';
+      const k = order[idx];
+      const card = document.createElement('div'); card.className = 'flash';
+      card.textContent = k.replace(/_/g, ' ');
+      main.appendChild(card);
 
-function showAllDefs(){ 
-    setMode('Toutes les définitions'); 
-    main.innerHTML=''; 
+      const btns = document.createElement('div'); btns.style.marginTop = '12px';
+      const prev = document.createElement('button'); prev.textContent = 'Précédent';
+      prev.onclick = () => { if (idx > 0) { idx--; renderCard(); } };
+
+      let showing = false;
+      const show = document.createElement('button'); show.textContent = 'Afficher la définition';
+      show.className = 'primary'; show.style.marginLeft = '8px';
+      show.onclick = () => {
+        showing = !showing;
+        card.textContent = showing ? DEFINITIONS[k] : k.replace(/_/g, ' ');
+        show.textContent = showing ? 'Cacher la définition' : 'Afficher la définition';
+      };
+
+      const next = document.createElement('button'); next.textContent = 'Suivant'; next.style.marginLeft = '8px';
+      next.onclick = () => { if (idx+1 >= order.length) main.innerHTML = `<div class='question'>Fin des flashcards</div>`; else { idx++; renderCard(); } };
+
+      btns.appendChild(prev); btns.appendChild(show); btns.appendChild(next);
+      main.appendChild(btns);
+    }
+  }
+
+  // ── DÉFINITIONS ───────────────────────────────────────────
+
+  function showAllDefs() {
+    setMode('Toutes les définitions'); main.innerHTML = '';
     const dl = document.createElement('div');
-    Object.entries(DEFINITIONS).forEach(([k,v])=>{ 
-    const el = document.createElement('div'); 
-    el.style.marginBottom='10px'; 
-    el.innerHTML = `<strong>${k.replace(/_/g,' ')}</strong> — <span class='small'>${v}</span>`; 
-    dl.appendChild(el); 
+    Object.entries(DEFINITIONS).forEach(([k, v]) => {
+      const item = document.createElement('div'); item.style.marginBottom = '10px';
+      item.innerHTML = `<strong>${k.replace(/_/g, ' ')}</strong> — <span class='small'>${v}</span>`;
+      dl.appendChild(item);
     });
     main.appendChild(dl);
-    scoreVal.textContent = '-'; 
-    scoreMax.textContent = '-';
+    scoreVal.textContent = '-'; scoreMax.textContent = '-';
+  }
+
+  // ── BINDING ───────────────────────────────────────────────
+
+  el('mode-quiz').onclick = startQuiz;
+  el('mode-match').onclick = startMatch;
+  el('mode-revision').onclick = startRevision;
+  el('mode-flash').onclick = startFlash;
+  el('show-defs').onclick = showAllDefs;
+  updateActiveButton();
+  startQuiz();
 }
 
-    document.getElementById('mode-quiz').onclick = startQuiz;
-    document.getElementById('mode-match').onclick = startMatch;
-    document.getElementById('mode-revision').onclick = startRevision;
-    document.getElementById('mode-flash').onclick = startFlash;
-    document.getElementById('show-defs').onclick = showAllDefs;
-
-    updateActiveButton();
-    startQuiz();
-}
-
-// Charger les données au démarrage
 loadData();

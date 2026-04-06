@@ -1,635 +1,858 @@
 {
-  "quiz_questions":
-    [
-      {
-        "q": "Ce qui ne dépend de rien d'autre.",
-        "correct": "absolu",
-        "distractors": [
-          "relatif",
-          "contingent",
-          "necessaire",
-          "universel",
-          "general",
-          "particulier",
-          "singulier",
-          "en fait",
-          "probable"
+  "quiz_questions": [
+    {
+      "q": "Ce qui ne dépend de rien d'autre.",
+      "correct": "absolu",
+      "distractors": [
+        "relatif",
+        "contingent",
+        "necessaire",
+        "universel",
+        "general",
+        "particulier",
+        "singulier",
+        "en fait",
+        "probable"
+      ],
+      "defKey": "absolu",
+      "keywords": [
+        "dépend",
+        "rien"
+      ],
+      "revision": true,
+      "revMot": ""
+    },
+    {
+      "q": "Ce qui dépend ou est limité par autre chose.",
+      "correct": "relatif",
+      "distractors": [
+        "absolu",
+        "necessaire",
+        "universel",
+        "certain",
+        "objectif",
+        "transcendant",
+        "en droit",
+        "genre",
+        "identite"
+      ],
+      "defKey": "relatif",
+      "keywords": [
+        [
+          "dépend",
+          "limité"
         ],
-        "defKey": "absolu",
-        "keywords": ["dépend","rien"],
-        "revision": true
-      },
-      {
-        "q": "Ce qui dépend ou est limité par autre chose.",
-        "correct": "relatif",
-        "distractors": [
-          "absolu",
-          "necessaire",
-          "universel",
-          "certain",
-          "objectif",
-          "transcendant",
-          "en droit",
-          "genre",
-          "identite"
+        "autre"
+      ],
+      "revision": true,
+      "revMot": ""
+    },
+    {
+      "q": "Ce qui peut ou aurait pu être autrement.",
+      "correct": "contingent",
+      "distractors": [
+        "necessaire",
+        "universel",
+        "absolu",
+        "legal",
+        "en droit",
+        "certain",
+        "immanent",
+        "objectif",
+        "singulier"
+      ],
+      "defKey": "contingent",
+      "keywords": [
+        [
+          "aurait pu",
+          "peut"
         ],
-        "defKey": "relatif",
-        "keywords": [["dépend","limité"],"autre"],
-        "revision": true
-      },
-      {
-        "q": "Ce qui peut ou aurait pu être autrement.",
-        "correct": "contingent",
-        "distractors": [
-          "necessaire",
-          "universel",
-          "absolu",
-          "legal",
-          "en droit",
-          "certain",
-          "immanent",
-          "objectif",
-          "singulier"
+        "être",
+        [
+          "différent",
+          "autrement"
+        ]
+      ],
+      "revision": true,
+      "revMot": ""
+    },
+    {
+      "q": "Ce qui ne peut pas ne pas être.",
+      "correct": "nécessaire",
+      "distractors": [
+        "contingent",
+        "relatif",
+        "probable",
+        "general",
+        "singulier",
+        "en puissance",
+        "subjectif",
+        "difference",
+        "particulier"
+      ],
+      "defKey": "necessaire",
+      "keywords": [
+        "peut pas",
+        "pas être"
+      ],
+      "revision": true,
+      "revMot": ""
+    },
+    {
+      "q": "Ce qui s'applique à tous les cas.",
+      "correct": "universel",
+      "distractors": [
+        "general",
+        "particulier",
+        "singulier",
+        "absolu",
+        "necessaire",
+        "certain",
+        "objectif",
+        "immanent",
+        "individu"
+      ],
+      "defKey": "universel",
+      "keywords": [
+        "tous",
+        "cas"
+      ],
+      "revision": true,
+      "revMot": ""
+    },
+    {
+      "q": "Ce qui s'applique à la plupart des cas.",
+      "correct": "general",
+      "distractors": [
+        "universel",
+        "particulier",
+        "singulier",
+        "absolu",
+        "necessaire",
+        "certain",
+        "objectif",
+        "immanent",
+        "individu"
+      ],
+      "defKey": "general",
+      "keywords": [
+        [
+          "majorité",
+          "plupart"
         ],
-        "defKey": "contingent",
-        "keywords": [["aurait pu","peut"],"être",["différent","autrement"]],
-        "revision": true
-      },
-      {
-        "q": "Ce qui ne peut pas ne pas être.",
-        "correct": "nécessaire",
-        "distractors": [
-          "contingent",
-          "relatif",
-          "probable",
-          "general",
-          "singulier",
-          "en puissance",
-          "subjectif",
-          "difference",
-          "particulier"
+        "cas"
+      ],
+      "revision": true,
+      "revMot": ""
+    },
+    {
+      "q": "Ce qui concerne un seul cas unique.",
+      "correct": "singulier",
+      "distractors": [
+        "particulier",
+        "universel",
+        "general",
+        "genre",
+        "espece",
+        "individu",
+        "relatif",
+        "probable",
+        "conclusion"
+      ],
+      "defKey": "singulier",
+      "keywords": [
+        [
+          "seul",
+          "unique"
         ],
-        "defKey": "necessaire",
-        "keywords": ["peut pas", "pas être"],
-        "revision": true
-      },
-      {
-        "q": "Ce qui s'applique à tous les cas.",
-        "correct": "universel",
-        "distractors": [
-          "general",
-          "particulier",
-          "singulier",
-          "absolu",
-          "necessaire",
-          "certain",
-          "objectif",
-          "immanent",
-          "individu"
+        "cas"
+      ],
+      "revision": true,
+      "revMot": ""
+    },
+    {
+      "q": "Ce qui s'applique à un ensemble limité de cas.",
+      "correct": "particulier",
+      "distractors": [
+        "universel",
+        "general",
+        "singulier",
+        "absolu",
+        "necessaire",
+        "certain",
+        "objectif",
+        "immanent",
+        "individu"
+      ],
+      "defKey": "particulier",
+      "keywords": [
+        [
+          "quelques",
+          "ensemble limité"
         ],
-        "defKey": "universel",
-        "keywords": ["tous","cas"],
-        "revision": true
-      },
-      {
-        "q": "Ce qui s'applique à la plupart des cas.",
-        "correct": "general",
-        "distractors": [
-          "universel",
-          "particulier",
-          "singulier",
-          "absolu",
-          "necessaire",
-          "certain",
-          "objectif",
-          "immanent",
-          "individu"
+        "cas"
+      ],
+      "revision": true,
+      "revMot": ""
+    },
+    {
+      "q": "Ce qui devrait être.",
+      "correct": "en droit",
+      "distractors": [
+        "en fait",
+        "légal",
+        "legitime",
+        "necessaire",
+        "objectif",
+        "principe",
+        "probable",
+        "universel",
+        "identite"
+      ],
+      "defKey": "en_droit",
+      "keywords": [
+        [
+          "devrait",
+          "doit"
         ],
-        "defKey": "general",
-        "keywords": [["majorité","plupart"],"cas"],
-        "revision": true
-      },
-      {
-        "q": "Ce qui concerne un seul cas unique.",
-        "correct": "singulier",
-        "distractors": [
-          "particulier",
-          "universel",
-          "general",
-          "genre",
-          "espece",
-          "individu",
-          "relatif",
-          "probable",
-          "conclusion"
+        "être"
+      ],
+      "revision": true,
+      "revMot": ""
+    },
+    {
+      "q": "Ce qui est.",
+      "correct": "en fait",
+      "distractors": [
+        "en droit",
+        "en puissance",
+        "absolu",
+        "relatif",
+        "probable",
+        "legitime",
+        "difference",
+        "genre",
+        "transcendant"
+      ],
+      "defKey": "en_fait",
+      "keywords": [
+        "qui",
+        "est"
+      ],
+      "revision": true,
+      "revMot": ""
+    },
+    {
+      "q": "Ce qui dépasse les limites naturelles d'un objet.",
+      "correct": "transcendant",
+      "distractors": [
+        "immanent",
+        "absolu",
+        "necessaire",
+        "universel",
+        "legitime",
+        "subjectif",
+        "individu",
+        "certain",
+        "principe"
+      ],
+      "defKey": "transcendant",
+      "keywords": [
+        [
+          "dépasse",
+          "sort",
+          "exterieur"
         ],
-        "defKey": "singulier",
-        "keywords": [["seul","unique"],"cas"],
-        "revision": true
-      },
-      {
-        "q": "Ce qui s'applique à un ensemble limité de cas.",
-        "correct": "particulier",
-        "distractors": [
-          "universel",
-          "general",
-          "singulier",
-          "absolu",
-          "necessaire",
-          "certain",
-          "objectif",
-          "immanent",
-          "individu"
+        "limite",
+        "naturelle"
+      ],
+      "revision": true,
+      "revMot": ""
+    },
+    {
+      "q": "Ce qui est contenu dans les limites naturelles d'un objet.",
+      "correct": "immanent",
+      "distractors": [
+        "transcendant",
+        "absolu",
+        "necessaire",
+        "universel",
+        "legitime",
+        "subjectif",
+        "individu",
+        "certain",
+        "principe"
+      ],
+      "defKey": "immanent",
+      "keywords": [
+        [
+          "contenu",
+          "intérieur",
+          "dans"
         ],
-        "defKey": "particulier",
-        "keywords": [["quelques","ensemble limité"],"cas"],
-        "revision": true
-      },
-      {
-        "q": "Ce qui devrait être.",
-        "correct": "en droit",
-        "distractors": [
-          "en fait",
-          "légal",
-          "legitime",
-          "necessaire",
-          "objectif",
-          "principe",
-          "probable",
-          "universel",
-          "identite"
+        "limite",
+        "naturelle"
+      ],
+      "revision": true,
+      "revMot": ""
+    },
+    {
+      "q": "Tenir pour vrai en s'appuyant sur des motifs subjectifs.",
+      "correct": "croire",
+      "distractors": [
+        "savoir",
+        "objectif",
+        "certain",
+        "probable",
+        "principe",
+        "conclusion",
+        "universel",
+        "legitime",
+        "identite"
+      ],
+      "defKey": "croire",
+      "keywords": [
+        "vrai",
+        "subjectif"
+      ],
+      "revision": true,
+      "revMot": ""
+    },
+    {
+      "q": "Affirmer vrai en s'appuyant sur des preuves objectives, rationnelles et/ou empiriques.",
+      "correct": "savoir",
+      "distractors": [
+        "croire",
+        "subjectif",
+        "probable",
+        "general",
+        "particulier",
+        "difference",
+        "en_puissance",
+        "relatif",
+        "obligation"
+      ],
+      "defKey": "savoir",
+      "keywords": [
+        "affirmer",
+        "vrai",
+        "preuves",
+        [
+          "objectives",
+          "rationnelles",
+          "empiriques"
+        ]
+      ],
+      "revision": true,
+      "revMot": ""
+    },
+    {
+      "q": "Un discours qui décrit l'objet comme il est.",
+      "correct": "objectif",
+      "distractors": [
+        "subjectif",
+        "intersubjectif",
+        "relatif",
+        "probable",
+        "universel",
+        "transcendant",
+        "croire",
+        "genre",
+        "consequence"
+      ],
+      "defKey": "objectif",
+      "keywords": [
+        [
+          "décrit",
+          "description"
         ],
-        "defKey": "en_droit",
-        "keywords": [["devrait","doit"],"être"],
-        "revision": true
-      },
-      {
-        "q": "Ce qui est.",
-        "correct": "en fait",
-        "distractors": [
-          "en droit",
-          "en puissance",
-          "absolu",
-          "relatif",
-          "probable",
-          "legitime",
-          "difference",
-          "genre",
-          "transcendant"
+        "est"
+      ],
+      "revision": true,
+      "revMot": ""
+    },
+    {
+      "q": "Un discours qui reflète le point de vue de celui qui parle.",
+      "correct": "subjectif",
+      "distractors": [
+        "objectif",
+        "intersubjectif",
+        "absolu",
+        "certain",
+        "necessaire",
+        "principe",
+        "legal",
+        "identite",
+        "universel"
+      ],
+      "defKey": "subjectif",
+      "keywords": [
+        "point de vue"
+      ],
+      "revision": true,
+      "revMot": ""
+    },
+    {
+      "q": "Produit d'une comparaison entre plusieurs subjectivités.",
+      "correct": "intersubjectif",
+      "distractors": [
+        "subjectif",
+        "objectif",
+        "absolu",
+        "relatif",
+        "singulier",
+        "probable",
+        "principe",
+        "egalite",
+        "en fait"
+      ],
+      "defKey": "intersubjectif",
+      "keywords": [
+        "comparaison",
+        "subjectivités"
+      ],
+      "revision": true,
+      "revMot": ""
+    },
+    {
+      "q": "Une idée montrant une chose telle qu'elle est ou raconte les faits tels qu'ils se sont passés",
+      "correct": "vrai",
+      "distractors": [
+        "certain",
+        "probable",
+        "necessaire",
+        "relatif",
+        "subjectif",
+        "en droit",
+        "difference",
+        "obligation",
+        "particulier"
+      ],
+      "defKey": "vrai",
+      "keywords": [
+        [
+          "telle qu'elle est",
+          "tels qu'ils se sont passés"
+        ]
+      ],
+      "revision": true,
+      "revMot": ""
+    },
+    {
+      "q": "Quelque chose dont il est impossible de douter.",
+      "correct": "certain",
+      "distractors": [
+        "probable",
+        "vrai",
+        "contingent",
+        "relatif",
+        "subjectif",
+        "general",
+        "consequence",
+        "immanent",
+        "individu"
+      ],
+      "defKey": "certain",
+      "keywords": [
+        "impossible de douter"
+      ],
+      "revision": true,
+      "revMot": ""
+    },
+    {
+      "q": "Quelque chose qu'on a des raisons de penser vrai sans en être certain.",
+      "correct": "probable",
+      "distractors": [
+        "certain",
+        "vrai",
+        "necessaire",
+        "absolu",
+        "objectif",
+        "principe",
+        "egalite",
+        "legal",
+        "singulier"
+      ],
+      "defKey": "probable",
+      "keywords": [
+        "penser vrai",
+        "sans",
+        "certain"
+      ],
+      "revision": true,
+      "revMot": ""
+    },
+    {
+      "q": "Idée point de départ d'un raisonnement.",
+      "correct": "principes",
+      "distractors": [
+        "consequences",
+        "conclusion",
+        "probable",
+        "identite",
+        "difference",
+        "universel",
+        "immanent",
+        "croire",
+        "particulier"
+      ],
+      "defKey": "principes",
+      "keywords": [
+        [
+          "point de départ",
+          "départ",
+          "début"
         ],
-        "defKey": "en_fait",
-        "keywords": ["qui","est"],
-        "revision": true
-      },
-      {
-        "q": "Ce qui dépasse les limites naturelles d'un objet.",
-        "correct": "transcendant",
-        "distractors": [
-          "immanent",
-          "absolu",
-          "necessaire",
-          "universel",
-          "legitime",
-          "subjectif",
-          "individu",
-          "certain",
-          "principe"
+        "raisonnement"
+      ],
+      "revision": true,
+      "revMot": ""
+    },
+    {
+      "q": "Idée qui découle logiquement d'une autre idée.",
+      "correct": "conséquences",
+      "distractors": [
+        "principes",
+        "conclusion",
+        "universel",
+        "singulier",
+        "certain",
+        "subjectif",
+        "legal",
+        "en acte",
+        "genre"
+      ],
+      "defKey": "conséquences",
+      "keywords": [
+        [
+          "découle",
+          "suivant",
+          "suit"
         ],
-        "defKey": "transcendant",
-        "keywords": [["dépasse","sort","exterieur"],"limite","naturelle"],
-        "revision": true
-      },
-      {
-        "q": "Ce qui est contenu dans les limites naturelles d'un objet.",
-        "correct": "immanent",
-        "distractors": [
-          "transcendant",
-          "absolu",
-          "necessaire",
-          "universel",
-          "legitime",
-          "subjectif",
-          "individu",
-          "certain",
-          "principe"
+        "logiquement"
+      ],
+      "revision": true,
+      "revMot": ""
+    },
+    {
+      "q": "Point d'arrivée d'un raisonnement.",
+      "correct": "conclusion",
+      "distractors": [
+        "principes",
+        "consequences",
+        "probable",
+        "relatif",
+        "absolu",
+        "en puissance",
+        "legitime",
+        "difference",
+        "espece"
+      ],
+      "defKey": "conclusion",
+      "keywords": [
+        [
+          "point d'arrivée",
+          "arrivée",
+          "fin"
         ],
-        "defKey": "immanent",
-        "keywords": [["contenu","intérieur","dans"],"limite","naturelle"],
-        "revision": true
-      },
-      {
-        "q": "Tenir pour vrai en s'appuyant sur des motifs subjectifs.",
-        "correct": "croire",
-        "distractors": [
-          "savoir",
-          "objectif",
-          "certain",
-          "probable",
-          "principe",
-          "conclusion",
-          "universel",
-          "legitime",
-          "identite"
+        "raisonnement"
+      ],
+      "revision": true,
+      "revMot": ""
+    },
+    {
+      "q": "Groupe d'objets.",
+      "correct": "genre",
+      "distractors": [
+        "espece",
+        "individu",
+        "singulier",
+        "universel",
+        "egalite",
+        "difference",
+        "probable",
+        "legal",
+        "subjectif"
+      ],
+      "defKey": "genre",
+      "keywords": [
+        "groupe",
+        "objet"
+      ],
+      "revision": true,
+      "revMot": ""
+    },
+    {
+      "q": "Sous-ensemble d'un genre.",
+      "correct": "espece",
+      "distractors": [
+        "genre",
+        "individu",
+        "singulier",
+        "particulier",
+        "relatif",
+        "necessaire",
+        "principes",
+        "objectif",
+        "en fait"
+      ],
+      "defKey": "espèce",
+      "keywords": [
+        [
+          "sous-ensemble",
+          "sous ensemble"
         ],
-        "defKey": "croire",
-        "keywords": ["vrai","subjectif"],
-        "revision": true
-      },
-      {
-        "q": "Affirmer vrai en s'appuyant sur des preuves objectives, rationnelles et/ou empiriques.",
-        "correct": "savoir",
-        "distractors": [
-          "croire",
-          "subjectif",
-          "probable",
-          "general",
-          "particulier",
-          "difference",
-          "en_puissance",
-          "relatif",
-          "obligation"
+        "genre"
+      ],
+      "revision": true,
+      "revMot": ""
+    },
+    {
+      "q": "Objet singulier.",
+      "correct": "individu",
+      "distractors": [
+        "genre",
+        "espece",
+        "universel",
+        "general",
+        "egalite",
+        "difference",
+        "certain",
+        "obligation",
+        "conclusion"
+      ],
+      "defKey": "individu",
+      "keywords": [
+        "objet",
+        "singulier"
+      ],
+      "revision": true,
+      "revMot": ""
+    },
+    {
+      "q": "Posséder les mêmes qualités.",
+      "correct": "identite",
+      "distractors": [
+        "egalite",
+        "difference",
+        "genre",
+        "relatif",
+        "absolu",
+        "legal",
+        "universel",
+        "probable",
+        "subjectif"
+      ],
+      "defKey": "Identité",
+      "keywords": [
+        [
+          "même",
+          "mêmes"
         ],
-        "defKey": "savoir",
-        "keywords": ["affirmer","vrai","preuves",["objectives","rationnelles","empiriques"]],
-        "revision": true
-      },
-      {
-        "q": "Un discours qui décrit l'objet comme il est.",
-        "correct": "objectif",
-        "distractors": [
-          "subjectif",
-          "intersubjectif",
-          "relatif",
-          "probable",
-          "universel",
-          "transcendant",
-          "croire",
-          "genre",
-          "consequence"
+        [
+          "qualités",
+          "qualité"
+        ]
+      ],
+      "revision": true,
+      "revMot": ""
+    },
+    {
+      "q": "Avoir la même quantité ou valeur.",
+      "correct": "egalite",
+      "distractors": [
+        "identite",
+        "difference",
+        "universel",
+        "necessaire",
+        "relatif",
+        "singulier",
+        "croire",
+        "principes",
+        "immanent"
+      ],
+      "defKey": "égalité",
+      "keywords": [
+        [
+          "même",
+          "équivalante"
         ],
-        "defKey": "objectif",
-        "keywords": [["décrit","description"],"est"],
-        "revision": true
-      },
-      {
-        "q": "Un discours qui reflète le point de vue de celui qui parle.",
-        "correct": "subjectif",
-        "distractors": [
-          "objectif",
-          "intersubjectif",
-          "absolu",
-          "certain",
-          "necessaire",
-          "principe",
-          "legal",
-          "identite",
-          "universel"
+        [
+          "valeur",
+          "quantité"
+        ]
+      ],
+      "revision": true,
+      "revMot": ""
+    },
+    {
+      "q": "Non-identité ou non-égalité.",
+      "correct": "difference",
+      "distractors": [
+        "identite",
+        "egalite",
+        "universel",
+        "absolu",
+        "en droit",
+        "probable",
+        "subjectif",
+        "genre",
+        "conclusion"
+      ],
+      "defKey": "différence",
+      "keywords": [
+        [
+          "non-identité",
+          "non identité"
         ],
-        "defKey": "subjectif",
-        "keywords": ["point de vue"],
-        "revision": true
-      },
-      {
-        "q": "Produit d'une comparaison entre plusieurs subjectivités.",
-        "correct": "intersubjectif",
-        "distractors": [
-          "subjectif",
-          "objectif",
-          "absolu",
-          "relatif",
-          "singulier",
-          "probable",
-          "principe",
-          "egalite",
-          "en fait"
+        [
+          "non-égalité",
+          "non égalité"
+        ]
+      ],
+      "revision": true,
+      "revMot": ""
+    },
+    {
+      "q": "Usage de la force imposant l'obéissance.",
+      "correct": "contrainte",
+      "distractors": [
+        "obligation",
+        "legal",
+        "legitime",
+        "necessaire",
+        "absolu",
+        "en fait",
+        "en puissance",
+        "certain",
+        "vrai"
+      ],
+      "defKey": "contrainte",
+      "keywords": [
+        "force",
+        "obéissance"
+      ],
+      "revision": true,
+      "revMot": ""
+    },
+    {
+      "q": "Quand on considère que l'injonction émane d'une autorité légitime.",
+      "correct": "obligation",
+      "distractors": [
+        "contrainte",
+        "legal",
+        "legitime",
+        "necessaire",
+        "absolu",
+        "en fait",
+        "en puissance",
+        "certain",
+        "vrai"
+      ],
+      "defKey": "obligation",
+      "keywords": [
+        "autorité",
+        "légitime"
+      ],
+      "revision": true,
+      "revMot": ""
+    },
+    {
+      "q": "Ce qui est pleinement réalisé.",
+      "correct": "en acte",
+      "distractors": [
+        "en puissance",
+        "en fait",
+        "en droit",
+        "absolu",
+        "necessaire",
+        "certain",
+        "vrai",
+        "objectif",
+        "singulier"
+      ],
+      "defKey": "en_acte",
+      "keywords": [
+        [
+          "réalisé",
+          "achevé"
         ],
-        "defKey": "intersubjectif",
-        "keywords": ["comparaison","subjectivités"],
-        "revision": true
-      },
-      {
-        "q": "Une idée montrant une chose telle qu'elle est ou raconte les faits tels qu'ils se sont passés",
-        "correct": "vrai",
-        "distractors": [
-          "certain",
-          "probable",
-          "necessaire",
-          "relatif",
-          "subjectif",
-          "en droit",
-          "difference",
-          "obligation",
-          "particulier"
-        ],
-        "defKey": "vrai",
-        "keywords": [["telle qu'elle est","tels qu'ils se sont passés"]],
-        "revision": true
-      },
-      {
-        "q": "Quelque chose dont il est impossible de douter.",
-        "correct": "certain",
-        "distractors": [
-          "probable",
-          "vrai",
-          "contingent",
-          "relatif",
-          "subjectif",
-          "general",
-          "consequence",
-          "immanent",
-          "individu"
-        ],
-        "defKey": "certain",
-        "keywords": ["impossible de douter"],
-        "revision": true
-      },
-      {
-        "q": "Quelque chose qu'on a des raisons de penser vrai sans en être certain.",
-        "correct": "probable",
-        "distractors": [
-          "certain",
-          "vrai",
-          "necessaire",
-          "absolu",
-          "objectif",
-          "principe",
-          "egalite",
-          "legal",
-          "singulier"
-        ],
-        "defKey": "probable",
-        "keywords": ["penser vrai","sans","certain"],
-        "revision": true
-      },
-      {
-        "q": "Idée point de départ d'un raisonnement.",
-        "correct": "principes",
-        "distractors": [
-          "consequences",
-          "conclusion",
-          "probable",
-          "identite",
-          "difference",
-          "universel",
-          "immanent",
-          "croire",
-          "particulier"
-        ],
-        "defKey": "principes",
-        "keywords": [["point de départ", "départ", "début"],"raisonnement"],
-        "revision": true
-      },
-      {
-        "q": "Idée qui découle logiquement d'une autre idée.",
-        "correct": "conséquences",
-        "distractors": [
-          "principes",
-          "conclusion",
-          "universel",
-          "singulier",
-          "certain",
-          "subjectif",
-          "legal",
-          "en acte",
-          "genre"
-        ],
-        "defKey": "conséquences",
-        "keywords": [["découle","suivant","suit"],"logiquement"],
-        "revision": true
-      },
-      {
-        "q": "Point d'arrivée d'un raisonnement.",
-        "correct": "conclusion",
-        "distractors": [
-          "principes",
-          "consequences",
-          "probable",
-          "relatif",
-          "absolu",
-          "en puissance",
-          "legitime",
-          "difference",
-          "espece"
-        ],
-        "defKey": "conclusion",
-        "keywords": [["point d'arrivée","arrivée","fin"], "raisonnement"],
-        "revision": true
-      },
-      {
-        "q": "Groupe d'objets.",
-        "correct": "genre",
-        "distractors": [
-          "espece",
-          "individu",
-          "singulier",
-          "universel",
-          "egalite",
-          "difference",
-          "probable",
-          "legal",
-          "subjectif"
-        ],
-        "defKey": "genre",
-        "keywords": ["groupe","objet"],
-        "revision": true
-      },
-      {
-        "q": "Sous-ensemble d'un genre.",
-        "correct": "espece",
-        "distractors": [
-          "genre",
-          "individu",
-          "singulier",
-          "particulier",
-          "relatif",
-          "necessaire",
-          "principes",
-          "objectif",
-          "en fait"
-        ],
-        "defKey": "espèce",
-        "keywords": [["sous-ensemble","sous ensemble"],"genre"],
-        "revision": true
-      },
-      {
-        "q": "Objet singulier.",
-        "correct": "individu",
-        "distractors": [
-          "genre",
-          "espece",
-          "universel",
-          "general",
-          "egalite",
-          "difference",
-          "certain",
-          "obligation",
-          "conclusion"
-        ],
-        "defKey": "individu",
-        "keywords": ["objet","singulier"],
-        "revision": true
-      },
-      {
-        "q": "Posséder les mêmes qualités.",
-        "correct": "identite",
-        "distractors": [
-          "egalite",
-          "difference",
-          "genre",
-          "relatif",
-          "absolu",
-          "legal",
-          "universel",
-          "probable",
-          "subjectif"
-        ],
-        "defKey": "Identité",
-        "keywords": [["même","mêmes"],["qualités","qualité"]],
-        "revision": true
-      },
-      {
-        "q": "Avoir la même quantité ou valeur.",
-        "correct": "egalite",
-        "distractors": [
-          "identite",
-          "difference",
-          "universel",
-          "necessaire",
-          "relatif",
-          "singulier",
-          "croire",
-          "principes",
-          "immanent"
-        ],
-        "defKey": "égalité",
-        "keywords": [["même","équivalante"],["valeur","quantité"]],
-        "revision": true
-      },
-      {
-        "q": "Non-identité ou non-égalité.",
-        "correct": "difference",
-        "distractors": [
-          "identite",
-          "egalite",
-          "universel",
-          "absolu",
-          "en droit",
-          "probable",
-          "subjectif",
-          "genre",
-          "conclusion"
-        ],
-        "defKey": "différence",
-        "keywords": [["non-identité","non identité"],["non-égalité","non égalité"]],
-        "revision": true
-      },
-      {
-        "q": "Usage de la force imposant l'obéissance.",
-        "correct": "contrainte",
-        "distractors": [
-          "obligation",
-          "legal",
-          "legitime",
-          "necessaire",
-          "absolu",
-          "en fait",
-          "en puissance",
-          "certain",
-          "vrai"
-        ],
-        "defKey": "contrainte",
-        "keywords": ["force","obéissance"],
-        "revision": true
-      },
-      {
-        "q": "Quand on considère que l'injonction émane d'une autorité légitime.",
-        "correct": "obligation",
-        "distractors": [
-          "contrainte",
-          "legal",
-          "legitime",
-          "necessaire",
-          "absolu",
-          "en fait",
-          "en puissance",
-          "certain",
-          "vrai"
-        ],
-        "defKey": "obligation",
-        "keywords": ["autorité","légitime"],
-        "revision": true
-      },
-      {
-        "q": "Ce qui est pleinement réalisé.",
-        "correct": "en acte",
-        "distractors": [
-          "en puissance",
-          "en fait",
-          "en droit",
-          "absolu",
-          "necessaire",
-          "certain",
-          "vrai",
-          "objectif",
-          "singulier"
-        ],
-        "defKey": "en_acte",
-        "keywords": [["réalisé","achevé"],"acte"],
-        "revision": true
-      },
-      {
-        "q": "Ce qui n'est qu'une simple possibilité.",
-        "correct": "en puissance",
-        "distractors": [
-          "en acte",
-          "en fait",
-          "en droit",
-          "absolu",
-          "necessaire",
-          "certain",
-          "vrai",
-          "objectif",
-          "singulier"
-        ],
-        "defKey": "en_puissance",
-        "keywords": ["simple",["possibilité","potentiel"]],
-        "revision": true
-      },
-      {
-        "q": "Ce qui est juste ou permis par les lois.",
-        "correct": "légal",
-        "distractors": [
-          "légitime",
-          "en droit",
-          "en fait",
-          "contrainte",
-          "obligation",
-          "necessaire",
-          "absolu",
-          "vrai",
-          "certain"
-        ],
-        "defKey": "légal",
-        "keywords": ["juste","permis","lois"],
-        "revision": true
-      },
-      {
-        "q": "Conforme à un principe supérieur de morale ou de justice.",
-        "correct": "légitime",
-        "distractors": [
-          "légal",
-          "en droit",
-          "en fait",
-          "contrainte",
-          "obligation",
-          "necessaire",
-          "absolu",
-          "vrai",
-          "certain"
-        ],
-        "defKey": "légitime",
-        "keywords": ["conforme","principe supérieur","morale","justice"],
-        "revision": true
-      }
-    ]
+        "acte"
+      ],
+      "revision": true,
+      "revMot": ""
+    },
+    {
+      "q": "Ce qui n'est qu'une simple possibilité.",
+      "correct": "en puissance",
+      "distractors": [
+        "en acte",
+        "en fait",
+        "en droit",
+        "absolu",
+        "necessaire",
+        "certain",
+        "vrai",
+        "objectif",
+        "singulier"
+      ],
+      "defKey": "en_puissance",
+      "keywords": [
+        "simple",
+        [
+          "possibilité",
+          "potentiel"
+        ]
+      ],
+      "revision": true,
+      "revMot": ""
+    },
+    {
+      "q": "Ce qui est juste ou permis par les lois.",
+      "correct": "légal",
+      "distractors": [
+        "légitime",
+        "en droit",
+        "en fait",
+        "contrainte",
+        "obligation",
+        "necessaire",
+        "absolu",
+        "vrai",
+        "certain"
+      ],
+      "defKey": "légal",
+      "keywords": [
+        "juste",
+        "permis",
+        "lois"
+      ],
+      "revision": true,
+      "revMot": ""
+    },
+    {
+      "q": "Conforme à un principe supérieur de morale ou de justice.",
+      "correct": "légitime",
+      "distractors": [
+        "légal",
+        "en droit",
+        "en fait",
+        "contrainte",
+        "obligation",
+        "necessaire",
+        "absolu",
+        "vrai",
+        "certain"
+      ],
+      "defKey": "légitime",
+      "keywords": [
+        "conforme",
+        "principe supérieur",
+        "morale",
+        "justice"
+      ],
+      "revision": true,
+      "revMot": ""
+    }
+  ]
 }

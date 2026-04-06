@@ -9,13 +9,44 @@
     "inconscient": "L'ensemble des phénomènes psychiques qui échappent à la conscience. Chez Freud (1ère topique), c'est ce qu'une résistance empêche d'accéder à la conscience."
   },
   "definitions_keywords": {
-    "conscience": [["voix","sentiment"], "intérieur","actions","pensées"],
-    "reflexivité": ["rapport","conscience","soi"],
-    "intentionnalité": ["rapport","conscience","monde"],
-    "intersubjectivité": ["rapport","conscience","autres"],
-    "substance_pensante": [["l'esprit","esprit"]],
-    "substance_étendue": ["corps"],
-    "inconscient": ["phénomènes","psychiques","conscience"]
+    "conscience": [
+      [
+        "voix",
+        "sentiment"
+      ],
+      "intérieur",
+      "actions",
+      "pensées"
+    ],
+    "reflexivité": [
+      "rapport",
+      "conscience",
+      "soi"
+    ],
+    "intentionnalité": [
+      "rapport",
+      "conscience",
+      "monde"
+    ],
+    "intersubjectivité": [
+      "rapport",
+      "conscience",
+      "autres"
+    ],
+    "substance_pensante": [
+      [
+        "l'esprit",
+        "esprit"
+      ]
+    ],
+    "substance_étendue": [
+      "corps"
+    ],
+    "inconscient": [
+      "phénomènes",
+      "psychiques",
+      "conscience"
+    ]
   },
   "philosophes": [
     {
@@ -71,7 +102,11 @@
         "L'esprit est identique au corps"
       ],
       "defText": "Dans le <em>Discours de la méthode</em>, Descartes parvient à cette première certitude après avoir utilisé la méthode du doute : même si je doute de tout, je ne peux pas douter que je suis en train de douter, donc de penser.",
-      "keywords": ["pense","donc","suis"],
+      "keywords": [
+        "pense",
+        "donc",
+        "suis"
+      ],
       "revision": false
     },
     {
@@ -90,8 +125,17 @@
         "La pensée est une illusion biologique"
       ],
       "defText": "Dans les <em>Pensées</em>, Pascal utilise cette métaphore pour exprimer la double nature de l'homme : sa fragilité physique face à l'univers (roseau) et sa grandeur unique par la conscience (pensant).",
-      "keywords": ["homme","fragile",["pensant","pensée","conscient"]],
-      "revision": true
+      "keywords": [
+        "homme",
+        "fragile",
+        [
+          "pensant",
+          "pensée",
+          "conscient"
+        ]
+      ],
+      "revision": true,
+      "revMot": null
     },
     {
       "q": "Selon Locke, quelle est la clé de l'identité personnelle ?",
@@ -109,8 +153,12 @@
         "Les gènes"
       ],
       "defText": "Pour John Locke dans son <em>Essai sur l'entendement humain</em>, l'identité d'une personne repose sur la conscience : le fait de pouvoir se considérer comme le même être dans différents temps et lieux.",
-      "keywords": ["conscience","soi"],
-      "revision": true
+      "keywords": [
+        "conscience",
+        "soi"
+      ],
+      "revision": true,
+      "revMot": ""
     },
     {
       "q": "Comment Descartes définit-il l'esprit (l'essence de l'homme) ?",
@@ -128,7 +176,10 @@
         "Un souffle biologique"
       ],
       "defText": "Dans ses <em>Méditations</em> (citées dans le <em>Discours de la méthode</em>), Descartes distingue la substance pensante (l'esprit) de la substance étendue (le corps).",
-      "keywords": ["substance","pensante"],
+      "keywords": [
+        "substance",
+        "pensante"
+      ],
       "revision": false
     },
     {
@@ -147,8 +198,12 @@
         "Le hasard et la chance"
       ],
       "defText": "Dans le <em>Discours de la méthode</em>, Descartes identifie la prévention (préjugés) et la précipitation (juger trop vite) comme les sources de nos erreurs.",
-      "keywords": ["prevention","précipitation"],
-      "revision": true
+      "keywords": [
+        "prevention",
+        "précipitation"
+      ],
+      "revision": true,
+      "revMot": null
     },
     {
       "q": "Selon Pascal, par quoi apprenons-nous à nous connaître ?",
@@ -166,8 +221,15 @@
         "Par la réussite sociale"
       ],
       "defText": "Dans les <em>Pensées</em>, Pascal souligne que la connaissance de soi passe à la fois par la conscience intérieure et par le rapport aux autres.",
-      "keywords": [["soi-même","soi même"],"autres"],
-      "revision": true
+      "keywords": [
+        [
+          "soi-même",
+          "soi même"
+        ],
+        "autres"
+      ],
+      "revision": true,
+      "revMot": null
     },
     {
       "q": "Quelle critique Sartre fait-il à la théorie de l'inconscient ?",
@@ -185,8 +247,17 @@
         "L'inconscient est le moteur du progrès"
       ],
       "defText": "Dans <em>L'être et le néant</em>, Sartre voit dans l'inconscient une excuse commode pour nier notre responsabilité absolue : c'est ce qu'il appelle la 'mauvaise foi'.",
-      "keywords": ["mauvaise foi",["fuir","fuit","fuis"],"liberté"],
-      "revision": true
+      "keywords": [
+        "mauvaise foi",
+        [
+          "fuir",
+          "fuit",
+          "fuis"
+        ],
+        "liberté"
+      ],
+      "revision": true,
+      "revMot": null
     },
     {
       "q": "Pourquoi Popper considère-t-il que la psychanalyse n'est pas une science ?",
@@ -204,8 +275,16 @@
         "Parce qu'elle est subjective"
       ],
       "defText": "Pour Karl Popper, une théorie est scientifique si on peut imaginer une expérience qui la contredit (réfutabilité). La psychanalyse, elle, trouve toujours une explication pour confirmer ses thèses.",
-      "keywords": [["pas réfutable","irréfutable","iréfutable","non réfutable"]],
-      "revision": true
+      "keywords": [
+        [
+          "pas réfutable",
+          "irréfutable",
+          "iréfutable",
+          "non réfutable"
+        ]
+      ],
+      "revision": true,
+      "revMot": null
     },
     {
       "q": "Selon Freud, pourquoi l'existence de l'inconscient est-elle légitime ?",
@@ -223,8 +302,12 @@
         "Parce que c'est une théorie populaire"
       ],
       "defText": "Dans sa <em>Métapsychologie</em>, Freud soutient que l'hypothèse de l'inconscient est légitime car elle permet de soigner des troubles psychiques que la conscience seule n'explique pas.",
-      "keywords": ["efficacité","médicale"],
-      "revision": true
+      "keywords": [
+        "efficacité",
+        "médicale"
+      ],
+      "revision": true,
+      "revMot": null
     },
     {
       "q": "Selon Descartes, que représente l'idée de Dieu (la perfection) dans notre esprit ?",
@@ -242,25 +325,51 @@
         "Un pur hasard"
       ],
       "defText": "Dans la 3ème <em>Méditation</em>, Descartes soutient que nous, êtres imparfaits, ne pouvons pas être la cause de l'idée de perfection. Cette idée a donc été déposée en nous par Dieu, comme la « marque du créateur ».",
-      "keywords": [["marque","trace"],["créateur","dieu"],["ouvrage","travail"]],
-      "revision": true
+      "keywords": [
+        [
+          "marque",
+          "trace"
+        ],
+        [
+          "créateur",
+          "dieu"
+        ],
+        [
+          "ouvrage",
+          "travail"
+        ]
+      ],
+      "revision": true,
+      "revMot": null
     },
-    {
+    { 
       "q": "Quel est l'argument de Descartes pour prouver l'existence de Dieu dans sa 5ème Méditation ?",
       "correct": "Puisque Dieu est parfait, il possède toutes les perfections, dont l'existence",
       "distractors": [
-        "Le monde est si beau qu'il doit avoir un créateur",
-        "Le mal n'existe pas, donc Dieu existe",
-        "Nous avons besoin de Dieu pour être heureux",
-        "Les miracles prouvent sa présence",
-        "La Bible le dit, donc c'est vrai",
-        "Le hasard ne peut pas créer la vie",
-        "L'ordre de l'univers est une preuve mathématique",
-        "Sans Dieu, la vérité serait relative",
-        "L'homme est parfait, donc Dieu existe"
+        "Puisque Dieu est infini, il contient toutes les dimensions, dont l'existence",
+        "Puisque Dieu est créateur, il engendre toutes les réalités, dont l'existence",
+        "Puisque Dieu est éternel, il traverse toutes les époques, dont l'existence",
+        "Puisque Dieu est immuable, il conserve toutes les substances, dont l'existence",
+        "Puisque Dieu est omniscient, il connaît toutes les vérités, dont l'existence",
+        "Puisque Dieu est nécessaire, il impose toutes les logiques, dont l'existence",
+        "Puisque Dieu est souverain, il commande toutes les volontés, dont l'existence",
+        "Puisque Dieu est unique, il unifie toutes les essences, dont l'existence",
+        "Puisque Dieu est bonté, il accorde toutes les grâces, dont l'existence",
+        "Puisque Dieu est esprit, il anime toutes les pensées, dont l'existence"
       ],
       "defText": "Dans la 5ème <em>Méditation</em>, Descartes utilise l'argument ontologique : l'existence est une perfection ; or Dieu possède toutes les perfections par définition, donc il existe nécessairement.",
-      "keywords": ["parfait",["toutes","toute"],"perfection",["l'existence","existence"]],
+      "keywords": [
+        "parfait",
+        [
+          "toutes",
+          "toute"
+        ],
+        "perfection",
+        [
+          "l'existence",
+          "existence"
+        ]
+      ],
       "revision": false
     }
   ]

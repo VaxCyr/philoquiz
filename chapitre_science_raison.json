@@ -4,8 +4,24 @@
     "raison": "1) Ce qui rend compte d’un fait ou d’un phénomène. 2) Faculté de l’esprit d’organiser ses rapports au réel, dans les domaines pratique et théorique ; notamment capacités de calcul et de jugement."
   },
   "definitions_keywords": {
-    "science": ["somme", "connaissances", "activité","ensemble","méthodes",["rationnelles","expérimentales"]],
-    "raison": ["faculté","esprit","organiser","rapport","réel"]
+    "science": [
+      "somme",
+      "connaissances",
+      "activité",
+      "ensemble",
+      "méthodes",
+      [
+        "rationnelles",
+        "expérimentales"
+      ]
+    ],
+    "raison": [
+      "faculté",
+      "esprit",
+      "organiser",
+      "rapport",
+      "réel"
+    ]
   },
   "citations": [
     {
@@ -31,20 +47,28 @@
       "q": "Quelle formulation décrit la science ?",
       "correct": "Activité visant à établir des connaissances par méthodes rationnelles et/ou expérimentales",
       "distractors": [
-        "Savoir populaire hérité des coutumes",
-        "Savoir religieux immuable",
-        "Connaissance intuitive sans épreuve",
-        "Opinion majoritaire des savants",
-        "Doctrine imposée par l’État",
-        "Expérience personnelle non partagée",
-        "Récit mythique explicatif",
-        "Savoir moral sur le bien et le mal",
-        "Règle juridique sur les faits",
-        "Technique pure sans théorie",
-        "Tradition philosophique ancienne"
+        "Activité visant à valider des intuitions par méthodes subjectives et/ou spirituelles",
+        "Activité visant à imposer des dogmes par méthodes autoritaires et/ou politiques",
+        "Activité visant à décrire des beautés par méthodes artistiques et/ou poétiques",
+        "Activité visant à prédire des destins par méthodes occultes et/ou divinatoires",
+        "Activité visant à classer des opinions par méthodes rhétoriques et/ou oratoires",
+        "Activité visant à transformer des matières par méthodes techniques et/ou industrielles",
+        "Activité visant à soigner des corps par méthodes médicales et/ou biologiques",
+        "Activité visant à justifier des morales par méthodes théologiques et/ou éthiques",
+        "Activité visant à créer des richesses par méthodes comptables et/ou financières",
+        "Activité visant à organiser des cités par méthodes juridiques et/ou administratives"
       ],
       "defKey": "science",
-      "keywords": ["activité","établir","connaissances","méthodes",["rationnelle","expérimentale"]]
+      "keywords": [
+        "activité",
+        "établir",
+        "connaissances",
+        "méthodes",
+        [
+          "rationnelle",
+          "expérimentale"
+        ]
+      ]
     },
     {
       "q": "Faculté d’organiser nos rapports au réel (calcul et jugement)",
@@ -63,7 +87,11 @@
         "Habitude culturelle"
       ],
       "defKey": "raison",
-      "keywords": ["faculté","organiser","réel"]
+      "keywords": [
+        "faculté",
+        "organiser",
+        "réel"
+      ]
     },
     {
       "q": "Selon Jacob, quelle différence sépare mythe et science ?",
@@ -79,7 +107,16 @@
         "Le mythe est rationnel ; la science est intuitive"
       ],
       "defText": "François Jacob dans <em>Le darwinisme aujourd’hui</em> : mythes — attitude d’adhésion/refus ; science — théories modifiables, en droit réfutables.",
-      "keywords": ["mythe","accepter","refuser","science",["modifiable","réfutable"]],
+      "keywords": [
+        "mythe",
+        "accepter",
+        "refuser",
+        "science",
+        [
+          "modifiable",
+          "réfutable"
+        ]
+      ],
       "revision": false
     },
     {
@@ -96,7 +133,14 @@
         "La théorie suffit sans observation"
       ],
       "defText": "Bachelard dans <em>Psychanalyse du feu</em> : on décrit ce qu’on estime ; l’objectivité exige une discipline critique. (La description comporte des choix)",
-      "keywords": [["pense","pensant"],"objectif","subjectif"],
+      "keywords": [
+        [
+          "pense",
+          "pensant"
+        ],
+        "objectif",
+        "subjectif"
+      ],
       "revision": false
     },
     {
@@ -114,7 +158,11 @@
         "Les lois sont décidées par vote"
       ],
       "defKey": "science",
-      "keywords": ["phénomènes","obéissent","lois"],
+      "keywords": [
+        "phénomènes",
+        "obéissent",
+        "lois"
+      ],
       "revision": false
     }
   ]

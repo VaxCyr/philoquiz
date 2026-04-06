@@ -3,7 +3,12 @@
     "justice": "Valeur (le juste), ou ce qui est conforme à cette valeur (ce qui est juste); Deux sens : 1) comme vertu — volonté constante de rendre à chacun ce qui lui revient ; 2) comme norme — ensemble des droits et des lois conformes aux droits de chacun."
   },
   "definitions_keywords": {
-    "justice": ["valeur","juste","conforme à cette valeur","est juste"]
+    "justice": [
+      "valeur",
+      "juste",
+      "conforme à cette valeur",
+      "est juste"
+    ]
   },
   "citations": [
     {
@@ -60,24 +65,35 @@
         "La punition exemplaire des fautifs"
       ],
       "defKey": "justice",
-      "keywords": ["volonté","constante","chacun","lui revient"]
+      "keywords": [
+        "volonté",
+        "constante",
+        "chacun",
+        "lui revient"
+      ]
     },
     {
       "q": "La justice comme norme, c’est :",
       "correct": "L’ensemble des droits et des lois conformes aux droits de chacun",
       "distractors": [
-        "La tolérance aux injustices nécessaires",
-        "La préférence pour les coutumes",
-        "La loi du plus fort",
-        "La défense des privilèges",
-        "La morale contre le droit",
-        "La simple efficacité administrative",
-        "La conformité aux traditions religieuses",
-        "La recherche de l’ordre sans droits",
-        "La soumission aux autorités privées"
+        "L’ensemble des peines et des sanctions conformes aux fautes de chacun",
+        "L’ensemble des mœurs et des coutumes conformes aux traditions de chacun",
+        "L’ensemble des désirs et des besoins conformes aux attentes de chacun",
+        "L’ensemble des forces et des pouvoirs conformes aux capacités de chacun",
+        "L’ensemble des jugements et des avis conformes aux opinions de chacun",
+        "L’ensemble des devoirs et des obligations conformes aux mérites de chacun",
+        "L’ensemble des rituels et des codes conformes aux croyances de chacun",
+        "L’ensemble des gains et des profits conformes aux efforts de chacun",
+        "L’ensemble des vertus et des sagesses conformes aux morales de chacun",
+        "L’ensemble des ordres et des décrets conformes aux intérêts de chacun"
       ],
       "defKey": "justice",
-      "keywords": ["droits","lois","droits","chacun"]
+      "keywords": [
+        "droits",
+        "lois",
+        "droits",
+        "chacun"
+      ]
     },
     {
       "q": "Dans la justice correctrice, on applique :",
@@ -94,7 +110,10 @@
         "La proportion religieuse"
       ],
       "defText": "Aristote dans <em>Éthique à Nicomaque</em> : justice correctrice → égalité arithmétique (punition/compensation équivalente au mal commis).",
-      "keywords": ["égalité","arithmétique"]
+      "keywords": [
+        "égalité",
+        "arithmétique"
+      ]
     },
     {
       "q": "Dans la justice distributive, on applique :",
@@ -111,7 +130,13 @@
         "La répartition par honneur"
       ],
       "defText": "Aristote dans <em>Éthique à Nicomaque</em> : justice distributive → égalité géométrique (proportionnelle aux parts, mérites, fonctions).",
-      "keywords": ["égalité",["géométrique","proportionnelle"]]
+      "keywords": [
+        "égalité",
+        [
+          "géométrique",
+          "proportionnelle"
+        ]
+      ]
     },
     {
       "q": "Quel est le premier principe de justice chez Rawls ?",
@@ -128,21 +153,26 @@
         "Libertés réservées aux citoyens nés sur le territoire"
       ],
       "defText": "Rawls dans <em>Une théorie de la justice</em> : Principe 1 — droit égal au système le plus étendu de libertés de base égales pour tous, compatible avec un même système pour tous.",
-      "keywords": ["liberté","égale","tous"]
+      "keywords": [
+        "liberté",
+        "égale",
+        "tous"
+      ]
     },
     {
       "q": "Quel est le deuxième principe de justice chez Rawls ?",
-      "correct": "Organiser les inégalités au bénéfice des plus désavantagés et permettrent l'égalité des chances",
+      "correct": "Organiser les inégalités au bénéfice des plus désavantagés et permettant l'égalité des chances",
       "distractors": [
-        "Réduire toutes les inégalités à zéro",
-        "Favoriser les plus compétents",
-        "Préserver les privilèges acquis",
-        "Accroître les inégalités méritées",
-        "Récompenser la performance maximale",
-        "Distribuer selon le mérite seul",
-        "Assurer l’égalité des revenus",
-        "Protéger la propriété des élites",
-        "Garantir l’égalité des résultats"
+        "Organiser les libertés au détriment des plus favorisés et permettant l'égalité des revenus",
+        "Organiser les pouvoirs au service des plus influents et permettant l'égalité des droits",
+        "Organiser les ressources au profit des plus méritants et permettant l'égalité des efforts",
+        "Organiser les besoins au secours des plus démunis et permettant l'égalité des désirs",
+        "Organiser les lois au respect des plus anciens et permettant l'égalité des devoirs",
+        "Organiser les talents au rendement des plus doués et permettant l'égalité des succès",
+        "Organiser les charges au fardeau des plus riches et permettant l'égalité des peines",
+        "Organiser les savoirs au partage des plus savants et permettant l'égalité des esprits",
+        "Organiser les biens au mélange des plus chanceux et permettant l'égalité des sorts",
+        "Organiser les votes au poids des plus nombreux et permettant l'égalité des voix"
       ],
       "defText": "Rawls dans <em>Une théorie de la justice</em> : Principe 2 — inégalités admises si elles améliorent la situation des plus désavantagés et si les positions sont ouvertes à tous (juste égalité des chances).",
       "keywords": []
@@ -179,7 +209,9 @@
         "Un besoin psychologique"
       ],
       "defText": "Marx dans <em>L'idéologie allemande</em> : l’idéologie est un ensemble d’idées qui justifient l’ordre social ; l’affirmation d’égalité peut masquer des inégalités.",
-      "keywords": ["idéologie"]
+      "keywords": [
+        "idéologie"
+      ]
     },
     {
       "q": "Selon Aristote (Rhétorique), nous avons :",
@@ -196,7 +228,11 @@
         "Une intuition religieuse du juste"
       ],
       "defText": "Aristote dans <em>Rhétorique</em> suggère un sentiment naturel et commun de justice.",
-      "keywords": ["divination","justice","commune"]
+      "keywords": [
+        "divination",
+        "justice",
+        "commune"
+      ]
     },
     {
       "q": "Selon Pascal, la croyance en une justice naturelle universelle est :",
@@ -230,8 +266,17 @@
         "Le bonheur pour tous"
       ],
       "defText": "Dans l'<em>Essai sur l'entendement humain</em>, Locke soutient que les règles de justice sont des inventions humaines pour résoudre des problèmes pratiques. Ce qui est universel, ce n'est pas telle ou telle règle, mais la nécessité d'en avoir.",
-      "keywords": [["présence","presence","il y a", "ait"],"règles"],
-      "revision": true
+      "keywords": [
+        [
+          "présence",
+          "presence",
+          "il y a",
+          "ait"
+        ],
+        "règles"
+      ],
+      "revision": true,
+      "revMot": null
     }
   ]
 }

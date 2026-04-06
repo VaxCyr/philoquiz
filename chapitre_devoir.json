@@ -3,7 +3,24 @@
     "devoir": "Impératif de conscience imposant d'accomplir ce qui est prescrit par une obligation religieuse, morale ou légale."
   },
   "definitions_keywords": {
-    "devoir": ["impératif","conscience","imposant",["de faire","d'accomplir","d'éxecuté"],["prescrit","demandé"],"obligation","religieuse","morale","légale"]
+    "devoir": [
+      "impératif",
+      "conscience",
+      "imposant",
+      [
+        "de faire",
+        "d'accomplir",
+        "d'éxecuté"
+      ],
+      [
+        "prescrit",
+        "demandé"
+      ],
+      "obligation",
+      "religieuse",
+      "morale",
+      "légale"
+    ]
   },
   "citations": [
     {
@@ -65,16 +82,29 @@
         "Norme pragmatique visant l'efficacité"
       ],
       "defKey": "devoir",
-      "keywords": ["impératif","conscience","imposant",["de faire","d'accomplir","d'éxecuté"],["prescrit","demandé"]]
+      "keywords": [
+        "impératif",
+        "conscience",
+        "imposant",
+        [
+          "de faire",
+          "d'accomplir",
+          "d'éxecuté"
+        ],
+        [
+          "prescrit",
+          "demandé"
+        ]
+      ]
     },
     {
       "q": "Quel stoïcien est cité en lien avec le devoir ?",
       "correct": "Zénon",
       "distractors": [
-        "Kant", 
-        "Bentham", 
-        "Aristote", 
-        "Sénèque", 
+        "Kant",
+        "Bentham",
+        "Aristote",
+        "Sénèque",
         "Epicure",
         "Chrysippe",
         "Épictète",
@@ -101,9 +131,9 @@
       "q": "Selon Durkheim, qu'est-ce que la conscience morale ?",
       "correct": "La société qui parle en nous",
       "distractors": [
-        "Un instinct individuel", 
-        "Un choix purement religieux", 
-        "Une conséquence biologique", 
+        "Un instinct individuel",
+        "Un choix purement religieux",
+        "Une conséquence biologique",
         "Un calcul utilitariste",
         "Une voix intérieure purement individuelle",
         "Un instinct biologique inné",
@@ -126,45 +156,59 @@
         "Une habitude individuelle sans portée sociale"
       ],
       "defText": "Durkheim dans <em>L'Éducation morale</em> : \"Quand notre conscience parle, c'est la société qui parle en nous.\" Notre conscience morale est une intériorisation de la contrainte sociale.",
-      "keywords": ["société",["parle","s'exprime"],"nous"]
+      "keywords": [
+        "société",
+        [
+          "parle",
+          "s'exprime"
+        ],
+        "nous"
+      ]
     },
     {
       "q": "Que dit Kant sur la bonne volonté ?",
       "correct": "Agir par devoir, non par contrainte ni intérêt",
-      "distractors": ["Agir uniquement par intérêt personnel", 
-      "Le devoir est inutile", 
-      "La bonne volonté n'existe pas", 
-      "Agir par habitude sociale",
-      "Agir selon l'intérêt personnel maximisé",
-      "Agir uniquement pour obtenir du plaisir",
-      "Agir sous la simple influence des émotions",
-      "Agir parce que la loi l'impose sans intention",
-      "Agir pour satisfaire des désirs sociaux",
-      "Agir en vue d'une récompense future",
-      "Agir seulement si le résultat est utile",
-      "Agir par peur de la sanction uniquement",
-      "Agir en suivant les coutumes locales",
-      "Agir pour maintenir le statut social",
-      "Agir en conformité avec les instincts",
-      "Agir quand cela plaît aux autres",
-      "Agir selon l'intérêt du plus grand nombre",
-      "Agir sous l'autorité d'une tradition religieuse",
-      "Agir sans réfléchir mais en visant l'honneur",
-      "Agir pour éviter la culpabilité personnelle",
-      "Agir uniquement pour l'estime d'autrui",
-      "Agir en se fiant uniquement à l'expérience",
-      "Agir selon l'exemple d'un leader"
-    ],
+      "distractors": [
+        "Agir uniquement par intérêt personnel",
+        "Le devoir est inutile",
+        "La bonne volonté n'existe pas",
+        "Agir par habitude sociale",
+        "Agir selon l'intérêt personnel maximisé",
+        "Agir uniquement pour obtenir du plaisir",
+        "Agir sous la simple influence des émotions",
+        "Agir parce que la loi l'impose sans intention",
+        "Agir pour satisfaire des désirs sociaux",
+        "Agir en vue d'une récompense future",
+        "Agir seulement si le résultat est utile",
+        "Agir par peur de la sanction uniquement",
+        "Agir en suivant les coutumes locales",
+        "Agir pour maintenir le statut social",
+        "Agir en conformité avec les instincts",
+        "Agir quand cela plaît aux autres",
+        "Agir selon l'intérêt du plus grand nombre",
+        "Agir sous l'autorité d'une tradition religieuse",
+        "Agir sans réfléchir mais en visant l'honneur",
+        "Agir pour éviter la culpabilité personnelle",
+        "Agir uniquement pour l'estime d'autrui",
+        "Agir en se fiant uniquement à l'expérience",
+        "Agir selon l'exemple d'un leader"
+      ],
       "defText": "Pour Kant : 1) Une action est bonne si l'intention est bonne. 2) La bonne volonté = agir conformément au devoir ET agir par devoir (non par contrainte ou intérêt).",
-      "keywords": ["agir","devoir","non","contrainite","intérêt"]
+      "keywords": [
+        "agir",
+        "devoir",
+        "non",
+        "contrainite",
+        "intérêt"
+      ]
     },
     {
       "q": "Selon Kant, une action est bonne si :",
       "correct": "L'intention est bonne",
       "distractors": [
-        "Le résultat est bon", 
-        "Elle procure du plaisir", 
-        "Elle est approuvée par tous", 
+        "Le résultat est bon",
+        "Elle procure du plaisir",
+        "Elle est approuvée par tous",
         "Elle suit l'intérêt personnel",
         "Le résultat produit le plus de plaisir",
         "L'action est conforme aux coutumes",
@@ -187,7 +231,10 @@
         "Elle répond à une simple préférence sociale"
       ],
       "defText": "Pour Kant, dans les <em>Fondement de la métaphysique des mœurs</em> : une action est bonne si l'intention est bonne (et non si le résultat est bon).",
-      "keywords": ["intention","bonne"]
+      "keywords": [
+        "intention",
+        "bonne"
+      ]
     }
   ]
 }

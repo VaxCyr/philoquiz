@@ -140,16 +140,16 @@
       "q": "Pourquoi l'homme est-il « condamné à être libre » selon Sartre ?",
       "correct": "Car il ne s'est pas créé lui-même mais est responsable de tout ce qu'il fait",
       "distractors": [
-        "Car la liberté est un fardeau juridique",
-        "Car il doit obéir aux lois de l'État",
-        "Car il est enfermé dans sa conscience",
-        "Car il ne peut pas s'empêcher de penser",
-        "Car la prison est l'opposé de la liberté",
-        "Car il est soumis au destin",
-        "Car Dieu l'a abandonné",
-        "Car il doit travailler pour vivre",
-        "Car la vérité l'oblige à agir",
-        "Car ses désirs sont infinis"
+        "Car il ne s'est pas choisi lui-même mais est prisonnier de tout ce qu'il voit",
+        "Car il ne s'est pas perçu lui-même mais est conscient de tout ce qu'il perd",
+        "Car il ne s'est pas nommé lui-même mais est esclave de tout ce qu'il dit",
+        "Car il ne s'est pas rêvé lui-même mais est victime de tout ce qu'il veut",
+        "Car il ne s'est pas défini lui-même mais est comptable de tout ce qu'il pense",
+        "Car il ne s'est pas voulu lui-même mais est témoin de tout ce qu'il subit",
+        "Car il ne s'est pas appris lui-même mais est l'auteur de tout ce qu'il sait",
+        "Car il ne s'est pas trouvé lui-même mais est juge de tout ce qu'il sent",
+        "Car il ne s'est pas sauvé lui-même mais est responsable de tout ce qu'il ignore",
+        "Car il ne s'est pas jugé lui-même mais est le reflet de tout ce qu'il fait"
       ],
       "defText": "Sartre affirme que nous sommes « jetés » dans le monde sans l'avoir choisi, mais qu'à partir de là, chaque acte est un choix dont nous portons l'entière responsabilité.",
       "keywords": ["responsable",["tout ce qu'il fait","tous ses actes","ses actes"]],
@@ -197,16 +197,16 @@
       "q": "Quand dit-on qu'un peuple est libre politiquement ?",
       "correct": "Quand il décide des lois qu'il se donne (souveraineté populaire)",
       "distractors": [
-        "Quand il n'y a plus de gouvernement",
-        "Quand il est le plus riche du monde",
-        "Quand il a conquis ses voisins",
-        "Quand il possède des armes puissantes",
-        "Quand il refuse de payer des impôts",
-        "Quand il suit une tradition millénaire",
-        "Quand il est dirigé par un roi sage",
-        "Quand il ignore les lois internationales",
-        "Quand il vit en autarcie complète",
-        "Quand il n'a aucune règle sociale"
+        "Quand il profite des biens qu'il accumule (prospérité économique)",
+        "Quand il accepte des chefs qu'il vénère (stabilité institutionnelle)",
+        "Quand il dispose des terres qu'il cultive (indépendance territoriale)",
+        "Quand il jouit des droits qu'il possède (protection individuelle)",
+        "Quand il ignore des conflits qu'il redoute (paix civile)",
+        "Quand il suit des traditions qu'il conserve (identité culturelle)",
+        "Quand il exerce des forces qu'il déploie (puissance militaire)",
+        "Quand il partage des valeurs qu'il prône (cohésion sociale)",
+        "Quand il exprime des idées qu'il défend (liberté d'opinion)",
+        "Quand il vote des budgets qu'il finance (autonomie financière)"
       ],
       "defKey": "souveraineté_populaire",
       "keywords": ["décide","loi"],
@@ -216,16 +216,16 @@
       "q": "Quelles sont les conditions de la responsabilité selon Thomas d'Aquin ?",
       "correct": "Être cause volontaire, pouvoir agir autrement et agir de manière éclairée",
       "distractors": [
-        "Être riche, puissant et célèbre",
-        "Être jeune, en bonne santé et intelligent",
-        "Obéir aux lois, à Dieu et à la famille",
-        "Avoir de la mémoire, de l'imagination et de la force",
-        "Vouloir le bien, éviter le mal et prier",
-        "Être libre, égal et fraternel",
-        "Connaître le passé, vivre le présent et prévoir l'avenir",
-        "Avoir un corps, une âme et un esprit",
-        "Être citoyen, majeur et vacciné",
-        "Ne jamais se tromper, être parfait et sage"
+        "Être sujet raisonnable, pouvoir choisir librement et agir de manière morale",
+        "Être acteur physique, pouvoir bouger librement et agir de manière utile",
+        "Être individu conscient, pouvoir décider seul et agir de manière efficace",
+        "Être citoyen majeur, pouvoir voter librement et agir de manière légale",
+        "Être être vivant, pouvoir réagir instinctivement et agir de manière naturelle",
+        "Être esprit pur, pouvoir penser librement et agir de manière spirituelle",
+        "Être agent social, pouvoir communiquer librement et agir de manière solidaire",
+        "Être personne libre, pouvoir s'exprimer librement et agir de manière authentique",
+        "Être témoin direct, pouvoir observer librement et agir de manière juste",
+        "Être créature divine, pouvoir obéir librement et agir de manière pieuse"
       ],
       "defText": "Tout jugement moral suppose la responsabilité, qui repose sur trois piliers : 1° être la cause volontaire de ses actes, 2° avoir pu agir autrement, 3° agir de manière éclairée.",
       "keywords": ["cause volontaire","agir autrement","agir de manière éclairée"],
@@ -267,7 +267,7 @@
       ],
       "defText": "Il distingue le temps réel du temps mesuré, le temps réel échappe à la science et aux mathématiques. D'après lui quand on mesure le temps on mesure un mobile ; exemple horloge, aiguille bouge donc on mesure une distance, on mesure de l'espace.",
       "keywords": [],
-      "revision": true
+      "revision": false
     },
     {
       "q": "Pourquoi la science ne mesure-t-elle que de « l'espace » selon Bergson ?",
@@ -286,7 +286,7 @@
       ],
       "defText": "Bergson soutient que mesurer le temps revient à mesurer une distance parcourue par un objet (mobile, comme une aiguille d'horloge), ce qui spatialise le temps et en fait perdre la nature réelle (la durée).",
       "keywords": [],
-      "revision": true
+      "revision": false
     }
   ]
 }

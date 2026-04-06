@@ -3,7 +3,17 @@
     "etat": "Autorité instituée sur un plan juridique et politique — fonctions : juridique (représentation), politique (pouvoir), administrative (gestion)."
   },
   "definitions_keywords": {
-    "etat": ["autorité","instituée","plan juridique et politique","juridique","représentation","politique","pouvoir","administrative","gestion"]
+    "etat": [
+      "autorité",
+      "instituée",
+      "plan juridique et politique",
+      "juridique",
+      "représentation",
+      "politique",
+      "pouvoir",
+      "administrative",
+      "gestion"
+    ]
   },
   "citations": [],
   "philosophes": [
@@ -40,8 +50,18 @@
         "Pour créer une religion d'État"
       ],
       "defText": "Dans son <em>Second traité du gouvernement civil</em>, Locke s'oppose à Hobbes en affirmant que le rôle de l'État est de protéger les libertés naturelles de chacun.",
-      "keywords": [["défense","défendre"],["liberté","libertés"]],
-      "revision": true
+      "keywords": [
+        [
+          "défense",
+          "défendre"
+        ],
+        [
+          "liberté",
+          "libertés"
+        ]
+      ],
+      "revision": true,
+      "revMot": null
     },
     {
       "q": "Parmi ces fonctions, laquelle fait partie des fonctions de l'État ?",
@@ -157,7 +177,10 @@
         "Pour assurer leur sécurité"
       ],
       "defText": "Aristote dans <em>Politique</em> donne 2 réponses : 1) Factuelle : comme d'autres animaux grégaires, pour répondre à leurs besoins. 2) Métaphysique : pour \"bien vivre\".",
-      "keywords": ["besoins","vivre"]
+      "keywords": [
+        "besoins",
+        "vivre"
+      ]
     },
     {
       "q": "Que soutient Hobbes sur l'état de nature ?",
@@ -189,15 +212,18 @@
         "C'est une paix imposée par la nature"
       ],
       "defText": "Hobbes dans <em>Le Citoyen</em> décrit l'état de nature comme une guerre de tous contre tous. Selon lui, la nature pousse les hommes à s'opposer (l'homme est un loup pour l'homme).",
-      "keywords": ["guerre","tous contre tous"]
+      "keywords": [
+        "guerre",
+        "tous contre tous"
+      ]
     },
     {
       "q": "Quel philosophe a théorisé le passage de l'état de nature au contrat social ?",
       "correct": "Hobbes",
       "distractors": [
-        "Aristote", 
-        "Pascal", 
-        "Alain", 
+        "Aristote",
+        "Pascal",
+        "Alain",
         "Spinoza",
         "Rousseau",
         "Locke",

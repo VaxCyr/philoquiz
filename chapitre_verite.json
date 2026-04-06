@@ -3,7 +3,17 @@
     "verite": "Conformité entre une pensée ou son expression et l’objet de cette pensée. Par usage courant : « une vérité » est une idée conforme à la réalité."
   },
   "definitions_keywords": {
-    "verite": ["conformité",["pensée","expression"],["réalité","objet"]]
+    "verite": [
+      "conformité",
+      [
+        "pensée",
+        "expression"
+      ],
+      [
+        "réalité",
+        "objet"
+      ]
+    ]
   },
   "citations": [
     {
@@ -74,8 +84,15 @@
         "Ce qui est ressenti comme vrai"
       ],
       "defKey": "verite",
-      "keywords": ["conformité",["pensée","expression"],"réalité"],
-      "revision":false
+      "keywords": [
+        "conformité",
+        [
+          "pensée",
+          "expression"
+        ],
+        "réalité"
+      ],
+      "revision": false
     },
     {
       "q": "Quel est un des trois sens de « vrai » selon Spinoza ?",
@@ -90,8 +107,12 @@
         "Idée vraie : ce qui est simple"
       ],
       "defText": "Spinoza dans <em>Pensées métaphysiques</em> distingue : récit vrai (conforme aux faits), idée vraie (essence), chose « vraie » par métaphore (apparence conforme à la nature).",
-      "keywords": ["montre","telle qu'elle est"],
-      "revision": true
+      "keywords": [
+        "montre",
+        "telle qu'elle est"
+      ],
+      "revision": true,
+      "revMot": null
     },
     {
       "q": "La thèse de Protagoras soutient que :",
@@ -106,24 +127,36 @@
         "La vérité est objective et certaine"
       ],
       "defText": "Protagoras dans <em>La vérité</em> soutient une thèse relativiste : toutes les vérités sont subjectives/relatives et tout opinion est vraie..",
-      "keywords": ["toute","verité","relative"],
-      "revision": true
+      "keywords": [
+        "toute",
+        "verité",
+        "relative"
+      ],
+      "revision": true,
+      "revMot": null
     },
     {
       "q": "Quel argument Platon avance-t-il contre le relativisme ?",
       "correct": "Le relativisme se contredit lorsqu’il affirme que toutes opinions sont vraies",
       "distractors": [
-        "Le relativisme est trop scientifique",
-        "Le relativisme est trop moral",
-        "Le relativisme nie la religion",
-        "Le relativisme refuse la coutume",
-        "Le relativisme est sensible à l’expérience",
-        "Le relativisme est conforme à la nature",
-        "Le relativisme est juste parfois"
+        "Le relativisme se dissout lorsqu'il prétend que seules les lois sont vraies",
+        "Le relativisme s'effondre lorsqu'il suggère que seules les sensations sont vraies",
+        "Le relativisme se trompe lorsqu'il déclare que seules les images sont vraies",
+        "Le relativisme se perd lorsqu'il soutient que seules les utilités sont vraies",
+        "Le relativisme s'isole lorsqu'il affirme que seuls les individus sont vrais",
+        "Le relativisme se tait lorsqu'il annonce que seuls les silences sont vrais",
+        "Le relativisme s'égare lorsqu'il démontre que seuls les changements sont vrais",
+        "Le relativisme se divise lorsqu'il prouve que seuls les contraires sont vrais",
+        "Le relativisme se nie lorsqu'il établit que seuls les plaisirs sont vrais",
+        "Le relativisme se brise lorsqu'il enseigne que seuls les nombres sont vrais"
       ],
       "defText": "Socrate/Platon dans <em>Théétète</em> : 1) pas de critère vrai/faux ; 2) contradiction performative ; 3) n’explique pas l’accord intersubjectif.",
-      "keywords": ["relativisme","se contredit"],
-      "revision": true
+      "keywords": [
+        "relativisme",
+        "se contredit"
+      ],
+      "revision": true,
+      "revMot": null
     },
     {
       "q": "Dans l’allégorie de la caverne, que représente l’éducation au début ?",
@@ -154,7 +187,13 @@
         "Une évidence morale"
       ],
       "defText": "Le scientifique suppose qu'il existe une vérité objective, certaine et définitive, mais elle est toujours pour lui un idéal.",
-      "keywords": ["idéal",["jamais atteint","inatteignable"]],
+      "keywords": [
+        "idéal",
+        [
+          "jamais atteint",
+          "inatteignable"
+        ]
+      ],
       "revision": false
     },
     {
@@ -172,8 +211,19 @@
         "Il devient immortel"
       ],
       "defText": "Dans ses <em>Essais</em>, Montaigne explique que la quête de vérité est utile non parce qu'on la trouve (elle nous échappe), mais parce qu'elle nous révèle nos propres limites.",
-      "keywords": [["connaissance","apprentissage","apprend"],["soi-même","connaître"]],
-      "revision": true
+      "keywords": [
+        [
+          "connaissance",
+          "apprentissage",
+          "apprend"
+        ],
+        [
+          "soi-même",
+          "connaître"
+        ]
+      ],
+      "revision": true,
+      "revMot": null
     }
   ]
 }
