@@ -107,7 +107,8 @@
         "donc",
         "suis"
       ],
-      "revision": false
+      "revision": false,
+      "revMot":null
     },
     {
       "q": "Que signifie l'expression de Pascal « roseau pensant » ?",
@@ -135,7 +136,11 @@
         ]
       ],
       "revision": true,
-      "revMot": null
+      "revMot": {
+        "mot":"« roseau pensant »",
+        "def":"L'homme est fragile mais doté d'une pensée",
+        "keywords":["fragile","mais",["possède","doté,","a"],"pensée"]
+      }
     },
     {
       "q": "Selon Locke, quelle est la clé de l'identité personnelle ?",
@@ -157,8 +162,8 @@
         "conscience",
         "soi"
       ],
-      "revision": true,
-      "revMot": ""
+      "revision": false,
+      "revMot": null
     },
     {
       "q": "Comment Descartes définit-il l'esprit (l'essence de l'homme) ?",
@@ -180,7 +185,12 @@
         "substance",
         "pensante"
       ],
-      "revision": false
+      "revision": true,
+      "revMot":{
+        "mot":"l' « essence de l'homme »",
+        "def":"Une substance pensante",
+        "keywords":["substance","pensante"]
+      }
     },
     {
       "q": "Quelles sont les deux causes de l'erreur selon Descartes ?",
@@ -202,7 +212,7 @@
         "prevention",
         "précipitation"
       ],
-      "revision": true,
+      "revision": false,
       "revMot": null
     },
     {
@@ -228,7 +238,7 @@
         ],
         "autres"
       ],
-      "revision": true,
+      "revision": false,
       "revMot": null
     },
     {
@@ -256,7 +266,7 @@
         ],
         "liberté"
       ],
-      "revision": true,
+      "revision": false,
       "revMot": null
     },
     {
@@ -283,7 +293,7 @@
           "non réfutable"
         ]
       ],
-      "revision": true,
+      "revision": false,
       "revMot": null
     },
     {
@@ -306,7 +316,7 @@
         "efficacité",
         "médicale"
       ],
-      "revision": true,
+      "revision": false,
       "revMot": null
     },
     {
@@ -339,7 +349,7 @@
           "travail"
         ]
       ],
-      "revision": true,
+      "revision": false,
       "revMot": null
     },
     { 
@@ -370,7 +380,8 @@
           "existence"
         ]
       ],
-      "revision": false
+      "revision": false,
+      "revMot":null
     }
   ]
 }

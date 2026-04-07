@@ -14,12 +14,29 @@ let DEFINITIONS_KEYWORDS = {};
 // ─────────────────────────────────────────────────────────────
 // POOL DE RÉVISION
 // ─────────────────────────────────────────────────────────────
-// Règle simple et déterministe pour inclure une question dans le mode révision :
-//   - La question DOIT avoir un champ "revMot" présent ET non-null
-//   - revMot === ""   → le mot affiché = q.correct
-//   - revMot !== ""   → le mot affiché = revMot (override explicite)
-//   - La définition   = q.defText si présent, sinon q.correct
-// Aucune heuristique sur le contenu de la question n'est utilisée.
+// Règles pour inclure une question dans le mode révision :
+//
+//   revMot absent / null  → question ignorée (pas dans le pool)
+//
+//   revMot === ""         → cas "repère simple" ou question bien formée :
+//                           mot      = q.correct
+//                           def      = DEFINITIONS[q.defKey] || q.q || q.defText
+//                           keywords = q.keywords (ils décrivent la def)
+//
+//   revMot = "string"     → override du mot seul (la def est construite comme "")
+//                           mot      = revMot
+//                           def      = DEFINITIONS[q.defKey] || q.q || q.defText
+//                           keywords = q.keywords
+//
+//   revMot = { mot, def, keywords }  → override complet
+//                           mot      = revMot.mot
+//                           def      = revMot.def
+//                           keywords = revMot.keywords
+//
+// Note : pour les repères, q.q *est* la définition (courte et précise),
+// et leurs keywords décrivent bien la définition → ils fonctionnent sans override.
+// Pour les questions de cours non-repères, si les keywords ne décrivent pas
+// la définition mais le mot, il faut un override objet.
 // ─────────────────────────────────────────────────────────────
 
 function buildRevisionPool() {
@@ -29,9 +46,9 @@ function buildRevisionPool() {
   ).map(cb => cb.value);
   const hasRepereChapter = selectedChapters.includes('reperes');
 
-  // 1. Définitions standards (termes du dictionnaire)
+  // 1. Définitions standards (termes du dictionnaire hors repères)
   Object.entries(DEFINITIONS).forEach(([term, def]) => {
-    if (REPERES_DEFS[term] && !hasRepereChapter) return;
+    if (REPERES_DEFS[term]) return; // les repères passent par le bloc 2
     pool.push({
       mot: term.replace(/_/g, ' '),
       def: def,
@@ -44,12 +61,29 @@ function buildRevisionPool() {
   QUIZ_QS.forEach(q => {
     if (q.multi) return;
     if (!('revMot' in q) || q.revMot === null || q.revMot === undefined) return;
+    // Filtrer les repères si le chapitre repères n'est pas sélectionné
+    if (q.chapter === 'reperes' && !hasRepereChapter) return;
 
-    const mot = q.revMot === '' ? q.correct : q.revMot;
-    const def = q.defText || q.correct;
-    const keywords = Array.isArray(q.keywords) ? q.keywords : null;
+    let mot, def, keywords;
 
-    // Éviter les doublons avec les définitions standards
+    if (typeof q.revMot === 'object' && q.revMot !== null) {
+      // Override complet : l'auteur a fourni les trois champs explicitement
+      mot      = q.revMot.mot;
+      def      = q.revMot.def;
+      keywords = Array.isArray(q.revMot.keywords) ? q.revMot.keywords : null;
+    } else {
+      // revMot === "" ou revMot = "string override du mot"
+      mot = q.revMot === '' ? q.correct : q.revMot;
+      // La définition : chercher d'abord dans DEFINITIONS via defKey (idéal pour repères),
+      // puis dans q.q (la question elle-même, souvent une vraie définition courte),
+      // puis dans q.defText en dernier recours.
+      def = (q.defKey && DEFINITIONS[q.defKey])
+          ? DEFINITIONS[q.defKey]
+          : (q.q || q.defText || q.correct);
+      keywords = Array.isArray(q.keywords) ? q.keywords : null;
+    }
+
+    // Éviter les doublons avec les définitions du dictionnaire hors-repères
     const motNorm = mot.toLowerCase().replace(/_/g, ' ');
     const alreadyIn = pool.some(
       item => item.mot.toLowerCase() === motNorm && item.source === 'definition'
@@ -109,7 +143,8 @@ async function loadChapterData(chapters) {
     else if (chapter === 'liberte_temps' && data.philosophes) PHILOSOPHES_LIBERTE_TEMPS.push(...data.philosophes);
   });
 
-  if (REPERES_DEFS) Object.assign(DEFINITIONS, REPERES_DEFS);
+  // Les repères entrent dans DEFINITIONS (flashcards, association) uniquement si le chapitre est sélectionné
+  if (chapters.includes('reperes') && REPERES_DEFS) Object.assign(DEFINITIONS, REPERES_DEFS);
   if (QUIZ_QS.length < 5) throw new Error('Pas assez de questions. Sélectionnez plus de chapitres.');
   console.log(`${QUIZ_QS.length} questions chargées depuis ${chapters.length} chapitres`);
   return true;

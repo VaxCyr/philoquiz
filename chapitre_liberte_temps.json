@@ -58,7 +58,8 @@
       ],
       "defText": "Dans la <em>Somme théologique</em>, Thomas d'Aquin soutient que la liberté est le fondement nécessaire de toute morale et de toute justice : on ne peut conseiller ou punir qu'un être capable de choisir.",
       "keywords": [["conseils","récompenses","châtiments"]],
-      "revision": true
+      "revision": false,
+      "revMot" : null
     },
     {
       "q": "Pourquoi le libre arbitre est-il une illusion selon Spinoza ?",
@@ -77,7 +78,8 @@
       ],
       "defText": "Dans sa <em>Lettre à Schuller</em>, Spinoza explique que les hommes se croient libres car ils sont conscients de leurs actions, mais ignorants des causes physiques ou psychiques qui les poussent à agir (i.e. déterminisme physique).",
       "keywords": [["igonrance","ignorons","ignore"],"causes",["agir","determinent","determine","actions"]],
-      "revision": true
+      "revision": true,
+      "revMot" : null
     },
     {
       "q": "Comment Aristote définit-il le temps ?",
@@ -96,7 +98,12 @@
       ],
       "defText": "Dans la <em>Physique</em>, Aristote lie indissociablement le temps au changement : il est ce qui permet de mesurer l'avant et l'après dans un mouvement.",
       "keywords": ["nombre","mouvement"],
-      "revision": true
+      "revision": true,
+      "revMot": {
+        "mot": "Le temps (Aristote)",
+        "def": "Le nombre du mouvement selon l'antérieur et le postérieur.",
+        "keywords": ["nombre", "mouvement", "antérieur", "anterieur"]
+      }
     },
     {
       "q": "Que mesure-t-on réellement selon Bergson quand on mesure le temps ?",
@@ -115,7 +122,8 @@
       ],
       "defText": "Pour Bergson dans <em>La pensée et le mouvant</em>, la science spatialise le temps. Le temps vécu (durée) est une expérience qualitative que les horloges ne peuvent pas saisir.",
       "keywords": ["espace"],
-      "revision": true
+      "revision": true,
+      "revMot": null
     },
     {
       "q": "Que signifie la formule de Sartre « l'existence précède l'essence » ?",
@@ -134,7 +142,12 @@
       ],
       "defText": "Dans <em>L'existentialisme est un humanisme</em>, Sartre explique que contrairement à un objet (comme un coupe-papier) fabriqué selon un concept, l'homme n'a pas de nature prédéfinie.",
       "keywords": [["existence","vit","vie"],["puis","ensuite","après"],"se définit"],
-      "revision": true
+      "revision": true,
+      "revMot": {
+        "mot": "« l'existence précède l'essence » (Sartre)",
+        "def": "L'homme vit puis se définit par ses actes",
+        "keywords": ["homme","définit","actes"]
+      }
     },
     {
       "q": "Pourquoi l'homme est-il « condamné à être libre » selon Sartre ?",
@@ -153,7 +166,8 @@
       ],
       "defText": "Sartre affirme que nous sommes « jetés » dans le monde sans l'avoir choisi, mais qu'à partir de là, chaque acte est un choix dont nous portons l'entière responsabilité.",
       "keywords": ["responsable",["tout ce qu'il fait","tous ses actes","ses actes"]],
-      "revision": true
+      "revision": true,
+      "revMot":null
     },
     {
       "q": "Quelle est la définition de la liberté ?",
@@ -172,7 +186,12 @@
       ],
       "defKey": "liberté",
       "keywords": ["pouvoir de faire ce que l'on veut"],
-      "revision": true
+      "revision": true,
+      "revMot": {
+        "mot":"Liberté",
+        "def":"Le pouvoir de faire ce que l'on veut. Elle peut être morale (libre arbitre, autonomie) ou politique (droits protégés, souveraineté populaire).",
+        "keywords":["pouvoir","faire",["ce que l'on veut","ce qu'on veut","comme on veut"]]
+      }
     },
     {
       "q": "Qu'est-ce que l'autonomie d'un point de vue moral ?",
@@ -191,7 +210,12 @@
       ],
       "defKey": "autonomie",
       "keywords": [["obeissance","obéir"],"loi",["on est l'auteur","soi-même l'auteur","soi même l'auteur"]],
-      "revision": false
+      "revision": true,
+      "revMot": {
+        "mot":"autonomie",
+        "def": "Fait de ne pas être soumis à une loi imposée de l'extérieur, mais d'obéir à une loi dont on est soi-même l'auteur.",
+        "keywords":["obéir",["loi","lois"],["soi-même","soi même"],"auteur"]
+      }
     },
     {
       "q": "Quand dit-on qu'un peuple est libre politiquement ?",
@@ -210,7 +234,12 @@
       ],
       "defKey": "souveraineté_populaire",
       "keywords": ["décide","loi"],
-      "revision": false
+      "revision": true,
+      "revMot": {
+        "mot":"Souveraineté populaire",
+        "def": "Principe selon lequel un peuple est libre quand il décide lui-même des lois qu'il se donne.",
+        "keywords":["principe","peuple","libre","décide","lois"]
+      }
     },
     {
       "q": "Quelles sont les conditions de la responsabilité selon Thomas d'Aquin ?",
@@ -229,7 +258,12 @@
       ],
       "defText": "Tout jugement moral suppose la responsabilité, qui repose sur trois piliers : 1° être la cause volontaire de ses actes, 2° avoir pu agir autrement, 3° agir de manière éclairée.",
       "keywords": ["cause volontaire","agir autrement","agir de manière éclairée"],
-      "revision": true
+      "revision": true,
+      "revMot": {
+        "mot": "Conditions de la responsabilité (Thomas d'Aquin)",
+        "def": "Être cause volontaire de ses actes, avoir pu agir autrement, et agir de manière éclairée.",
+        "keywords": ["cause volontaire", "agir", ["éclairée","éclairé"]]
+      }
     },
     {
       "q": "Selon Sartre, qu'est-ce qu'être « pour soi » ?",
@@ -248,7 +282,12 @@
       ],
       "defText": "L'Homme n'est pas seulement en soi (i.e. quelque chose qui se définit par des caractéristiques objectives) mais aussi pour soi (i.e. être ce que l'on a conscience d'être)",
       "keywords": ["être","conscience","d'être"],
-      "revision": true
+      "revision": true,
+      "revMot": {
+        "mot" : "être « Pour soi » (Sartre)",
+        "def" : "Être ce que l'on a conscience d'être",
+        "keywords": ["être","conscience","d'être"]
+      }
     },
     {
       "q": "Comment Bergson distingue-t-il le temps réel du temps mesuré ?",
@@ -267,7 +306,8 @@
       ],
       "defText": "Il distingue le temps réel du temps mesuré, le temps réel échappe à la science et aux mathématiques. D'après lui quand on mesure le temps on mesure un mobile ; exemple horloge, aiguille bouge donc on mesure une distance, on mesure de l'espace.",
       "keywords": [],
-      "revision": false
+      "revision": false,
+      "revMot": null
     },
     {
       "q": "Pourquoi la science ne mesure-t-elle que de « l'espace » selon Bergson ?",
@@ -286,7 +326,8 @@
       ],
       "defText": "Bergson soutient que mesurer le temps revient à mesurer une distance parcourue par un objet (mobile, comme une aiguille d'horloge), ce qui spatialise le temps et en fait perdre la nature réelle (la durée).",
       "keywords": [],
-      "revision": false
+      "revision": false,
+      "revMot" : null
     }
   ]
 }

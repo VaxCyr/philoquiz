@@ -70,7 +70,12 @@
         "constante",
         "chacun",
         "lui revient"
-      ]
+      ],
+      "revMot":{
+        "mot":"Justice (vertu)",
+        "def":"La volonté constante de rendre à chacun ce qui lui revient",
+        "keywords":["volonté","rendre","chacun",["revient","appartient"]]
+      }
     },
     {
       "q": "La justice comme norme, c’est :",
@@ -93,7 +98,12 @@
         "lois",
         "droits",
         "chacun"
-      ]
+      ],
+      "revMot":{
+        "mot":"Justice (norme)",
+        "def":"L’ensemble des droits et des lois conformes aux droits de chacun",
+        "keywords":["ensemble",["droits","lois"],["conforme","conformes"],"droits","chacun"]
+      }
     },
     {
       "q": "Dans la justice correctrice, on applique :",
@@ -113,7 +123,8 @@
       "keywords": [
         "égalité",
         "arithmétique"
-      ]
+      ],
+      "revMot":null
     },
     {
       "q": "Dans la justice distributive, on applique :",
@@ -136,7 +147,8 @@
           "géométrique",
           "proportionnelle"
         ]
-      ]
+      ],
+      "revMot":null
     },
     {
       "q": "Quel est le premier principe de justice chez Rawls ?",
@@ -157,7 +169,8 @@
         "liberté",
         "égale",
         "tous"
-      ]
+      ],
+      "revMot":null
     },
     {
       "q": "Quel est le deuxième principe de justice chez Rawls ?",
@@ -175,7 +188,8 @@
         "Organiser les votes au poids des plus nombreux et permettant l'égalité des voix"
       ],
       "defText": "Rawls dans <em>Une théorie de la justice</em> : Principe 2 — inégalités admises si elles améliorent la situation des plus désavantagés et si les positions sont ouvertes à tous (juste égalité des chances).",
-      "keywords": []
+      "keywords": [],
+      "revMot":null
     },
     {
       "q": "Selon Platon (La République), la justice sert :",
@@ -192,7 +206,8 @@
         "Le bonheur particulier"
       ],
       "defText": "Platon dans <em>La République</em> (critique) : la justice sert les intérêts de ceux qui dictent les règles.",
-      "keywords": []
+      "keywords": [],
+      "revMot":null
     },
     {
       "q": "Pour Marx, la justice est :",
@@ -211,7 +226,8 @@
       "defText": "Marx dans <em>L'idéologie allemande</em> : l’idéologie est un ensemble d’idées qui justifient l’ordre social ; l’affirmation d’égalité peut masquer des inégalités.",
       "keywords": [
         "idéologie"
-      ]
+      ],
+      "revMot":null
     },
     {
       "q": "Selon Aristote (Rhétorique), nous avons :",
@@ -232,7 +248,8 @@
         "divination",
         "justice",
         "commune"
-      ]
+      ],
+      "revMot":null
     },
     {
       "q": "Selon Pascal, la croyance en une justice naturelle universelle est :",
@@ -249,7 +266,8 @@
         "Mesurable mathématiquement"
       ],
       "defText": "Pascal dans <em>Pensées</em> : s’il y avait une injustice naturelle connue de tous, on trouverait des actions unanimement jugées injustes — ce n’est pas le cas.",
-      "keywords": []
+      "keywords": [],
+      "revMot":null
     },
     {
       "q": "Selon Locke, quel est le seul aspect universel de la justice ?",
@@ -275,7 +293,7 @@
         ],
         "règles"
       ],
-      "revision": true,
+      "revision": false,
       "revMot": null
     }
   ]

@@ -60,7 +60,7 @@
           "libertés"
         ]
       ],
-      "revision": true,
+      "revision": false,
       "revMot": null
     },
     {
@@ -89,7 +89,8 @@
         "Esthétique (promotion des arts)"
       ],
       "defText": "L'État a 3 fonctions : juridique de représentation, politique de pouvoir et administrative de gestion.",
-      "keywords": []
+      "keywords": [],
+      "revMot": null
     },
     {
       "q": "Parmi ces fonctions, laquelle fait partie des fonctions de l'État ?",
@@ -117,7 +118,8 @@
         "Morale (définition du bien et du mal)"
       ],
       "defText": "L'État a 3 fonctions : juridique de représentation, politique de pouvoir et administrative de gestion.",
-      "keywords": []
+      "keywords": [],
+      "revMot": null
     },
     {
       "q": "Parmi ces fonctions, laquelle fait partie des fonctions de l'État ?",
@@ -145,7 +147,8 @@
         "Spirituelle (élévation morale)"
       ],
       "defText": "L'État a 3 fonctions : juridique de représentation, politique de pouvoir et administrative de gestion.",
-      "keywords": []
+      "keywords": [],
+      "revMot": null
     },
     {
       "q": "Selon Aristote, pourquoi les hommes se réunissent-ils ?",
@@ -180,7 +183,8 @@
       "keywords": [
         "besoins",
         "vivre"
-      ]
+      ],
+      "revMot": null
     },
     {
       "q": "Que soutient Hobbes sur l'état de nature ?",
@@ -215,7 +219,8 @@
       "keywords": [
         "guerre",
         "tous contre tous"
-      ]
+      ],
+      "revMot": null
     },
     {
       "q": "Quel philosophe a théorisé le passage de l'état de nature au contrat social ?",
@@ -244,7 +249,8 @@
         "Levi-Strauss"
       ],
       "defText": "Hobbes dans <em>Le Citoyen</em> : État de nature (guerre de tous contre tous) → Contrat social → État de société (fin de la guerre). La vie en société n'est pas naturelle mais conventionnelle.",
-      "keywords": []
+      "keywords": [],
+      "revMot": null
     }
   ]
 }
