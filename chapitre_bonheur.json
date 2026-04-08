@@ -67,7 +67,12 @@
       "defKey": "bonheur",
       "keywords": [
         "satisfait"
-      ]
+      ],
+      "revMot": {
+        "mot": "Bonheur",
+        "def": "Ce qui nous satisfait",
+        "keywords":["satisfait"]
+      }
     },
     {
       "q": "Lequel de ces remèdes contre le malheur est dans le cours ?",
@@ -103,7 +108,8 @@
           "craindre",
           "peur"
         ]
-      ]
+      ],
+      "revMot": null
     },
     {
       "q": "Lequel de ces remèdes contre le malheur est dans le cours ?",
@@ -140,7 +146,8 @@
           "craindre",
           "peur"
         ]
-      ]
+      ],
+      "revMot": null
     },
     {
       "q": "Lequel de ces remèdes contre le malheur est dans le cours ?",
@@ -174,7 +181,8 @@
       "keywords": [
         "supporter",
         "douleur"
-      ]
+      ],
+      "revMot": null
     },
     {
       "q": "Lequel de ces remèdes contre le malheur est dans le cours ?",
@@ -208,7 +216,8 @@
       "keywords": [
         "possible",
         "heureux"
-      ]
+      ],
+      "revMot": null
     },
     {
       "q": "Quel philosophe est associé à l'utilitarisme dans le cours ?",
@@ -243,7 +252,8 @@
       "defText": "Jeremy Bentham est le représentant de l'utilitarisme (doctrine qui considère l'utilité comme principe du bien).",
       "keywords": [
         "Bentham"
-      ]
+      ],
+      "revMot": null
     },
     {
       "q": "Qui a écrit : 'Nous ne nous tenons jamais au temps présent' ?",
@@ -277,7 +287,8 @@
       "defText": "Citation de Blaise Pascal dans les <em>Pensées</em>. Pascal critique notre incapacité à vivre le présent : on anticipe l'avenir ou on rappelle le passé.",
       "keywords": [
         "Pascal"
-      ]
+      ],
+      "revMot": null
     },
     {
       "q": "Parmi ces repères, lesquels forment une paire ?",
@@ -296,7 +307,8 @@
       ],
       "multi": true,
       "defText": "Absolu (ne dépend de rien) ≠ Relatif (dépend d'autre chose). Autre paire : Contingent (peut être autrement) ≠ Nécessaire (ne peut pas ne pas être).",
-      "keywords": []
+      "keywords": [],
+      "revMot": null
     },
     {
       "q": "Parmi ces repères, lesquels forment une paire ?",
@@ -315,7 +327,8 @@
       ],
       "multi": true,
       "defText": "Contingent : Ce qui peut ou aurait pu être autrement ≠ Nécessaire : Ce qui ne peut pas ne pas être.",
-      "keywords": []
+      "keywords": [],
+      "revMot": null
     },
     {
       "q": "Parmi ces repères, lesquels forment une paire ?",
@@ -334,7 +347,8 @@
       ],
       "multi": true,
       "defText": "En fait : Ce qui est / En droit : Ce qui devrait être.",
-      "keywords": []
+      "keywords": [],
+      "revMot": null
     },
     {
       "q": "Parmi ces repères, lesquels forment une paire ?",
@@ -353,7 +367,8 @@
       ],
       "multi": true,
       "defText": "Contrainte : Injonction accompagnée de l'usage d'une force qui impose une obéissance / Obligation : Quand on considère que l'injonction émane d'une autorité légitime",
-      "keywords": []
+      "keywords": [],
+      "revMot": null
     },
     {
       "q": "Parmi ces repères, lesquels forment une paire ?",
@@ -372,7 +387,8 @@
       ],
       "multi": true,
       "defText": "Transcendant : Dépasse les limites naturel d'un objet ≠ Immanent : Contenu dans les limites naturel d'un objet",
-      "keywords": []
+      "keywords": [],
+      "revMot": null
     },
     {
       "q": "Parmi ces repères, lesquels forment une paire ?",
@@ -391,7 +407,8 @@
       ],
       "multi": true,
       "defText": "En acte : Achevé/accomplit ≠ En puissance : Accomplissement potentiel",
-      "keywords": []
+      "keywords": [],
+      "revMot": null
     },
     {
       "q": "Combien y a-t-il de types de désirs listés dans le cours ?",
@@ -406,10 +423,11 @@
         "Un unique type"
       ],
       "defText": "3 types : 1) Naturels et nécessaires (il faut), 2) Naturels et non nécessaires (on peut), 3) Non naturels et non nécessaires (on ne doit pas).",
-      "keywords": []
+      "keywords": [],
+      "revMot": null
     },
     { 
-      "q": "Quelle phrase est attribuée à Alain dans le cours à propos du Bonheur ?",
+      "q": "Quelle phrase est attribuée à Alain à propos du Bonheur ?",
       "correct": "Dès qu'un homme cherche le bonheur, il est condamné à ne pas le trouver",
       "distractors": [
         "Dès qu'un homme possède le bonheur, il est condamné à le perdre aussitôt",
@@ -432,10 +450,11 @@
           "trouver",
           "avoir"
         ]
-      ]
+      ],
+      "revMot": null
     },
     {
-      "q": "Selon le cours, quel type de désir faut-il éviter ?",
+      "q": "Quels types de désir faut-il éviter ?",
       "correct": "Non naturels et non nécessaires",
       "distractors": [
         "Naturels et nécessaires",
@@ -458,10 +477,11 @@
         "Désirs conformes à la nature"
       ],
       "defText": "Non naturels et non nécessaires = on ne doit pas / Naturels et nécessaires = il faut / Naturels et non nécessaires = on peut.",
-      "keywords": []
+      "keywords": [],
+      "revMot": null
     },
     {
-      "q": "Pour Schopenhauer, qu’est-ce que la volonté dans l’être humain ?",
+      "q": "Selon Schopenhauer, qu’est-ce que la volonté dans l’être humain ?",
       "correct": "Un effort perpétuel qui engendre des désirs sans fin",
       "distractors": [
         "Une faculté rationnelle qui cherche la vérité",
@@ -484,7 +504,8 @@
           "sans fin",
           "infini"
         ]
-      ]
+      ],
+      "revMot": null
     },
     {  
       "q": "Pourquoi, selon Schopenhauer, tout désir est-il une source de souffrance ?",
@@ -509,7 +530,8 @@
           "non satisfait",
           "pas satisfait"
         ]
-      ]
+      ],
+      "revMot": null
     },
     {
       "q": "Selon Schopenhauer, pourquoi la satisfaction d’un désir ne permet-elle pas le bonheur durable ?",
@@ -534,7 +556,8 @@
         ],
         "nouveau",
         "désir"
-      ]
+      ],
+      "revMot": null
     },
     {
       "q": "D'après Schopenhauer, pourquoi l’être humain ne peut-il pas être durablement heureux ?",
@@ -551,7 +574,8 @@
         "vie",
         "souffrance",
         "ennui"
-      ]
+      ],
+      "revMot": null
     },
     {
       "q": "Pourquoi, selon Pascal, les hommes ne vivent-ils presque jamais dans le présent ?",
@@ -575,7 +599,8 @@
           "pensent"
         ],
         "l'avenir"
-      ]
+      ],
+      "revMot": null
     },
     {
       "q": "Quel rôle joue l’imagination dans le malheur humain selon Pascal ?",
@@ -607,7 +632,8 @@
           "non nécessaire",
           "pas nécessaire"
         ]
-      ]
+      ],
+      "revMot": null
     },
     {
       "q": "Pourquoi, selon Pascal, les hommes ne peuvent-ils pas connaître un bonheur complet ?",
@@ -624,7 +650,8 @@
         "jamais",
         "présent",
         "bonheur"
-      ]
+      ],
+      "revMot": null
     },
     {
       "q": "Quelle est la conception stoïcienne du bonheur ?",
@@ -648,7 +675,8 @@
           "raison",
           "rationnel"
         ]
-      ]
+      ],
+      "revMot": null
     }
   ]
 }

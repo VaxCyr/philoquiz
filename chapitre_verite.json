@@ -92,7 +92,12 @@
         ],
         "réalité"
       ],
-      "revision": false
+      "revision": true,
+      "revMot": {
+        "mot": "Vérité",
+        "def": "Conformité entre une pensée ou son expression et son objet",
+        "keywords": ["conformité",["pensée","expression"],"réalité"]
+      }
     },
     {
       "q": "Quel est un des trois sens de « vrai » selon Spinoza ?",
@@ -111,7 +116,7 @@
         "montre",
         "telle qu'elle est"
       ],
-      "revision": true,
+      "revision": false,
       "revMot": null
     },
     {
@@ -132,7 +137,7 @@
         "verité",
         "relative"
       ],
-      "revision": true,
+      "revision": false,
       "revMot": null
     },
     {
@@ -155,7 +160,7 @@
         "relativisme",
         "se contredit"
       ],
-      "revision": true,
+      "revision": false,
       "revMot": null
     },
     {
@@ -172,7 +177,8 @@
       ],
       "defText": "Platon dans <em>La République</em> (Allégorie de la caverne) : l’éducation est d’abord difficile et contraignante ; elle arrache aux illusions.",
       "keywords": [],
-      "revision": false
+      "revision": false,
+      "revMot": null
     },
     {
       "q": "Selon Einstein et Infeld, la vérité scientifique est :",
@@ -194,7 +200,8 @@
           "inatteignable"
         ]
       ],
-      "revision": false
+      "revision": false,
+      "revMot": null
     },
     {
       "q": "Selon Montaigne, que gagne l'homme à chercher une vérité qu'il ne peut atteindre ?",
@@ -222,7 +229,7 @@
           "connaître"
         ]
       ],
-      "revision": true,
+      "revision": false,
       "revMot": null
     }
   ]

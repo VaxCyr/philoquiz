@@ -68,7 +68,21 @@
           "rationnelle",
           "expérimentale"
         ]
-      ]
+      ],
+      "revMot": {
+        "mot":"Science",
+        "def":"Activité visant à établir des connaissances par méthodes rationnelles et/ou expérimentales",
+        "keywords": [
+          "activité",
+          "établir",
+          "connaissances",
+          "méthodes",
+          [
+            "rationnelle",
+            "expérimentale"
+          ]
+        ]
+      }
     },
     {
       "q": "Faculté d’organiser nos rapports au réel (calcul et jugement)",
@@ -91,7 +105,8 @@
         "faculté",
         "organiser",
         "réel"
-      ]
+      ],
+      "revMot": ""
     },
     {
       "q": "Selon Jacob, quelle différence sépare mythe et science ?",
@@ -117,7 +132,8 @@
           "réfutable"
         ]
       ],
-      "revision": false
+      "revision": false,
+      "revMot": null
     },
     {
       "q": "Que souligne Bachelard à propos de l’objectivité ?",
@@ -141,7 +157,8 @@
         "objectif",
         "subjectif"
       ],
-      "revision": false
+      "revision": false,
+      "revMot": null
     },
     {
       "q": "La science suppose que :",
@@ -163,7 +180,8 @@
         "obéissent",
         "lois"
       ],
-      "revision": false
+      "revision": false,
+      "revMot": null
     }
   ]
 }
