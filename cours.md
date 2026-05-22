@@ -130,15 +130,15 @@
 - **Épicure — Lettre à Ménécée** :
    Le bonheur est simple, c'est le plaisir. Bien vivre = être heureux.
    Les 4 remèdes (le Tetrapharmakos) :
-   > 1° Ne pas avoir peur des Dieux (ils sont parfaits donc désintéressés de nous).
-   > 2° Ne pas craindre la mort (si je suis là, elle n'est pas là ; si elle est là, je n'y suis plus).
-   > 3° Le bonheur est possible (plaisirs).
-   > 4° La douleur est supportable (car elle est limitée dans le temps ou l'intensité).
+   - 1° Ne pas avoir peur des Dieux (ils sont parfaits donc désintéressés de nous).
+   - 2° Ne pas craindre la mort (si je suis là, elle n'est pas là ; si elle est là, je n'y suis plus).
+   - 3° Le bonheur est possible (plaisirs).
+   - 4° La douleur est supportable (car elle est limitée dans le temps ou l'intensité).
    
    Les 3 types de désirs :
-   > Naturels et nécessaires (à satisfaire impérativement).
-   > Naturels et non nécessaires (on peut les satisfaire avec modération).
-   > Non naturels et non nécessaires (à éviter car ils sont insatiables).
+   - Naturels et nécessaires (à satisfaire impérativement).
+   - Naturels et non nécessaires (on peut les satisfaire avec modération).
+   - Non naturels et non nécessaires (à éviter car ils sont insatiables).
 
 - **Schopenhauer — Le Monde comme volonté et comme représentation** :
    Le bonheur durable est impossible. La volonté est un manque perpétuel : le désir est souffrance. La satisfaction est brève et mène à l'ennui ou à un nouveau désir. La vie oscille comme un pendule entre la souffrance et l'ennui.
@@ -171,14 +171,13 @@
 
 - **Aristote — Politique** :
    L'homme est un « animal politique ».
-   > Cause factuelle : S'unir pour répondre aux besoins vitaux (grégarité).
-   > Cause métaphysique : Se réunir pour le « bien vivre » (la vie heureuse et vertueuse).
+   Cause factuelle : S'unir pour répondre aux besoins vitaux (grégarité).
+   Cause métaphysique : Se réunir pour le « bien vivre » (la vie heureuse et vertueuse).
 
 - **Hobbes — Le Citoyen** :
    La société n'est pas naturelle mais conventionnelle.
-   > État de nature = guerre de tous contre tous (« l'homme est un loup pour l'homme »).
-   > Contrat social = abandon de la liberté naturelle pour la sécurité.
-   > État de société = paix sous l'autorité du souverain.
+   État de nature = guerre de tous contre tous (« l'homme est un loup pour l'homme »).
+   Contrat social = abandon de la liberté naturelle pour la sécurité.
 
 - **Locke — Second traité du gouvernement civil** :
    En opposition à Hobbes, l'État est créé pour défendre les libertés naturelles et la propriété. L'État définit les limites de chacun pour permettre la coexistence des libertés.
@@ -190,15 +189,15 @@
 - **Aristote — Rhétorique & Éthique à Nicomaque** :
    Il existe une justice naturelle dont le sentiment est commun à tous.
    Le « juste » est ce qui est légal et ce qui est égal.
-   > Justice correctrice : Égalité arithmétique (réparation stricte).
-   > Justice distributive : Égalité géométrique (proportionnelle au mérite).
+   Justice correctrice : Égalité arithmétique (réparation stricte).
+   Justice distributive : Égalité géométrique (proportionnelle au mérite).
 
 - **Pascal — Pensées** :
    En opposition à Aristote : il n'y a pas de justice naturelle universelle (les lois changent selon les pays). La justice véritable est inaccessible à la raison, elle n'est accessible qu'au cœur.
 
 - **John Rawls — Une théorie de la justice** :
-   > Principe 1 : Libertés de base égales pour tous.
-   > Principe 2 : Inégalités organisées au bénéfice des plus désavantagés et égalité des chances.
+   Principe 1 : Libertés de base égales pour tous.
+   Principe 2 : Inégalités organisées au bénéfice des plus désavantagés et égalité des chances.
 
 - **Platon — La République** :
    La justice est souvent un outil de domination au service des plus forts (majorité ou force physique).
@@ -217,13 +216,19 @@
    3 sens du vrai : Récit fidèle aux faits, idée conforme à l'objet (A²=B²+C²), et apparence conforme à la nature.
 
 - **Aristote — Métaphysique** :
-   La vérité est la correspondance entre ce que l'on pense et ce qui est (théorie de la vérité-correspondance).
+   La vérité est la correspondance entre ce que l'on pense et ce qui est.
 
 - **Protagoras — La Vérité** :
    Thèse relativiste : « L'homme est la mesure de toute chose ». La vérité est subjective et relative.
 
-- **Platon — Théétète & La République** :
-   Réfutation du relativisme : il se contredit et rend le dialogue impossible.
+- **Platon - Théétète** :
+   Réfutation du relativisme par Socrate :
+      - Le relativisme ne permet pas de distinguer le vrai du faux (pourtant j'arrive à voir que je me trompe des fois) ;
+      - Le relativisme se contredit (Protagoras dit que tout opinion est vraie, Socrate dit que c'est faux, donc Protagoras à faux puisque c'est vrai que c'est faux.) ;
+      - Le relativisme ne permet pas de comprendre comment les hommes peuvent se comprendre les uns les autres (Les opinions humains divergent sur certains sujets, il y a désaccord, ce qui suppose que ceux qui dialoguent parlent de la même chose. Il existe donc des expériences et vérités commune.)
+
+
+- **Platon — La République** :
    Allégorie de la caverne : Passage de l'ignorance (ombres) à la connaissance (soleil/réalité supérieure) par l'éducation, qui est une libération contraignante.
 
 - **Montaigne — Essais** :
@@ -236,6 +241,7 @@
    L'objectivité est une conquête contre la subjectivité. On décrit ce qu'on estime, ce qui implique des choix inconscients.
 
 - **Jacob — Le darwinisme aujourd'hui** :
+   Les discours scientifiques et myhtes répondent tout deux aux mêmes questions fondamental, mais de manière opposé
    Le mythe est une adhésion/refus (immodifiable). La science est une théorie modifiable et en droit réfutable (Popper).
 
 ---
@@ -243,21 +249,73 @@
 ### Références sur la Conscience et l'Inconscient :
 
 - **Descartes — Discours de la méthode & Méditations** :
-   Le Cogito : « Je pense donc je suis » (première certitude).
-   Dualisme : Distinction entre substance pensante (esprit) et substance étendue (corps).
-   Preuve de Dieu : L'idée de perfection en moi (être imparfait) est la « marque du créateur ».
-   L'erreur : Vient de la prévention (préjugés) ou de la précipitation.
+   6 méditations :
+         1° 
+            Je ne peux pas penser en pensant que je n'existe pas
+            Je ne peux pas douter que je suis
+            Je pense donc je suis
+         2° Qui suis-je ?
+            existence = le fait que je suis
+            essence = ce que je suis :
+               Un esprit > Quelque chose qui pense => une substance pensante
+               Un corps > Quelque chose qu'est étendue/flexible/muable => une substance étendue
+         3° Vers d'autres vérités
+            La consience de soi c'est que je suis un esprit, c'est-à-dire un être limité et imparfait
+            Ce qui veut dire qu'il y a une cause plus grande, infini et cause d'elle-même => Dieu (sens non religieu)
+            => Il existe une cause infinie et cause d'elle-même nommé Dieu
+            Je me considère imparfait donc j'ai une idée de la perfection, mais la cause de cette idée de perfection ne peut être que infini et parfaite donc je n'en suis pas la cause
+            L'idée de Dieu est la marque du créateur
+         4° causes vérité et erreurs
+            Causes de l'erreur sont en vrai donc corrigeable
+            2 causes de l'erreur :
+               - Prévention -> empêche de juger car faux précédent jugement (Préjugés)
+               - Precipitation -> Juger avant d'avoir toutes les informations / Juger avec un nombre limité d'informations
+            Volonté -> Capacité de juger /infini
+            Entendement -> Capacité de former idée /limité
+         5°
+            mathématisation du monde -> Utilisation d'un principe second pour la représentation d'une première
+            essence de dieu (être, avoir toutes les perfections) -> existence de dieu (parfaite = perfection)
+            Il a toutes les perfections
+            L'existence est une perfection
+            donc Dieu existe
+         6° monde infiniement complexe et cohérent
+            -> On est imparfait donc nous ne sommes pas à son origine
+            -> Loi nature existe avant découvertes = Preuve que l'Homme n'est pas à son origine
+            => Esprit lié à un coprs - c'est un fait
+
+- **Pascal, Pensées** :
+      L'Homme est un roseau pensant, un être corporel et spirituel
+      roseau = fragilité, faiblesse
+
+      Homme contenu dans l'univers donc soumis aux lois de celui-ci
+
+      Je donne sens à ce qui m'entourne -> LA cosncience du monde et de modifiable
+      Conscience - > Connaissances
+      J'apprend à me connaître -> grâce aux autres -> grâce à moi
 
 - **John Locke — Essai sur l'entendement humain** :
-   L'identité personnelle repose sur la conscience de soi (être l'auteur de ses actes et pensées).
+   Clé identité : conscience de soi
+      être consient :
+         - avoir conscience de ses pensées
+         - avoir conscience de ses actes
+         - avoir conscience qu'on est l'auteur de ses pensées et actes
 
 - **Freud — Métapsychologie** :
-   L'inconscient est une hypothèse nécessaire et légitime. L'Homme n'est pas maître dans sa propre maison (blessure narcissique).
+   Existence de l'inconscient psychique est légitime (elle permet d'éclairer l'expérience et la pratique ; en médecine : effets positifs) et nécessaire (nécessité relative ; en science : quand pas d'autres moyens de l'expliquer)
+      C'est-à-dire comme preuves de cette existence on a les résultats de la psychanalyse et l'éclairage de phénomènes tel que les rêves
+   L'Homme n'est pas maître de ses propres pensées
+   Le rejet de l'hypothèse de l'existence de l'inconscient vient de la blessure narcissique que cette hypothèse leur inflige
 
-- **Critiques de l'inconscient** :
-   > Alain : L'inconscient est un « fantôme », ce qui n'est pas conscience est corps.
-   > Sartre : L'inconscient est une forme de « mauvaise foi » pour fuir sa responsabilité.
-   > Popper : La psychanalyse n'est pas une science car elle n'est pas réfutable.
+
+- **Critiques de Freud** :
+   Alain, Éléments de philosophie : Notion d'inconscient repose sur une confusion, elle est inutile. Ce que Freud explique par l'inconscient devra un jour s'expliquer par l'action/le corps
+
+   Sartre, L'être et le néant : 
+      Thoérie du determinisme psychique nie la liberté
+      Mauvaise foi (=ne pas reconnaître sa responsabilité), cette théorie nous donne des excuses car c'est plus facile à vivre quand on est pas responsable
+
+   Popper, Conjecture et réfutations
+      Théorie freudienne ne peut être vue comme une véritable théorie scientifique car elle n'est pas réfutable, dès que ça colle pas, elle est adaptée
 
 ---
 
@@ -290,10 +348,10 @@
 
 - **J.-S. Mill — La Nature** :
    Critique de l'idée de « suivre la nature » :
-   > Sens Cosmique : L'ensemble de tout ce qui existe, de toutes les choses et de toutes les lois de la physique.
+      Sens Cosmique : L'ensemble de tout ce qui existe, de toutes les choses et de toutes les lois de la physique.
          Si la nature désigne tout ce qui existe, l'homme ne peut jamais lui désobéir. Toutes nos actions, qu'elles soient jugées bonnes ou mauvaises, suivent nécessairement les lois de la physique (la gravité, la chimie, la biologie). Dire « il faut suivre la nature » dans ce sens est **inutile**, car il est de toute façon impossible de faire autrement.
 
-   > Sens Spontané : Ce qui se produit spontanément, sans l'intervention ou la modification de l'homme.
+      Sens Spontané : Ce qui se produit spontanément, sans l'intervention ou la modification de l'homme.
          Si la nature désigne ce qui se fait sans l'homme, alors l'action humaine est par définition artificielle. Si la nature spontanée était un modèle à suivre, **toute action humaine serait immorale**.
 
 ---
@@ -308,9 +366,9 @@
 
 - **Marx — Ébauche d'une critique de l'économie politique** :
    Le travail industriel est une aliénation :
-   > Dépossession de soi (pas de choix, pas propriétaire du produit).
-   > Contrainte (on ne travaille que pour survivre).
-   > Déshumanisation (travail instinctif/machinal à l'usine, vie réduite aux besoins biologiques hors travail).
+      Dépossession de soi (pas de choix, pas propriétaire du produit).
+      Contrainte (on ne travaille que pour survivre).
+      Déshumanisation (travail instinctif/machinal à l'usine, vie réduite aux besoins biologiques hors travail).
 
 ---
 
