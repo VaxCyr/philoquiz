@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Jeu de révision — Philosophie</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
   <!-- Chapter Selection Modal -->
@@ -61,6 +62,21 @@
           <span class="chapter-label">Liberté &amp; Temps</span>
         </label>
 
+        <label class="chapter-option">
+          <input type="checkbox" name="chapters" value="technique_nature" checked>
+          <span class="chapter-label">Technique &amp; Nature</span>
+        </label>
+
+        <label class="chapter-option">
+          <input type="checkbox" name="chapters" value="travail" checked>
+          <span class="chapter-label">Travail</span>
+        </label>
+
+        <label class="chapter-option">
+          <input type="checkbox" name="chapters" value="langage" checked>
+          <span class="chapter-label">Langage</span>
+        </label>
+
       </div>
       <div class="chapter-actions">
         <button id="validate-chapters" class="primary">Valider la sélection</button>
@@ -93,7 +109,7 @@
       <button id="mode-match">Association</button>
       <button id="mode-revision">Révision</button>
       <button id="mode-flash">Flashcards</button>
-      <button id="show-defs">Définitions</button>
+      <button id="show-cours">Cours</button>
       <div style="flex:1"></div>
     </div>
 

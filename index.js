@@ -8,6 +8,9 @@ let PHILOSOPHES_DEVOIR = [];
 let PHILOSOPHES_ETAT = [];
 let PHILOSOPHES_CONSCIENCE = [];
 let PHILOSOPHES_LIBERTE_TEMPS = [];
+let PHILOSOPHES_TECHNIQUE_NATURE = [];
+let PHILOSOPHES_TRAVAIL = [];
+let PHILOSOPHES_LANGAGE = [];
 let REPERES_DEFS = {};
 let DEFINITIONS_KEYWORDS = {};
 
@@ -119,7 +122,8 @@ async function loadData() {
 async function loadChapterData(chapters) {
   QUIZ_QS = []; DEFINITIONS = {}; CITATIONS = []; REMEDES = []; DESIRES = [];
   PHILOSOPHES_DEVOIR = []; PHILOSOPHES_ETAT = []; PHILOSOPHES_CONSCIENCE = [];
-  PHILOSOPHES_LIBERTE_TEMPS = []; DEFINITIONS_KEYWORDS = {};
+  PHILOSOPHES_LIBERTE_TEMPS = []; PHILOSOPHES_TECHNIQUE_NATURE = [];
+  PHILOSOPHES_TRAVAIL = []; PHILOSOPHES_LANGAGE = []; DEFINITIONS_KEYWORDS = {};
 
   const chapterData = await Promise.all(chapters.map(async chapter => {
     try {
@@ -141,6 +145,9 @@ async function loadChapterData(chapters) {
     else if (chapter === 'etat' && data.philosophes) PHILOSOPHES_ETAT.push(...data.philosophes);
     else if (chapter === 'conscience' && data.philosophes) PHILOSOPHES_CONSCIENCE.push(...data.philosophes);
     else if (chapter === 'liberte_temps' && data.philosophes) PHILOSOPHES_LIBERTE_TEMPS.push(...data.philosophes);
+    else if (chapter === 'technique_nature' && data.philosophes) PHILOSOPHES_TECHNIQUE_NATURE.push(...data.philosophes);
+    else if (chapter === 'travail' && data.philosophes) PHILOSOPHES_TRAVAIL.push(...data.philosophes);
+    else if (chapter === 'langage' && data.philosophes) PHILOSOPHES_LANGAGE.push(...data.philosophes);
   });
 
   // Les repères entrent dans DEFINITIONS (flashcards, association) uniquement si le chapitre est sélectionné
@@ -201,10 +208,11 @@ function initializeApp() {
 
 function initializeQuizInterface() {
   const main = document.getElementById('main');
-  const scoreVal = document.getElementById('score-val');
-  const scoreMax = document.getElementById('score-max');
-  const progress = document.getElementById('progress');
+  const scoreVal = el('score-val'), scoreMax = el('score-max'), progress = el('progress');
   const scoreWrap = document.getElementById('scoreWrap');
+  const side = el('side');
+  const area = document.querySelector('.area');
+  const wrap = document.querySelector('.wrap');
   let score = 0, maxQ = 0, currentMode = '';
 
   function el(id) { return document.getElementById(id); }
@@ -212,13 +220,30 @@ function initializeQuizInterface() {
   function setMode(name) { currentMode = name; progress.textContent = 'Mode : ' + name; updateActiveButton(); }
   function updateScore() { scoreVal.textContent = score; scoreMax.textContent = maxQ; }
   function updateActiveButton() {
-    ['mode-quiz','mode-match','mode-revision','mode-flash','show-defs'].forEach(id => el(id).classList.remove('active'));
+    ['mode-quiz', 'mode-match', 'mode-revision', 'mode-flash', 'show-cours'].forEach(id => {
+      const btn = el(id);
+      if (btn) btn.classList.remove('active');
+    });
     if (currentMode === 'Quiz') el('mode-quiz').classList.add('active');
     if (currentMode === 'Association') el('mode-match').classList.add('active');
-    if (currentMode.startsWith('Révision')) el('mode-revision').classList.add('active');
+    if (currentMode.includes('Révision')) el('mode-revision').classList.add('active');
     if (currentMode === 'Flashcards') el('mode-flash').classList.add('active');
-    if (currentMode === 'Toutes les définitions') el('show-defs').classList.add('active');
-    scoreWrap.style.display = currentMode === 'Flashcards' ? 'none' : 'block';
+    if (currentMode === 'Cours') {
+      const btn = el('show-cours');
+      if (btn) btn.classList.add('active');
+    }
+
+    const isFullWidth = (currentMode === 'Flashcards' || currentMode === 'Cours');
+    if (scoreWrap) scoreWrap.style.display = isFullWidth ? 'none' : 'block';
+    if (side) side.style.display = isFullWidth ? 'none' : 'block';
+    if (area) {
+      if (isFullWidth) area.classList.add('full-width');
+      else area.classList.remove('full-width');
+    }
+    if (wrap) {
+      if (currentMode === 'Cours') wrap.classList.add('cours-layout');
+      else wrap.classList.remove('cours-layout');
+    }
   }
 
   function showDefinitionBox(title, text) {
@@ -652,18 +677,60 @@ function initializeQuizInterface() {
     }
   }
 
-  // ── DÉFINITIONS ───────────────────────────────────────────
+  // ── COURS ────────────────────────────────────────────────
 
-  function showAllDefs() {
-    setMode('Toutes les définitions'); main.innerHTML = '';
-    const dl = document.createElement('div');
-    Object.entries(DEFINITIONS).forEach(([k, v]) => {
-      const item = document.createElement('div'); item.style.marginBottom = '10px';
-      item.innerHTML = `<strong>${k.replace(/_/g, ' ')}</strong> — <span class='small'>${v}</span>`;
-      dl.appendChild(item);
-    });
-    main.appendChild(dl);
-    scoreVal.textContent = '-'; scoreMax.textContent = '-';
+  async function showCours() {
+    setMode('Cours');
+    main.innerHTML = '<div class="small">Chargement du cours...</div>';
+    try {
+      const response = await fetch('cours.md');
+      if (!response.ok) throw new Error('Impossible de charger cours.md');
+      let text = await response.text();
+
+      // Custom Discord-like additions to marked
+      // Handle __underline__
+      text = text.replace(/__(.*?)__/g, '<u>$1</u>');
+      // Handle ~~strikethrough~~
+      text = text.replace(/~~(.*?)~~/g, '<del>$1</del>');
+
+      // Configure marked for Discord-like behavior
+      marked.setOptions({
+        breaks: true,
+        gfm: true,
+        headerIds: false,
+        mangle: false
+      });
+
+      // Pre-process text to handle Discord-style blockquotes (where only the first line has '>')
+      // and ensure lists inside them are correctly parsed.
+      const lines = text.split('\n');
+      let processedText = '';
+      let inQuote = false;
+
+      for (let i = 0; i < lines.length; i++) {
+        let line = lines[i];
+        if (line.trim().startsWith('>')) {
+          inQuote = true;
+          processedText += line + '\n';
+        } else if (inQuote && line.trim() === '') {
+          inQuote = false;
+          processedText += '\n';
+        } else if (inQuote) {
+          // Keep the line in the quote by adding '>' if it's not empty
+          processedText += '> ' + line.trim() + '\n';
+        } else {
+          processedText += line + '\n';
+        }
+      }
+
+      const html = marked.parse(processedText);
+      main.innerHTML = `<div class="cours-content">${html}</div>`;
+    } catch (error) {
+      console.error(error);
+      main.innerHTML = `<div class="error">Erreur : ${error.message}</div>`;
+    }
+    scoreVal.textContent = '-';
+    scoreMax.textContent = '-';
   }
 
   // ── BINDING ───────────────────────────────────────────────
@@ -672,7 +739,8 @@ function initializeQuizInterface() {
   el('mode-match').onclick = startMatch;
   el('mode-revision').onclick = startRevision;
   el('mode-flash').onclick = startFlash;
-  el('show-defs').onclick = showAllDefs;
+  const showCoursBtn = el('show-cours');
+  if (showCoursBtn) showCoursBtn.onclick = showCours;
   updateActiveButton();
   startQuiz();
 }

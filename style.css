@@ -167,8 +167,94 @@
     button.active{background:var(--accent);color:#042032;border:none}
     button:disabled{opacity:0.5;cursor:not-allowed}
 .area{display:grid;grid-template-columns:1fr 360px;gap:18px}
-.panel{background:var(--card);padding:14px;border-radius:10px;min-height:220px}
+.area.full-width {
+    grid-template-columns: 1fr;
+}
+.wrap.cours-layout {
+    max-width: 1400px;
+}
+.panel{background:var(--card);padding:14px;border-radius:10px;min-height:220px;white-space:pre-wrap}
 /* Responsive layout for mobile */
+/* ── COURS MARKDOWN ───────────────────────────────────────── */
+.cours-content {
+    line-height: 1.6;
+    text-align: left;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+@media (min-width: 1024px) {
+    .cours-layout .cours-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        align-items: start;
+    }
+    .cours-layout .cours-content > * {
+        grid-column: 1 / -1;
+    }
+    .cours-layout .cours-content > blockquote {
+        grid-column: span 1;
+    }
+}
+.cours-content h1, .cours-content h2, .cours-content h3 {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    color: var(--primary);
+}
+.cours-content blockquote {
+    border-left: 4px solid var(--accent);
+    background: rgba(255, 255, 255, 0.03);
+    margin: 0.5em 0;
+    padding: 8px 14px;
+    border-radius: 4px 10px 10px 4px;
+    color: #e6eef8;
+    font-style: normal;
+}
+.cours-content blockquote p {
+    margin: 0;
+}
+.cours-content blockquote p + p {
+    margin-top: 0.3em;
+}
+.cours-content ul, .cours-content ol {
+    margin-left: 1.2em;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+}
+.cours-content li {
+    margin-bottom: 0.1em;
+}
+.cours-content h1, .cours-content h2, .cours-content h3 {
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+    color: var(--primary);
+}
+.cours-content hr {
+    margin: 1em 0;
+}
+.cours-content hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 2em 0;
+}
+.cours-content strong {
+    color: var(--primary);
+}
+.cours-content u {
+    text-decoration: underline;
+}
+.cours-content del {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+.light-mode .cours-content blockquote {
+    color: #444;
+}
+.light-mode .cours-content strong {
+    color: #0369a1;
+}
+
 @media (max-width: 768px){
   .wrap{max-width:980px;margin:16px auto;padding:16px}
   .area{grid-template-columns:1fr;gap:12px}
@@ -207,7 +293,7 @@
     .hidden{display:none}
     .badges{display:flex;gap:8px;flex-wrap:wrap}
     .badge{padding:6px 8px;border-radius:999px;background:rgba(255,255,255,0.02);font-size:13px}
-    .defbox{margin-top:12px;padding:10px;border-radius:8px;background:rgba(125,211,252,0.05);border:1px solid rgba(125,211,252,0.2);font-size:14px}
+    .defbox{margin-top:12px;padding:10px;border-radius:8px;background:rgba(125,211,252,0.05);border:1px solid rgba(125,211,252,0.2);font-size:14px;white-space:pre-wrap}
     input[type="text"], textarea{
       width:100%;
       padding:10px;

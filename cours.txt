@@ -1,18 +1,24 @@
 # Définitions des notions :
 
-> Le **bonheur **c'est ce qui nous satisfait.
-> Le **devoir **est un impératif de conscience qui impose à l'H d'accomplir ce qui est prescrit en vertu d'une obligation religieuse, morale ou légale.
-> L'**État** est une autorité instituée définie sur un plan juridique et politique. 3 fonctions : **Juridique **de représentation, **politique **de pouvoir et **administrative **de gestion
+> Le **bonheur** c'est ce qui nous satisfait.
+
+> Le **devoir** est un impératif de conscience qui impose à l'H d'accomplir ce qui est prescrit en vertu d'une obligation religieuse, morale ou légale.
+
+> L'**État** est une autorité instituée définie sur un plan juridique et politique. 3 fonctions : **Juridique** de représentation, **politique** de pouvoir et **administrative** de gestion
+
 > La **Justice** : le terme désigne en général une valeur (le juste), ou ce qui est conforme à cette valeur (ce qui est juste).
    On distingue :
       - La justice comme attitude ou comme veertu : c'est la volonté constante de rendre à chacun ce qui lui revient.
       - La justice comme norme : c'est alors l'ensemble des droits, et l'ensemble des lois qui sont conformes aux droits de chacun.
+
 > La **Vérité** :
    D'après l'usage le plus courant du terme, « une vérité » est une idée conforme à la réalité . Et « la vérité », en général, est la conformité entre une pensée ou son expression, et l'objet de cette pensée.
    Dans le cadre de discussions scientifiques ou communes, le mot « vérité » recouvre parfois une autre définition : C'est une connaissance reconnue comme juste, comme conforme à son objet et possédant à ce titre une valeur absolue, ultime.
+
 > La **Science** :
    - Somme des connaissances qu'un individu possède.
    - Activité humaine visant à établir un ensemble cohérent de connaissances.  Cette activité suppose que ces objets ou phénomènes obéissent à des lois : elle s'efforce d'établir des connaissances par des méthodes rationnelles et/ou expérimentales.
+
 > La **Raison** : 
    - Ce qui rend compte d'un fait, d'un phénomène.
    - La raison est la faculté qu'à l'esprit humain d'organiser ses relations avec le réel ; son activité considérée en général tant dans le domaine pratique que dans le domaine théorique. En ce dernier sens, le mot « raison » peut désigner plus précisément :
@@ -46,12 +52,12 @@
 > Particulier -> Un nombre limité de cas
 > Singulier -> Un seul cas
 
-> *Déjà implémentée dans reperes.json*
+> 
 
 
 ### Références sur le Bonheur :
 
-- **Remèdes** (contre le malheur?) d'après Epicure:
+- **Remèdes** d'après Epicure:
 > 1° Ne pas avoir peur de Dieu (Ils sont parfait donc désintéressé de nous)
 > 2° Ne pas craindre la mort (Si vivant alors pas mort, et si mort alors pas vivant)
 > 3° Il est possible d'être heureux (Plaisirs)
@@ -70,10 +76,6 @@
 > *Dès qu'un homme cherche le bonheur, il est condamné à ne pas le trouver [...].*
 
 ### Références sur le Devoir :
-
-> Stoïcien : Zenon
-
-> Utilitariste : Jeremy Bentham
 
 > Kant __Fondement de la métaphysique des mœurs__ :
 > Action bonne si intention bonne
@@ -98,129 +100,6 @@ Quelles sont les causes et les raisons de la réunion des hommes en société ?
 > 
 > Selon Hobbes, la nature pousse les hommes à s'opposer, l'Homme est un loup pour lui-même
 
-
-
-
-
-
-
-
-------------------------------------------------------
-
-
-
-# ✅ **1. SCHOPENHAUER — Le Monde comme volonté et comme représentation**
-
-### **Thèse principale (selon ton cours)**
-
-➡️ *L’être humain ne peut pas être pleinement et définitivement heureux.*
-
-
-### **A) Concepts nécessaires**
-
-1. **Volonté**
-
-   * Essence métaphysique de tout être.
-   * C’est un effort perpétuel, un vouloir sans repos.
-
-2. **Souffrance**
-
-   * Toute volonté naît d’un manque → donc désir = souffrance.
-
-3. **Plaisir / satisfaction**
-
-   * Si un désir est satisfait → plaisir.
-   * Mais ce plaisir est toujours **bref**.
-
-### **B) Démonstration (selon §1 cité)**
-
-* La volonté est un effort constant.
-* Si la volonté rencontre un obstacle → souffrance.
-* Si elle obtient ce qu’elle veut → satisfaction → **mais la satisfaction ne dure pas**.
-* Toute satisfaction donne naissance immédiatement à un nouveau désir.
-* Donc : **pas de fin au vouloir → pas de fin à la souffrance**.
-
-### **C) Analyse (§2 – d’après ton cours)**
-
-Deux arguments :
-
-#### **1) Argument métaphysique**
-
-* La volonté est un effort infini.
-* Par nature même, elle condamne l’être humain à souffrir.
-* On n’échappe jamais au cycle « vouloir → souffrir ».
-
-#### **2) Argument empirique**
-
-* On le constate dans l’expérience :
-
-  * Le plaisir disparaît toujours.
-  * Une fois le désir satisfait, un autre apparaît.
-  * Quand rien ne manque → l’ennui surgit.
-
-→ **La vie oscille entre la souffrance et l’ennui.**
-
-### **Conclusion**
-
-L’être humain ne peut pas être durablement heureux car :
-
-* désirer = souffrir,
-* satisfaire un désir = plaisir bref,
-* absence de désir = ennui,
-* la nature empêche tout bonheur durable.
-
----
-
-# ✅ **2. PASCAL — Pensées (bonheur impossible)**
-
-### **Thèse principale**
-
-➡️ *L’être humain ne peut pas vivre un bonheur complet, car il est incapable de vivre dans le présent, là où se trouve le bonheur.*
-
-### **Analyse de l’extrait fourni**
-
-### **A) Le problème fondamental : l’incapacité à vivre le présent**
-
-Pascal observe que :
-
-* le passé **n’est plus**,
-* le futur **n’est pas encore**,
-* seul le présent **existe réellement**,
-* mais l’homme **n’y demeure jamais**.
-
-L’homme :
-
-* regrette le passé,
-* anticipe le futur,
-* fuit un présent qui souvent « le blesse ».
-
-Donc : **il ne vit jamais réellement**.
-
-### **B) Deux problèmes causés par l’imagination (selon ton cours)**
-
-1. **Craindre des choses qu’on n’a pas lieu de craindre**
-   → le futur est imaginé comme menaçant.
-
-2. **Viser des objets non nécessaires**
-   → désirs infinis, illusions de bonheur.
-
-→ L’imagination déforme le réel et empêche le bonheur.
-
-### **C) Rapport à Épicure (selon ton cours)**
-
-* Pascal est d’accord avec l’idée que le bonheur se trouve :
-
-  * **dans le présent**,
-  * **dans l’absence de trouble**.
-
-Mais :
-✔ Épicure pense que c’est possible avec la sagesse.
-✘ Pascal pense que **la nature humaine rend cela impossible**.
-
-### **Conclusion**
-
-L’homme ne vit jamais l’instant présent → donc il n’atteint jamais le bonheur.
-Il espère toujours être heureux **plus tard**, donc ne l’est jamais **maintenant**.
 
 
 ---
@@ -250,8 +129,6 @@ restons incapables d’être heureux.
 
 --------------------------- 
 
-[Auteur], [nom_de_l_ouvrage]
-[Idée(s) à retenir (si pas de guillemet, alors ce n'est pas des citations, seulement des reformulations ou synthèse)]
 
 
 Sur le Bonheur :
@@ -338,7 +215,7 @@ Sur la Vérité :
    Les prisonniers enchaînés au fond de la caverne, voient des ombres, qu'ils prennent pour la seule réalité existante
    -> La plupart des hommes vivent dans l'ignorance/l'illusion
    Des personnes sont détachées contraints de regarder les objets le feu à l'origine des ombres qu'ils ont vues jusqu'alors 
-   - > L'éducation est d'abord une contrainte difficile elle remet en question les opinions de celui qui la reçoit
+   -> L'éducation est d'abord une contrainte difficile elle remet en question les opinions de celui qui la reçoit
    Certains parviennent à la surface 
    -> Le terme de l'éducation est la vision directe d'une réalité supérieure ; Cette vision est synonyme de joie et de liberté
    Ceux qui sont montés à la surface sont contraints de redescendre dans la caverne ; Le récit est mal reçu 
@@ -381,11 +258,6 @@ Sur la Conscience :
    L'inconscient : L'ensemble des phénomènes physiologiques, psychiques et neuropsychiques qui échappent totalement à la conscience du sujet. En psychanalyse freudienne (1er topyque) l'inconscient c'est l'ensemble des phénomènes psychiques qu'une résistance empêche d'accéder à la conscience.
 
    Descartes, Discours de la méthodes
-
-   (A PARTIR DE CE QUI SUIT IL FAUT SYNTHETISER EN ÇA :
-      principes vrai et certains ? 
-      Oui -> Méthode du doute
-      1 certitude : Je pense donc je suis)
 
       6 méditations :
          1° 
@@ -509,3 +381,90 @@ Sur la Liberté et le temps :
 
             « Chez l'Homme, l'existence (ce qui fait que l'object est réel) précède l'essence (ce que c'est ; sa nature/définition) »
             D'parès Sartres, on vit puis on s'auto donne une définition/essence
+
+[Auteur], [nom_de_l_ouvrage]
+[Idée(s) à retenir (si pas de guillemet, alors ce n'est pas des citations, seulement des reformulations ou synthèse)]
+
+Nouveaux repères : 
+
+   Médiat : qui passe par au moins un intermédiaire
+   Immédiat : qui passe par aucun intermédiaire
+
+   Origine : Ce qui est premier d'un point de vue chronologique
+   Fondement : Priorité logique, raison qui justifie quelque chose (exemple la propriété privée fondement de la propriété de tel maison à tel personne)
+
+   essentiel : Un attribut est essentiel s'il est lié à la nature de l'objet
+   accidentel : Un attribut est accidentel quand il est attribué à l'objet à cause d'un événement ayant eu lieu mais qui aurait pu ne pas avoir lieu
+
+   Intiutif : Une pensée qui saisit immédiatement tout son objet
+   Discursif : Une pensée qui procède par étape pour avancer
+
+   Persuader : Amener quelqu'un à adopter une idée en utilisant des moyens rationnels (études, sondages, etc.)
+   Convaincre : Amener quelqu'un à  adopter une idée en utilisant n'importe quel moyen (Imagination, sensibilité, etc.)
+
+Sur la Technique  et la Nature :
+
+   - Sens premier : une technique est un ensemble organisé de moyens pour atteindre un but 
+   - Sens dérivée : Par extension la technique et l'ensemble des objets produits par les hommes est disponible pour être utilisée
+
+   Nature : 
+      - 1er sens : La nature c'est l'ensemble de la réalité matérielle considérée comme indépendante de l'activité et de l'histoire humaine.
+      - 2eme sens : « La nature d'une chose » Cette expression désigne l'essence de cette chose c'est à dire l'ensemble des propriétés qui la définissent
+      
+
+   Bergson, L'Évolution créatrice
+      Nous avons raison de définir l'homme par son intelligence mais nous nous trompons sur le type d'intelligence, c'est une intelligence technique avant d'être une intelligence théorique 
+      Intelligence technique :
+         Capacité à utiliser outils
+         Capacité fabriquer outils/les garder
+         Capacité fabriquer outils à faire des outils
+         Capacité évoluer outils/varier la fabrication
+      
+   Descartes, Discours de la méthodes
+      La philosophie spéculative (la théorie traditionnelle) doit céder la place à une **philosophie pratique** (la science).
+      - **La science développe la technique :** En comprenant les lois de la physique et de la nature (les connaissances), l'homme peut inventer des « infinités d'artifices » (les techniques) pour s'épargner du travail et interagir avec le monde.
+      - **La technique soutient la science :** Descartes précise que pour faire progresser ces connaissances, il a besoin d'expériences. Or, ces expériences nécessitent souvent des outils, des instruments et des moyens techniques.
+
+   J.-S. Mill, La Nature
+      Il confronte les deux seules définitions scientifiques et cohérentes du mot « Nature » :
+
+      Cosmique : L'ensemble de tout ce qui existe, de toutes les choses et de toutes les lois de la physique.
+         Si la nature désigne tout ce qui existe, l'homme ne peut jamais lui désobéir. Toutes nos actions, qu'elles soient jugées bonnes ou mauvaises, suivent nécessairement les lois de la physique (la gravité, la chimie, la biologie). Dire « il faut suivre la nature » dans ce sens est **inutile**, car il est de toute façon impossible de faire autrement.
+      Spontanée : Ce qui se produit spontanément, sans l'intervention ou la modification de l'homme.
+         Si la nature désigne ce qui se fait sans l'homme, alors l'action humaine est par définition artificielle. Si la nature spontanée était un modèle à suivre, **toute action humaine serait immorale**.
+
+Sur le Travail :
+   - Sens générique : activité, effort permettant à un individu ou à un groupe d'individus de transformer son environnement
+   - Sens spécifique : activité réfléchie par laquelle est produit un objet (bien ou service)
+   - Sens économique : Toute activité rémunérée
+
+   K. Marx, Le capitale
+      Distinction travail autres animaux et humain Le travai humain est réfléchit contrairement aux animaux où il est instinctif
+      L'Homme imagine avant de produire
+   
+   J. Locke, Traité du gouvernement civil
+      Nature propriété commune
+      Mais chacun propriétaire de son corps donc propriétaire de ce que son corps produit
+      Donc l'effort et le travail qui sortent de ce corps m'appartiennent tout autant
+
+   K. Marx, Ébauche d'une critique de l'économie politique
+      Le travail de l'ouvrier est une aliénation
+      1° Le travail dépossède l'ouvrier de lui-même (pas de choix d'horaires, de l'exécution/plan, pas propriétaire création, pas propriétaire des outils)
+      2° L'ouvrier ne travail que car il en est contraint (travail -> Argent pour vivre, si on pourrait ne pas travailler, on ne le ferait pas)
+      3° Le travail déshumanise l'ouvrier 
+         Quand il travail, il travaille à la chaîne, instinctif - > Animaux
+         Quand il ne travaille pas, temps et energie restant uniquement pour besoins nécessaires (dormir, manger, etc.) -> Animaux
+
+   Sur le Langage : 
+      Faculté que les hommes possèdent d'exprimer leurs pensées et de communiquer entre eux
+      Le mot « langage » peut aussi désigner le système de signes conventionnels ainsi utilisé - et, par extension, un système de symbole et de règles permettant d'utiliser ces symboles pour donner des instructions à un ordinateur 
+      
+      Descartes, Lettre à Newcastle
+         Contrairement au perroquet qui répète ou à l'animal qui crie par instinct, l'homme sait adapter ses mots au contexte pour exprimer une pensée consciente.
+      
+      Bergson, Le rire
+         Les mots sont des étiquettes, ils désignent le genre plutôt que l'individu. Le langage simplifie les choses et retient uniquement l'intérêt des choses. Les mots sont un filtre entre nous et le réel.
+
+      Hegel, Encyclopédie des sciences philosophiques 
+         « C'est dans les mots que nous pensons. » « [...] vouloir penser sans les mots, c'est une tentative insensée [...]. »
+         Les mots sont le lieu dans lequel se forment/développent les pensées.

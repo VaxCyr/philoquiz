@@ -1,0 +1,80 @@
+{
+  "definitions": {
+    "technique": "1) Sens premier : ensemble organisé de moyens pour atteindre un but. 2) Sens dérivé : ensemble des objets produits par les hommes et disponibles pour être utilisés.",
+    "nature": "1) 1er sens : ensemble de la réalité matérielle considérée comme indépendante de l'activité et de l'histoire humaine. 2) 2ème sens : « La nature d'une chose » désigne l'essence de cette chose, c'est-à-dire l'ensemble des propriétés qui la définissent."
+  },
+  "definitions_keywords": {
+    "technique": [],
+    "nature": []
+  },
+  "philosophes": [
+    {
+      "nom": "Bergson",
+      "oeuvre": "<em>L'Évolution créatrice</em>",
+      "idee": "L'homme est avant tout un « Homo faber ». Son intelligence est technique avant d'être théorique. Elle se définit par la capacité à fabriquer et varier les outils."
+    },
+    {
+      "nom": "Descartes",
+      "oeuvre": "<em>Discours de la méthode</em>",
+      "idee": "La science (philosophie pratique) doit nous rendre « comme maîtres et possesseurs de la nature ». La science développe la technique en comprenant les lois de la physique et de la nature (les connaissances) pour s'épargner du travail, et la technique soutient la science via les outils, instruments et moyens techniques."
+    },
+    {
+      "nom": "J.-S. Mill",
+      "oeuvre": "<em>La Nature</em>",
+      "idee": "Critique de l'idée de « suivre la nature » : au sens cosmique (lois physiques), c'est inutile car impossible de lui désobéir ; au sens spontané (sans l'homme), ce serait immoral car toute action humaine est artificielle."
+    }
+  ],
+  "quiz_questions": [
+    {
+      "q": "Selon Bergson, par quoi devrait-on définir l'intelligence humaine ?",
+      "correct": "Par l'intelligence technique (Homo faber)",
+      "distractors": ["Par l'intelligence purement théorique", "Par la capacité de langage", "Par la moralité", "Par la conscience de soi", "Par la vie sociale", "Par l'instinct de survie", "Par la religion", "Par les émotions", "Par la force physique"],
+      "keywords": ["intelligence","technique"],
+      "revMot": {
+        "mot":"Intelligence technique",
+        "def":"Capacité à fabriquer et varier les outils",
+        "keywords":["capacité","fabriquer","varier","outils"]
+      }
+    },
+    {
+      "q": "Quelle est la finalité de la « philosophie pratique » selon Descartes ?",
+      "correct": "Nous rendre comme maîtres et possesseurs de la nature",
+      "distractors": ["Nous rendre plus sages et vertueux", "Expliquer l'origine de l'univers", "Prouver l'existence de Dieu", "Déterminer les lois de la justice", "Atteindre la vérité absolue par la spéculation", "Soumettre les hommes au pouvoir politique", "Supprimer tous les désirs humains", "Vivre en harmonie avec les animaux", "Comprendre le sens de la vie"],
+      "keywords": [],
+      "revMot": null
+    },
+    {
+      "q": "Pourquoi est-il inutile de vouloir « suivre la nature » au sens cosmique selon Mill ?",
+      "correct": "Car il est de toute façon impossible de désobéir aux lois physiques",
+      "distractors": ["Car la nature est mauvaise", "Car Dieu ne le veut pas", "Car la science a prouvé le contraire", "Car l'homme est supérieur à la nature", "Car la nature change tout le temps", "Car les lois de la physique sont relatives", "Car le futur est déjà écrit", "Car la nature n'existe pas vraiment", "Car l'homme n'a pas de corps"],
+      "keywords": [],
+      "revMot": {
+        "mot":"La « Nature » au sens cosmique",
+        "def":"L'ensemble de tout ce qui existe, de toutes les choses et de toutes les lois de la phyisique.",
+        "keywords":[["ensemble","toutes","toute"],["choses","chose","existe"]]
+      }
+    },
+    {
+      "q": "Pourquoi est-il inutile de vouloir « suivre la nature » au sens spontané ?",
+      "correct": "Car l'action humaine est par définition artificielle, toute action humaine serait donc immorale",
+      "distractors": [
+        "Car l'action rationnelle est par définition artificielle, toute action rationnelle serait donc insensée",
+        "Car l'action morale est par définition artificielle, toute action morale serait donc impossible",
+        "Car l'action sociale est par définition artificielle, toute action sociale serait donc conflictuelle",
+        "Car l'action politique est par définition artificielle, toute action politique serait donc tyrannique",
+        "Car l'action technique est par définition artificielle, toute action technique serait donc destructive",
+        "Car l'action créatrice est par définition artificielle, toute action créatrice serait donc mensongère",
+        "Car l'action libre est par définition artificielle, toute action libre serait donc illusoire",
+        "Car l'action réfléchie est par définition artificielle, toute action réfléchie serait donc vaine",
+        "Car l'action collective est par définition artificielle, toute action collective serait donc égoïste",
+        "Car l'action juridique est par définition artificielle, toute action juridique serait donc injuste"
+      ],
+      "keywords": [],
+      "revMot": {
+        "mot":"La « Nature » au sens spontané",
+        "def":"Ce qui se produit spontanément, sans l'intervention ou la modification de l'homme.",
+        "keywords":[["produit","créer"],"sans",["intervention","modification"],["homme","humain"]]
+      }
+    }
+  ]
+}

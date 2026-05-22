@@ -1,0 +1,51 @@
+{
+  "definitions": {
+    "langage": "1) Faculté que les hommes possèdent d'exprimer leurs pensées et de communiquer entre eux. 2) Système de signes conventionnels utilisé pour communiquer ou donner des instructions (ex: informatique)."
+  },
+  "definitions_keywords": {
+    "langage": []
+  },
+  "philosophes": [
+    {
+      "nom": "Descartes",
+      "oeuvre": "<em>Lettre à Newcastle</em>",
+      "idee": "Le langage est le signe de la pensée. Contrairement à l'animal qui crie par instinct ou au perroquet qui repète sans comprendre, l'homme adapte ses mots au contexte pour exprimer une pensée consciente."
+    },
+    {
+      "nom": "Bergson",
+      "oeuvre": "<em>Le rire</em>",
+      "idee": "Les mots sont des « étiquettes » simplificatrices. Ils désignent le genre (général) plutôt que l'individu (singulier) et agissent comme un filtre entre nous et le réel."
+    },
+    {
+      "nom": "Hegel",
+      "oeuvre": "<em>Encyclopédie des sciences philosophiques</em>",
+      "idee": "« C'est dans les mots que nous pensons. », « Vouloir penser sans les mots est une tentative insensée » ; le langage est le lieu même de la formation de la pensée."
+    }
+  ],
+  "quiz_questions": [
+    {
+      "q": "Selon Descartes, qu'est-ce qui distingue le langage humain du cri animal ?",
+      "correct": "L'adaptation des mots au contexte pour exprimer une pensée consciente",
+      "distractors": ["Le volume sonore des paroles", "La complexité des sons produits", "La capacité à imiter les bruits de la nature", "L'utilisation d'une syntaxe mathématique", "Le fait que l'homme parle avec sa bouche", "Le nombre de mots connus", "La vitesse de communication", "L'écriture sur papier", "Il n'y a aucune distinction"],
+      "keywords": [],
+      "revision": false,
+      "revMot": null
+    },
+    {
+      "q": "Pourquoi Bergson considère-t-il que le langage simplifie le réel ?",
+      "correct": "Car les mots sont des étiquettes qui désignent le genre plutôt que l'individu",
+      "distractors": ["Car l'alphabet est trop court", "Car les hommes sont paresseux", "Car la grammaire est trop rigide", "Car le cerveau humain est limité", "Car les mots changent de sens tout le temps", "Car il y a trop de langues différentes", "Car la réalité n'existe pas vraiment", "Car les émotions sont plus précises", "Car les images sont plus claires"],
+      "keywords": [],
+      "revision": false,
+      "revMot": null
+    },
+    {
+      "q": "Que signifie la formule de Hegel « C'est dans les mots que nous pensons » ?",
+      "correct": "Que la pensée se forme et se développe uniquement à travers le langage",
+      "distractors": ["Que les mots nous empêchent de réfléchir", "Que la pensée existe avant les mots", "Que le silence est supérieur à la parole", "Que les mots sont des pièges pour l'esprit", "Que la vérité est purement mathématique", "Que le langage est une invention inutile", "Que les animaux pensent comme les hommes", "Que la pensée est une illusion sonore", "Que les mots sont des objets physiques"],
+      "keywords": [],
+      "revision": false,
+      "revMot": null
+    }
+  ]
+}

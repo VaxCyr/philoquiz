@@ -47,6 +47,21 @@
 
     "Identité" : "Objet -> Posséder même qualités",
     "égalité" : "Objet -> même quantité ou valeur",
-    "différence" : "soit non indentité soit non égalité"
+    "différence" : "soit non indentité soit non égalité",
+
+    "médiat" : "qui passe par au moins un intermédiaire",
+    "immédiat" : "qui passe par aucun intermédiaire",
+
+    "origine" : "Ce qui est premier d'un point de vue chronologique",
+    "fondement" : "Priorité logique, raison qui justifie quelque chose",
+
+    "essentiel" : "Un attribut est essentiel s'il est lié à la nature de l'objet",
+    "accidentel" : "Un attribut est accidentel quand il est attribué à l'objet à cause d'un événement ayant eu lieu mais qui aurait pu ne pas avoir lieu",
+
+    "intuitif" : "Une pensée qui saisit immédiatement tout son objet",
+    "discursif" : "Une pensée qui procède par étape pour avancer",
+
+    "persuader" : "Amener quelqu'un à adopter une idée en utilisant n'importe quel moyen (imagination, sensibilité, etc.)",
+    "convaincre" : "Amener quelqu'un à adopter une idée en utilisant des moyens rationnels (études, sondages, etc.)"
   }
 }

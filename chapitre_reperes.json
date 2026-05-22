@@ -831,28 +831,108 @@
       "revMot": ""
     },
     {
-      "q": "Conforme à un principe supérieur de morale ou de justice.",
-      "correct": "légitime",
-      "distractors": [
-        "légal",
-        "en droit",
-        "en fait",
-        "contrainte",
-        "obligation",
-        "necessaire",
-        "absolu",
-        "vrai",
-        "certain"
-      ],
-      "defKey": "légitime",
-      "keywords": [
-        "conforme",
-        "principe supérieur",
-        "morale",
-        "justice"
-      ],
-      "revision": true,
-      "revMot": ""
-    }
-  ]
+        "q": "Conforme à un principe supérieur de morale ou de justice.",
+        "correct": "légitime",
+        "distractors": [
+          "légal",
+          "en droit",
+          "en fait",
+          "contrainte",
+          "obligation",
+          "necessaire",
+          "absolu",
+          "vrai",
+          "certain"
+        ],
+        "defKey": "légitime",
+        "keywords": [
+          "conforme",
+          "principe supérieur",
+          "morale",
+          "justice"
+        ],
+        "revision": true,
+        "revMot": ""
+      },
+      {
+        "q": "Qui passe par au moins un intermédiaire.",
+        "correct": "médiat",
+        "distractors": ["immédiat", "origine", "fondement", "essentiel", "accidentel", "intuitif", "discursif", "absolu", "relatif"],
+        "keywords": ["au moins","intermédiaire"],
+        "revision": true,
+        "revMot": ""
+      },
+      {
+        "q": "Qui passe par aucun intermédiaire.",
+        "correct": "immédiat",
+        "distractors": ["médiat", "origine", "fondement", "essentiel", "accidentel", "intuitif", "discursif", "absolu", "relatif"],
+        "keywords": [["aucun","sans"],"intermédiaire"],
+        "revision": true,
+        "revMot": ""
+      },
+      {
+        "q": "Ce qui est premier d'un point de vue chronologique.",
+        "correct": "origine",
+        "distractors": ["fondement", "médiat", "immédiat", "essentiel", "accidentel", "en fait", "en droit", "nature", "cause"],
+        "keywords": ["premier","chronologique"],
+        "revision": true,
+        "revMot": ""
+      },
+      {
+        "q": "Priorité logique, raison qui justifie quelque chose.",
+        "correct": "fondement",
+        "distractors": ["origine", "médiat", "immédiat", "essentiel", "accidentel", "en fait", "en droit", "nature", "cause"],
+        "keywords": ["raison","justifie"],
+        "revision": true,
+        "revMot": ""
+      },
+      {
+        "q": "Attribut lié à la nature même de l'objet.",
+        "correct": "essentiel",
+        "distractors": ["accidentel", "origine", "fondement", "médiat", "immédiat", "en acte", "en puissance", "absolu", "nécessaire"],
+        "keywords": ["lié","nature"],
+        "revision": true,
+        "revMot": ""
+      },
+      {
+        "q": "Un attribut attribué à cause d'un évènement qui aurait pu ne pas avoir lieu.",
+        "correct": "accidentel",
+        "distractors": ["essentiel", "origine", "fondement", "médiat", "immédiat", "en acte", "en puissance", "absolu", "nécessaire"],
+        "keywords": [["donné","attribué"],"évènement","pas avoir lieu"],
+        "revision": true,
+        "revMot": ""
+      },
+      {
+        "q": "Une pensée qui saisit immédiatement tout son objet.",
+        "correct": "intuitif",
+        "distractors": ["discursif", "médiat", "immédiat", "raison", "savoir", "croire", "objectif", "subjectif", "certain"],
+        "keywords": ["pensée","immédiatement","tout"],
+        "revision": true,
+        "revMot": ""
+      },
+      {
+        "q": "Une pensée qui procède par étape pour avancer.",
+        "correct": "discursif",
+        "distractors": ["intuitif", "médiat", "immédiat", "raison", "savoir", "croire", "objectif", "subjectif", "certain"],
+        "keywords": ["pensée","étape"],
+        "revision": true,
+        "revMot": ""
+      },
+      {
+        "q": "Amener quelqu'un à adopter une idée par n'importe quel moyen.",
+        "correct": "persuader",
+        "distractors": ["convaincre", "savoir", "croire", "prouver", "démontrer", "expliquer", "enseigner", "discuter", "juger"],
+        "keywords": ["quelqu'un",["adopter","accepter","valider","adhérer"],"idée","n'importe","moyen"],
+        "revision": true,
+        "revMot": ""
+      },
+      {
+        "q": "Amener quelqu'un à adopter une idée par des moyens rationnels.",
+        "correct": "convaincre",
+        "distractors": ["persuader", "savoir", "croire", "prouver", "démontrer", "expliquer", "enseigner", "discuter", "juger"],
+        "keywords": ["quelqu'un",["adopter","accepter","valider","adhérer"],"idée","moyens","rationnels"],
+        "revision": true,
+        "revMot": ""
+      }
+    ]
 }

@@ -1,0 +1,48 @@
+{
+  "definitions": {
+    "travail": "1) Sens générique : activité, effort permettant à un individu ou à un groupe d'individus de transformer son environnement. 2) Sens spécifique : activité réfléchie par laquelle est produit un objet (bien ou service). 3) Sens économique : toute activité rémunérée."
+  },
+  "definitions_keywords": {
+    "travail": []
+  },
+  "philosophes": [
+    {
+      "nom": "Marx",
+      "oeuvre": "<em>Le Capital</em>",
+      "idee": "Distinction entre le travail humain et animal : l'homme imagine et conçoit son œuvre avant de la réaliser contrairement à l'animal qui agit de manière instinctive. Le travail humain est une activité réfléchie."
+    },
+    {
+      "nom": "Locke",
+      "oeuvre": "<em>Traité du gouvernement civil</em>",
+      "idee": "Le travail est le fondement de la propriété privée. Puisque je suis propriétaire de mon corps, ce que mon corps produit par son effort m'appartient en propre."
+    },
+    {
+      "nom": "Marx",
+      "oeuvre": "<em>Ébauche d'une critique de l'économie politique</em>",
+      "idee": "Le travail industriel est une aliénation : dépossession de soi (pas de choix), contrainte (travailler pour survivre) et déshumanisation (travail machinal, vie réduite aux besoins biologiques)."
+    }
+  ],
+  "quiz_questions": [
+    {
+      "q": "Selon Marx dans « Le Capital », quelle est la différence majeure entre le travail humain et l'instinct animal ?",
+      "correct": "L'homme imagine et conçoit son œuvre avant de la réaliser",
+      "distractors": ["L'homme travaille plus dur que les animaux", "Les animaux n'utilisent jamais d'outils", "Le travail humain est toujours collectif", "Les animaux ne transforment pas la nature", "Le travail animal est rémunéré en nourriture", "L'homme est le seul à se fatiguer", "Les animaux travaillent pour le plaisir", "Il n'y a aucune différence réelle", "Le travail humain est une punition divine"],
+      "keywords": [],
+      "revMot": null
+    },
+    {
+      "q": "Sur quoi repose le droit de propriété selon Locke ?",
+      "correct": "Sur le travail et l'effort du corps",
+      "distractors": ["Sur la loi du plus fort", "Sur l'héritage familial", "Sur un don de Dieu", "Sur le hasard des découvertes", "Sur le vote de la majorité", "Sur l'autorisation de l'État", "Sur l'ancienneté de l'occupation", "Sur la force militaire", "Sur l'utilité sociale"],
+      "keywords": [],
+      "revMot": null
+    },
+    {
+      "q": "Pourquoi le travail industriel est-il une « aliénation » pour Marx ?",
+      "correct": "Car il dépossède l'ouvrier de lui-même et le déshumanise",
+      "distractors": ["Car il est trop fatigant physiquement", "Car il ne rapporte pas assez d'argent", "Car il éloigne l'homme de sa famille", "Car il détruit la nature environnante", "Car il est basé sur des machines complexes", "Car il nécessite trop d'études", "Car il est réservé aux hommes", "Car il est trop dangereux", "Car il empêche de pratiquer la religion"],
+      "keywords": [],
+      "revMot": null
+    }
+  ]
+}
