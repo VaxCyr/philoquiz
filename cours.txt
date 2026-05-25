@@ -52,7 +52,21 @@
 > Particulier -> Un nombre limité de cas
 > Singulier -> Un seul cas
 
-> 
+> Médiat : qui passe par au moins un intermédiaire
+> Immédiat : qui passe par aucun intermédiaire
+
+> Origine : Ce qui est premier d'un point de vue chronologique
+> Fondement : Priorité logique, raison qui justifie quelque chose (exemple la propriété privée fondement de la propriété de tel maison à tel personne)
+
+> essentiel : Un attribut est essentiel s'il est lié à la nature de l'objet
+> accidentel : Un attribut est accidentel quand il est attribué à l'objet à cause d'un événement ayant eu lieu mais qui aurait pu ne pas avoir lieu
+
+> Intiutif : Une pensée qui saisit immédiatement tout son objet
+> Discursif : Une pensée qui procède par étape pour avancer
+
+> Persuader : Amener quelqu'un à adopter une idée en utilisant des moyens rationnels (études, sondages, etc.)
+> Convaincre : Amener quelqu'un à  adopter une idée en utilisant n'importe quel moyen (Imagination, sensibilité, etc.)
+
 
 
 ### Références sur le Bonheur :
@@ -384,24 +398,7 @@ Sur la Liberté et le temps :
 
 [Auteur], [nom_de_l_ouvrage]
 [Idée(s) à retenir (si pas de guillemet, alors ce n'est pas des citations, seulement des reformulations ou synthèse)]
-
-Nouveaux repères : 
-
-   Médiat : qui passe par au moins un intermédiaire
-   Immédiat : qui passe par aucun intermédiaire
-
-   Origine : Ce qui est premier d'un point de vue chronologique
-   Fondement : Priorité logique, raison qui justifie quelque chose (exemple la propriété privée fondement de la propriété de tel maison à tel personne)
-
-   essentiel : Un attribut est essentiel s'il est lié à la nature de l'objet
-   accidentel : Un attribut est accidentel quand il est attribué à l'objet à cause d'un événement ayant eu lieu mais qui aurait pu ne pas avoir lieu
-
-   Intiutif : Une pensée qui saisit immédiatement tout son objet
-   Discursif : Une pensée qui procède par étape pour avancer
-
-   Persuader : Amener quelqu'un à adopter une idée en utilisant des moyens rationnels (études, sondages, etc.)
-   Convaincre : Amener quelqu'un à  adopter une idée en utilisant n'importe quel moyen (Imagination, sensibilité, etc.)
-
+ 
 Sur la Technique  et la Nature :
 
    - Sens premier : une technique est un ensemble organisé de moyens pour atteindre un but 

@@ -2,7 +2,7 @@
 
 > Le **bonheur** c'est ce qui nous satisfait.
 
-> Le **devoir** est un impératif de conscience qui impose à l'H d'accomplir ce qui est prescrit en vertu d'une obligation religieuse, morale ou légale.
+> Le **devoir** est un impératif de conscience qui impose à l'Homme d'accomplir ce qui est prescrit en vertu d'une obligation religieuse, morale ou légale.
 
 > L'**État** est une autorité instituée définie sur un plan juridique et politique. 3 fonctions : **Juridique** de représentation, **politique** de pouvoir et **administrative** de gestion.
 
@@ -22,8 +22,8 @@
 > La **Raison** : 
    - Ce qui rend compte d'un fait, d'un phénomène.
    - La raison est la faculté qu'a l'esprit humain d'organiser ses relations avec le réel ; son activité considérée en général tant dans le domaine pratique que dans le domaine théorique. En ce dernier sens, le mot « raison » peut désigner plus précisément :
-      - Une capacité de calcul ;
-      - Une capacité de jugement ;
+      Une capacité de calcul ;
+      Une capacité de jugement ;
 
 > La **Conscience** : Le sentiment intérieur qui accompagne les actions et les pensées du sujet.
    On distingue :
@@ -37,6 +37,10 @@
    On distingue :
       - Point de vue moral : Libre arbitre (capacité de se décider par soi-même) et Autonomie (obéir à une loi dont on est l'auteur).
       - Point de vue politique : Droits reconnus et protégés par l'État et Souveraineté populaire (le peuple décide des lois).
+
+> Le **Temps** :
+   Aristote : Le nombre du mouvement selon l'antérieur- postérieur
+   Bergson distingue le temps réel du temps mesuré, le temps réel lui échappe aux mathématiques
 
 > La **Technique** :
    - Sens premier : une technique est un ensemble organisé de moyens pour atteindre un but 
