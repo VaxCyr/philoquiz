@@ -43,6 +43,18 @@
       "distractors": ["Car il est trop fatigant physiquement", "Car il ne rapporte pas assez d'argent", "Car il éloigne l'homme de sa famille", "Car il détruit la nature environnante", "Car il est basé sur des machines complexes", "Car il nécessite trop d'études", "Car il est réservé aux hommes", "Car il est trop dangereux", "Car il empêche de pratiquer la religion"],
       "keywords": [],
       "revMot": null
+    },
+    {
+      "q": "Le travail se définit au sens générique comme",
+      "correct": "une activité humaine qui transforme l'environnement",
+      "distractors": ["un simple plaisir corporel", "une activité uniquement religieuse", "un pur jeu de l'esprit", "un acte purement naturel", "une force de la nature", "une contrainte imposée par la société", "une activité réservée aux esclaves", "une punition divine", "un phénomène purement économique"],
+      "keywords": ["activité", "transforme", "environnement"],
+      "revision": true,
+      "revMot": {
+        "mot": "travail",
+        "def": "Une activité humaine qui transforme l'environnement",
+        "keywords": ["activité", "transforme", "environnement"]
+      }
     }
   ]
 }

@@ -1,0 +1,82 @@
+{
+  "definitions": {
+    "art": "Sens premier : mode de fabrication humaine visant à produire une œuvre ; sens spécifique : domaine de l'esthétique et des beaux-arts."
+  },
+  "definitions_keywords": {
+    "art": ["mode de fabrication", "esthétique", "beaux-arts"]
+  },
+  "philosophes": [
+    {
+      "nom": "Aristote",
+      "oeuvre": "Politique",
+      "idee": "L'art est une imitation rationnelle (mimesis) qui peut avoir une fonction libératrice par la catharsis."
+    },
+    {
+      "nom": "Hegel",
+      "oeuvre": "Esthétique",
+      "idee": "L'art est une manifestation sensible de l'esprit, une façon pour l'homme d'extérioriser sa vie intérieure."
+    },
+    {
+      "nom": "Bergson",
+      "oeuvre": "La pensée et le mouvant",
+      "idee": "L'artiste saisit le mouvant et l'émotion par l'intuition subjective, au-delà des concepts fixes de la science."
+    }
+  ],
+  "quiz_questions": [
+    {
+      "q": "Selon Aristote, l'art est surtout une forme d'",
+      "correct": "imitation rationnelle",
+      "distractors": ["expression spontanée", "répétition mécanique", "copie sans sens", "construction utilitaire"],
+      "keywords": ["imitation", "rationnelle"],
+      "revision": true,
+      "revMot": {
+        "mot": "l'art (Aristote)",
+        "def": "Pour Aristote, l'art est une imitation rationnelle (mimesis).",
+        "keywords": ["imitation", "rationnelle", "catharsis"]
+      }
+    },
+    {
+      "q": "Pour Hegel, l'art est principalement",
+      "correct": "une manifestation sensible de l'esprit",
+      "distractors": ["une simple technique de fabrication", "un divertissement sans portée", "un langage purement logique", "une copie de la nature"],
+      "keywords": ["manifestation", "sensible", "esprit"],
+      "revision": true,
+      "revMot": {
+        "mot": "l'art (Hegel)",
+        "def": "Pour Hegel, l'art est une manifestation sensible de l'esprit.",
+        "keywords": ["manifestation", "sensible", "esprit"]
+      }
+    },
+    {
+      "q": "Selon Bergson, ce que l'art saisit contrairement à la science, c'est",
+      "correct": "le mouvant (i.e. la vie et l'émotion) dans sa singularité",
+      "distractors": [
+        "le stable (i.e. l'esprit et la raison) dans sa singularité",
+        "le permanent (i.e. l'essence et la forme) dans sa singularité",
+        "le divin (i.e. l'absolu et la foi) dans sa singularité",
+        "l'éternel (i.e. l'âme et la vérité) dans sa singularité",
+        "l'universel (i.e. la nature et la loi) dans sa singularité",
+        "le fixe (i.e. la matière et l'atome) dans sa singularité",
+        "le logique (i.e. le concept et l'ordre) dans sa singularité",
+        "le parfait (i.e. l'idéal et la beauté) dans sa singularité",
+        "l'intelligible (i.e. l'idée et la pensée) dans sa singularité",
+        "le structuré (i.e. le code et la fonction) dans sa singularité"
+        ],
+      "keywords": [],
+      "revision": false,
+      "revMot": null
+    },
+    {
+      "q": "La définition la plus générale de l'art est celle d'un",
+      "correct": "mode de fabrication humaine",
+      "distractors": ["ensemble de croyances", "système de signes", "travail purement utile", "acte de création divine"],
+      "keywords": [],
+      "revision": true,
+      "revMot": {
+        "mot": "art",
+        "def": "L'art est un mode de fabrication humaine visant à produire une œuvre.",
+        "keywords": ["mode de fabrication", "œuvre"]
+      }
+    }
+  ]
+}

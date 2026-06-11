@@ -75,6 +75,18 @@
         "def":"Ce qui se produit spontanément, sans l'intervention ou la modification de l'homme.",
         "keywords":[["produit","créer"],"sans",["intervention","modification"],["homme","humain"]]
       }
+    },
+    {
+      "q": "La technique se définit comme",
+      "correct": "un ensemble organisé de moyens pour atteindre un but",
+      "distractors": ["un simple instinct naturel", "une croyance religieuse", "un état de conscience pure", "une vérité absolue", "une émotion spontanée", "une construction sociale", "une fiction littéraire", "une illusion philosophique", "un phénomène biologique"],
+      "keywords": ["ensemble", "organisé", "moyens", "but"],
+      "revision": true,
+      "revMot": {
+        "mot": "technique",
+        "def": "Un ensemble organisé de moyens pour atteindre un but",
+        "keywords": ["ensemble", "organisé", "moyens", "but"]
+      }
     }
   ]
 }

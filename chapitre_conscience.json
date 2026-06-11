@@ -242,6 +242,32 @@
       "revMot": null
     },
     {
+      "q": "La conscience se définit comme",
+      "correct": "le sentiment intérieur qui accompagne les actions et les pensées du sujet",
+      "distractors": [
+        "une substance matérielle qui pense",
+        "la capacité de mesurer le temps",
+        "la capacité de produire des outils",
+        "une croyance religieuse partagée",
+        "une illusion créée par le cerveau",
+        "une force vitale qui anime le corps",
+        "une construction sociale imposée",
+        "une simple réaction chimique"
+      ],
+      "keywords": [
+        "sentiment",
+        "intérieur",
+        "actions",
+        "pensées"
+      ],
+      "revision": true,
+      "revMot": {
+        "mot": "conscience",
+        "def": "Le sentiment intérieur qui accompagne les actions et les pensées du sujet",
+        "keywords": ["sentiment", "intérieur", "actions", "pensées"]
+      }
+    },
+    {
       "q": "Quelle critique Sartre fait-il à la théorie de l'inconscient ?",
       "correct": "C'est une forme de mauvaise foi pour fuir sa liberté",
       "distractors": [

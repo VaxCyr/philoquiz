@@ -1,0 +1,63 @@
+{
+  "definitions": {
+    "religion": "C'est un ensemble de croyances définit, de rites, une communauté de croyants soumise à une autorité reconnue."
+  },
+  "definitions_keywords": {
+    "religion": ["croyances", "rites", "communauté de croyants", "autorité reconnue"]
+  },
+  "philosophes": [
+    {
+      "nom": "Eliade",
+      "oeuvre": "Le Sacré et le Profane",
+      "idee": "La religion superpose au monde profane un ordre du sacré, considéré comme supérieur et absolu."
+    },
+    {
+      "nom": "Spinoza",
+      "oeuvre": "Traité théologico-politique",
+      "idee": "La superstition naît de la peur et de l'imagination face à l'incertitude."
+    },
+    {
+      "nom": "Pascal",
+      "oeuvre": "Pensées",
+      "idee": "On ne peut prouver l'existence ou non de Dieu ; il faut parier en son existence car on a plus à y gagner."
+    }
+  ],
+  "quiz_questions": [
+    {
+      "q": "Selon Eliade, les croyants croient au monde profane ainsi qu'au ...",
+      "correct": "sacré",
+      "distractors": ["divin", "naturel", "matériel", "logique"],
+      "keywords": [],
+      "revision": false,
+      "revMot": null
+    },
+    {
+      "q": "Pour Spinoza, la superstition trouve surtout son origine dans",
+      "correct": "la peur et l'imagination",
+      "distractors": ["la science expérimentale", "la logique mathématique", "la morale universelle", "l'absence de croyances"],
+      "keywords": [],
+      "revision": false,
+      "revMot": null
+    },
+    {
+      "q": "Dans les Pensées, Pascal insiste surtout sur",
+      "correct": "l'impossibilité de prouver l'existence de Dieu et l'intérêt de parier",
+      "distractors": ["la nécessité de rejeter toute croyance", "l'importance d'une religion strictement rationnelle", "la supériorité du monde profane", "l'égalité des religions"],
+      "keywords": [],
+      "revision": false,
+      "revMot": null
+    },
+    {
+      "q": "La religion se définit notamment comme un ensemble de",
+      "correct": "croyances, de rites avec une communauté de croyants soumise à une autorité reconnue",
+      "distractors": ["techniques et de savoirs scientifiques", "lois civiles et économiques", "émotions spontanées et instinctives", "conceptions purement individuelles", "phénomènes naturels et matériels", "idées abstraites et universelles", "valeurs morales et politiques", "structures sociales et culturelles", "langages symboliques et artistiques"],
+      "keywords": [],
+      "revision": true,
+      "revMot": {
+        "mot": "religion",
+        "def": "La religion se définit comme un ensemble de croyances, de rites avec une communauté de croyants soumise à une autorité reconnue.",
+        "keywords": ["croyances", "rites", "communauté de croyants", "autorité reconnue"]
+      }
+    }
+  ]
+}

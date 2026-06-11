@@ -59,6 +59,16 @@
    - Faculté que les hommes possèdent d'exprimer leurs pensées et de communiquer entre eux.
    - Système de signes conventionnels utilisé pour communiquer ou donner des instructions (informatique).
 
+> L'**Art** :
+   - Sens premier : Au sens le plus large, et conformément à son étymologie, le mot « art » s'applique à tout mode de fabrication humaine, il désigne en habileté, la maîtrise dont fait preuve l'artisan ou l'artiste.
+   - Sens spécifique : De nos jours le mot « art », pris absolument Renvoie de manière plus restrictive au domaine de l'esthétique Les « Beaux-Arts ».
+
+> La **Religion** : 
+   4 traits :
+   - Un ensemble de croyance définit
+   - Des pratiques codifiées : rites
+   - Une communauté de croyants
+   - Communauté soumise à une autoritée reconnue
 ---
 
 ## Définitions des repères :
@@ -386,3 +396,31 @@
 
 - **Hegel — Encyclopédie des sciences philosophiques** :
    « C'est dans les mots que nous pensons. », « Vouloir penser sans les mots est une tentative insensée » ; le langage est le lieu même de la formation de la pensée.
+
+--- 
+
+### Références sur l'Art :
+
+- **Aristote - Politique** :
+   Aristote définit l'art comme une imitation rationnelle (*mimesis*). Cette fiction permet la *catharsis* : grâce à la distanciation théâtrale, le spectateur purge ses passions (pitié et terreur) sans danger, ce qui attribue à l'art une fonction libératrice
+
+- **Hegel - Esthétique** :
+   Pour Hegel, l'art est une manifestation sensible de l'esprit. En créant, l'Homme extériorise sa vie intérieure — ses idées, ses croyances et ses sentiments — pour leur donner une existence matérielle et visible dans le monde. Cette production d'œuvres d'art est donc un besoin vital pour l'Homme de se reconnaître lui-même dans ce qu'il a transformé.
+
+- **Bergson - La pensée et le mouvant** :
+   D'après Bergson, la science échoue à saisir la véritable réalité car son langage est objectif, général et fige les choses dans des concepts utilitaires. 
+   À l'inverse, l'artiste utilise son intuition subjective pour capter le « mouvant », c'est-à-dire la vie et l'émotion pure dans ce qu'elles ont de singulier et de fluide. L'artiste nous révèle une vérité plus profonde.
+
+---
+
+### Références sur la Religion :
+
+- **Eliade - Le Sacré et le Profane** :
+   La religion est un mode d'être qui structure la conscience du croyant dans son rapport au monde (intentionnalité), à soi-même (réflexivité) et aux autres (intersubjectivité). Alors que l'homme non religieux s'en tient au profane — c'est-à-dire la réalité naturelle, utilitaire et directement accessible —, l'homme religieux superpose à ce monde le sacré, qu'il considère comme la réalité supérieure et absolue.
+
+- **Spinoza - Traité théologico-politique** :
+   Spinoza montre que la superstition naît naturellement de la peur et de l'imagination des hommes face à l'incertitude. Des individus peuvent manipuler ensuite autrui grâce à ces moteurs psychologiques.
+
+- **Pascal - Pensées** :
+   On ne peut prouver l'existence ou la non-existence de Dieu.
+   Selon Pascal, il faut parier sur l'existence de Dieu : si vous gagnez, vous obtenez le bonheur éternel ; si vous perdez, vous ne perdez rien d'important. En revanche, parier contre lui fait risquer l'enfer pour des plaisirs terrestres dérisoires.
