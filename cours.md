@@ -320,11 +320,10 @@
    L'Homme n'est pas maître de ses propres pensées
    Le rejet de l'hypothèse de l'existence de l'inconscient vient de la blessure narcissique que cette hypothèse leur inflige
 
-
 - **Critiques de Freud** :
    Alain, Éléments de philosophie : Notion d'inconscient repose sur une confusion, elle est inutile. Ce que Freud explique par l'inconscient devra un jour s'expliquer par l'action/le corps
 
-- ***Sartre, L'être et le néant** : 
+- **Sartre, L'être et le néant** : 
       Thoérie du determinisme psychique nie la liberté
       Mauvaise foi (=ne pas reconnaître sa responsabilité), cette théorie nous donne des excuses car c'est plus facile à vivre quand on est pas responsable
 
